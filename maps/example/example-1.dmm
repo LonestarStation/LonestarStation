@@ -1,0 +1,1474 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aT" = (
+/obj/machinery/portable_atmospherics/canister/empty,
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"bD" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/shield_gen,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"fm" = (
+/obj/effect/landmark/start,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"fn" = (
+/obj/machinery/light,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"fG" = (
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/meter,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"ic" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"jb" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"jN" = (
+/obj/machinery/light,
+/obj/machinery/shield_capacitor{
+	anchored = 1;
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/aisat)
+"kg" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/aisat)
+"nf" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/yellow{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"nT" = (
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	d1 = 16;
+	d2 = 0;
+	icon_state = "16-0"
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating,
+/area/aisat)
+"oC" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"oZ" = (
+/obj/machinery/atmospheric_field_generator,
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/aisat)
+"pr" = (
+/obj/machinery/atmospheric_field_generator,
+/turf/simulated/floor/tiled/monotile,
+/area/aisat)
+"pF" = (
+/obj/machinery/light_switch,
+/turf/simulated/wall,
+/area/aisat)
+"pS" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"qd" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/aisat)
+"qI" = (
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"qV" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/aisat)
+"sA" = (
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -22
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"sP" = (
+/obj/machinery/shield_capacitor{
+	anchored = 1;
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/aisat)
+"uR" = (
+/obj/turbolift_map_holder/example{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/red,
+/area/aisat)
+"vq" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"vw" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"wb" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"wj" = (
+/obj/structure/stairs/spawner/south,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"xd" = (
+/turf/space,
+/area/space)
+"xn" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/button/remote/blast_door{
+	id = "arftest";
+	pixel_y = 26
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"xD" = (
+/obj/effect/floor_decal/sign/a,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"yr" = (
+/obj/machinery/atmospherics/binary/pump/high_power{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"yC" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/standard,
+/obj/item/clothing/gloves/yellow,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"yZ" = (
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"AQ" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/aisat)
+"AZ" = (
+/turf/simulated/wall,
+/area/aisat)
+"BM" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/standard,
+/obj/item/multitool,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"BR" = (
+/obj/machinery/door/blast/multi_tile/two_tile_ver{
+	id = "arftest"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"CI" = (
+/obj/machinery/shield_gen/external{
+	anchored = 1
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/aisat)
+"Da" = (
+/turf/simulated/floor/tiled/red,
+/area/aisat)
+"Es" = (
+/obj/machinery/atmospherics/pipe/zpipe/up{
+	dir = 4
+	},
+/obj/structure/disposalpipe/up,
+/turf/simulated/floor/plating,
+/area/aisat)
+"FA" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"Hv" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"KH" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/meter,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"KJ" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/button/remote/blast_door{
+	id = "arftest";
+	pixel_y = 26
+	},
+/obj/structure/handrail,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"KZ" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"MJ" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/aisat)
+"Ow" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"Pv" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/aisat)
+"QQ" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/aisat)
+"RW" = (
+/obj/machinery/atmospheric_field_generator,
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/aisat)
+"Se" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"Sz" = (
+/obj/structure/ladder/up,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"SD" = (
+/obj/machinery/door/blast/multi_tile/three_tile_hor{
+	id = "arftest"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"TZ" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"Ub" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"VO" = (
+/obj/machinery/atmospherics/binary/pump/high_power{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"YU" = (
+/obj/effect/landmark{
+	name = "JoinLate"
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+"Zm" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/table/standard,
+/obj/item/storage/belt/utility/full,
+/turf/simulated/floor/tiled/dark,
+/area/aisat)
+
+(1,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(2,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(3,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(4,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(5,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(6,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(7,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(8,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(9,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(10,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+Es
+kg
+aT
+aT
+pS
+pS
+sA
+Ow
+Ow
+Ow
+yZ
+wj
+AZ
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(11,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+Se
+Ow
+Ow
+Ow
+Ow
+Ow
+yZ
+Ow
+Ow
+Ow
+AZ
+AZ
+AZ
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(12,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+qI
+KH
+TZ
+Ow
+Ow
+Ow
+yZ
+Ow
+YU
+YU
+YU
+Ow
+Ow
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(13,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+yr
+wb
+VO
+Ow
+Ow
+Ow
+yZ
+Ow
+YU
+YU
+YU
+Ow
+fn
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+xd
+xd
+"}
+(14,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+vq
+fG
+Ub
+Ow
+Ow
+Ow
+yZ
+Ow
+YU
+YU
+YU
+Ow
+Ow
+AZ
+Da
+Da
+Da
+Da
+uR
+AZ
+xd
+xd
+"}
+(15,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+Ow
+Ow
+Ow
+Ow
+Ow
+Ow
+oC
+BM
+Ow
+Ow
+Ow
+Ow
+Ow
+yZ
+Da
+Da
+Da
+Da
+Da
+AZ
+xd
+xd
+"}
+(16,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+FA
+yZ
+Sz
+yZ
+yZ
+KZ
+pF
+Zm
+yZ
+fm
+yZ
+xD
+yZ
+yZ
+Da
+Da
+Da
+Da
+Da
+AZ
+xd
+xd
+"}
+(17,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+ic
+Ow
+Ow
+Ow
+Ow
+Ow
+jb
+yC
+Ow
+Ow
+Ow
+Ow
+Ow
+yZ
+Da
+Da
+Da
+Da
+Da
+AZ
+xd
+xd
+"}
+(18,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+yZ
+BR
+AZ
+KJ
+Ow
+Ow
+Ow
+Ow
+Ow
+yZ
+Ow
+Ow
+Ow
+Ow
+Ow
+Ow
+AZ
+Da
+Da
+Da
+Da
+Da
+AZ
+xd
+xd
+"}
+(19,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+SD
+qd
+Pv
+RW
+Ow
+Hv
+Hv
+Hv
+Ow
+Ow
+yZ
+Ow
+Ow
+Ow
+Ow
+Ow
+jN
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+xd
+xd
+"}
+(20,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+yZ
+QQ
+MJ
+pr
+Ow
+Hv
+Hv
+Hv
+Ow
+Ow
+yZ
+Ow
+Ow
+Ow
+Ow
+Ow
+CI
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(21,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+yZ
+AQ
+qV
+oZ
+Ow
+Hv
+Hv
+Hv
+Ow
+Ow
+yZ
+Ow
+Ow
+Ow
+Ow
+Ow
+sP
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(22,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+yZ
+BR
+AZ
+xn
+Ow
+Ow
+Ow
+Ow
+Ow
+nf
+vw
+vw
+bD
+vw
+vw
+nT
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(23,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(24,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(25,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(26,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(27,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(28,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(29,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(30,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(31,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(32,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}

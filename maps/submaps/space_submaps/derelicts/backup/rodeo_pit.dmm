@@ -1,0 +1,46 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/template_noop,/area/submap/rodeo_pit)
+"c" = (/obj/structure/railing,/turf/template_noop,/area/submap/rodeo_pit)
+"d" = (/obj/structure/railing,/obj/structure/bed/chair,/turf/template_noop,/area/submap/rodeo_pit)
+"e" = (/obj/structure/railing,/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/food/snacks/chips,/turf/template_noop,/area/submap/rodeo_pit)
+"f" = (/obj/structure/railing,/obj/structure/table/woodentable,/obj/item/weapon/cell/high,/obj/item/weapon/cell/high,/turf/template_noop,/area/submap/rodeo_pit)
+"g" = (/obj/structure/railing,/obj/structure/table/woodentable,/turf/template_noop,/area/submap/rodeo_pit)
+"h" = (/obj/structure/railing,/obj/structure/table/woodentable,/obj/item/weapon/spacecash/c10,/obj/item/weapon/spacecash/c10,/turf/template_noop,/area/submap/rodeo_pit)
+"i" = (/obj/structure/railing{icon_state = "railing0"; dir = 4},/turf/template_noop,/area/submap/rodeo_pit)
+"j" = (/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"k" = (/obj/structure/railing{icon_state = "railing0"; dir = 8},/turf/template_noop,/area/submap/rodeo_pit)
+"l" = (/obj/effect/decal/mecha_wreckage/ripley/deathripley,/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"m" = (/obj/item/stack/rods,/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"n" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"o" = (/obj/effect/decal/cleanable/blood/oil/streak,/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"p" = (/obj/item/stack/cable_coil,/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"q" = (/obj/effect/decal/mecha_wreckage/ripley/firefighter,/turf/simulated/floor/outdoors/dirt/vacuum,/area/submap/rodeo_pit)
+"r" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/turf/template_noop,/area/submap/rodeo_pit)
+"s" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/obj/structure/bed/chair{dir = 1},/turf/template_noop,/area/submap/rodeo_pit)
+"t" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/obj/structure/table/woodentable,/obj/structure/reagent_dispensers/beerkeg,/turf/template_noop,/area/submap/rodeo_pit)
+"u" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/obj/structure/table/woodentable,/obj/item/weapon/spacecash/c50,/turf/template_noop,/area/submap/rodeo_pit)
+"v" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/obj/structure/table/woodentable,/obj/item/weapon/cell/high,/obj/item/weapon/cell/device/weapon,/turf/template_noop,/area/submap/rodeo_pit)
+"w" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,/turf/template_noop,/area/submap/rodeo_pit)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+abbbbbbbbbbbbbbbbbbbbbbbbbbbba
+abbbbbbbbbbbbbbbbbbbbbbbbbbbba
+abbcccdddddcefghgcdddddcccccba
+abijjjjjjjjjjjjjjjjjjjjjjjjjka
+abijljjjjjjjjjjjjjjjjjjjjjjjka
+abijjjmjjjjjjjjjjjjnjjjojjjjka
+abijjjjjnjjjjjjjjjjjjjjjjjjjka
+ajjjjjjjjjjjjjjjjjjjjjjjjjjjja
+abjjjjjjjjjjjjjjjjjjjjjjjjjjja
+abijjjjjjjjjjjjjjjnjjjjjjjjjka
+abijjjjjjjjjjjjjjjjjjjjjjjjjka
+abijjjjjjjnjjpjjjjjjjjjjjjjjka
+abijojjjjjjjjjjjjjjjjjjjjjqjka
+abijjjjjjjjjjjjjjjjjjjjjjjjjka
+abbrrrsssssrtuvuwrsssssrrrrrba
+abbbbbbbbbbbbbbbbbbbbbbbbbbbba
+abbbbbbbbbbbbbbbbbbbbbbbbbbbba
+abbbbbbbbbbbbbbbbbbbbbbbbbbbba
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

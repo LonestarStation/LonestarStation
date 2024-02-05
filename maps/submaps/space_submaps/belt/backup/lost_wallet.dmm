@@ -1,0 +1,11 @@
+"a" = (/turf/template_noop,/area/submap/lost_wallet)
+"b" = (/obj/item/weapon/storage/wallet/random,/turf/template_noop,/area/submap/lost_wallet)
+"c" = (/obj/item/weapon/coin/silver,/turf/template_noop,/area/submap/lost_wallet)
+
+(1,1,1) = {"
+aaaaa
+aaaaa
+aabaa
+aacaa
+aaaaa
+"}

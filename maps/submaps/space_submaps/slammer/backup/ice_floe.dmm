@@ -1,0 +1,68 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"d" = (/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/ice_floe)
+"e" = (/turf/simulated/wall,/area/submap/ice_floe)
+"f" = (/turf/simulated/floor/holofloor/wood{nitrogen = 0; oxygen = 0},/area/submap/ice_floe)
+"g" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/holofloor/wood{nitrogen = 0; oxygen = 0},/area/submap/ice_floe)
+"h" = (/turf/simulated/wall/wood,/area/submap/ice_floe)
+"i" = (/obj/effect/wingrille_spawn,/turf/simulated/floor/plating,/area/submap/ice_floe)
+"j" = (/obj/structure/coatrack,/obj/machinery/power/apc{dir = 1; name = "north bump"; operating = 1; pixel_x = 0; pixel_y = 24},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"k" = (/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"l" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"m" = (/obj/structure/table/woodentable,/obj/item/weapon/gun/projectile/shotgun/pump,/obj/item/weapon/storage/box/shotgunammo,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"n" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"o" = (/obj/structure/table/woodentable,/obj/item/device/flashlight/lamp,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"p" = (/obj/structure/closet/cabinet,/obj/item/clothing/suit/storage/hooded/wintercoat/miner,/obj/item/clothing/suit/storage/hooded/wintercoat/miner,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"q" = (/obj/structure/closet/secure_closet/miner,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"r" = (/obj/structure/table/steel,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"s" = (/obj/structure/table/steel,/obj/item/weapon/paper{info = "the borg has been a little glitchy lately so I put it in the pod. you'll be alone until I get back so watch your ass. "; name = "Note"},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"t" = (/obj/structure/table/steel,/obj/item/robot_parts/robot_component/actuator,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"u" = (/obj/effect/decal/cleanable/blood,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"v" = (/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; layer = 3.3; master_tag = "floe_airlock"; name = "exterior access button"; pixel_x = 25; pixel_y = 25; req_one_access = list(12,25,48)},/turf/simulated/floor/holofloor/wood{nitrogen = 0; oxygen = 0},/area/submap/ice_floe)
+"w" = (/obj/machinery/door/airlock/external{frequency = 1379; icon_state = "door_locked"; id_tag = "floe_outer"; locked = 1; name = "Access Airlock"; req_access = list(13)},/turf/simulated/floor/tiled/hydro,/area/submap/ice_floe)
+"x" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; frequency = 1379; id_tag = "floe_pump"},/obj/machinery/embedded_controller/radio/airlock/airlock_controller{id_tag = "floe_airlock"; layer = 3.3; pixel_x = 0; pixel_y = 25; pixel_z = 0; tag_airpump = "floe_pump"; tag_chamber_sensor = "floe_sensor"; tag_exterior_door = "floe_outer"; tag_interior_door = "floe_inner"},/obj/machinery/airlock_sensor{id_tag = "floe_sensor"; layer = 3.3; pixel_x = 0; pixel_y = -25},/turf/simulated/floor/tiled/hydro,/area/submap/ice_floe)
+"y" = (/obj/machinery/door/airlock/external{frequency = 1379; icon_state = "door_locked"; id_tag = "floe_inner"; locked = 1; name = "Access Airlock"; req_access = list(13)},/turf/simulated/floor/tiled/hydro,/area/submap/ice_floe)
+"z" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/access_button{command = "cycle_interior"; frequency = 1379; layer = 3.3; master_tag = "floe_airlock"; name = "interior access button"; pixel_x = -25; pixel_y = 25; req_one_access = list(12,25,48)},/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"A" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"B" = (/obj/machinery/atmospherics/pipe/manifold/hidden,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"C" = (/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/obj/structure/simple_door/wood,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"D" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"E" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"F" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"G" = (/obj/structure/table/steel,/obj/item/device/robotanalyzer,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"H" = (/obj/structure/table/steel,/obj/item/weapon/storage/toolbox,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"I" = (/obj/structure/table/bench/steel,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"J" = (/obj/effect/decal/remains,/obj/item/clothing/under/rank/miner,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"K" = (/obj/machinery/power/smes/buildable/point_of_interest,/obj/structure/cable/green,/turf/simulated/floor/plating,/area/submap/ice_floe)
+"L" = (/obj/item/weapon/stool/padded,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"M" = (/obj/structure/ghost_pod/manual/lost_drone,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"N" = (/obj/structure/bed/padded,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"O" = (/obj/machinery/alarm{dir = 1; pixel_y = -25},/obj/structure/table/woodentable,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"P" = (/obj/structure/table/steel,/obj/item/robot_parts/l_leg,/obj/item/robot_parts/head,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"Q" = (/obj/effect/decal/cleanable/blood/gibs/robot,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+"R" = (/obj/machinery/power/terminal{dir = 8},/obj/machinery/power/port_gen/pacman,/turf/simulated/floor/holofloor/wood,/area/submap/ice_floe)
+"S" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/ice_floe)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbba
+aabbbccccbbcccccccccccccbbbbbbbbccccccdddddda
+abbbcccccccccccccccccccccccccccccccccddddddda
+abcccccScccccccccccccccccccccccccccccddddddda
+abccccccccceffeddddddddddddddddddddddddddddba
+aaccddddddddffdddddddddddddddddddddddddddddba
+aaddddddddddffdddddddddddddddddddddddddddddda
+adddddddddddffdddddddddddddddddddddddddddddda
+adddddddddddffdddddddddddddddddddddddddddddda
+adddddddddddffdddddddddddddddddddddddddddddda
+aaddddddddddffddddddddddddddccccccddddcccccca
+aaaacccccdddffdddccccccccccccccccccccccccccba
+aaabccccccceffeccccccccccccccccccccccccccccba
+aabbbccccccccccccfghhiiiiihhhhhhccccccccccaba
+aaaabcccccccccccfhhhjkklmnnhopqhcccccSccaaaba
+aaaabbbbbrstucccvwxyzAAAABBCDEFhccccccccaaaaa
+aaaaaaabbbbGHIcJfhhhKRLoLkMhNONhccccbbbbaaaaa
+aaaaaaaabbbbPQuccfghhiiiiihhhhhhcbbbbbbabaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

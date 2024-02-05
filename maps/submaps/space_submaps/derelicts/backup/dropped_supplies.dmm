@@ -1,0 +1,24 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/floor/plating,/area/submap/dropped_supplies)
+"c" = (/obj/structure/girder/displaced,/turf/template_noop,/area/template_noop)
+"d" = (/turf/simulated/wall/titanium,/area/submap/dropped_supplies)
+"e" = (/turf/simulated/floor/reinforced,/area/submap/dropped_supplies)
+"f" = (/turf/template_noop,/area/submap/dropped_supplies)
+"g" = (/obj/structure/loot_pile/maint/junk,/turf/simulated/floor/reinforced,/area/submap/dropped_supplies)
+"h" = (/obj/item/device/flashlight,/turf/simulated/floor/reinforced,/area/submap/dropped_supplies)
+"i" = (/obj/structure/loot_pile/maint/technical,/obj/item/device/gps/internal/poi,/obj/item/weapon/cell/device/weapon/empty,/obj/item/weapon/cell/device/weapon/empty,/turf/simulated/floor/plating,/area/submap/dropped_supplies)
+"j" = (/obj/structure/loot_pile/maint/technical,/turf/simulated/floor/reinforced,/area/submap/dropped_supplies)
+"k" = (/obj/structure/girder,/turf/template_noop,/area/submap/dropped_supplies)
+"l" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/floor/reinforced,/area/submap/dropped_supplies)
+"m" = (/obj/structure/girder/displaced,/turf/template_noop,/area/submap/dropped_supplies)
+"n" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/floor/plating,/area/submap/dropped_supplies)
+
+(1,1,1) = {"
+aaaabcaaa
+aaadefaaa
+aaddgddaa
+aeehijeee
+aadkbdkaa
+aaaklmaaa
+aaaanaaaa
+"}

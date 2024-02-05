@@ -1,0 +1,11 @@
+"a" = (/turf/template_noop,/area/submap/tech_junk)
+"b" = (/obj/item/broken_device/random,/turf/template_noop,/area/submap/tech_junk)
+"c" = (/obj/random/tool,/turf/template_noop,/area/submap/tech_junk)
+
+(1,1,1) = {"
+aaaaa
+abaaa
+aacba
+abaaa
+aaaaa
+"}

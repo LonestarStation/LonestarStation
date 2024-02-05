@@ -1,0 +1,16 @@
+"a" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/crystals1)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/crystals1)
+"c" = (/obj/machinery/crystal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/crystals1)
+"d" = (/obj/item/weapon/ore/diamond,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/crystals1)
+"e" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/crystals1)
+
+(1,1,1) = {"
+aaabbaaa
+accbbcaa
+acdbbdca
+aacbbbda
+aacbbeba
+acbbbbba
+abbbbbca
+aaabbbaa
+"}

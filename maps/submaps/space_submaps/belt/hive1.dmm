@@ -1,0 +1,29 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/hive1)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/hive1)
+"d" = (/obj/effect/alien/egg,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/hive1)
+"e" = (/obj/effect/alien/weeds/node,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/hive1)
+"f" = (/obj/effect/landmark{name = "xeno_spawn"; pixel_x = -1},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/hive1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaaaabbbbbbbcccaaaaa
+aaabbbbbbbbbbccccaaa
+aaabbbbbbbbbbceccaaa
+aabbbbbbbbbbccccccaa
+aabbbbbbbbbcccccbbba
+aabbbbbbbcceccccbbba
+aabbbbbbcccdcccccbaa
+abbbbbbdccfcccdecbaa
+abbbbbbcdccccccccbaa
+abbbbbbdecccdccccbba
+abbbbbbcdccccecccbba
+abbbbbbdccccfccdbbba
+aabbbbbbccccccdbbbba
+aabbbbbbbcecccbbbbba
+aabbbbbbbbdcdbbbbbaa
+aaabbbbbbbcdcbbbbbaa
+aaaaaabbbbbbbbbbbbaa
+aaaaaaaabbbabbbbbaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

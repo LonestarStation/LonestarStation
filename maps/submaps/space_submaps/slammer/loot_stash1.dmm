@@ -1,0 +1,30 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"c" = (/obj/structure/ore_box,/obj/item/ore/coal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"e" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"f" = (/obj/item/ore/coal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"g" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"j" = (/obj/vehicle/train/trolley,/obj/random/firstaid,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"l" = (/obj/structure/table/steel,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"m" = (/obj/vehicle/train/trolley,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"n" = (/obj/structure/closet/crate,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"o" = (/obj/structure/closet/crate,/obj/random/projectile/scrapped_gun,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"p" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+
+(1,1,1) = {"
+abaaaaabbbbbbbaaaaaa
+abbbbbbbbcnbbbbbaaaa
+bbbbbbbbefgbbgbbbaaa
+bbbbbbbggggnggbbbbaa
+abbbbblggjgggnbbbbaa
+aabbbblggmgpgnbbbbba
+aaaaabbggggggobbbbbb
+aaaabbbbggggbgbbbbbb
+aaabbbbbbggbbbbbbbbb
+aaaabbbggggbbbbbbbba
+aaaaagggggbbbbbbbbba
+aaaaagggbbbbbbbbbbaa
+aaabbbbbbbbbbbbbbaaa
+aaaaabbbbbbbbbbbaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

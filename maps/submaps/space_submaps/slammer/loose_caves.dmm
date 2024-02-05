@@ -1,0 +1,40 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/loose)
+"d" = (/turf/simulated/mineral/vacuum,/area/submap/cave/loose)
+"f" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/loose)
+"g" = (/obj/structure/loot_pile/surface/bones,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/loose)
+"i" = (/obj/effect/decal/remains/ribcage,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/loose)
+"j" = (/turf/simulated/mineral/ignore_mapgen,/area/submap/cave/loose)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaabbbbbaaaabbbbbbbbaaaaaa
+aaaaaaddbbbbbbbbbbbbbbbbbbaaaa
+aaaaddddbbibbbbbbbbbbbdddbbaaa
+aaabddddbbbfbbbbbbbbdddddbbbaa
+aabbdddbbbbbbbbbbbbbdddddbbbaa
+aabbbddbbbbbdbbbbbdbbdddbbbbaa
+aabbbbbbbbdddbbbbddbbbbbbbbbaa
+aabbbbbbbbddddbbddddbbbbfbbbaa
+aabbbbbbbbdddddbddddbbbgbbbbaa
+abbbbbbbbbdddddddddddbbbbbbaaa
+abbbbbbbbbbbbdbbbddbbbbbbbbaaa
+abbbbbbbbbbbbbbbbbbbbbbbdddaaa
+abbbbbbbbbbbbbbbbbbbbbbbddddaa
+abbbddbbbbfbbbbbbbbbbbbbbdddba
+abbbdddbbbbgbbbbdbbbbbbbbbbbba
+abbddddbbbbbbbbdddbbbbjjbbbbba
+abbddddddbbbbbbbddbbbjjjjbbbba
+abbbbbddddbbbbbbdbbbbjjjjbbbba
+aabbbbbdddbbbbbbbbbbbbjjjbbbaa
+aabbbbbbdddbbbbbbbbibbbjjbbbaa
+aabbbbbbbbdbbbbbbbbbfbbbbbbaaa
+aabbbbfbbbbbbbbbbbbbbbbbbbbaaa
+aabbbbbgbbbbbbbbbbbddbbbbbbaaa
+aaabbbbbbbbbbbdbbbbdddbbbddaaa
+aaabbdddbbbbbddbbbddddbbdddaaa
+aaaabddddbbbddddbbbdddbbddddaa
+aaaaaadddbbbbddbbbbbbbbbbddaaa
+aaaaaaaaaaabbbbbbbbbaaaabbaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

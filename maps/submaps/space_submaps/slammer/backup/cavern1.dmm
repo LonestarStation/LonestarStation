@@ -1,0 +1,41 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+"c" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+"d" = (/obj/structure/ore_box,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+"e" = (/obj/item/device/radio,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+"f" = (/obj/vehicle/train/trolley,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+"g" = (/obj/vehicle/train/engine,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+"h" = (/obj/item/device/flashlight,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/cavern1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabbaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabbaaabbabbbaaaa
+aabbaaaaaaaaaaaaaaaabbbbcbaaaa
+aabbaaaaaaabbaaaaaaabbbbbaaaaa
+aaaaaaaaaaabbbaaaaaaaabbbaaaaa
+aaaaaabbbabbbbbbaaaaaaaaaaaaaa
+aaaaabbbbabbbbbbaaaaaaaaaaaaaa
+aaaabbbbbbbbbbbbbbaaaaaaaaaaaa
+aaaabbbbbbbbbbbbbbbbbaabbbaaaa
+aaaabbbbbbbbbbbbbbbbbaabbbaaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbcbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaaabbbaabbbbdbebbbbbbbbbaaaa
+aaaaabbbbaabbdffgbbbbbbbbbaaaa
+aaaaabbbbabbbbbhbbbbbbbabbaaaa
+aaaaabbbbbbbbbbbbbbbbbbbbbaaaa
+aaaaabbbbbbbbbbbbbbbbbbbbbaaaa
+aaaaaabbbbbbbbbbbbcbbbbbbbaaaa
+aaaaaabbbbbbbbbbbbbbbbbbbaaaaa
+aaabaabbbbbbbbbbbbbbbbbbbbaaaa
+aabbaabbbbbbbbbbbbbbbbbbbbaaaa
+aabbbaabbbbbbbbbbbbbbbbbbaaaaa
+aaacbaabbbbabbbbbbaaaaaaaaaaaa
+aabbbaabbbbabbbabbaaaaabbbbaaa
+aabbaaaabbaaaababaaaaabbcabbaa
+aaaaaaaaaaaaaaaabaaaaaabbbbaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

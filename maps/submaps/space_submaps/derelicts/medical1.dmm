@@ -1,0 +1,115 @@
+"aa" = (/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"ab" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"ac" = (/obj/random/trash,/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"ad" = (/turf/simulated/floor/outdoors/rocks/airless,/area/submap/shuttles/medical1)
+"ae" = (/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/submap/shuttles/medical1)
+"af" = (/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"ag" = (/obj/structure/sign/greencross{desc = "White cross in a green field, you can get medical aid here."; name = "First-Aid"},/turf/simulated/shuttle/wall/no_join,/area/submap/shuttles/medical1)
+"ah" = (/obj/structure/grille,/obj/structure/shuttle/window,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"ai" = (/turf/simulated/shuttle/wall,/area/submap/shuttles/medical1)
+"aj" = (/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"ak" = (/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"al" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"am" = (/obj/machinery/light/small{dir = 4; pixel_y = 0},/obj/structure/sign/warning/airlock{pixel_x = 32},/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"ao" = (/obj/item/storage/toolbox/mechanical,/obj/machinery/light{dir = 1},/obj/structure/table/standard,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aq" = (/obj/item/material/shard{icon_state = "medium"},/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"ar" = (/obj/item/circuitboard/broken,/obj/structure/door_assembly/door_assembly_ext,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"as" = (/obj/structure/door_assembly/door_assembly_ext,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"at" = (/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"au" = (/obj/structure/closet/crate/medical,/obj/random/medical,/obj/random/medical,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"av" = (/obj/structure/table/standard,/obj/machinery/cell_charger,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aw" = (/obj/item/material/shard{icon_state = "medium"},/obj/effect/decal/cleanable/blood/oil,/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"ax" = (/obj/structure/closet/secure_closet/personal/patient,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"ay" = (/obj/machinery/door/airlock/glass,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"az" = (/obj/effect/decal/cleanable/blood/drip,/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aA" = (/obj/effect/decal/cleanable/blood/oil,/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aB" = (/obj/effect/decal/cleanable/blood/gibs/robot,/obj/item/firstaid_arm_assembly,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aC" = (/obj/structure/window/reinforced,/obj/effect/decal/cleanable/blood/oil,/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"aD" = (/obj/item/material/shard,/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"aE" = (/obj/effect/decal/cleanable/blood/oil,/obj/item/firstaid_arm_assembly,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aF" = (/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aG" = (/obj/structure/reagent_dispensers/fueltank,/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aH" = (/obj/structure/reagent_dispensers/watertank,/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aI" = (/obj/machinery/recharge_station,/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aK" = (/obj/structure/table/standard,/obj/item/material/shard{icon_state = "medium"},/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aL" = (/obj/structure/grille/broken,/obj/item/material/shard{icon_state = "medium"},/obj/item/stack/rods,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"aM" = (/obj/item/stack/rods,/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"aN" = (/obj/structure/lattice,/obj/item/stack/rods,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"aO" = (/obj/item/material/shard{icon_state = "medium"},/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aP" = (/obj/effect/decal/cleanable/blood/gibs/robot,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aQ" = (/turf/simulated/shuttle/wall/no_join,/area/submap/shuttles/medical1)
+"aR" = (/obj/item/material/shard,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"aS" = (/obj/machinery/light,/obj/structure/table/standard,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aT" = (/obj/structure/table/standard,/obj/item/material/shard{icon_state = "medium"},/obj/random/medical,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"aU" = (/obj/effect/decal/cleanable/blood/drip,/turf/simulated/floor/outdoors/rocks/airless,/area/submap/shuttles/medical1)
+"aV" = (/obj/machinery/computer,/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/medical1)
+"aW" = (/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/medical1)
+"aX" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"aY" = (/obj/effect/decal/cleanable/blood/oil,/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"aZ" = (/obj/item/material/shard{icon_state = "medium"},/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"ba" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; pixel_y = 0},/obj/structure/extinguisher_cabinet{pixel_x = -32},/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/submap/shuttles/medical1)
+"bb" = (/obj/item/stack/rods,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"bc" = (/obj/structure/girder/displaced,/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"bd" = (/obj/effect/decal/cleanable/blood/oil,/obj/effect/decal/cleanable/blood/drip,/obj/structure/lattice,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"be" = (/obj/structure/grille/broken,/obj/item/material/shard{icon_state = "medium"},/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"bf" = (/obj/item/material/shard,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bg" = (/obj/random/medical,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bh" = (/obj/effect/decal/mecha_wreckage/odysseus,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"bi" = (/obj/item/material/shard,/obj/random/trash,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"bj" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{frequency = 1380; id_tag = "medical_shuttle"; pixel_x = -25; pixel_y = 0; req_one_access = list(101); tag_door = "medical_shuttle_hatch"},/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"bk" = (/obj/structure/grille/broken,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"bl" = (/obj/structure/loot_pile/maint/technical,/obj/structure/lattice,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/shuttles/medical1)
+"bm" = (/obj/structure/bed/chair/office/light{dir = 8},/turf/simulated/shuttle/floor/purple/airless,/area/submap/shuttles/medical1)
+"bn" = (/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bo" = (/obj/structure/girder,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/shuttles/medical1)
+"bp" = (/obj/structure/girder,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/shuttles/medical1)
+"bq" = (/obj/structure/girder/displaced,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/shuttles/medical1)
+"br" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_r"; dir = 8},/turf/simulated/floor/outdoors/rocks/airless,/area/submap/shuttles/medical1)
+"bs" = (/obj/structure/shuttle/engine/heater{icon_state = "heater"; dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/shuttles/medical1)
+"bv" = (/obj/random/medical/pillbottle,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bx" = (/obj/structure/table/standard,/obj/item/bodybag/cryobag,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bz" = (/obj/machinery/light{dir = 1},/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bC" = (/obj/machinery/light{dir = 8},/obj/structure/table/standard,/obj/structure/loot_pile/maint/technical,/turf/simulated/shuttle/floor/purple/airless,/area/submap/shuttles/medical1)
+"bD" = (/obj/effect/decal/cleanable/blood/gibs/robot,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bE" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/structure/closet/secure_closet/medical_wall/anesthetics{pixel_x = 32},/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bF" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; pixel_y = 0},/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bG" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bH" = (/obj/structure/grille,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"bI" = (/obj/structure/table/standard,/turf/simulated/shuttle/floor/purple/airless,/area/submap/shuttles/medical1)
+"bJ" = (/obj/machinery/iv_drip,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bL" = (/obj/structure/table/standard,/obj/random/firstaid,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bM" = (/obj/structure/table/standard,/obj/random/medical/lite,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bN" = (/obj/structure/table/standard,/obj/random/medical,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bO" = (/obj/structure/girder,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"bP" = (/obj/structure/girder,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"bQ" = (/obj/structure/frame,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bR" = (/obj/structure/table/standard,/obj/structure/sign/periodic{pixel_y = -32},/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bS" = (/obj/machinery/optable,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bU" = (/obj/machinery/door/airlock/external{frequency = 1380; icon_state = "door_locked"; id_tag = "medical_shuttle_hatch"; locked = 1; name = "Shuttle Hatch"; req_access = null},/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/medical1)
+"bV" = (/obj/structure/table/standard,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bW" = (/obj/structure/table/standard,/obj/machinery/light,/turf/simulated/shuttle/floor/white/airless,/area/submap/shuttles/medical1)
+"bY" = (/obj/effect/decal/cleanable/blood/drip,/turf/simulated/mineral/floor/ignore_mapgen,/area/template_noop)
+"bZ" = (/obj/effect/decal/remains/tajaran,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaabaaaaaaaaaaaaaaaaaaaaacaaaaaaaaaaabaaaaaaaaaa
+aaaaaaaaaaabaaaaaaaaabaaaaaaaaabaaaaaaaaaaaaaaaaaa
+aaacaaaaaaaaaaajaaaaajakafagahaiaiaiaaaaaaajaaaaaa
+aaabaaacajajaaaaaqajawalamaibnaobVaiaiaiaaaaaaaaaa
+aaaaaaaaaaaaacaaajaCaiarasaiatbnbnauavaiaiaaaaaaaa
+aaaaaaacaaaqaaajaDaxaibnbnayazaAbnbnaBbnahajaaaaaa
+aaaaajajaaaMajaNaEaxahbnaFaiaGaHaIbWbVaKaLajaaaaaa
+aaaaajaaaaaRaXakaOaPaybnbnaQaiaiaiaiaiaiaiajaaaaaa
+aaaaaaabaaajajaYaSaTahadaUaVaWahajaaaaaaajaaabaaaa
+aaabaaaaaZbbbcaiaiaiaibaadadbdbeaaajbhajajabaaaaaa
+aaaaabaaajbiaYbnbfbgahadaeaWajbkbYbYbZajaaaaabaaaa
+aaaaaaajaXblbmbnbnbnbnbnbnaibobpbqaiaiaiaiaaaaabaa
+aaaMajbrbsbIbIbvbnbnahbnbnaibVbxbVbzbnbVbHajaaaaaa
+aaaaajaiaibCbmbDbnbEaibFbnbnbnbnbnbnbGbVbHajaaaaaa
+aaaaaaajaiaibIbJbnbVaiafaraibLbnbMbVbNbObPaaaaaaaa
+aaabaaaaajaibQbRbSbVaibjamaibVbWbVaibObPadaaaaabaa
+aaaaaaabajaiaiaiaiaiagbUbUaQahaiaibPadadadabaaaaaa
+aaaaaaaaaaajajajajaaajajaaaaacajajaaaaabaaaaaaaaaa
+aaaaaaabaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

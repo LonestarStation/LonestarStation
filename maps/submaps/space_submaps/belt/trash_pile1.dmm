@@ -1,0 +1,18 @@
+"a" = (/turf/template_noop,/area/submap/trash/pile1)
+"b" = (/obj/random/junk,/turf/template_noop,/area/submap/trash/pile1)
+"c" = (/mob/living/simple_mob/animal/space/carp,/turf/template_noop,/area/submap/trash/pile1)
+"d" = (/obj/structure/loot_pile/maint/trash,/turf/template_noop,/area/submap/trash/pile1)
+"e" = (/obj/random/junk,/obj/structure/loot_pile/maint/trash,/turf/template_noop,/area/submap/trash/pile1)
+
+(1,1,1) = {"
+aaaaaaaaaa
+abaaabaaaa
+aaabcbabaa
+aabbbadaaa
+aaaababaaa
+aaadaabbaa
+aabaabcaaa
+aababeabaa
+aaabaaaaaa
+aaaaaaaaaa
+"}

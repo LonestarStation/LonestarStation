@@ -1,0 +1,12 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/buried_stash2)
+"c" = (/obj/structure/closet/grave,/obj/random/contraband,/obj/random/contraband,/obj/random/cash,/obj/random/cash,/obj/random/cash,/obj/random/cash,/obj/random/drinkbottle,/obj/random/drinkbottle,/obj/random/grenade,/obj/random/cash/huge,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/buried_stash2)
+"d" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/buried_stash2)
+
+(1,1,1) = {"
+aaaaa
+abbda
+abcba
+abbba
+aaaaa
+"}

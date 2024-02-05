@@ -1,0 +1,34 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"c" = (/obj/structure/ore_box,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"d" = (/obj/structure/closet/crate,/obj/item/weapon/extinguisher,/obj/item/weapon/extinguisher,/obj/item/weapon/extinguisher,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"e" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"f" = (/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/obj/item/weapon/ore/coal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"g" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"h" = (/obj/structure/closet/crate,/obj/item/weapon/lipstick,/obj/item/weapon/lipstick/black,/obj/item/weapon/lipstick/random,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"i" = (/obj/structure/table/steel,/obj/item/weapon/beartrap,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"j" = (/obj/vehicle/train/trolley,/obj/random/firstaid,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"k" = (/obj/structure/closet/crate,/obj/item/weapon/folder/blue,/obj/item/weapon/folder/red,/obj/item/weapon/folder/white,/obj/item/weapon/folder/yellow,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"l" = (/obj/structure/table/steel,/obj/item/weapon/paper{desc = "This is some bullshit. First chance we got to knick something that looks half decent turns out to be mostly junk. And now we're getting calls that the other stash we've got has got some kind of spider problem. Fuck this, Between the shitty locals, The pissed off bugs, and now apparently some NT goon running around in the area there's hardly enough reason to stick around. I'm telling Carl I'm out tommorow."; name = "Note"},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"m" = (/obj/vehicle/train/trolley,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"n" = (/obj/structure/closet/crate,/obj/item/weapon/cell/device/weapon,/obj/item/weapon/cell/device/weapon,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"o" = (/obj/structure/closet/crate,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/practiceshells,/obj/random/projectile/scrapped_gun,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+"p" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash1)
+
+(1,1,1) = {"
+abaaaaabbbbbbbaaaaaa
+abbbbbbbbcdbbbbbaaaa
+bbbbbbbbefgbbgbbbaaa
+bbbbbbbgggghggbbbbaa
+abbbbbiggjgggkbbbbaa
+aabbbblggmgpgnbbbbba
+aaaaabbggggggobbbbbb
+aaaabbbbggggbgbbbbbb
+aaabbbbbbggbbbbbbbbb
+aaaabbbggggbbbbbbbba
+aaaaagggggbbbbbbbbba
+aaaaagggbbbbbbbbbbaa
+aaabbbbbbbbbbbbbbaaa
+aaaaabbbbbbbbbbbaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

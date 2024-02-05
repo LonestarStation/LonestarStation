@@ -1,0 +1,16 @@
+"a" = (/turf/template_noop,/area/submap/dumpster)
+"b" = (/obj/random/junk,/obj/item/weapon/material/shard,/turf/template_noop,/area/submap/dumpster)
+"c" = (/obj/random/junk,/turf/template_noop,/area/submap/dumpster)
+"d" = (/mob/living/simple_mob/animal/space/carp,/turf/template_noop,/area/submap/dumpster)
+"e" = (/obj/structure/closet/crate/trashcart{opened = 1},/obj/item/weapon/material/shard,/turf/template_noop,/area/submap/dumpster)
+"f" = (/obj/item/weapon/material/shard,/turf/template_noop,/area/submap/dumpster)
+"g" = (/obj/random/junk,/obj/random/junk,/turf/template_noop,/area/submap/dumpster)
+"h" = (/obj/item/weapon/broken_bottle,/turf/template_noop,/area/submap/dumpster)
+
+(1,1,1) = {"
+aaaba
+acaah
+cdeaa
+afaga
+acaaa
+"}

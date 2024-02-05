@@ -1,0 +1,18 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"c" = (/obj/structure/droppod_door{dir = 1},/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"d" = (/turf/simulated/floor/reinforced,/area/submap/undropped_supplies)
+"e" = (/obj/structure/droppod_door{dir = 8},/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"f" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/stunrevolver,/obj/item/weapon/gun/energy/stunrevolver,/obj/item/weapon/storage/box/flare,/obj/item/stack/marker_beacon/ten,/obj/item/weapon/cell/device/weapon,/obj/item/weapon/cell/device/weapon,/obj/item/weapon/flame/lighter/random,/obj/item/device/gps,/obj/item/weapon/reagent_containers/food/snacks/cookiesnack,/obj/item/weapon/reagent_containers/food/snacks/cookiesnack,/obj/item/weapon/reagent_containers/food/snacks/chips,/obj/item/weapon/reagent_containers/food/snacks/chips,/obj/item/weapon/reagent_containers/food/snacks/liquidfood,/obj/item/weapon/reagent_containers/food/snacks/liquidfood,/obj/item/weapon/reagent_containers/food/snacks/pistachios,/obj/item/weapon/reagent_containers/food/snacks/no_raisin,/obj/item/weapon/reagent_containers/food/drinks/dry_ramen,/obj/item/weapon/reagent_containers/food/drinks/dry_ramen,/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle,/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey,/obj/item/weapon/storage/fancy/cigarettes/luckystars,/turf/simulated/floor/reinforced,/area/submap/undropped_supplies)
+"g" = (/obj/structure/droppod_door{dir = 4},/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"h" = (/obj/structure/droppod_door,/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+
+(1,1,1) = {"
+aaaaaaa
+aabcbaa
+abbdbba
+aedfdga
+abbdbba
+aabhbaa
+aaaaaaa
+"}

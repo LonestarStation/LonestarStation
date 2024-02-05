@@ -1,0 +1,23 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/asteroid/blast)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/asteroid/blast)
+"d" = (/obj/structure/closet/crate,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/asteroid/blast)
+"e" = (/obj/machinery/floodlight,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/asteroid/blast)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+aaaabbbbbbbbaaa
+aabbbbbbbbbbbaa
+abbbbbbbbbbbbaa
+abbbbbbbbbbbbba
+abbbbbbbbbbbbba
+abbbbbbbbbbbbba
+abbbbbbbbbbbbba
+abbbbbbbbbbbbba
+abbccccbbbbbbba
+aabccdeccbbbbba
+aaacccccccbbbaa
+aaaaccccccbbbaa
+aaaaabbbbbbbaaa
+aaaaaaaaaaaaaaa
+"}

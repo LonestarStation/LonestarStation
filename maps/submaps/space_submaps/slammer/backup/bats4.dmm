@@ -1,0 +1,31 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+"c" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+"d" = (/obj/structure/loot_pile/maint/trash,/obj/item/weapon/spacecash/c1,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+"e" = (/obj/structure/closet/crate/trashcart,/obj/random/multiple/gun/projectile/shotgun,/obj/random/contraband/nofail,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+"f" = (/obj/random/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+"g" = (/obj/random/trash,/obj/random/toolbox,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+"h" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bats4)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaabbbbbbaaaaaaa
+aaaaaabbbbbbbbaaaaaa
+aaaaabbbbbbbbbbaaaaa
+aaaabbbccccccbbbaaaa
+aaabbbccccccccbbbaaa
+aaccbbcccccccccbbbaa
+aaccccccdebfgcccbbaa
+acccccccfbbbbcccbbba
+acccccccbbbbhbccbbba
+abbccbbbbbbbbbbcbbba
+abbcbbhbbbbbbbbbbbba
+abbbbbbbbbbbbhbbbbba
+abbbbbbbbbbbbbbcbbba
+abbbbbbhbbbbbbccbbba
+aabbcbbbbbbcccccbbaa
+aaabccbbccccccccbaaa
+aaaaccccccccccccaaaa
+aaaaaccccccccbcaaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

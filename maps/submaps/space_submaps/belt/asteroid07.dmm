@@ -1,0 +1,26 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/asteroid/type7)
+"c" = (/turf/simulated/mineral/floor/vacuum,/area/submap/asteroid/type7)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaabbbbbbbbaaaaaaaaa
+aaaaaaaaaaaabbbbbbbbbbaaaaaaaa
+aaaaaaaaaaacccbbbbbbbcccaaaaaa
+aaaaaaabbaccccbbbbbbbbccaaaaaa
+aaaaabbbbcccbbbbbbbbbbbccaaaaa
+aaaaabbbbccbbbbbbbbbbbbccaaaaa
+aaaaabbbcccbbbbbbbbbbbbccaaaaa
+aaaaabbccccbbbbbbbbbbbbccaaaaa
+aaaaabbcccccbbbbbbbbbbccaaaaaa
+aaaaaabcccbbbbbbbbbbccccaaaaaa
+aaaaacccccbbbbbbbbbbcccbbaaaaa
+aaaaccccccbbbbbbbbbbcccbbaaaaa
+aaaacccccccbbbbbbbbccccbaaaaaa
+aaacccccccbbbbbbbbbccccaaaaaaa
+aaacbbccccbbbbbbbbccccaaaaaaaa
+aaacbbcccccbbbbbbbccaaaaaaaaaa
+aaaacccccccccaabbbcaaaaaaaaaaa
+aaaaaaacccccaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

@@ -1,0 +1,119 @@
+"aa" = (/turf/template_noop,/area/template_noop)
+"ab" = (/obj/effect/decal/cleanable/blood/oil,/turf/template_noop,/area/template_noop)
+"ac" = (/obj/structure/grille,/obj/item/weapon/material/shard{icon_state = "medium"},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"ad" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"ae" = (/obj/structure/girder,/turf/simulated/floor/plating,/area/submap/shuttles/containment1)
+"af" = (/obj/structure/girder,/turf/simulated/floor/plating,/area/template_noop)
+"ag" = (/turf/simulated/shuttle/wall/dark/hard_corner,/area/submap/shuttles/containment1)
+"ah" = (/turf/simulated/shuttle/wall/dark,/area/submap/shuttles/containment1)
+"ai" = (/obj/item/weapon/material/shard{icon_state = "medium"},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"aj" = (/obj/structure/lattice,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/shuttles/containment1)
+"ak" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"al" = (/turf/simulated/shuttle/wall/dark/hard_corner,/area/template_noop)
+"am" = (/turf/simulated/shuttle/wall/dark,/area/template_noop)
+"an" = (/obj/item/stack/rods,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"ao" = (/obj/structure/door_assembly/door_assembly_ext,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/shuttles/containment1)
+"ap" = (/obj/structure/door_assembly/door_assembly_ext{anchored = 1},/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"aq" = (/obj/structure/grille,/obj/item/weapon/material/shard,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"ar" = (/obj/effect/decal/cleanable/blood/oil/streak,/turf/template_noop,/area/template_noop)
+"as" = (/obj/structure/lattice,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"at" = (/obj/structure/girder,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"au" = (/turf/simulated/floor/outdoors/rocks/airless,/area/template_noop)
+"av" = (/obj/item/weapon/material/shard,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"aw" = (/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"ax" = (/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"ay" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"az" = (/obj/effect/decal/mecha_wreckage/gygax{anchored = 1},/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aA" = (/obj/structure/loot_pile/maint/technical,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aB" = (/obj/item/stack/rods,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"aC" = (/obj/structure/loot_pile/maint/technical,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"aD" = (/obj/structure/grille{density = 0; icon_state = "brokengrille"},/obj/structure/lattice,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"aE" = (/obj/structure/toilet{dir = 8},/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"aF" = (/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aG" = (/obj/structure/table/steel_reinforced,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aH" = (/obj/structure/closet/medical_wall,/turf/simulated/shuttle/wall/dark,/area/submap/shuttles/containment1)
+"aI" = (/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"aJ" = (/obj/structure/loot_pile/maint/technical,/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"aK" = (/obj/structure/door_assembly/door_assembly_highsecurity{anchored = 1},/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aL" = (/obj/structure/closet/walllocker/emerglocker/east,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aM" = (/obj/structure/grille,/obj/item/weapon/material/shard{icon_state = "medium"},/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"aN" = (/obj/item/weapon/circuitboard/broken,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aO" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"aP" = (/obj/effect/decal/cleanable/blood,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"aQ" = (/obj/structure/closet/crate{name = "landmines crate"; opened = 1},/obj/random/landmine,/obj/random/landmine,/obj/random/medical,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"aR" = (/obj/structure/bed/chair/office/dark{dir = 4},/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"aS" = (/obj/structure/frame/computer,/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"aT" = (/obj/structure/frame,/obj/item/weapon/circuitboard/broken,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aU" = (/obj/effect/decal/cleanable/vomit,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"aV" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"aW" = (/obj/structure/largecrate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"aX" = (/obj/item/weapon/circuitboard/broken,/obj/structure/bed/chair/office/dark{dir = 4},/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"aY" = (/obj/structure/shuttle/engine/propulsion{dir = 8},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"aZ" = (/obj/effect/decal/remains/robot,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"ba" = (/obj/effect/decal/cleanable/blood,/obj/effect/decal/remains/human,/turf/simulated/shuttle/floor/red/airless,/area/submap/shuttles/containment1)
+"bb" = (/obj/item/weapon/material/shard,/turf/simulated/floor/plating,/area/submap/shuttles/containment1)
+"bc" = (/obj/effect/decal/cleanable/blood/drip,/obj/effect/decal/cleanable/blood/drip,/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"bd" = (/obj/machinery/computer,/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"be" = (/obj/structure/grille{density = 0; icon_state = "brokengrille"},/obj/item/stack/rods,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"bf" = (/obj/item/weapon/circuitboard/broken,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bg" = (/obj/effect/decal/cleanable/blood/drip,/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"bh" = (/obj/structure/extinguisher_cabinet,/turf/simulated/shuttle/wall/dark,/area/submap/shuttles/containment1)
+"bi" = (/obj/structure/grille,/obj/item/weapon/material/shard{icon_state = "medium"},/turf/simulated/floor/plating,/area/submap/shuttles/containment1)
+"bj" = (/obj/item/stack/rods,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"bl" = (/obj/structure/door_assembly,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bm" = (/obj/structure/table/steel_reinforced,/turf/simulated/shuttle/floor/yellow/airless,/area/submap/shuttles/containment1)
+"bn" = (/obj/item/clothing/suit/space/cult,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bo" = (/obj/effect/decal/cleanable/blood/drip,/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bp" = (/obj/structure/loot_pile/maint/technical,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bq" = (/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"br" = (/obj/structure/closet/walllocker/emerglocker/north,/obj/structure/frame,/obj/item/weapon/circuitboard/broken,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bs" = (/obj/structure/frame,/turf/simulated/shuttle/floor/black/airless,/area/submap/shuttles/containment1)
+"bt" = (/obj/item/frame/mirror,/obj/item/weapon/material/shard{icon_state = "medium"},/turf/simulated/shuttle/wall/dark,/area/submap/shuttles/containment1)
+"bu" = (/obj/structure/sink{icon_state = "sink"; dir = 8; pixel_x = -12; pixel_y = 2},/obj/effect/decal/cleanable/blood/drip,/obj/effect/decal/cleanable/blood/drip,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bv" = (/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bw" = (/obj/effect/decal/cleanable/vomit,/turf/simulated/shuttle/floor/white,/area/submap/shuttles/containment1)
+"bx" = (/obj/structure/shuttle/engine/heater{dir = 8},/obj/structure/window/reinforced{dir = 4; health = 1e+006},/turf/template_noop,/area/template_noop)
+"by" = (/obj/effect/decal/remains/robot,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bz" = (/obj/structure/door_assembly/door_assembly_ext{anchored = 1},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/shuttles/containment1)
+"bA" = (/obj/structure/grille{density = 0; icon_state = "brokengrille"},/obj/item/weapon/material/shard{icon_state = "medium"},/obj/item/stack/rods,/turf/simulated/shuttle/plating/airless,/area/submap/shuttles/containment1)
+"bB" = (/obj/structure/grille,/obj/item/weapon/material/shard,/turf/simulated/floor/plating,/area/submap/shuttles/containment1)
+"bC" = (/turf/simulated/shuttle/wall/dark/no_join,/area/template_noop)
+"bD" = (/obj/structure/bed/chair/office/dark{dir = 8},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bE" = (/turf/simulated/shuttle/plating/airless,/area/template_noop)
+"bF" = (/obj/item/weapon/material/shard,/turf/template_noop,/area/template_noop)
+"bG" = (/obj/structure/shuttle/engine/heater{dir = 8},/obj/structure/window/reinforced{dir = 4; health = 1e+006},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bH" = (/obj/effect/decal/cleanable/liquid_fuel,/turf/template_noop,/area/template_noop)
+"bI" = (/obj/effect/decal/cleanable/blood/drip,/turf/template_noop,/area/template_noop)
+"bJ" = (/obj/structure/shuttle/engine/propulsion{icon_state = "burst_r"},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bK" = (/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+"bL" = (/turf/simulated/shuttle/floor/black/airless,/area/template_noop)
+"bM" = (/obj/item/weapon/circuitboard/broken,/turf/simulated/shuttle/floor/black/airless,/area/template_noop)
+"bN" = (/obj/effect/decal/cleanable/liquid_fuel,/obj/item/weapon/flame/lighter/random,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaabaaaaaaacaaaaaaadafaaaaaaaaaaaaaaaiaaaaabaa
+aaaaalamaaaaaaaaaaaraaaaasaaauauaaavaaaaaaaaaaaaaa
+aaaaamaaaaadaaaaaaaaadasauauauadauaaaaaaaBaaaaaaaa
+aaadaaaaanaoapaqahahaCaDahahatatahagaaaaaaaaaaaaaa
+aaaYbfaaawaxaaawawadbfawawayazawaAahagaaaaaaaaaaaa
+aabnaabxahaaawawbyasawawawawaFawaGahataxaaaaaaaaaa
+aaaaadadadasasasawawawawawawanawaGaHaIaJataaaaaBaa
+amaaaaaaasawanawawawahahaKahaeawaLahaIaIaIaMaaaaaa
+auadaYbxahawawawaNawahaOaPaQahawawawaIaRaSaqaaaaaa
+aaauadaaahaTawaUawaFahaVaWaPahaNawaKaIaXaSaxasaaaa
+aubCaYbxahaAawaFawaFaeaZaPbaaeawaFbbaIbcbdbeaabDaa
+auauaaaaaaaabgawawawaeahahahbhawawbiaIaRaSaxaaacaa
+auauadaabjajawawayauauawawawawawawahaIaIaIaMaaaaaa
+adaaabaaaabEawawauauakawahaeahblahahaJbmahahaaaaaa
+auamaaaabFasawaAauakaFawaHbobpbqbrahahahagauaaaaaa
+auauaaauahawawawawawawbsbtbubvbwaEatagauauaaaaaaaa
+aaaabfbGaaahbzajaxbAataeaeahahbBatagauauaaaaaaaaaa
+amabaaaaauauaabEaaaaasasauauauasauauaaaaaaaaaaaaaa
+abbfabaaaaamaaaaadaaaabHaabIaaaaaaaaaaaaaaaaabaaaa
+aabJaaaaaaaCaaaaaaaabKbHbIaabHaaaaaaaaabaaaaaaaaaa
+aaaaaaaaaaaabLbMaaaabHadbNbHbHaaaaaaaaaaaaabaaaaaa
+aaaaadadaaabaaamaubKbHbHbHaaadaaaaaaaaaaaaaaaaabaa
+aaaaaaadaaaaaaauauaaaaaabHaaaaaaaaaaaaaaaaaaaaaaaa
+"}

@@ -1,0 +1,43 @@
+"a" = (/turf/simulated/wall/solidrock{block_tele = 0; nitrogen = 0; oxygen = 0},/area/submap/cave/ice_cave1A)
+"b" = (/turf/template_noop,/area/template_noop)
+"c" = (/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/cave/ice_cave1A)
+"d" = (/obj/machinery/crystal/ice,/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/cave/ice_cave1A)
+"e" = (/obj/structure/loot_pile/surface/bones,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+"f" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+"g" = (/obj/machinery/crystal/ice,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+"h" = (/obj/random/firstaid,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+"i" = (/obj/random/ammo,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+"j" = (/turf/simulated/wall/solidrock{block_tele = 0},/area/submap/cave/ice_cave1A)
+"k" = (/obj/random/maintenance/security,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+"l" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_cave1A)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaabbbbbbbbbbbbaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaabbbbbbbbbbaaaaaaaaaa
+aacccccdccccccccddaabbbbbbbbbbaaaeiggaaa
+aaccccccccccccccddaaabbbbbbbbaaagfffghaa
+aaccccccccccccccaaaaaaaaaaaaaaaafkfffiaa
+aaccccccccccdcccaaaaaaaaaaaaaaaffffffeaa
+aadccccccccccccdaaaaajccccdccggffffkfaaa
+aaccccccccccccccaaaaajcccccccffffgefgaaa
+aaccccccccccccccffffffdccccccgggaaaaaaaa
+aacccccccccdccccffggffccdcccdgggaaaaaaab
+aaccdcccccccccccaaaaaaddaaaaaaaaaaabbbbb
+aaccccdccccccccdaaaaaaddageffffaaaabbbbb
+aaccccccdcccccccaaggffgdagfffffaabbbbbbb
+aaccccccccccccccaafffflgaaafafgaabbbbbbb
+aaaaaadddddddddfffffgfffffffaffaabbbbbbb
+aaaaaagggfffgddddggggggffgffaffaabbbbbbb
+aagggfffffffffccaaaaaaaafffgagfaabbbbbbb
+aagfffffffffffccaaaaaaaaggggaffaabbbbbbb
+aaaggfaaaaaaaaccaaaaaaagfffffffaabbbbbbb
+aaaalfaaaaaaaaccaaaaaaaffffffaaaabbbbbbb
+aaaaffgaaaaaaaccccccddafffffgaaaabbbbbbb
+aaaaaffgaaaaaaccccccddaagfaaaaabbbbbbbbb
+aaaagfffaaaaaaaaddccffgfffaaaaabbbbbbbbb
+aaaggafffaaaaaaaddccffffffaabbbbbbbbbbbb
+faaaaafffgaaaaaaaaaaaafffgaabbbbbbbbbbbb
+ffaaaagffaaaaaaaaaaaaaggggaabbbbbbbbbbbb
+fffffffffaaaaaaaaaaaaaaaaaaabbbbbbbbbbbb
+ffffffffaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbb
+"}

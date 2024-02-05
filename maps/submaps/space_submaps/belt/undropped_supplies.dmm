@@ -1,0 +1,18 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"c" = (/obj/structure/droppod_door{dir = 1},/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"d" = (/turf/simulated/floor/reinforced,/area/submap/undropped_supplies)
+"e" = (/obj/structure/droppod_door{dir = 8},/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"f" = (/obj/structure/closet/crate,/obj/item/gun/energy/stunrevolver,/obj/item/stack/marker_beacon/ten,/turf/simulated/floor/reinforced,/area/submap/undropped_supplies)
+"g" = (/obj/structure/droppod_door{dir = 4},/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+"h" = (/obj/structure/droppod_door,/turf/simulated/wall/titanium,/area/submap/undropped_supplies)
+
+(1,1,1) = {"
+aaaaaaa
+aabcbaa
+abbdbba
+aedfdga
+abbdbba
+aabhbaa
+aaaaaaa
+"}

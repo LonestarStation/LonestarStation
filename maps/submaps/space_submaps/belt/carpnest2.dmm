@@ -1,0 +1,28 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/carp/nest2)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+"d" = (/obj/structure/loot_pile/surface/bones,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+"e" = (/mob/living/simple_mob/animal/space/carp,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+"f" = (/obj/random/plushie,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+"g" = (/mob/living/simple_mob/animal/space/carp,/turf/template_noop,/area/template_noop)
+"h" = (/mob/living/simple_mob/animal/space/carp/large,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+"i" = (/obj/random/projectile/random,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+"j" = (/obj/random/action_figure,/obj/structure/loot_pile/surface/bones,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest2)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+aabbbbaaabbbbaa
+abbbbbbbbbbbbba
+abbbbbbbbbbbbba
+abbbccccdecbbba
+abbccefcccccbba
+abbcbbcbcbbcbba
+abbcccebccccbba
+abbhicbbhccjbba
+abbcdcccccccbba
+abbbccbbbccbbba
+abbbbcccchbbbba
+aabbbcecccbbbaa
+aaabbbaagbbbaga
+aaaaaaaaaaaaaaa
+"}

@@ -1,0 +1,11 @@
+"a" = (/turf/template_noop,/area/submap/boxing_champ)
+"b" = (/mob/living/simple_mob/animal/space/carp,/turf/template_noop,/area/submap/boxing_champ)
+"c" = (/obj/effect/decal/remains/human,/obj/item/weapon/storage/belt/champion,/obj/item/clothing/gloves/boxing/green,/obj/item/clothing/shoes/hitops/black,/obj/item/clothing/under/shorts/green,/turf/template_noop,/area/submap/boxing_champ)
+
+(1,1,1) = {"
+aaaaa
+aaaaa
+abcba
+aaaaa
+aaaaa
+"}

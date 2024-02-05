@@ -1,0 +1,19 @@
+"a" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"b" = (/obj/item/weapon/shovel,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"c" = (/obj/random/multiple/ore_pile,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"d" = (/obj/item/clothing/head/helmet/space/syndicate/orange,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"e" = (/obj/item/weapon/pickaxe,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"f" = (/obj/item/clothing/shoes/syndigaloshes,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"g" = (/obj/effect/decal/remains,/obj/item/clothing/under/color/prison,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"h" = (/obj/item/clothing/suit/space/syndicate/orange,/obj/item/clothing/mask/breath,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"i" = (/obj/item/weapon/storage/backpack/dufflebag,/obj/random/multiple/ore_pile,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"j" = (/obj/item/device/flashlight,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+"k" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/lost_prisoner)
+
+(1,1,1) = {"
+aabca
+adaea
+afgaa
+aahki
+jcaaa
+"}

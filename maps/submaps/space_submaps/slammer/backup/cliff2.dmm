@@ -1,0 +1,38 @@
+"a" = (/turf/simulated/mineral/vacuum,/area/submap/cliff2)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"c" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 9},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"d" = (/obj/structure/cliff/automatic,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"e" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 5},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"f" = (/obj/structure/cliff/automatic/corner{icon_state = "cliffbuilder-corner"; dir = 9},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"g" = (/obj/random/outcrop,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"h" = (/obj/structure/cliff/automatic/corner,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"i" = (/obj/item/weapon/ore/marble,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"j" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 8},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"k" = (/obj/item/weapon/ore,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"l" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 4},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"m" = (/obj/item/weapon/ore/gold,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"n" = (/obj/item/weapon/ore/diamond,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"o" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 10},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"p" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 2},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"q" = (/obj/structure/cliff/automatic/corner{icon_state = "cliffbuilder-corner"; dir = 10},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"r" = (/obj/structure/cliff/automatic/corner{icon_state = "cliffbuilder-corner"; dir = 6},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"s" = (/obj/structure/cliff/automatic{icon_state = "cliffbuilder"; dir = 6},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+"t" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cliff2)
+
+(1,1,1) = {"
+aabbbbbbbaa
+abbcdddebba
+bbcfggbhebb
+bcfgbbigheb
+bjbbbkbbblb
+bjgbbbbbglb
+bjbkbbikglb
+bjgmbnbbblb
+bjbbbbkbglb
+bjgbbktnblb
+bjgbkbmbglb
+bjbbbkbbglb
+bjbbibkbglb
+aopqkbbrpsa
+aabbbbbbbaa
+"}

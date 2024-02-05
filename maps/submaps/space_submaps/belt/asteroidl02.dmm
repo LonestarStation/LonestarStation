@@ -1,0 +1,37 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/asteroid/large2)
+"c" = (/turf/simulated/mineral/floor/vacuum,/area/submap/asteroid/large2)
+"d" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/asteroid/large2)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aabbbbbbbbbaaaaaaaaaaaaaaaaaaa
+abbbbbbbbbbbbbbbbbbbbaaaaaaaaa
+aaabbbbbbbccbbbbbbbbbbbbbaaaaa
+abbbbbbbbbccccbbbbbbbbbbbbbaaa
+aabbbbbbbbccccbbbbbbbbbbbbbbaa
+aabbbbbbbbcccccbbbbbbbbbbbbbba
+aaabbbbbbccccccbbbbbbbbbbbbbba
+aabbbbbbbcccccccbbbbbbbbbbbbba
+abbbbbbbbccccccccbbbbbbbbbbbba
+aabbbccccbbbcccccccbbbbbbbbbba
+aabbbbccccccccccccccbbbccccbba
+aabbbbccccccccccccccbbbbbbccda
+aabbbbcccccddddddccccccccbccda
+aaabbbbcccddddddddcccccccbccba
+aabbbbbccddddddddddcccccbbbbba
+aaabbbbcdddddddddddcccccbbbbba
+aaaabbbcddddddddddddcccbbbbbba
+aaaaabbbddddddddddddccccbbcbba
+aaaaabbbdddddddddddbcbbbbbbbba
+aaaabbbbddddddddddbbbbbbbbbbba
+aabbbbbbbbdddddddbbbbbbbbbbaaa
+aaabbbbbbbdddddddbbbbbbbbbbaaa
+aaabbbbbbbddddddbbbbbbbbbbbaaa
+aaaabbbbbbbddddbdbbbbbbbbbaaaa
+aaaabbbbbbbbbbbbbbbbbbbbbaaaaa
+aaabbbbbbbbbbaaabbbbbbbbbaaaaa
+aaaaabbbabbaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

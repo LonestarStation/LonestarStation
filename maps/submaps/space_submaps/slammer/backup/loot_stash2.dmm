@@ -1,0 +1,39 @@
+"a" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"c" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"d" = (/obj/structure/closet/crate,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/coin,/obj/random/contraband,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"e" = (/obj/vehicle/train/trolley,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"f" = (/obj/structure/closet/crate,/obj/random/drinkbottle,/obj/random/drinkbottle,/obj/random/drinkbottle,/obj/random/drinkbottle,/obj/random/drinkbottle,/obj/random/drinkbottle,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"g" = (/obj/machinery/floodlight,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"h" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"i" = (/obj/structure/closet/crate,/obj/random/firstaid,/obj/random/firstaid,/obj/random/firstaid,/obj/random/medical/pillbottle,/obj/random/medical/pillbottle,/obj/item/stack/medical/splint,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"j" = (/obj/structure/closet/crate,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"k" = (/obj/random/junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"l" = (/obj/random/projectile/scrapped_gun,/obj/random/projectile/scrapped_gun,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"m" = (/obj/random/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"n" = (/obj/random/trash,/obj/random/junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"o" = (/obj/random/projectile/scrapped_gun,/obj/random/junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"p" = (/obj/random/pacman,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"q" = (/obj/random/toolbox,/obj/structure/table/steel,/obj/item/device/multitool{pixel_x = 5},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"r" = (/obj/structure/table/steel,/obj/random/projectile/random,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"s" = (/obj/structure/table/steel,/obj/item/weapon/storage/box/shotgunammo,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"t" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+"u" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/loot_stash2)
+
+(1,1,1) = {"
+aaaaabbaaaaaaaaaaaaa
+aaaaabbbbbaaaaaaaaaa
+aaaaaubbbbaaaaaaaaaa
+aaaaaaaabbaaaaaaaaaa
+aaaaacbbbbbbbbcaaaaa
+aaadbbbbbbeebbbbaaaa
+aafbbbgbbbbbbbbbhaaa
+aaibbbbbbbbbgbbbbbaa
+aaajbbbkbbbbbbbbbbaa
+aaaacklbmbbbbbbbcaaa
+aaaaaanockpqrstbaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

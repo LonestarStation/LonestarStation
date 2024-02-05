@@ -1,0 +1,23 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/asteroid/geode1)
+"c" = (/obj/item/weapon/ore/diamond,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/asteroid/geode1)
+"d" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/asteroid/geode1)
+"e" = (/obj/machinery/crystal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/asteroid/geode1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+aaaaabbbbbaaaaa
+aaabbbbbbbbbaaa
+aabbbbbbbbbbbaa
+abbbbcdcdebbbaa
+abbbedddcdebbba
+abbedcddddcbbba
+abbcddcddedbbba
+abbedcedcddbbba
+abbbdedddcbbbaa
+aabbcddcdebbbaa
+aabbbecdebbbbaa
+aabbbbbbbbbbaaa
+aaabbbbbbbbaaaa
+aaaaaaaaaaaaaaa
+"}

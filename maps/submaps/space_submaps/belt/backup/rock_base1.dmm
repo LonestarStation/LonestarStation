@@ -1,0 +1,87 @@
+"aa" = (/turf/template_noop,/area/space)
+"ab" = (/turf/simulated/mineral/vacuum,/area/submap/rock_base1)
+"ac" = (/turf/simulated/wall/r_wall,/area/submap/rock_base1)
+"ad" = (/obj/structure/table/woodentable,/obj/item/device/flashlight/lamp,/turf/simulated/floor/lino,/area/submap/rock_base1)
+"ae" = (/obj/structure/closet/cabinet,/obj/item/weapon/gun/projectile/pistol,/obj/item/ammo_magazine/m9mm/compact,/turf/simulated/floor/lino,/area/submap/rock_base1)
+"af" = (/obj/structure/bookcase,/turf/simulated/floor/lino,/area/submap/rock_base1)
+"ag" = (/obj/machinery/atmospherics/pipe/tank/carbon_dioxide,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"ah" = (/obj/machinery/atmospherics/portables_connector,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"ai" = (/obj/machinery/atmospherics/pipe/tank/air,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aj" = (/obj/item/seeds/ambrosiadeusseed,/obj/machinery/portable_atmospherics/hydroponics,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"ak" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/portable_atmospherics/hydroponics,/obj/item/seeds/ambrosiadeusseed,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"al" = (/obj/machinery/portable_atmospherics/hydroponics,/obj/item/seeds/ambrosiadeusseed,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"am" = (/obj/structure/bed,/turf/simulated/floor/lino,/area/submap/rock_base1)
+"an" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/lino,/area/submap/rock_base1)
+"ao" = (/turf/simulated/floor/lino,/area/submap/rock_base1)
+"ap" = (/obj/machinery/light/small{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/red{dir = 5},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aq" = (/obj/machinery/atmospherics/pipe/manifold/hidden/red{dir = 4},/obj/machinery/meter,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"ar" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 5},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"as" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 4},/obj/machinery/meter,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"at" = (/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"au" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"av" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small{brightness_color = "#DA0205"; brightness_power = 1; brightness_range = 5},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aw" = (/obj/effect/decal/cleanable/dirt,/obj/structure/loot_pile/maint/trash,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"ax" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/rock_base1)
+"ay" = (/obj/machinery/door/airlock,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"az" = (/obj/machinery/atmospherics/pipe/simple/hidden/red,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aA" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aB" = (/obj/machinery/light/small{dir = 8; pixel_x = 0},/turf/simulated/floor/tiled/steel/airless,/area/submap/rock_base1)
+"aC" = (/obj/machinery/light/small{brightness_color = "#DA0205"; brightness_power = 1; brightness_range = 5},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aD" = (/obj/machinery/atmospherics/pipe/simple/visible/universal,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aE" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 8},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aF" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aG" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/machinery/access_button{command = "cycle_interior"; frequency = 1379; layer = 3.3; master_tag = "rock1_airlock"; name = "interior access button"; pixel_x = 25; pixel_y = -25; req_one_access = newlist()},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aH" = (/obj/machinery/door/airlock/external{frequency = 1379; icon_state = "door_locked"; id_tag = "rock1_inner"; locked = 1; name = "External Access"; req_access = list(13)},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aI" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 1},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 10},/obj/machinery/embedded_controller/radio/airlock/airlock_controller{id_tag = "rock1_airlock"; layer = 3.3; pixel_x = 0; pixel_y = 24; pixel_z = 0; tag_airpump = "rock1_pump"; tag_chamber_sensor = "rock1_sensor"; tag_exterior_door = "rock1_outer"; tag_interior_door = "rock1_inner"},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aK" = (/obj/machinery/door/airlock/external{frequency = 1379; icon_state = "door_locked"; id_tag = "rock1_outer"; locked = 1; name = "External Access"; req_access = list(13)},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aL" = (/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; layer = 3.3; master_tag = "rock1_airlock"; name = "exterior access button"; pixel_x = -25; pixel_y = -25; req_one_access = newlist()},/turf/simulated/floor/tiled/steel/airless,/area/submap/rock_base1)
+"aM" = (/obj/structure/table/standard,/obj/fiftyspawner/glass,/obj/fiftyspawner/steel,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aN" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aO" = (/obj/machinery/light/small{brightness_color = "#DA0205"; brightness_power = 1; brightness_range = 5},/obj/structure/closet/emcloset,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aP" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1379; id_tag = "rock1_pump"},/obj/machinery/airlock_sensor{id_tag = "rock1_sensor"; layer = 3.3; pixel_x = 0; pixel_y = -24},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aQ" = (/obj/machinery/light/small{brightness_color = "#DA0205"; brightness_power = 1; brightness_range = 5},/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1379; id_tag = "rock1_pump"},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aR" = (/obj/machinery/power/apc{dir = 1; name = "north bump"; operating = 1; pixel_x = 0; pixel_y = 24},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aS" = (/obj/machinery/light/small{dir = 1},/obj/structure/closet/excavation,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aT" = (/obj/structure/table/standard,/obj/item/weapon/storage/toolbox/electrical,/obj/machinery/light/small{dir = 8; pixel_x = 0},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aU" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aV" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aW" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aX" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aY" = (/obj/structure/table/standard,/obj/item/weapon/storage/toolbox/mechanical,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"aZ" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"ba" = (/obj/machinery/light/small{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/hydro,/area/submap/rock_base1)
+"bb" = (/obj/structure/toilet{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/hydro,/area/submap/rock_base1)
+"bc" = (/obj/machinery/power/smes/buildable/point_of_interest,/obj/structure/cable/green,/turf/simulated/floor/plating,/area/submap/rock_base1)
+"bd" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/power/terminal{dir = 8},/obj/machinery/power/port_gen/pacman,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"be" = (/obj/effect/decal/cleanable/dirt,/obj/structure/table/standard,/obj/item/weapon/pickaxe/drill,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"bf" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/tiled,/area/submap/rock_base1)
+"bg" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/floor/plating,/area/submap/rock_base1)
+"bh" = (/turf/simulated/floor/plating,/area/submap/rock_base1)
+"bi" = (/obj/machinery/light/small{brightness_color = "#DA0205"; brightness_power = 1; brightness_range = 5},/turf/simulated/floor/plating,/area/submap/rock_base1)
+"bj" = (/obj/effect/decal/cleanable/greenglow,/turf/simulated/floor/plating,/area/submap/rock_base1)
+"bk" = (/turf/simulated/mineral/ignore_mapgen,/area/submap/rock_base1)
+"bl" = (/turf/simulated/floor/tiled/steel/airless,/area/submap/rock_base1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaababababaaaaabababababababababaaaaaaaaaaaa
+aaaaaaabababababababababababababababababababaaaaaa
+aaaaabababababababababababababababababababababaaaa
+aaabababababababababababababababababababababababaa
+aaabababacacacacacacacacacacacacacacacabababababaa
+aaabababacadaeafacagahahaiacajakakalacabababababaa
+aaabababacamanaoacapaqarasacatauavawacababaxaxaaaa
+aaabababacacacayacawazataAacayacacacacacaBaxaxaaaa
+aaabababacawataCauauaDataEaFaFaGaHaIaJaKaLaxaxaaaa
+aaabababacacayacacaMaNataDatataOacaPaQacblaxaxaaaa
+aaabababacaRataSacaTaUataVauatacacacacacaBaxaxaaaa
+aaabababacaWataXacaYaXataZatataybabbacababaxaxaaaa
+aaabababacbcbdbeacacacbfacacacacacacacabababababaa
+aaabababacacacacacbgbhbhbibjbgacababababababababaa
+aaaaababababababacacacacacacacacabababababababaaaa
+aaaaababababababababababababbkbkabababababababaaaa
+aaaaaaabababababababababababababababababababaaaaaa
+aaaaaaaaaaaaababababababaaaaababababaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

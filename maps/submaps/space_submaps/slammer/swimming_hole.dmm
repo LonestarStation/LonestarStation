@@ -1,0 +1,57 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"d" = (/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/swimming_hole)
+"e" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"f" = (/obj/machinery/crystal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"g" = (/obj/random/junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"h" = (/obj/effect/decal/remains/mouse,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"i" = (/obj/random/drinkbottle,/obj/random/drinkbottle,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"j" = (/obj/random/snack,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"k" = (/obj/random/cigarettes,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"l" = (/obj/random/snack,/obj/random/snack,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"m" = (/obj/random/drinkbottle,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"n" = (/obj/random/fishing_junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"o" = (/obj/item/clothing/mask/snorkel,/obj/random/humanoidremains,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+"p" = (/obj/random/grenade,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/swimming_hole)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabbaaaaaabbbbbbbaaaaaaaaaaaaaaaaaaa
+aaabbbcccccbbbbbbbbaaaaabbbbbbbbbbbaaa
+aabbbccccccccccccccaaaaaaabbbbbbbbbbaa
+abbbccccgccccccccccccccccgccccccccbbaa
+abbbcgccccccccccccccccgcccccccccccbbaa
+bbbccccccccccccccccccccccccccccccccbaa
+bbbcccgcccccccccccccddddddddddcccccbaa
+bbbcccccccccccccccdddddddddddddcnccbaa
+bbbcccccccccccccccdddddddddddddccncbaa
+bbcggccccccceccccdddddddddddddddcccbba
+bbcccccccccccccccddddddddddddddddddbbb
+bccccccccccccccccddddddddddddddddddddb
+bccccbbbfccccccccddddddddddddddddddddb
+bcccbbbbbcceccccccdddddddddddddddddddb
+bcccbbbbbbccccccccdddddddddddddddddddb
+bcccfbbbbbccccecccdddddddddddddddddddb
+bbccccbbicjccccccccddddddddddddddddddb
+bbcccccklmcccccccccddddddddddddddddddb
+bbccccccccccccccccccdddddddddddddddddb
+bbccccccccccccccccccdddddddddddddddddb
+bccccccccoccccccccccdddddddddddddddddb
+bccccddddddddddccccccddddddddddddddddb
+bcddddddddddddddcccccddddddddddddddddb
+bdddddddddddddddcccccddddddddddddddbbb
+bddddddddddddddddccccdddddddddddddcbba
+bcdddddddddddddddcccccddddddddddcpcbaa
+bccdddddddddddddddccccddddddddddcccbba
+bcccddddddddddddddccccddddddddccccbbba
+bccccccddddddddddddcccccddccccccccbbba
+bccchcccccdddddddddcccccccccccccccbbba
+bccccccccccccccccccccccccccccccgccbbaa
+bbcccccccccccccccccccccccccccgccccbbaa
+abbcccccccccccccccccccccccccccccccbaaa
+aabbbccccbbbbccccccccccccbbbaaaccgbaaa
+aaaabbbbbbbbbccccbbbbbbbbbbbaaaaabaaaa
+aaaaaaabbbbbbbbbbbaaaaabbaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

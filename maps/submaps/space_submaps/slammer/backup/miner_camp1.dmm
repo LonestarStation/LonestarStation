@@ -1,0 +1,94 @@
+"aa" = (/turf/template_noop,/area/template_noop)
+"ab" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"ac" = (/turf/simulated/wall,/area/submap/miner_camp1)
+"ad" = (/obj/structure/table/standard,/obj/random/maintenance/clean,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ae" = (/obj/random/crate,/obj/random/maintenance/cargo,/obj/random/maintenance/cargo,/obj/random/maintenance/engineering,/obj/random/maintenance/medical,/obj/random/maintenance/security,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"af" = (/obj/random/crate,/obj/random/maintenance/cargo,/obj/random/maintenance/cargo,/obj/random/maintenance/engineering,/obj/random/maintenance/security,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ag" = (/obj/structure/table/rack,/obj/random/multiple/gun/projectile/handgun,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ah" = (/obj/structure/table/rack,/obj/random/projectile/shotgun,/obj/machinery/alarm{frequency = 1441; pixel_y = 22},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ai" = (/obj/structure/closet/secure_closet/engineering_welding,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aj" = (/obj/structure/closet/secure_closet/miner,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ak" = (/obj/structure/closet/crate/trashcart,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"al" = (/obj/structure/table/standard,/obj/random/toolbox,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"am" = (/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"an" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ao" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ap" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aq" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ar" = (/obj/structure/table/standard,/obj/random/maintenance/medical,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"as" = (/obj/item/weapon/stool,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"at" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"au" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor,/area/submap/miner_camp1)
+"av" = (/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 1; name = "north bump"; operating = 1; pixel_x = 0; pixel_y = 24},/obj/structure/closet/crate/engineering,/obj/random/maintenance/engineering,/turf/simulated/floor,/area/submap/miner_camp1)
+"aw" = (/obj/machinery/vending/snack{dir = 4; name = "hacked Getmore Chocolate Corp"; prices = list()},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ax" = (/obj/structure/table/standard,/obj/random/cigarettes,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ay" = (/obj/structure/table/standard,/obj/random/drinkbottle,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"az" = (/obj/structure/table/standard,/obj/random/drinksoft,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aA" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aB" = (/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aC" = (/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 1; icon_state = "map"},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aD" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/door/airlock/hatch,/turf/simulated/floor,/area/submap/miner_camp1)
+"aE" = (/obj/machinery/atmospherics/pipe/manifold/hidden,/turf/simulated/floor,/area/submap/miner_camp1)
+"aF" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 9; icon_state = "intact"},/turf/simulated/floor,/area/submap/miner_camp1)
+"aG" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor,/area/submap/miner_camp1)
+"aH" = (/obj/machinery/vending/cola{dir = 4},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aI" = (/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aJ" = (/obj/structure/table/standard,/obj/machinery/cell_charger,/obj/item/weapon/cell/high,/obj/item/weapon/cell/high,/obj/item/weapon/cell/high,/obj/item/weapon/cell/high,/turf/simulated/floor,/area/submap/miner_camp1)
+"aK" = (/obj/machinery/power/port_gen/pacman,/obj/machinery/power/terminal{dir = 4},/turf/simulated/floor,/area/submap/miner_camp1)
+"aL" = (/obj/machinery/power/smes/buildable/point_of_interest,/obj/structure/cable/green,/turf/simulated/floor,/area/submap/miner_camp1)
+"aM" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aN" = (/obj/machinery/space_heater,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aO" = (/obj/structure/closet/emcloset,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aP" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aQ" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/access_button{command = "cycle_interior"; frequency = 1379; layer = 3.3; master_tag = "mcamp1_airlock"; name = "interior access button"; pixel_x = 25; pixel_y = -25; req_one_access = list(12,48)},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aR" = (/obj/structure/table/rack,/obj/item/weapon/pickaxe/drill,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aS" = (/obj/structure/ore_box,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 9; icon_state = "intact"},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aT" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"aU" = (/obj/structure/ore_box,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"aV" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/submap/miner_camp1)
+"aW" = (/obj/machinery/atmospherics/pipe/simple/hidden,/obj/machinery/door/airlock/external{frequency = 1379; icon_state = "door_locked"; id_tag = "mcamp1_inner"; locked = 1; name = "Access Door"; req_access = list(13)},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aX" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/obj/machinery/embedded_controller/radio/airlock/airlock_controller{id_tag = "mcamp1_airlock"; layer = 3.3; pixel_x = -25; pixel_y = 0; pixel_z = 0; tag_airpump = "mcamp1_pump"; tag_chamber_sensor = "mcamp1_sensor"; tag_exterior_door = "mcamp1_outer"; tag_interior_door = "mcamp1_inner"},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aY" = (/obj/machinery/atmospherics/pipe/manifold/hidden,/obj/machinery/meter,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"aZ" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 10},/obj/machinery/airlock_sensor{id_tag = "mcamp1_sensor"; layer = 3.3; pixel_x = 25; pixel_y = 0},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"ba" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"bb" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1379; id_tag = "mcamp1_pump"},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"bc" = (/obj/machinery/floodlight,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"bd" = (/obj/machinery/door/airlock/external{frequency = 1379; icon_state = "door_locked"; id_tag = "mcamp1_outer"; locked = 1; name = "Access Door"; req_access = list(13)},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"be" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/steel_grid/airless,/area/submap/miner_camp1)
+"bf" = (/turf/simulated/floor/tiled/steel_grid/airless,/area/submap/miner_camp1)
+"bg" = (/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; layer = 3.3; master_tag = "mcamp1_airlock"; name = "exterior access button"; pixel_x = 25; pixel_y = 25; req_one_access = list(12,48)},/turf/simulated/floor/tiled/steel_grid/airless,/area/submap/miner_camp1)
+"bh" = (/obj/item/mecha_parts/mecha_equipment/tool/drill,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"bi" = (/obj/effect/decal/mecha_wreckage/ripley,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"bj" = (/obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/miner_camp1)
+"bk" = (/obj/structure/closet/secure_closet/miner,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"bl" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/air/airlock,/obj/machinery/light{dir = 1},/turf/simulated/floor,/area/submap/miner_camp1)
+"bm" = (/obj/structure/closet/emcloset,/obj/machinery/light,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+"bn" = (/obj/structure/table/rack,/obj/item/weapon/pickaxe/drill,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/light,/turf/simulated/floor/tiled,/area/submap/miner_camp1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaaaa
+aaaaacacacacacacacacacacacaaaaaaaaaaaaababababaaaa
+aaaaacadaeafagahaiajbkakacaaaaaaaaaaaaababababaaaa
+aaaaacalamanaoaoaoapamaqacacacacacaaabababaaaaaaaa
+aaaaacaramamasasasatamamacaublavacaaabababaaaaaaaa
+aaaaacawamamaxayazaAaBaCaDaEaFaGacaaababaaaaaaaaaa
+aaaaacaHamamasasasatamaIacaJaKaLacaaababaaaaaaaaaa
+aaaaacaqamanaoaoaoaMamaIacacacacacabababaaaaaaaaaa
+aaaaacaNbmaOamaPaQaRbnaSacaTaUaUabababaaaaaaaaaaaa
+aaaaacacacacaVaWaVacacacacaaabababababaaaaaaaaaaaa
+aaaaaaaaaaacaXaYaZacaaaaaaabababbaabababaaaaaaaaaa
+aaaaaaaaaaacbbambbacaaaaaaabababbcabababaaaaaaaaaa
+aaaaaaaaaaacaVbdaVacaaaaaaaaabababababaaaaaaaaaaaa
+aaaaaaaaaabebfbfbgbeabababababababababaaaaaaaaaaaa
+aaaaaaaTababbaabababbhabbiababaaaaaaaaaaaaaaaaaaaa
+aaababababababababababbjabababaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaababababaaaaaaaaaaababababaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababbcaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababab
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

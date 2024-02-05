@@ -1,0 +1,16 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/lonely_shard)
+"c" = (/obj/item/device/soulstone,/obj/random/humanoidremains,/obj/random/handgun/sec,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/lonely_shard)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaaaaaabba
+aabbbbabba
+abbbbbaaaa
+abbbbbbaaa
+abbbcbbaaa
+abbbbbbaaa
+aabbbbbaaa
+aabbbbaaaa
+aaaaaaaaaa
+"}

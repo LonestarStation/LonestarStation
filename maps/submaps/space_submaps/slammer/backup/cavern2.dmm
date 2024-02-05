@@ -1,0 +1,50 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"c" = (/obj/item/weapon/ore,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"d" = (/obj/structure/boulder,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"e" = (/obj/machinery/floodlight,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"f" = (/obj/structure/closet/crate,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"g" = (/obj/structure/table/steel,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"h" = (/obj/structure/table/steel,/obj/item/weapon/storage/box/samplebags,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"i" = (/obj/structure/table/steel,/obj/random/tech_supply,/obj/random/toolbox,/obj/item/weapon/tool/wrench,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"j" = (/obj/structure/closet/crate/secure/loot,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"k" = (/obj/structure/loot_pile/maint/junk,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"l" = (/obj/item/weapon/storage/excavation,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"m" = (/obj/item/device/measuring_tape,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"n" = (/obj/item/stack/flag/yellow,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"o" = (/obj/item/weapon/shovel,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"p" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen,/area/submap/cave/cavern2)
+"q" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/cavern2)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaqabcaaaabcbbaqaabbbaaaa
+aabbdqqqqbbbdbcbdbbqqqbbcbbaaa
+aabbdqqqqdbddcddbdqqqqbbbbbbaa
+aaacbqqqqqbcbdbddqqqqqqbpcbaaa
+aaabbdqqqqqddcddbqqqqqdcbbbaaa
+aaabbbqqqqqddddcdqqqqqddbbbaaa
+aaaaqqqqqqqbddbddqqqqqbbbbbaaa
+aaaaaqqqqqddbbdddqqqqqqbbbaaaa
+aabaaaqqqdbddbbbdbqqqqqqbbaaaa
+abbdaaaqbbbcddbbbdbqqqqqqaaaaa
+aacbaaaaddebbbcbbbdbqqqqqaaaaa
+aaaaaaabbdbbbbbcbbdbbqqqaaaaaa
+aaaaaabbbbbbbbbbbbbbcbaaaaacaa
+aaaaabbbbbbbbbbcbbbbbbbaaabbba
+aaaabbbbbcbbbbbbbbfbbbbbaadbaa
+aaabbbbbbbbbbbbbbbbggbpbbaaaaa
+aabbbbbbbbpbbbbbbbbhibbbbbaaaa
+aabbbbbbbbbbbbbbbjbbbkbbbbbaaa
+aabbaabbbbbbbbbbbbbebbbbbbbaaa
+aabbaaaababbbbbbbbbbbbbbbbbaaa
+aabbaaaaaabbbbbbbbbbbbbbbbbaaa
+aabbbbababbbbbbbbbbabbabbbbaaa
+aabbbbbbbbbbbbbbbbbaaaaabbbaaa
+aabbbbbbbbblbbbpbbbbaaabbbbaaa
+aaabbbbbbbbbbbbbbbbbaabbbbbaaa
+aaaabbbbbbmbebbnbbbbbbbbbbaaaa
+aaaaaaaabbbbbobbbbbbbbbbbaaaaa
+aaaaaaaaaaabbbbbbbbaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

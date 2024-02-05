@@ -1,0 +1,24 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_junction)
+"c" = (/turf/simulated/mineral/vacuum,/area/submap/cave/ice_junction)
+"d" = (/mob/living/simple_mob/animal/space/bats,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/ice_junction)
+"e" = (/obj/machinery/crystal/ice,/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/cave/ice_junction)
+"f" = (/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/cave/ice_junction)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaabb
+aaaabbbccaaaaaaaabbb
+aaabbcccccbbbbaabbbb
+aabbbcccccccbbbbbdbb
+aabbbbecccccfbbbbbbb
+abbbbbfffffffbbbbbba
+bbdbbfffffffffbccbba
+bbbbffffffffffeccbaa
+bbbbfffffffffeccccaa
+bbbffffffffffcccccaa
+bbcefffffffffcccccaa
+abcccefffffffecccaaa
+aacccccbbbbbbbccaaaa
+aaacccbbbbdbbbbaaaaa
+aaaabbbbbbbbbbaaaaaa
+"}

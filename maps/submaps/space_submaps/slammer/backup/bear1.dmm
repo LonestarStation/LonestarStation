@@ -1,0 +1,45 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"c" = (/obj/random/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"d" = (/obj/item/weapon/bone/skull{pixel_x = 4; pixel_y = 6},/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"e" = (/turf/simulated/mineral/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"f" = (/obj/random/junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"h" = (/obj/machinery/crystal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"i" = (/obj/structure/loot_pile/maint/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"j" = (/obj/random/ammo,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"k" = (/obj/effect/decal/cleanable/blood/gibs,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"l" = (/obj/item/weapon/bone,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"m" = (/mob/living/simple_mob/animal/space/bear,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"n" = (/obj/random/projectile/scrapped_shotgun,/obj/item/weapon/bone/arm,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"o" = (/obj/effect/decal/cleanable/blood/gibs,/obj/item/weapon/bone/ribs,/obj/random/multiple/voidsuit,/obj/random/cash/big,/obj/random/grenade,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"p" = (/obj/item/clothing/gloves/yellow,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"r" = (/obj/random/trash,/obj/random/junk,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/cave/bear1)
+"s" = (/turf/simulated/mineral/ignore_mapgen,/area/submap/cave/bear1)
+
+(1,1,1) = {"
+aaaaaaaaaaabbbbcbaaaaaaaa
+abbbaaabbbbbdbbbbbeeaaaaa
+abfbbabbeeeeeeeeebeeeaaaa
+abbbbbbeeeeeeeehbbeeeeaaa
+aabcbbeeeeeeeeebbeeeeeaaa
+aaabbeeeeeeeheebeeeeeeeaa
+aaaabeeeeeeebbibeeeeeeeaa
+aaaaaeeeeeebbfbbeeeeeebaa
+aaaaaeeeeebcbbbbieeeebbba
+aaaaaabeeejkbbbbbeeeebbba
+aaaaabbeeeblbbbbbeeeebbba
+aaaabbeeeebbbbbbbheeebbba
+aaabbeeeehbbmbbnbbeehbbba
+aaabeeeeeebbbbbbobeeeebba
+aaabeeeeeeibbbbpbbeeeebba
+aaabeeeeeeikblbbbbeeeeaaa
+aaabbeeeeeibbbbbbbeeeeeaa
+aaabbeeeeebbbbbbbjeeeeeba
+aaaabeeeeebbbbbbbeeeeeeba
+aaaabeeedbbbbbfcheeeeeeba
+aaaaaeeebbeehfbbeeeeebbaa
+aaaaaeeerbbeeeeeeeeeebbaa
+aaaaaeeebbeeeeesfbhebbaaa
+aaaaaabblbbdeeeibfcbbaaaa
+aaaabbbbbbbbbbbbbbblbbbaa
+"}

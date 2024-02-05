@@ -1,0 +1,32 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/mob/living/simple_mob/animal/space/carp,/turf/template_noop,/area/template_noop)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"d" = (/turf/simulated/mineral/vacuum,/area/submap/carp/king)
+"e" = (/mob/living/simple_mob/animal/space/carp/large,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"f" = (/obj/structure/loot_pile/surface/bones,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"g" = (/mob/living/simple_mob/animal/space/carp/large/huge,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"h" = (/obj/item/weapon/material/harpoon,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"i" = (/mob/living/simple_mob/animal/space/carp,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"j" = (/obj/structure/loot_pile/surface/bones,/obj/random/projectile/scrapped_pistol,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"k" = (/obj/structure/loot_pile/surface/bones,/obj/random/projectile/shotgun,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"l" = (/obj/random/carp_plushie,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"m" = (/obj/structure/loot_pile/surface/bones,/obj/random/projectile/scrapped_shotgun,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+"n" = (/obj/random/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/king)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+abaaccdddaaaaaa
+aaddccddddddaba
+adddcejdddddaaa
+adddnccddddddaa
+adddklcndddddaa
+adddcccccddddaa
+addddcghfcdddaa
+addddcccciddaaa
+adddddnclnddaaa
+addddddmceddaaa
+adddddddccdaaaa
+aaddddddccaacca
+abaddddaaaaacia
+aaaaaaaaaaaaaaa
+"}

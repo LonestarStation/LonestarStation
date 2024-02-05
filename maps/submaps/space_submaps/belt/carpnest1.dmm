@@ -1,0 +1,31 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/mob/living/simple_mob/animal/space/carp,/turf/template_noop,/area/template_noop)
+"c" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"d" = (/turf/simulated/mineral/vacuum,/area/submap/carp/nest1)
+"e" = (/obj/random/maintenance/cargo,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"f" = (/mob/living/simple_mob/animal/space/carp/large,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"g" = (/obj/random/medical/pillbottle,/turf/template_noop,/area/template_noop)
+"h" = (/mob/living/simple_mob/animal/space/carp,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"i" = (/obj/structure/loot_pile/surface/bones,/mob/living/simple_mob/animal/space/carp,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"j" = (/obj/random/projectile/shotgun,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"k" = (/obj/structure/loot_pile/surface/bones,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+"l" = (/obj/random/trash,/turf/template_noop,/area/template_noop)
+"m" = (/obj/random/trash,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/carp/nest1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aabaaaaaaaaaaaaaaaaaaagaa
+aaaaacccccdddddddaaalaaaa
+abaccmcccccdddddddddaaaaa
+aadddddddccceccccddddaaaa
+adddddddddcccfccmcccddaaa
+addddddddchcccecciccdddda
+adddddchccccjcccmccddddda
+aaddmcckcfcccccddddddddda
+aaddchcceckchcdddddddddaa
+adddddddcmccccmcddddddaaa
+adddddddddddccicdddddaaba
+aadddddchccccmcddddddaaaa
+aaaaaddddcccddddddddaabaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+"}

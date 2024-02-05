@@ -1,0 +1,22 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/crystal_growth)
+"d" = (/obj/machinery/crystal,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/crystal_growth)
+"e" = (/obj/item/ore/diamond,/turf/simulated/mineral/floor/ignore_mapgen/vacuum,/area/submap/crystal_growth)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+aaaabbbbbbbbbaa
+aaabbebbdbbdbba
+aabbbddbbbedbba
+aaebbddbedbbeba
+aabdbbbbbdbbbba
+aabdbebbdedbdba
+aabbbbdbdbebdba
+aabdbbdbbbbbbba
+aabdbbbbedbbeba
+aaabbedbbbbdbba
+aaaedbbbdbebbba
+aaaadbebdbdbeaa
+aaaaaabbbbdbaaa
+aaaaaaaaaaaaaaa
+"}

@@ -1,0 +1,30 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/asteroid/ice1)
+"c" = (/obj/random/trash,/turf/template_noop,/area/template_noop)
+"d" = (/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/asteroid/ice1)
+"e" = (/obj/machinery/crystal/ice,/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/asteroid/ice1)
+"f" = (/obj/random/drinkbottle,/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/asteroid/ice1)
+"g" = (/obj/random/contraband/nofail,/turf/simulated/floor/outdoors/ice/vacuum,/area/submap/asteroid/ice1)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaabaaa
+aaaaaaaaaaaacaabbbaa
+aaaadbbbbaaaaaabbbaa
+aaabdbbbbbdaaaaabaaa
+aaabdbbbbbdddaaaaaaa
+aabbddebbbeddaaaaaaa
+aabbdddbbbbddaaaaaaa
+aabbdfddbbbbedaaaaaa
+aabbbdddebbbbdaaaaaa
+aabbbedgdbbbbedaaaca
+aabbbbdddebbbbdaaaaa
+aabbbbbdddbbbbdaaaaa
+aaabbbbbdddbbbaaaaaa
+aaaabbbbeddbbaaaaaaa
+aaaabbbbbddbaaaaaaaa
+aaaaabbbbbdaaaabaaaa
+aacaaaabbaaaaabbbaaa
+aaaaaaaaaaaaaaabaaaa
+aaaaaaaaaaaaaaaaaaaa
+"}

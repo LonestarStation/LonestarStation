@@ -1,0 +1,97 @@
+"aa" = (/turf/template_noop,/area/template_noop)
+"ab" = (/turf/simulated/shuttle/wall/alien,/area/submap/mysterious_ship)
+"ac" = (/obj/structure/closet/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ad" = (/obj/structure/closet/alien,/obj/item/prop/alien/junk,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ae" = (/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"af" = (/obj/machinery/door/airlock/alien/locked,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ag" = (/obj/effect/decal/remains/xeno,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ah" = (/obj/machinery/porta_turret/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ai" = (/obj/structure/loot_pile/surface/alien/engineering,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aj" = (/obj/structure/prop/alien/computer,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ak" = (/obj/item/tool/wrench/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"al" = (/obj/structure/bed/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"am" = (/obj/structure/table/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"an" = (/obj/structure/table/alien,/obj/item/clothing/head/helmet/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ao" = (/obj/structure/prop/alien/power,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ap" = (/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aq" = (/obj/structure/table/alien,/obj/item/paper/alien{icon_state = "alienpaper_words"; info = "\[i]This tablet has a large collection of symbols that you've never seen before outside this ship. You have no hope of figuring out what any of the mean...\[/i]"},/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ar" = (/turf/simulated/shuttle/wall/alien/hard_corner,/area/submap/mysterious_ship)
+"as" = (/obj/structure/prop/alien/computer,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"at" = (/obj/structure/table/alien,/obj/item/prop/alien/junk,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"au" = (/obj/structure/table/alien,/obj/item/paper/alien{icon_state = "alienpaper_words"; info = "\[i]This tablet has a large collection of symbols that you've never seen before outside this ship. You have no hope of figuring out what any of the mean...\[/i]"},/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"av" = (/obj/structure/loot_pile/surface/alien/security,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aw" = (/obj/structure/prop/alien/computer{dir = 8},/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"ax" = (/obj/structure/prop/alien/computer{icon_state = "console-c"; dir = 4},/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"ay" = (/obj/machinery/door/airlock/alien/locked{welded = 1},/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"az" = (/obj/structure/bed/alien,/obj/effect/decal/remains/xeno,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aA" = (/obj/item/tool/screwdriver/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aB" = (/obj/item/tool/wirecutters/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aC" = (/obj/structure/table/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aD" = (/obj/item/multitool/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aE" = (/obj/structure/prop/alien/computer/camera/flipped{icon_state = "camera_flipped"; dir = 4},/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aF" = (/obj/structure/prop/alien/computer/camera{icon_state = "camera"; dir = 8},/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aG" = (/obj/machinery/porta_turret/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aH" = (/obj/machinery/door/airlock/alien/locked{p_open = 1},/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aI" = (/obj/effect/decal/remains/robot,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aJ" = (/obj/item/tool/crowbar/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aK" = (/obj/item/stack/cable_coil/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aL" = (/obj/structure/table/alien,/obj/item/prop/alien/junk,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aM" = (/obj/structure/table/alien,/obj/item/paper/alien{icon_state = "alienpaper_words"; info = "\[i]This tablet has a large collection of symbols that you've never seen before outside this ship. You have no hope of figuring out what any of the mean...\[/i]"},/obj/item/gps/internal/poi,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aN" = (/obj/structure/prop/alien/computer{icon_state = "console-c"; dir = 4},/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aO" = (/obj/structure/table/alien,/obj/item/clothing/accessory/medal/dungeon/alien_ufo,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aP" = (/obj/structure/table/alien,/obj/item/weldingtool/alien,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aQ" = (/obj/structure/bed/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aR" = (/obj/structure/prop/alien/computer/camera,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aS" = (/obj/structure/closet/alien,/obj/item/paper/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aT" = (/obj/structure/bed/alien,/obj/effect/decal/remains/xeno,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aU" = (/obj/structure/loot_pile/surface/alien/end,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"aV" = (/obj/structure/table/alien,/obj/item/surgical/circular_saw/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aW" = (/obj/structure/table/alien,/obj/item/surgical/FixOVein/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aX" = (/obj/structure/table/alien,/obj/item/surgical/scalpel/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aY" = (/obj/item/surgical/hemostat/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"aZ" = (/obj/machinery/door/airlock/alien/locked,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"ba" = (/obj/effect/decal/remains/lizard,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"bb" = (/obj/structure/prop/alien/dispenser,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"bc" = (/obj/structure/table/alien,/obj/item/surgical/bone_clamp/alien,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"bd" = (/obj/structure/loot_pile/surface/alien/medical,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"be" = (/obj/structure/closet/alien,/obj/item/prop/alien/junk,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"bf" = (/obj/structure/prop/alien/dispenser,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+"bg" = (/obj/effect/decal/remains/mouse,/turf/simulated/shuttle/floor/alien,/area/submap/mysterious_ship)
+"bh" = (/obj/structure/closet/alien,/obj/item/prop/alien/junk,/obj/item/prop/alien/junk,/turf/simulated/shuttle/floor/alienplating,/area/submap/mysterious_ship)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabababababababaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaababababacacadacacababababaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabababaeafaeaeaeagaeaeaeafaeabababaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababaeaeaeabaeaeaeaeaeaeaeabaeaeaeababaaaaaaaaaaaaaa
+aaaaaaaaaaaaababaeaeababababahaeaeaeahababababaeaeababaaaaaaaaaaaa
+aaaaaaaaaaababaeaeababaiajababaeaeakababalagababaeaeababaaaaaaaaaa
+aaaaaaaaababaeaeababahaeaeamababaeababanaeagadababaeaeababaaaaaaaa
+aaaaaaababaeaeababaoaeaeapamaqarafarababafabababababaeaeababaaaaaa
+aaaaaaabaeaeababaoaeaeapapapaearaearahapapasatatabababaeaeabaaaaaa
+aaaaababaeababahaeaeapapapaeaeafaeafaeaeapapapauabadababaeababaaaa
+aaaaabaeaeabaiaeaeapapapaeaeaiaraearavaeaeapapawabaeagabaeaeabaaaa
+aaaaabafababaxaeapapapaeaeacabarayarabavaeaeapapafaeazababafabaaaa
+aaababaeaeababamamapaAaBacababasaeasababavaeaeapabaCababaeaeababaa
+aaabacaeaeahababaCaDagaiababaEapaeapaFababavaeaGabababahaeaeadabaa
+aaabacaeaeaeaeabararaHarabapapapaIapapapabarafararabaeaeaeaJacabaa
+aaabadaeaKaeaeaeafaeaeaeabahapaLaMaqapahabaeaeaeafaeaeaeaeaeacabaa
+aaabadaeaeaeaeabararafarabaNapaOagaPapawabarafararabagaeaeaeadabaa
+aaabacaeaeahababasabapaQababapapapapapababaRapapaSababahaeaeacabaa
+aaababaeaeababapapabapapaTababahaUahababaVapapapababababaeaeababaa
+aaaaabafababaWapaTarabapapaQabababababaXaGapaparabaYabababafabaaaa
+aaaaabaeaeabauapapaZapapapapaTaraearaEapapapapaZapbaapabaeaeabaaaa
+aaaaababaeababbbbcarahapabapapafaeafapapapapaparabapababaeababaaaa
+aaaaaaabaeaeababababarafarababaraearapaparaZarababababaeaeabaaaaaa
+aaaaaaababaeaeabababbdaeaeaebdarafarbeababapababababaeaeababaaaaaa
+aaaaaaaaababaeaeababbfaeaebdababaeabababapbgapababaeaeababaaaaaaaa
+aaaaaaaaaaababaeaeababbhbdababaeaeaeabababapababaeaeababaaaaaaaaaa
+aaaaaaaaaaaaababaeaeababababahaeaeaeahababababaeaeababaaaaaaaaaaaa
+aaaaaaaaaaaaaaababaeaeaearaeaeaeaeaeaeaearaeaeaeababaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabababaeafaeaeaeaeaeaeaeafaeabababaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaababarabaearafaraeabarababaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabararaearababaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarafaraaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

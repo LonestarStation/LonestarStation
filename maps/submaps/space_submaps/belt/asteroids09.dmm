@@ -1,0 +1,15 @@
+"a" = (/turf/template_noop,/area/space)
+"b" = (/turf/simulated/mineral/vacuum,/area/submap/asteroid/small9)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaabbbbbba
+aabbbbbbba
+aabbbbbbba
+aabbbbbbba
+aaabbbbbba
+abaabbbbba
+aaabbbbbaa
+aabbbbbbba
+aaaaaaaaaa
+"}
