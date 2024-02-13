@@ -313,6 +313,7 @@
 	icon_state = "darkred"
 	sound_env = ASTEROID
 	area_flags = AREA_FLAG_IS_NOT_PERSISTENT
+	base_turf = /turf/simulated/floor/plating
 
 /area/lonestar/asteroid/cave				// -- TLE
 	name = "\improper Lonestar - Cave"

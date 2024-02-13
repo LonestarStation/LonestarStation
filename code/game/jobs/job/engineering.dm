@@ -22,11 +22,11 @@
 
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
-			            access_heads, access_pest, access_sec_doors,
+			            access_heads,access_construction, access_pest, access_sec_doors,
 			            access_ce, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
-			            access_heads, access_pest, access_sec_doors,
+			            access_heads, access_construction, access_pest, access_sec_doors,
 			            access_ce, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
 	minimal_player_age = 7
 
@@ -50,8 +50,8 @@
 	supervisors = "the Chief Engineer"
 	selection_color = "#5B4D20"
 	economic_modifier = 5
-	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_atmospherics)
-	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_atmospherics)
+	access = list(access_eva, access_engine, access_engine_equip, access_construction, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_atmospherics)
+	minimal_access = list(access_eva, access_engine, access_engine_equip, access_construction, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_atmospherics)
 	alt_titles = list("Maintenance Technician" = /datum/alt_title/maint_tech,
 						"Engine Technician" = /datum/alt_title/engine_tech,
 						"Electrician" = /datum/alt_title/electrician,
@@ -99,8 +99,8 @@
 	supervisors = "the Chief Engineer"
 	selection_color = "#5B4D20"
 	economic_modifier = 5
-	access = list(access_eva, access_maint_tunnels, access_external_airlocks, access_pest)
-	minimal_access = list(access_eva, access_maint_tunnels, access_external_airlocks, access_pest)
+	access = list(access_eva, access_maint_tunnels, access_construction, access_external_airlocks, access_pest)
+	minimal_access = list(access_eva, access_maint_tunnels, access_construction, access_external_airlocks, access_pest)
 
 	minimal_player_age = 1
 
