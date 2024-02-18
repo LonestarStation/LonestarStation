@@ -168,6 +168,13 @@
 	id = "Captain's spare id"
 	item_path = /obj/item/card/id/gold/captain/spare
 
+// Lonestar Ed. Baron's spare ID
+
+/obj/random_multi/single_item/barons_spare_id
+	name = "Multi Point - Baron's Spare"
+	id = "Baron's spare id"
+	item_path = /obj/item/card/id/gold/captain/spareb
+
 /obj/random_multi/single_item/hand_tele
 	name = "Multi Point - Hand Teleporter"
 	id = "hand tele"

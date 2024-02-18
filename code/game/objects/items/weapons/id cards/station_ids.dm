@@ -153,6 +153,18 @@
 	icon_state = "gold-id-alternate"
 	registered_name = "Site Manager"
 
+// Lonestar Ed. Baron's Spare ID
+
+/obj/item/card/id/gold/captain/spareb
+	name = "\improper Baron's spare ID"
+	desc = "The emergency spare ID for the station's very own Big Cheese."
+	icon_state = "gold-id-alternate"
+	registered_name = "Baron of Lonestar"
+
+/obj/item/card/id/gold/captain/spareb/Initialize()
+	. = ..()
+	access = get_all_station_access().Copy() + access_synth
+
 /obj/item/card/id/synthetic
 	name = "\improper Synthetic ID"
 	desc = "Access module for NanoTrasen Synthetics"

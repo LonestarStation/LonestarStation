@@ -118,3 +118,18 @@
 	description_fluff = "Ward-Takahashi zero-gravity performance sportswear does not require an EVA certification to purchase, though user manuals do list it as 'recommended' on condition of a 2550 lawsuit."
 	icon_state = "sports_void"
 	slowdown = 0
+
+//an Orange spacesuit for prison miners
+
+/obj/item/clothing/head/helmet/space/prisoner
+	name = "prisoner space helmet"
+	icon_state = "emergencyhelm"
+	desc = "A simple airtight helmet with a wide-angle visor, meant to pair with a prison spacesuit.  It comes with a head-mounted flashlight."
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	flash_protection = FLASH_PROTECTION_NONE
+
+/obj/item/clothing/suit/space/prisoner
+	name = "prisoner spacesuit"
+	icon_state = "emergency_softsuit"
+	desc = "An airtight spce suit made of thermal foil, colored in reflective blaze orange for the authorities to easily locate. It's too fragile to protect you from asteroids or hungry carp, but it does do a good job of keeping you from freezing to death."
+	slowdown = 2

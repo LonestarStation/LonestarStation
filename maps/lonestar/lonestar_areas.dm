@@ -212,6 +212,7 @@
 
 /area/lonestar/away/carls/solarpanels
 	name = "Corner Solar Panels"
+	outdoors = OUTDOORS_YES
 
 	////
 
@@ -1501,7 +1502,10 @@
 	icon_state = "research_restroom"
 
 /area/lonestar/garage/storage
-	name = "\improper Electronics Storage"
+	name = "\improper Tool Storage"
+
+/area/lonestar/garage/techstorage
+	name = "\improper Technical Storage"
 
 /area/lonestar/garage/dronefab
 	name = "\improper Garage Computer Lab"
