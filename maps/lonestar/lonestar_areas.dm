@@ -396,6 +396,7 @@
 	name = "\improper Engineering"
 	icon_state = "engineering"
 	ambience = AMBIENCE_ENGINEERING
+//	area_flags = AREA_FLAG_IS_RAD_SHIELDED
 	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/lonestar/engineering/access
@@ -423,6 +424,11 @@
 
 /area/lonestar/engineering/engine_smes
 	name = "\improper Powerstation SMES"
+	icon_state = "engine_smes"
+	sound_env = SMALL_ENCLOSED
+
+/area/lonestar/engineering/engine_access
+	name = "\improper Engine Access"
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
 
@@ -471,7 +477,6 @@
 /area/lonestar/engineering/engineer_restroom
 	name = "\improper Engineer Restroom"
 	icon_state = "toilet"
-	area_flags = AREA_FLAG_IS_RAD_SHIELDED
 	sound_env = SMALL_ENCLOSED
 
 /area/lonestar/engineering/coldaccess
@@ -501,10 +506,17 @@
 	name = "Pest Holding"
 	icon_state = "purple"
 	area_flags = AREA_FLAG_IS_NOT_PERSISTENT
-	requires_power = 0
 
 /area/lonestar/pestcontrol/foyer
 	name = "\improper Pest Control Foyer"
+	icon_state = "purple"
+
+/area/lonestar/pestcontrol/front_desk
+	name = "\improper Pest Control Front Desk"
+	icon_state = "purple"
+
+/area/lonestar/pestcontrol/hallway
+	name = "\improper Pest Control Hallway"
 	icon_state = "purple"
 
 /area/lonestar/pestcontrol/study
@@ -515,18 +527,15 @@
 	name = "\improper Pest Control Storage"
 	icon_state = "purple"
 
-/area/lonestar/pestcontrol/break_room
-	name = "\improper Exterminator Break Room"
+/area/lonestar/pestcontrol/locker
+	name = "\improper Pest Control Locker Room"
 	icon_state = "purple"
 
 /area/lonestar/pestcontrol/exterminator_restroom
-	name = "\improper Exterminator Restroom"
+	name = "\improper Pest Control Restroom"
 	icon_state = "toilet"
 	area_flags = AREA_FLAG_IS_RAD_SHIELDED
 	sound_env = SMALL_ENCLOSED
-
-/area/lonestar/maintenance/pest
-	name = "\improper Pest Control Maintenance"
 
 //lonestar: garbage collection//
 

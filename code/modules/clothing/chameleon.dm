@@ -411,6 +411,7 @@
 /obj/item/gun/energy/chameleon
 	name = "desert eagle"
 	desc = "A hologram projector in the shape of a gun. There is a dial on the side to change the gun's disguise."
+	icon = 'icons/obj/gun.dmi'
 	icon_state = "deagle"
 	w_class = ITEMSIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 4)
