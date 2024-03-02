@@ -12,7 +12,7 @@
 	language = null
 	default_language = "Raccoon"
 
-	minimum_breath_pressure = 0.1 //able to vent crawl when they need to, but not to run around in space willy nilly
+	minimum_breath_pressure = 12 //able to vent crawl when they need to, but not to run around in space willy nilly
 
 	body_temperature = 280.15	//rrripped from our larger fuzzy friends, the tajarans
 
@@ -66,13 +66,13 @@
 	item_slowdown_mod = 2 //remember what they say about greed kids
 	flash_mod = 1.5	//the mask is supposed to absorb light, but it seems like a somewhat intuitive weakness to build in
 	metabolic_rate = 1.3
-	hud_type = /datum/hud_data/monkey
+	hud_type = /datum/hud_data/raccoon
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/raccoon
 
-	rarity_value = 0.1
+	rarity_value = 0.5
 	total_health = 75
-	brute_mod = 0.8
-	burn_mod = 0.5
+	brute_mod = 0.9
+	burn_mod = 0.6
 
 	//spawn_flags = SPECIES_IS_RESTRICTED
 

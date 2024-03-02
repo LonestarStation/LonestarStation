@@ -19,7 +19,8 @@ var/global/list/ventcrawl_machinery = list(
 	/obj/item/storage/belt/utility/alien,
 	/obj/item/storage/belt/janitor,
 	/obj/item/storage/belt/archaeology,
-	/obj/item/storage/belt/fannypack
+	/obj/item/storage/belt/fannypack,
+	/obj/item/clothing/head
 	)
 
 /mob/living/var/list/icon/pipes_shown = list()

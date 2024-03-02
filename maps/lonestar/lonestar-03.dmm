@@ -1081,7 +1081,7 @@
 "aKW" = (/obj/effect/floor_decal/borderfloorblack{dir = 1},/obj/effect/floor_decal/industrial/danger{dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/lonestar/garage/dronefab)
 "aKX" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/borderfloorblack{dir = 4},/obj/effect/floor_decal/industrial/danger{dir = 4},/turf/simulated/floor/tiled/dark,/area/lonestar/garage/storage)
 "aKY" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/turf/simulated/floor/tiled/steel_grid,/area/lonestar/garage/workshop)
-"aKZ" = (/obj/effect/floor_decal/borderfloorblack/corner{dir = 1},/obj/effect/floor_decal/industrial/danger/corner{dir = 8},/turf/simulated/floor/tiled/steel_grid,/area/lonestar/garage/dronefab)
+"aKZ" = (/obj/effect/floor_decal/borderfloorblack/corner{dir = 1},/obj/effect/floor_decal/industrial/danger/corner{dir = 8},/obj/machinery/computer/cryopod/robot{pixel_x = 28},/turf/simulated/floor/tiled/steel_grid,/area/lonestar/garage/dronefab)
 "aLa" = (/obj/structure/closet/wardrobe/robotics_black,/obj/effect/floor_decal/borderfloorblack{dir = 4},/obj/effect/floor_decal/corner/purple/border{dir = 4},/obj/machinery/light{dir = 4; icon_state = "tube1"; pixel_x = 0},/turf/simulated/floor/tiled/dark,/area/lonestar/garage/workshop)
 "aLb" = (/turf/simulated/wall,/area/lonestar/garage/bathrooms)
 "aLc" = (/turf/simulated/wall/r_wall,/area/lonestar/garage/surgical)
