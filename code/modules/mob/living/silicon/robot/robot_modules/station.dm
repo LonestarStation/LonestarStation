@@ -611,7 +611,7 @@ var/global/list/robot_modules = list(
 		"Command" = 1
 		)
 	languages = list(
-					LANGUAGE_SOL_COMMON	= 1,
+					LANGUAGE_GALCOM	= 1,
 					LANGUAGE_SIVIAN 	= 1,
 					LANGUAGE_UNATHI		= 1,
 					LANGUAGE_SIIK		= 1,

@@ -76,7 +76,7 @@ var/global/list/_nymph_default_emotes = list(
 
 	species = GLOB.all_species[SPECIES_DIONA]
 	add_language(LANGUAGE_ROOTGLOBAL)
-	add_language(LANGUAGE_GALCOM)
+	add_language(LANGUAGE_SOL_COMMON)
 
 
 /mob/living/carbon/diona/put_in_hands(var/obj/item/W) // No hands.
@@ -119,7 +119,7 @@ var/global/list/_nymph_default_emotes = list(
 /mob/living/carbon/diona/say_quote(var/message, var/datum/language/speaking = null)
 	var/verb = pick(speak_emote)
 	var/ending = copytext(message, length(message))
-	if(speaking && (speaking.name != "Galactic Common"))
+	if(speaking && (speaking.name != "Sol Common"))
 		verb = speaking.get_spoken_verb(ending)
 	else if(ending == "?")
 		verb += " curiously"

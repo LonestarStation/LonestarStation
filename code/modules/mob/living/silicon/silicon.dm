@@ -37,8 +37,8 @@
 /mob/living/silicon/Initialize()
 	silicon_mob_list |= src
 	. = ..()
-	add_language(LANGUAGE_GALCOM)
-	set_default_language(GLOB.all_languages[LANGUAGE_GALCOM])
+	add_language(LANGUAGE_SOL_COMMON)
+	set_default_language(GLOB.all_languages[LANGUAGE_SOL_COMMON])
 	init_id()
 	init_subsystems()
 

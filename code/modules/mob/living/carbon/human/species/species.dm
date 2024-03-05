@@ -65,14 +65,14 @@
 	var/max_age = 70
 
 	// Language/culture vars.
-	var/default_language = LANGUAGE_GALCOM					// Default language is used when 'say' is used without modifiers.
-	var/language = LANGUAGE_GALCOM							// Default racial language, if any.
-	var/list/species_language = list(LANGUAGE_GALCOM)		// Used on the Character Setup screen
+	var/default_language = LANGUAGE_SOL_COMMON					// Default language is used when 'say' is used without modifiers.
+	var/language = LANGUAGE_SOL_COMMON							// Default racial language, if any.
+	var/list/species_language = list(LANGUAGE_SOL_COMMON)		// Used on the Character Setup screen
 	var/list/secondary_langs = list()						// The names of secondary languages that are available to this species.
 	var/list/speech_sounds = list()							// A list of sounds to potentially play when speaking.
 	var/list/speech_chance = list()							// The likelihood of a speech sound playing.
 	var/num_alternate_languages = 0							// How many secondary languages are available to select at character creation
-	var/name_language = LANGUAGE_GALCOM						// The language to use when determining names for this species, or null to use the first name/last name generator
+	var/name_language = LANGUAGE_SOL_COMMON						// The language to use when determining names for this species, or null to use the first name/last name generator
 
 	// The languages the species can't speak without an assisted organ.
 	// This list is a guess at things that no one other than the parent species should be able to speak

@@ -46,7 +46,7 @@
 	. = ..()
 	update_icons()
 
-	default_language = GLOB.all_languages[LANGUAGE_GALCOM]
+	default_language = GLOB.all_languages[LANGUAGE_SOL_COMMON]
 
 	botcard = new /obj/item/card/id(src)
 	botcard.access = botcard_access.Copy()

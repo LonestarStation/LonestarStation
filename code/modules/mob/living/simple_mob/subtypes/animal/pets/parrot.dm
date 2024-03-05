@@ -3,7 +3,7 @@
 	name = "parrot"
 	description_info = "You can give it a headset by clicking on it with a headset. \
 	To remove it, click the bird while on grab intent."
-	has_langs = list("Galactic Common", "Bird")
+	has_langs = list("Sol Common", "Bird")
 
 	ai_holder_type = /datum/ai_holder/simple_mob/passive/parrot
 

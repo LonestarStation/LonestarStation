@@ -9,7 +9,7 @@
 	icon_state = "larynx"
 	parent_organ = BP_TORSO		// We don't have a neck area
 	organ_tag = O_VOICE
-	will_assist_languages = list(LANGUAGE_GALCOM)
+	will_assist_languages = list(LANGUAGE_SOL_COMMON)
 	var/mute = FALSE
 
 /obj/item/organ/internal/voicebox/Initialize()
@@ -36,7 +36,7 @@
 
 /obj/item/organ/internal/voicebox/robot
 	name = "vocal synthesizer"
-	will_assist_languages = list(LANGUAGE_GALCOM, LANGUAGE_EAL) // Synthetics spawn with this by default
+	will_assist_languages = list(LANGUAGE_SOL_COMMON, LANGUAGE_EAL) // Synthetics spawn with this by default
 
 /obj/item/organ/internal/voicebox/robot/Initialize()
 	. = ..()

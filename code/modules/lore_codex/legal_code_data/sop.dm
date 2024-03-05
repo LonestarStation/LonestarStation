@@ -333,7 +333,7 @@
 	<br>\
 	<h3>Crew</h3>\
 	Employees and guests are recommended to comply with all requests from Security.  Suit sensor activation is mandatory, however the coordinate tracker functionality \
-	is not required.  Random body and workplace searched are allowed without a warrant.  Command can demand that only Galactic Common is spoken on the radio."
+	is not required.  Random body and workplace searched are allowed without a warrant.  Command can demand that only Sol Common is spoken on the radio."
 
 /datum/lore/codex/page/red
 	name = "Red Alert"

@@ -198,7 +198,7 @@
 /obj/item/borg/upgrade/language/action(var/mob/living/silicon/robot/R)
 	if(..()) return 0
 
-	R.add_language(LANGUAGE_SOL_COMMON, 1)
+	R.add_language(LANGUAGE_GALCOM, 1)
 	R.add_language(LANGUAGE_TRADEBAND, 1)
 	R.add_language(LANGUAGE_SIVIAN, 1)
 	R.add_language(LANGUAGE_UNATHI, 1)

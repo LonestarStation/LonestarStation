@@ -184,7 +184,7 @@
 /obj/item/mmi/digital/Initialize()
 	src.brainmob = new(src)
 //	src.brainmob.add_language("Robot Talk")//No binary without a binary communication device
-	src.brainmob.add_language(LANGUAGE_GALCOM)
+	src.brainmob.add_language(LANGUAGE_SOL_COMMON)
 	src.brainmob.add_language(LANGUAGE_EAL)
 	src.brainmob.loc = src
 	src.brainmob.container = src
@@ -211,7 +211,7 @@
 				. += "<span class='deadsay'>It appears to be completely inactive.</span>"
 	else
 		. += "<span class='deadsay'>It appears to be completely inactive.</span>"
-		
+
 /obj/item/mmi/digital/emp_act(severity)
 	if(!src.brainmob)
 		return

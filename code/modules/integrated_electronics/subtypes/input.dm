@@ -507,9 +507,9 @@
 /obj/item/integrated_circuit/input/microphone
 	name = "microphone"
 	desc = "Useful for spying on people or for voice activated machines."
-	extended_desc = "This will automatically translate most languages it hears to Galactic Common.  \
+	extended_desc = "This will automatically translate most languages it hears to Sol Common.  \
 	The first activation pin is always pulsed when the circuit hears someone talk, while the second one \
-	is only triggered if it hears someone speaking a language other than Galactic Common."
+	is only triggered if it hears someone speaking a language other than Sol Common."
 	icon_state = "recorder"
 	complexity = 8
 	inputs = list()
@@ -550,7 +550,7 @@
 /obj/item/integrated_circuit/input/microphone/sign
 	name = "sign-language translator"
 	desc = "Useful for spying on people or for sign activated machines."
-	extended_desc = "This will automatically translate galactic standard sign language it sees to Galactic Common.  \
+	extended_desc = "This will automatically translate galactic standard sign language it sees to Sol Common.  \
 	The first activation pin is always pulsed when the circuit sees someone speak sign, while the second one \
 	is only triggered if it sees someone speaking a language other than sign language, which it will attempt to \
 	lip-read."

@@ -48,7 +48,7 @@
 
 	//Mob talking settings
 	universal_speak = 0				// Can all mobs in the entire universe understand this one?
-	var/has_langs = list(LANGUAGE_GALCOM)// Text name of their language if they speak something other than galcom. They speak the first one.
+	var/has_langs = list(LANGUAGE_SOL_COMMON)// Text name of their language if they speak something other than galcom. They speak the first one.
 
 	//Movement things.
 	var/movement_cooldown = 5			// Lower is faster.

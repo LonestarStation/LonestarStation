@@ -8,8 +8,8 @@
 	emote_type = 2 //This lets them emote through containers.  The communicator has a image feed of the person calling them so...
 
 /mob/living/voice/Initialize(loc)
-	add_language(LANGUAGE_GALCOM)
-	set_default_language(GLOB.all_languages[LANGUAGE_GALCOM])
+	add_language(LANGUAGE_SOL_COMMON)
+	set_default_language(GLOB.all_languages[LANGUAGE_SOL_COMMON])
 	. = ..()
 	check_comm()
 
