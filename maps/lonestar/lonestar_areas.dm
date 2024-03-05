@@ -791,7 +791,7 @@
 	icon_state = "yellow"
 
 /area/lonestar/hallway/primary/floor_two/four
-	name = "\improper F-2 Neathward Thataways Hallway"
+	name = "\improper F-2 Shaller Thataways Hallway"
 	icon_state = "yellow"
 
 /area/lonestar/hallway/primary/floor_two/five
@@ -928,6 +928,10 @@
 
 /area/lonestar/cargobay/reception
 	name = "\improper Cargo Office"
+	icon_state = "quartoffice"
+
+/area/lonestar/cargobay/pilot
+	name = "\improper Pilot's Office"
 	icon_state = "quartoffice"
 
 /area/lonestar/cargobay/hall
@@ -1251,6 +1255,10 @@
 
 /area/lonestar/maintenance/oldranch/fishtanks
 	name = "\improper Old Ranch Carp Tanks"
+
+//lonestar: bathrooms
+/area/lonestar/maintenance/oldbathrooms
+	name = "\improper Second Floor Bathrooms"
 
 //lonestar: arilocks 2//
 /area/lonestar/airlock/floor_two/chapel

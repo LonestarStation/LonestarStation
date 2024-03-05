@@ -1,5 +1,5 @@
 /datum/game_mode/traitor
-	name = "traitor"
+	name = "Tarnation!"
 	round_description = "There is a foreign agent or traitor on the station. Do not let the traitor succeed!"
 	extended_round_description = "The Company's majority control of phoron in the system has marked the \
 		station to be a highly valuable target for many competing organizations and individuals. The varied pasts \
@@ -19,7 +19,7 @@
 	antag_scaling_coeff = 8
 
 /datum/game_mode/traitor/auto
-	name = "autotraitor"
+	name = "Auto Tarnation!"
 	config_tag = "autotraitor"
 	antag_tags = list(MODE_AUTOTRAITOR)
 	round_autoantag = 1

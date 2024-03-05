@@ -16,6 +16,7 @@
 	selection_color = "#696969"
 	access = list(access_bar, access_barman, access_maint_tunnels)
 	minimal_access = list(access_bar, access_barman)
+//	tcrystals = 50 //honestly this needs to be a thing, but for now we can just manually give a player TC if they ask nicely
 
 	outfit_type = /decl/hierarchy/outfit/job/service/barman
 	job_description = "A Bar Manager is in charge of the bar. No further comment."
