@@ -506,6 +506,26 @@
 	desc = "A level sign, stating the level to find Research & Development on."
 	icon_state = "level_rnd"
 
+/obj/structure/sign/directions/science/ranch
+	name = "\improper Ranch"
+	desc = "A direction sign, pointing out the way to the Ranch."
+	icon_state = "direction_ranch"
+
+/obj/structure/sign/levels/science/ranch
+	name = "\improper Ranch"
+	desc = "A level sign, stating the level to find the Ranch on."
+	icon_state = "level_ranch"
+
+/obj/structure/sign/directions/science/garage
+	name = "\improper Garage"
+	desc = "A direction sign, pointing out the way to the Garage."
+	icon_state = "direction_garage"
+
+/obj/structure/sign/levels/science/garage
+	name = "\improper Garage"
+	desc = "A level sign, stating the level to find the Garage on."
+	icon_state = "level_garage"
+
 /obj/structure/sign/directions/science/toxins
 	name = "\improper Toxins Lab"
 	desc = "A direction sign, pointing out the way to the Toxins Lab."

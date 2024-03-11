@@ -1354,11 +1354,11 @@
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/lonestar/command/frontdesk
-	name = "\improper Civic Office"
+	name = "\improper Crew Resources Office"
 	icon_state = "head_quarters"
 
-/area/lonestar/command/command_lobby
-	name = "\improper Command Lobby"
+/area/lonestar/command/command_interview
+	name = "\improper Crew Interviews Office"
 	icon_state = "head_quarters"
 
 /area/lonestar/command/command_kiosk
@@ -1530,8 +1530,8 @@
 /area/lonestar/garage/eva_lab
 	name = "\improper EVA Lab"
 
-/area/lonestar/garage/eva_storage
-	name = "\improper EVA Storage"
+/area/lonestar/garage/servers
+	name = "\improper Garage Servers"
 
 /area/lonestar/garage/workshop
 	name = "\improper Garage Workshop"
