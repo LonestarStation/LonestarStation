@@ -408,6 +408,16 @@
 	desc = "A level sign, stating the level to find Engineering Equipment Storage on."
 	icon_state = "level_engeqp"
 
+/obj/structure/sign/directions/engineering/pest
+	name = "\improper Pest Control"
+	desc = "A direction sign, pointing out the way to Pest Control."
+	icon_state = "direction_pest"
+
+/obj/structure/sign/levels/engineering/pest
+	name = "\improper Pest Control"
+	desc = "A level sign, stating the level to find Pest Control on."
+	icon_state = "level_pest"
+
 //security signs
 /obj/structure/sign/directions/security
 	name = "\improper Security Department"
@@ -484,6 +494,16 @@
 	name = "\improper Interrogations"
 	desc = "A level sign, stating the level to find Interrogations on."
 	icon_state = "level_interrogation"
+
+/obj/structure/sign/directions/security/gunsmith
+	name = "\improper Gunsmith"
+	desc = "A direction sign, pointing out the way to the Gunsmithy."
+	icon_state = "direction_gun"
+
+/obj/structure/sign/levels/security/gunsmith
+	name = "\improper Gunsmith"
+	desc = "A level sign, stating the level to find the Gunsmith on."
+	icon_state = "level_gun"
 
 //science signs
 /obj/structure/sign/directions/science
