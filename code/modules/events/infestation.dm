@@ -4,7 +4,7 @@
 #define LOC_LIBRARY 3
 #define LOC_HYDRO 4
 #define LOC_VAULT 5
-#define LOC_CONSTR 6
+#define LOC_CARGO 6
 #define LOC_TECH 7
 #define LOC_GARDEN 8
 
@@ -27,32 +27,32 @@
 	var/spawn_area_type
 	switch(location)
 		if(LOC_KITCHEN)
-			spawn_area_type = /area/crew_quarters/kitchen
-			locstring = "the kitchen"
+			spawn_area_type = /area/lonestar/bar/kitchen
+			locstring = "the bar kitchen"
 		if(LOC_ATMOS)
-			spawn_area_type = /area/engineering/atmos
+			spawn_area_type = /area/lonestar/engineering/atmos
 			locstring = "atmospherics"
 		if(LOC_CHAPEL)
-			spawn_area_type = /area/chapel/main
+			spawn_area_type = /area/lonestar/medbay/clerical/worshiphall
 			locstring = "the chapel"
 		if(LOC_LIBRARY)
-			spawn_area_type = /area/library
-			locstring = "the library"
+			spawn_area_type = /area/lonestar/civilian/range/shooting
+			locstring = "the shooting range"
 		if(LOC_HYDRO)
-			spawn_area_type = /area/hydroponics
-			locstring = "hydroponics"
+			spawn_area_type = /area/lonestar/ranch/crops
+			locstring = "the ranch crops"
 		if(LOC_VAULT)
-			spawn_area_type = /area/security/nuke_storage
-			locstring = "the vault"
-		if(LOC_CONSTR)
-			spawn_area_type = /area/construction
-			locstring = "the construction area"
+			spawn_area_type = /area/lonestar/command/baron_armory
+			locstring = "the Baron's personal armory"
+		if(LOC_CARGO)
+			spawn_area_type = /area/lonestar/cargobay/storage
+			locstring = "cargo storage lock-up"
 		if(LOC_TECH)
-			spawn_area_type = /area/storage/tech
-			locstring = "technical storage"
+			spawn_area_type = /area/lonestar/garage/techstorage
+			locstring = "tech storage"
 		if(LOC_GARDEN)
-			spawn_area_type = /area/hydroponics/garden
-			locstring = "the public garden"
+			spawn_area_type = /area/lonestar/hallway/primary/floor_two/six
+			locstring = "the diner's maintenance garden"
 
 	for(var/areapath in typesof(spawn_area_type))
 		var/area/A = locate(areapath)
@@ -66,7 +66,7 @@
 	switch(vermin)
 		if(VERM_MICE)
 			spawn_types = list(/mob/living/simple_mob/animal/passive/mouse/gray, /mob/living/simple_mob/animal/passive/mouse/brown, /mob/living/simple_mob/animal/passive/mouse/white)
-			max_number = 12
+			max_number = 6
 			vermstring = "mice"
 		if(VERM_LIZARDS)
 			spawn_types = list(/mob/living/simple_mob/animal/passive/lizard)
@@ -74,7 +74,7 @@
 			vermstring = "lizards"
 		if(VERM_SPIDERS)
 			spawn_types = list(/obj/effect/spider/spiderling)
-			max_number = 3
+			max_number = 6
 			vermstring = "spiders"
 
 	spawn(0)
@@ -86,7 +86,7 @@
 
 			if(vermin == VERM_SPIDERS)
 				var/obj/effect/spider/spiderling/S = new(T)
-				S.amount_grown = -1
+				S.amount_grown = 0
 			else
 				var/spawn_type = pick(spawn_types)
 				new spawn_type(T)
@@ -101,6 +101,7 @@
 #undef LOC_LIBRARY
 #undef LOC_HYDRO
 #undef LOC_VAULT
+#undef LOC_CARGO
 #undef LOC_TECH
 #undef LOC_GARDEN
 

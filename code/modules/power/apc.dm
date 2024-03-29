@@ -75,6 +75,19 @@ GLOBAL_LIST_EMPTY(apcs)
 /obj/machinery/power/apc/alarms_hidden
 	alarms_hidden = TRUE
 
+/*
+/obj/machinery/power/apc/low_light
+	nightshift_setting = NIGHTSHIFT_ALWAYS
+
+/obj/machinery/power/apc/low_light_no_alarms
+	lighting = 2
+	equipment = 2
+	environ = 2
+	nightshift_lights = TRUE
+	nightshift_setting = NIGHTSHIFT_ALWAYS
+	alarms_hidden = TRUE
+*/
+
 /obj/machinery/power/apc
 	name = "area power controller"
 	desc = "A control terminal for the area electrical systems."
@@ -134,7 +147,7 @@ GLOBAL_LIST_EMPTY(apcs)
 	var/static/list/status_overlays_lighting
 	var/static/list/status_overlays_environ
 	var/alarms_hidden = FALSE //If power alarms from this APC are visible on consoles
-	
+
 	var/nightshift_lights = FALSE
 	var/nightshift_setting = NIGHTSHIFT_AUTO
 	var/last_nightshift_switch = 0
