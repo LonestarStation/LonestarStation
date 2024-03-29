@@ -46,7 +46,7 @@
 #define TGS_ERROR_LOG(message) world.log << "TGS Error: [##message]"
 
 /// Get the number of connected /clients.
-#define TGS_CLIENT_COUNT global.client_count
+//#define TGS_CLIENT_COUNT global.client_cout
 
 #endif
 
