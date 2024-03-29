@@ -11,10 +11,10 @@
 	var/gas_type			// Chosen gas to release
 	// Exclude these types and sub-types from targeting eligibilty
 	var/list/area/excluded = list(
-		/area/shuttle,
-		/area/crew_quarters,
-		/area/holodeck,
-		/area/engineering/engine_room
+		/area/lonestar/hallway,
+		/area/lonestar/maintenance,
+		/area/lonestar/bar,
+		/area/lonestar/engineering
 	)
 
 // Decide which area will be targeted!

@@ -1,5 +1,10 @@
 ////Lonestar Station
 
+/area/lonestar/tcoms
+	name = "tcoms"
+	icon_state = "tcomsatwest"
+	requires_power = 0
+
 /area/lonestar
 	name = "lonestar"
 	icon_state = "west"
@@ -45,6 +50,7 @@
 	name = "\improper El Prison"
 	icon_state = "brig"
 	holomap_color = HOLOMAP_AREACOLOR_SECURITY
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/away/slammer/prison/warden
 	name = "\improper Warden's Office"
@@ -156,6 +162,7 @@
 /area/lonestar/away/carls/corner
 	name = "\improper Carl's Corner"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/away/carls/corner/bathroom
 	name = "\improper Corner Bathroom"
@@ -215,7 +222,7 @@
 	outdoors = OUTDOORS_YES
 
 	////
-
+//structure areas currently unused
 /area/lonestar/away/yard/corner_access
 	name = "\improper Corner Access"
 	icon_state = "yellow"
@@ -332,10 +339,12 @@
 	area_flags = AREA_FLAG_IS_RAD_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 	sound_env = TUNNEL_ENCLOSED
 	holomap_color = HOLOMAP_AREACOLOR_DORMS
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/maintenance
 	name = "maintenance"
 	icon_state = "green"
+	base_turf = /turf/simulated/mineral/floor
 	area_flags = AREA_FLAG_IS_RAD_SHIELDED
 	sound_env = TUNNEL_ENCLOSED
 	turf_initializer = new /datum/turf_initializer/maintenance()
@@ -346,37 +355,46 @@
 /area/lonestar/hallway/primary/floor_one/elevatoralpha
 	name = "\improper Elevator Alpha - Bottom"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/elevatorbeta
 	name = "\improper Elevator Beta - Bottom"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/one
 	name = "\improper F-1 Yonder Hallway"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/two
 	name = "\improper F-1 Central Hallway"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/three
 	name = "\improper F-1 Thataways Hallway"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/four
 	name = "\improper F-1 Shaller Hallway"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/five
 	name = "\improper F-1 Deep Thataways Hallway"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/hallway/primary/floor_one/six
 	name = "\improper F-1 Deep Central Hallway"
 	icon_state = "yellow"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/maintenance/first/
 	name = "\improper first floor"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/maintenance/first/elevatoralpha
 	name = "\improper FFEA Maintenance Hall"
@@ -396,7 +414,8 @@
 	name = "\improper Engineering"
 	icon_state = "engineering"
 	ambience = AMBIENCE_ENGINEERING
-//	area_flags = AREA_FLAG_IS_RAD_SHIELDED
+	base_turf = /turf/simulated/mineral/floor
+	area_flags = AREA_FLAG_IS_RAD_SHIELDED
 	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/lonestar/engineering/access
@@ -501,6 +520,7 @@
 	name = "\improper Pest Control"
 	icon_state = "purple"
 	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/pestcontrol/cells
 	name = "Pest Holding"
@@ -549,9 +569,11 @@
 	name = "\improper Custodial Office"
 	icon_state = "janitor"
 	area_flags = AREA_FLAG_IS_RAD_SHIELDED
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/maintenance/janitor
 	name = "\improper Custodial Maintenance"
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/janitor/collection
 	name = "Waste Collection"
@@ -562,9 +584,11 @@
 	name = "Waste disposal"
 	icon_state = "disposal"
 	area_flags = AREA_FLAG_IS_RAD_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT //If trash items got this far, they can be safely deleted.
+	base_turf = /turf/simulated/mineral/floor
 
 /area/lonestar/airlock/disposals
 	name = "\improper Disposals Airlock"
+	base_turf = /turf/simulated/mineral/floor
 
 //lonestar: shady bar//
 
@@ -572,6 +596,7 @@
 	name = "\improper Bar"
 	icon_state = "bar"
 	holomap_color = HOLOMAP_AREACOLOR_DORMS
+	base_turf = /turf/simulated/mineral/floor
 //	sound_env = LARGE_SOFTFLOOR
 
 /area/lonestar/bar/bar_manager
@@ -1056,7 +1081,7 @@
 	icon_state = "toilet"
 
 /area/lonestar/medbay/clerical
-	name = "\improper space jesus"
+	name = "\improper space jesus place"
 	icon_state = "chapel"
 
 /area/lonestar/medbay/clerical/worshiphall
