@@ -332,6 +332,107 @@
 		"Faraday"
 		)
 
+/datum/lore/organization/tsc/lonestar
+	name = "Lonestar Station"
+	short_name = "Lonestar"
+	acronym = "LS"
+	desc = "Lonestar is one of the leading names in meat and meat products, as well as other produce types. \
+	additionally, Lonestar has been known to be home to many lisenced professional gunsmiths. However, as long \
+	as the station has been populated, booze-related purchases have always driven the local economy."
+	history = "" // To be written someday.
+	work = "export production"
+	headquarters = "Main Belt, Sol"
+	motto = ""
+	legit = 85 //ehhhh, y'know cowboys
+
+	missions = list(
+		new /datum/lore/mission/prebuilt/medical("LSR"),
+		new /datum/lore/mission/prebuilt/transport("LST"),
+		new /datum/lore/mission/prebuilt/defense("LSR"),
+		new /datum/lore/mission/prebuilt/freight("LST"),
+		new /datum/lore/mission/prebuilt/industrial("LST"),
+		new /datum/lore/mission/prebuilt/salvage("LST"),
+		new /datum/lore/mission/prebuilt/medical_response("LSR"),
+		new /datum/lore/mission/prebuilt/defense_response("LSR")
+		)
+
+	serviced = list( //again, protagonists, so this is something close to a map by trade distance of human+tajaran space
+		/datum/lore/system/vir = 10,
+		/datum/lore/system/sol = 25,
+		/datum/lore/system/gavel = 15,
+		/datum/lore/system/oasis = 15,
+		/datum/lore/system/saint_columbia = 10,
+		/datum/lore/system/kess_gendar = 10,
+		/datum/lore/system/tau_ceti = 10,
+		/datum/lore/system/alpha_centauri = 10,
+		/datum/lore/system/new_ohio = 10,
+		/datum/lore/system/new_seoul = 10,
+		/datum/lore/system/el = 10, //specific high NT investment
+		/datum/lore/system/nyx = 10,
+		/datum/lore/system/zhu_que = 5,
+		/datum/lore/system/love = 5,
+		/datum/lore/system/kauqxum = 5,
+		/datum/lore/system/sidhe = 5,
+		/datum/lore/system/mahimahi = 5,
+		/datum/lore/system/relan = 5,
+		/datum/lore/system/exalts_light = 5,
+		/datum/lore/system/rarkajar = 5,
+		/datum/lore/system/raphael = 5, //they own one of the raphaelite colonies
+		/datum/lore/system/mesomori = 2,
+		/datum/lore/system/arrathiir = 2,
+		/datum/lore/system/jahans_post = 2,
+		/datum/lore/system/abels_rest = 2,
+		/datum/lore/system/terminus = 2,
+		/datum/lore/system/eutopia = 2,
+		/datum/lore/system/altair = 2,
+		/datum/lore/system/neon_light = 1
+		)
+
+
+	//Scientist naming scheme
+	ship_names = list(
+		"Runt Wylde",
+		"Pops Gal",
+		"Rose Legend",
+		"Dawn Caller",
+		"Red Tail",
+		"Taco Truck",
+		"High Noon",
+		"Hide The Guns",
+		"Beef Supreme II",
+		"Star Tripper",
+		"Bull Horn",
+		"Steer Clear",
+		"Truffle Tracker",
+		"Muffin-Man",
+		"Dinner Bell",
+		"Range Hours",
+		"Treestump",
+		"Left At Albuquerque",
+		"Tiger Blood",
+		"No Rest",
+		"Hawkeye",
+		"Five Million Horses",
+		"Tribute to the Moonrocker",
+		"Cliffhanger",
+		"Shot & Chaser",
+		"Moonman Jr.",
+		"Humble As Pie",
+		"Wacky Racer",
+		"Lucky Numbers",
+		"Bullrider",
+		"Trickshot",
+		"Rock Hopper",
+		"Keepsake",
+		"Overhead Storage",
+		"Jonny Come Lately",
+		"Goods And Services",
+		"Blue Raptor",
+		"Not At Fault",
+		"Crunchtime",
+		"Space Wagon"
+		)
+
 
 /datum/lore/organization/tsc/hephaestus
 	name = "Hephaestus Industries"
@@ -975,7 +1076,7 @@
 		)
 
 	serviced = list(
-		/datum/lore/system/vir = 1 // the one thing that's uncomplicated about the new system
+		/datum/lore/system/sol = 1 // the one thing that's uncomplicated about the new system
 	)
 
 	ship_names = list(
@@ -1030,13 +1131,13 @@
 
 	missions = list( //most transport and freight is privatized. sifguard is its own org for whatever reason
 		new /datum/lore/mission("VGA", list("energy relay", "emergency resupply", "restricted material transport"), ATC_FREIGHT),
-		new /datum/lore/mission("VGA", list("refugee transport", "prison transport"), ATC_TRANS),
+//		new /datum/lore/mission("VGA", list("refugee transport", "prison transport"), ATC_TRANS),
 		new /datum/lore/mission/prebuilt/diplomatic("VGA"), //local zaddat colonies
 		new /datum/lore/mission/prebuilt/scientific("VGA")
 		)
 
 	serviced = list(
-		/datum/lore/system/vir = 10, //unsurprisingly, mostly stays in vir
+		/datum/lore/system/sol = 10, //unsurprisingly, mostly stays in vir
 		/datum/lore/system/gavel = 1, //sometimes does some limited local cooperative diplomacy or emergency response
 		/datum/lore/system/oasis = 1
 		)
@@ -1068,6 +1169,7 @@
 		"Gullfoss",
 		"Thingvellir"
 		)
+
 
 /datum/lore/organization/gov/solgov
 	name = "Solar Confederate Government"
@@ -1147,7 +1249,7 @@
 //maybe some other flavorful government agencies like the EIO or the GSA or SOFI
 
 // Military
-
+/*
 /datum/lore/organization/mil/sifguard
 	name = "Sif Defense Force"
 	short_name = "SifGuard"
@@ -1199,3 +1301,4 @@
 			"Gladan",
 			"Falken"
 			)
+*/

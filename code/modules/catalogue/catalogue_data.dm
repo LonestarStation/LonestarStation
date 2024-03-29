@@ -321,6 +321,10 @@ GLOBAL_DATUM_INIT(catalogue_data, /datum/category_collection/catalogue, new)
 	name = "TSC - NanoTrasen Incorporated"
 	datum_to_copy = /datum/lore/organization/tsc/nanotrasen
 
+/datum/category_item/catalogue/information/organization/lonestar
+	name = "TSC - Lonestar Station"
+	datum_to_copy = /datum/lore/organization/tsc/lonestar
+
 /datum/category_item/catalogue/information/organization/hephaestus
 	name = "TSC - Hephaestus Industries"
 	datum_to_copy = /datum/lore/organization/tsc/hephaestus
@@ -361,7 +365,6 @@ GLOBAL_DATUM_INIT(catalogue_data, /datum/category_collection/catalogue, new)
 /datum/category_item/catalogue/information/organization/virgov
 	name = "Government - Vir Governmental Authority"
 	datum_to_copy = /datum/lore/organization/gov/virgov
-
 
 
 /datum/category_item/catalogue/anomalous

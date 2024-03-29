@@ -52,8 +52,8 @@
 //SCG major systems
 /datum/lore/system/sol
 	name = "Sol"
-	desc = "Humanity's heartland. The most densely settled system in space. You know. Sol." //desc isn't currently used for anything so I'm being sparse for all of these in hopes of like, actually completing the project.
-	autogenerate_destinations = FALSE // it has more sites than literally anywhere else
+	desc = "You Are Here. Humanity's heartland. The most densely settled system in space. You know. Sol." //desc isn't currently used for anything so I'm being sparse for all of these in hopes of like, actually completing the project.
+	autogenerate_destinations = TRUE // it has more sites than literally anywhere else
 	planets = list("Earth", "Mars", "Luna", "Venus", "Titan", "Pluto") //not used but whatever
 	locations = list(
 		new /datum/lore/location("Baghdad on Earth, Sol", list(ATC_LUX)),
@@ -111,33 +111,33 @@
 
 /datum/lore/system/vir
 	name = "Vir"
-	desc = "You Are Here. A crossroads system with a tendency towards sleepy isolation."
+	desc = "A crossroads system with a tendency towards sleepy isolation."
 	autogenerate_destinations = FALSE
 	planets = list("Sif")
 	locations = list(
-		new /datum/lore/location("New Rekjavik", list(ATC_ALL_CIV)), //sivian locations don't need 'on sif' and virite locations dont need 'in vir'-- theyre local
-		new /datum/lore/location("Kalmar", list(ATC_ALL_CIV)),
-		new /datum/lore/location("Ekmanshalvo", list(ATC_ALL_CIV)),
-		new /datum/lore/location("a settlement on the Thorvaldsson Plains", list(ATC_TYPICAL)), //padding
-		new /datum/lore/location("a mining outpost in the Dauthabrekka Mountains", list(ATC_TYPICAL)),
-		new /datum/lore/location("a corporate facility in Stockholm-Skargard", list(ATC_TYPICAL, ATC_SCI)),
-		new /datum/lore/location("a site in the Ullran Expanse", list(ATC_MED, ATC_DEF, ATC_INDU)),
-		new /datum/lore/location("a location in the Anomalous Region", list(ATC_SCI)),
-		new /datum/lore/location("the NLS Southern Cross", list(ATC_DEF, ATC_INDU)),
-		new /datum/lore/location("the NCS Northern Star", list(ATC_TYPICAL, ATC_SCI)),
-		new /datum/lore/location("Vir Interstellar Spaceport", list(ATC_TYPICAL)),
-		new /datum/lore/location("Firnir", list(ATC_TYPICAL)),
-		new /datum/lore/location("Tyr", list(ATC_TYPICAL)),
-		new /datum/lore/location("Magnai", list(ATC_TYPICAL)),
-		new /datum/lore/location("the rings of Kara", list(ATC_LUX)),
-		new /datum/lore/location("the rings of Rota", list(ATC_LUX)),
-		new /datum/lore/location("the Radiance Energy Chain", list(ATC_FREIGHT, ATC_DEF, ATC_INDU)),
-		new /datum/lore/location("a corporate colony in the Kara subsystem", list(ATC_ALL_CIV)), //padding-- there should probably be more than one named kara colony anyway
-		new /datum/lore/location("an independent colony in the Kara subsystem", list(ATC_ALL_CIV)),
-		new /datum/lore/location("a phoron mine in the Kara subsystem", list(ATC_TYPICAL)),
-		new /datum/lore/location("a xenoarcheological dig in the Kara subsystem", list(ATC_TYPICAL, ATC_SCI)),
-		new /datum/lore/location("an Incursion derelict in local space", list(ATC_SALVAGE, ATC_DEF, ATC_SCI, ATC_INDU)),
-		new /datum/lore/location("Colony Bright", list(ATC_TYPICAL, ATC_DIPLO))
+		new /datum/lore/location("New Rekjavik on Sif, Vir", list(ATC_ALL_CIV)), //sivian locations don't need 'on sif' and virite locations dont need 'in vir'-- theyre local
+		new /datum/lore/location("Kalmar on Sif, Vir", list(ATC_ALL_CIV)),
+		new /datum/lore/location("Ekmanshalvo on Sif, Vir", list(ATC_ALL_CIV)),
+//		new /datum/lore/location("a settlement on the Thorvaldsson Plains", list(ATC_TYPICAL)), //padding
+//		new /datum/lore/location("a mining outpost in the Dauthabrekka Mountains", list(ATC_TYPICAL)),
+//		new /datum/lore/location("a corporate facility in Stockholm-Skargard", list(ATC_TYPICAL, ATC_SCI)),
+//		new /datum/lore/location("a site in the Ullran Expanse", list(ATC_MED, ATC_DEF, ATC_INDU)),
+//		new /datum/lore/location("a location in the Anomalous Region", list(ATC_SCI)),
+		new /datum/lore/location("the NLS Southern Cross in orbit of Sif, Vir", list(ATC_DEF, ATC_INDU)),
+		new /datum/lore/location("the NCS Northern Star in orbit of Sif, Vir", list(ATC_TYPICAL, ATC_SCI)),
+		new /datum/lore/location("Vir Interstellar Spaceport in, uh, Vir", list(ATC_TYPICAL)),
+		new /datum/lore/location("Firnir in Vir", list(ATC_TYPICAL)),
+		new /datum/lore/location("Tyr in Vir", list(ATC_TYPICAL)),
+		new /datum/lore/location("Magnai in Vir", list(ATC_TYPICAL)),
+		new /datum/lore/location("the rings of Kara in Vir", list(ATC_LUX)),
+		new /datum/lore/location("the rings of Rota in Vir", list(ATC_LUX)),
+//		new /datum/lore/location("the Radiance Energy Chain", list(ATC_FREIGHT, ATC_DEF, ATC_INDU)),
+//		new /datum/lore/location("a corporate colony in the Kara subsystem", list(ATC_ALL_CIV)), //padding-- there should probably be more than one named kara colony anyway
+//		new /datum/lore/location("an independent colony in the Kara subsystem", list(ATC_ALL_CIV)),
+//		new /datum/lore/location("a phoron mine in the Kara subsystem", list(ATC_TYPICAL)),
+//		new /datum/lore/location("a xenoarcheological dig in the Kara subsystem", list(ATC_TYPICAL, ATC_SCI)),
+//		new /datum/lore/location("an Incursion derelict in local space", list(ATC_SALVAGE, ATC_DEF, ATC_SCI, ATC_INDU)),
+//		new /datum/lore/location("Colony Bright", list(ATC_TYPICAL, ATC_DIPLO))
 		)
 
 /datum/lore/system/alpha_centauri
