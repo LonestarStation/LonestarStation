@@ -3364,4 +3364,6 @@
 #include "maps\submaps\space_submaps\slammer\slammer_areas.dm"
 #include "maps\submaps\space_submaps\vox_derelict\vox_derelict.dm"
 #include "maps\~map_system\maps.dm"
+#include "tgs\includes.dm'
+#include "tgs.dm"
 // END_INCLUDE
