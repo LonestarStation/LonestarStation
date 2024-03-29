@@ -7,7 +7,7 @@
 // CONFIGURATION
 
 /// Create this define if you want to do TGS configuration outside of this file.
-#define TGS_EXTERNAL_CONFIGURATION
+#ifndef TGS_EXTERNAL_CONFIGURATION
 
 // Comment this out once you've filled in the below.
 //#error TGS API unconfigured
