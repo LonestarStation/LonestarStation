@@ -14,7 +14,7 @@
 
 // Uncomment this if you wish to allow the game to interact with TGS 3..
 // This will raise the minimum required security level of your game to TGS_SECURITY_TRUSTED due to it utilizing call()().
-#define TGS_V3_API
+//#define TGS_V3_API
 
 // Required interfaces (fill in with your codebase equivalent):
 
@@ -46,7 +46,7 @@
 #define TGS_ERROR_LOG(message) world.log << "TGS Error: [##message]"
 
 /// Get the number of connected /clients.
-//#define TGS_CLIENT_COUNT global.client_cout
+#define TGS_CLIENT_COUNT global.client_cout
 
 #endif
 
