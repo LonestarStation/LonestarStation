@@ -187,7 +187,7 @@ var/global/const/access_robotics = 29
 var/global/const/access_rd = 30
 /datum/access/rd
 	id = access_rd
-	desc = "Research Director"
+	desc = "Garage Head"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_cargo = 31
@@ -310,8 +310,17 @@ var/global/const/access_mailsorting = 50
 	desc = "Cargo Office"
 	region = ACCESS_REGION_SUPPLY
 
-// /var/const/free_access_id = 51
-// /var/const/free_access_id = 52
+var/global/const/access_ranch_head = 51
+/datum/access/ranch_head
+	id = access_ranch_head
+	desc = "Ranch Head"
+	region = ACCESS_REGION_RESEARCH
+
+var/global/const/access_garage_head = 52
+/datum/access/garage_head
+	id = access_garage_head
+	desc = "Garage Head"
+	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_heads_vault = 53
 /datum/access/heads_vault
