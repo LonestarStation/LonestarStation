@@ -19,7 +19,7 @@
 	docking_codes = null
 
 //lonestar general facilities
-/obj/effect/overmap/visitable/lonestar_station/neo_vima
+/obj/effect/overmap/visitable/lonestar_station/vima
 	name = "Lonestar_Station"
 	icon_state = "object"
 	base = 1
@@ -29,6 +29,6 @@
 	map_z = list(Z_LEVEL_STATION_ONE, Z_LEVEL_STATION_TWO, Z_LEVEL_STATION_THREE)
 	extra_z_levels = list(Z_LEVEL_TRANSIT) // Hopefully temporary, so arrivals announcements work.
 
-/obj/effect/overmap/visitable/lonestar_station/neo_vima/Initialize()
+/obj/effect/overmap/visitable/lonestar_station/vima/Initialize()
 	. = ..()
 	docking_codes = null

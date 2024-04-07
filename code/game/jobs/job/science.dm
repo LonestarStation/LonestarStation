@@ -15,10 +15,10 @@
 	selection_color = "#633D63"
 	req_admin_notify = 1
 	economic_modifier = 15
-	access = list(access_rd, access_heads, access_tox, access_genetics,
+	access = list(access_ranch_head, access_heads, access_tox, access_genetics,
 			            access_tox_storage, access_maint_tunnels, access_research,
 			            access_xenobiology, access_RC_announce, access_network)
-	minimal_access = list(access_rd, access_heads, access_tox, access_genetics,
+	minimal_access = list(access_ranch_head, access_heads, access_tox, access_genetics,
 			            access_tox_storage, access_research,
 			            access_xenobiology, access_RC_announce, access_network)
 
@@ -57,11 +57,11 @@
 	selection_color = "#AD6BAD"
 	req_admin_notify = 1
 	economic_modifier = 15
-	access = list(access_rd, access_heads, access_tox, access_morgue, access_maint_tunnels,
+	access = list(access_garage_head, access_heads, access_tox, access_morgue, access_maint_tunnels,
 			            access_tox_storage, access_teleporter,
 			            access_research, access_robotics, access_ai_upload, access_tech_storage,
 			            access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_network)
-	minimal_access = list(access_rd, access_heads, access_tox, access_morgue,
+	minimal_access = list(access_garage_head, access_heads, access_tox, access_morgue,
 			            access_tox_storage, access_teleporter,
 			            access_research, access_robotics, access_ai_upload, access_tech_storage,
 			            access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_network)
