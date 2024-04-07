@@ -152,7 +152,7 @@
 	desc = "A bastardized hybrid of many languages, including Chinese, English, French, and more; it is the common language of the Sol system."
 	speech_verb = "says"
 	whisper_verb = "whispers"
-	colour = "solcom"
+	colour = "say_quote"
 	key = "1"
 	flags = WHITELISTED
 	partial_understanding = list(LANGUAGE_GALCOM = 70, LANGUAGE_TRADEBAND = 20, LANGUAGE_TERMINUS = 20, LANGUAGE_GUTTER = 20, LANGUAGE_SIVIAN = 40, LANGUAGE_SKRELLIAN = 5)

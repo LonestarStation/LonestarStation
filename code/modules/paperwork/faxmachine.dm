@@ -1,5 +1,5 @@
 var/global/list/obj/machinery/photocopier/faxmachine/allfaxes = list()
-var/global/list/admin_departments = list("[using_map.boss_name]", "Vir Governmental Authority", "Supply")
+var/global/list/admin_departments = list("[using_map.boss_name]", "Sol Governmental Authority", "Lonestar Supply")
 var/global/list/alldepartments = list()
 
 var/global/list/adminfaxes = list()	//cache for faxes that have been sent to admins
@@ -200,9 +200,9 @@ var/global/list/adminfaxes = list()	//cache for faxes that have been sent to adm
 	// Sadly, we can't use a switch statement here due to not using a constant value for the current map's centcom name.
 	if(destination == using_map.boss_name)
 		message_admins(sender, "[uppertext(using_map.boss_short)] FAX", rcvdcopy, "CentComFaxReply", "#006100")
-	else if(destination == "Vir Governmental Authority")
-		message_admins(sender, "VIR GOVERNMENT FAX", rcvdcopy, "CentComFaxReply", "#1F66A0")
-	else if(destination == "Supply")
+	else if(destination == "Sol Governmental Authority")
+		message_admins(sender, "SOL GOVERNMENT FAX", rcvdcopy, "CentComFaxReply", "#1F66A0")
+	else if(destination == "Lonestar Supply")
 		message_admins(sender, "[uppertext(using_map.boss_short)] SUPPLY FAX", rcvdcopy, "CentComFaxReply", "#5F4519")
 	else
 		message_admins(sender, "[uppertext(destination)] FAX", rcvdcopy, "UNKNOWN")

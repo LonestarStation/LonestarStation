@@ -98,7 +98,7 @@ h1.alert, h2.alert		{color: #000000;}
 .skrell					{color: #00B0B3;}
 .skrellfar				{color: #70FCFF;}
 .soghun					{color: #50BA6C;}
-.solcom					{color: #22228B;}
+.solcom					{color: #000000;}
 .changeling				{color: #800080;}
 .vox					{color: #AA00AA;}
 .zaddat					{color: #941C1C;}
