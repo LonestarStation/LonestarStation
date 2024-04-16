@@ -99,6 +99,9 @@
 //		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-15,-30,-30,-45), dispersion=list(0.6, 1.0, 1.0, 1.0, 1.2)),
 		)
 
+/obj/item/gun/projectile/automatic/sts35/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/automatic/sts35/update_icon(var/ignore_inhands)
 	..()
 	if(istype(ammo_magazine,/obj/item/ammo_magazine/m545/small))
@@ -121,6 +124,9 @@
 	magazine_type = /obj/item/ammo_magazine/m9mmt/rubber
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mmt)
 	projectile_type = /obj/item/projectile/bullet/pistol/medium
+
+/obj/item/gun/projectile/automatic/wt550/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/automatic/wt550/update_icon()
 	..()
@@ -289,6 +295,9 @@
 		return
 	..()
 
+/obj/item/gun/projectile/automatic/l6_saw/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/automatic/as24
 	name = "automatic shotgun"
 	desc = "The AS-24 is a rugged looking automatic shotgun produced exclusively for the SCG Fleet by Hephaestus Industries. For very obvious reasons, it's illegal to own in many juristictions. Uses 12g rounds."
@@ -314,6 +323,9 @@
 //		list(mode_name="6-round bursts", burst=6, move_delay=6, burst_accuracy = list(0,-15,-15,-30,-30, -30), dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2, 1.2)),
 		)
 
+/obj/item/gun/projectile/automatic/as24/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/automatic/as24/update_icon()
 	..()
 	if(ammo_magazine)
@@ -335,6 +347,9 @@
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 5)
 	magazine_type = /obj/item/ammo_magazine/m45uzi
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
+
+/obj/item/gun/projectile/automatic/mini_uzi/empty
+	magazine_type = null
 
 	firemodes = list(
 		list(mode_name="semiauto", burst=1, fire_delay=0),
@@ -367,6 +382,9 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-15,-15), dispersion=list(0.0, 0.6, 1.0))
 		)
 
+/obj/item/gun/projectile/automatic/p90/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/automatic/p90/update_icon()
 	icon_state = "p90smg-[ammo_magazine ? round(ammo_magazine.stored_ammo.len, 6) : "empty"]"
 
@@ -391,6 +409,9 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-15,-30), dispersion=list(0.0, 0.6, 0.6))
 		)
 
+/obj/item/gun/projectile/automatic/pearlshield/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/automatic/tommygun
 	name = "\improper Tommy Gun"
 	desc = "This weapon was made famous by gangsters in the 20th century. Cybersun Industries is currently reproducing these for a target market of historic gun collectors and classy criminals. Uses .45 rounds."
@@ -408,6 +429,9 @@
 		list(mode_name="semiauto", burst=1, fire_delay=0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-15,-15), dispersion=list(0.0, 0.6, 1.0))
 		)
+
+/obj/item/gun/projectile/automatic/tommygun/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/automatic/tommygun/update_icon()
 	..()
@@ -436,6 +460,9 @@
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null),
 		list(mode_name="2-round bursts", burst=2, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-15), dispersion=list(0.0, 0.6))
 		)
+
+/obj/item/gun/projectile/automatic/bullpup/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/automatic/bullpup/update_icon(var/ignore_inhands)
 	..()
@@ -467,6 +494,9 @@
 		list(mode_name="semiauto", burst=1, fire_delay=0),
 		list(mode_name="3-round bursts", burst=3, burst_delay=1, fire_delay=4, move_delay=4, burst_accuracy=list(0,-15,-30), dispersion=list(0.0, 0.6, 0.6))
 		)
+
+/obj/item/gun/projectile/automatic/combatsmg/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/automatic/combatsmg/update_icon()
 	..()

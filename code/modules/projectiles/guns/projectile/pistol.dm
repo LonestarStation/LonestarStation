@@ -10,6 +10,9 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 
+/obj/item/gun/projectile/colt/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/colt/update_icon()
 	if(ammo_magazine)
 		if(unique_reskin)
@@ -29,12 +32,12 @@
 /obj/item/gun/projectile/colt/detective/verb/rename_gun()
 	set name = "Name Gun"
 	set category = "Object"
-	set desc = "Rename your gun. If you're Security."
+	set desc = "Rename your gun. If you're a Law-man."
 
 	var/mob/M = usr
 	if(!M.mind)	return 0
 	var/job = M.mind.assigned_role
-	if(job != "Detective" && job != "Security Officer" && job != "Warden" && job != "Head of Security")
+	if(job != "Ranger" && job != "Deputy" && job != "Warden" && job != "Sheriff")
 		to_chat(M, "<span class='notice'>You don't feel cool enough to name this gun, chump.</span>")
 		return 0
 
@@ -87,6 +90,9 @@
 	caliber = ".45"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
+
+/obj/item/gun/projectile/sec/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/sec/update_icon()
 	..()
@@ -144,6 +150,9 @@
 	magazine_type = /obj/item/ammo_magazine/m44
 	allowed_magazines = list(/obj/item/ammo_magazine/m44)
 
+/obj/item/gun/projectile/deagle/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/deagle/update_icon()
 	..()
 	if(ammo_magazine)
@@ -196,6 +205,9 @@
 	magazine_type = /obj/item/ammo_magazine/m9mm/compact
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm/compact)
 	projectile_type = /obj/item/projectile/bullet/pistol
+
+/obj/item/gun/projectile/pistol/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/pistol/flash
 	name = "compact signal pistol"
@@ -303,6 +315,9 @@
 	ammo_type = /obj/item/ammo_casing/a357
 	projectile_type = /obj/item/projectile/bullet/pistol/strong
 
+/obj/item/gun/projectile/derringer/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/luger
 	name = "\improper Jindal T15 Chooha"
 	desc = "Almost seventy percent guaranteed not to be a cheap rimworld knockoff! Accuracy, easy handling, and its distinctive appearance make it popular among gun collectors. Uses 9mm rounds."
@@ -317,6 +332,9 @@
 	magazine_type = /obj/item/ammo_magazine/m9mm/compact
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm/compact)
 	projectile_type = /obj/item/projectile/bullet/pistol
+
+/obj/item/gun/projectile/luger/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/luger/update_icon()
 	..()
@@ -340,6 +358,9 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m9mm
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mm) // Can accept illegal large capacity magazines, or compact magazines.
+
+/obj/item/gun/projectile/p92x/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/p92x/update_icon()
 	..()
@@ -367,6 +388,9 @@
 	caliber = ".45"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	load_method = MAGAZINE
+
+/obj/item/gun/projectile/compact_45/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/compact_45/update_icon()
 	..()

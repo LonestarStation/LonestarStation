@@ -770,3 +770,93 @@
 	icon_state = "spring"
 	origin_tech = list(TECH_ENGINEERING = 1)
 	matter = list(MAT_STEEL = 40)
+
+// Gunsmithing parts. Lonestar Ed.
+
+/obj/item/gun_parts/stock_wood
+	name = "wooden gunstock"
+	desc = "A wooden gunstock used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "wood_stock"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_WOOD = 50)
+
+/obj/item/gun_parts/stock_steel
+	name = "steel gunstock"
+	desc = "A steel gunstock used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "steel_stock"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/barrel/long
+	name = "long gun barrel"
+	desc = "A gun barrel used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "long_barrel"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/barrel/short
+	name = "short gun barrel"
+	desc = "A gun barrel used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "short_barrel"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/slide
+	name = "standard slide"
+	desc = "A pistol slide used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "slide"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/trigger/single
+	name = "single action trigger group"
+	desc = "A trigger mechanism used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "trigger_group"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/trigger/semi_auto
+	name = "semi-automatic trigger group"
+	desc = "A trigger mechanism used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "trigger_group"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/trigger/automatic
+	name = "automatic trigger group"
+	desc = "A trigger mechanism used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "trigger_group"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 2)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/cylinder
+	name = "standard cylinder"
+	desc = "A revolver cylinder used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "cylinder"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/bolt
+	name = "standard bolt"
+	desc = "A rifle bolt used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "bolt"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)
+
+/obj/item/gun_parts/hammer_pin
+	name = "standard firing pin"
+	desc = "A firing pin and hammer used for gunsmithing."
+	icon = 'icons/obj/gun_parts.dmi'
+	icon_state = "hammer_pin"
+	origin_tech = list(TECH_ENGINEERING = 1, TECH_COMBAT = 1)
+	matter = list(MAT_STEEL = 50)

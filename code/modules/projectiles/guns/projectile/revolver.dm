@@ -15,6 +15,9 @@
 	projectile_type = /obj/item/projectile/bullet/pistol/strong
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 
+/obj/item/gun/projectile/revolver/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/revolver/verb/spin_cylinder()
 	set name = "Spin cylinder"
 	set desc = "Fun when you're bored out of your skull."
@@ -42,6 +45,9 @@
 	name = "mateba"
 	desc = "This unique looking handgun is named after an Italian company famous for the original manufacture of these revolvers, and pasta kneading machines. Uses .357 rounds." // Yes I'm serious. -Spades
 	icon_state = "mateba"
+
+/obj/item/gun/projectile/revolver/mateba/empty
+	magazine_type = null
 
 
 /obj/item/gun/projectile/revolver/detective
@@ -78,6 +84,9 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 4)
 	caliber = ".38"
 	ammo_type = /obj/item/ammo_casing/a38
+
+/obj/item/gun/projectile/revolver/gold/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/revolver/detective45
 	name = ".45 revolver"
@@ -136,6 +145,7 @@
 /obj/item/gun/projectile/revolver/deckard
 	name = "\improper Deckard .38"
 	desc = "A custom-built revolver, based off the semi-popular Detective Special model. Uses .38-Special rounds."
+	icon = 'icons/obj/gun_energy.dmi'
 	icon_state = "deckard-empty"
 	caliber = ".38"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
@@ -143,6 +153,9 @@
 
 /obj/item/gun/projectile/revolver/deckard/emp
 	ammo_type = /obj/item/ammo_casing/a38/emp
+
+/obj/item/gun/projectile/revolver/deckard/empty
+	magazine_type = null
 
 
 /obj/item/gun/projectile/revolver/deckard/update_icon()
@@ -184,6 +197,9 @@
 	projectile_type = /obj/item/projectile/bullet/shotgun
 	// ToDo: Remove accuracy debuf in exchange for slightly injuring your hand every time you fire it.
 
+/obj/item/gun/projectile/revolver/judge/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/revolver/lemat
 	name = "Mako revolver"
 	desc = "The Bishamonten P100 Mako is a 9 shot revolver with a secondary firing barrel loading shotgun shells. For when you really need something dead. A rare yet deadly collector's item. Uses .38-Special and 12g rounds depending on the barrel."
@@ -206,6 +222,8 @@
 	var/list/secondary_loaded = list()
 	var/list/tertiary_loaded = list()
 
+/obj/item/gun/projectile/revolver/lemat/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/revolver/lemat/Initialize()
 	for(var/i in 1 to secondary_max_shells)
@@ -291,6 +309,9 @@
 	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/a44
 
+/obj/item/gun/projectile/revolver/webley/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/revolver/webley/auto
 	name = "autorevolver"
 	icon_state = "mosley"
@@ -300,6 +321,9 @@
 	fire_anim = "mosley_fire"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 
+/obj/item/gun/projectile/revolver/webley/auto/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/revolver/webley/large
 	name = "heavy revolver"
 	desc = "A high-capacity magnum revolver, polished to a mirror shine. Uses .44 magnum rounds."
@@ -307,6 +331,9 @@
 	Introduced to the consumer market by popular demand a few years later, the Wyrm has been a hit with collectors ever since."
 	icon_state = "revolver_stainless"
 	max_shells = 8
+
+/obj/item/gun/projectile/revolver/webley/large/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/revolver/webley/magnetic
 	name = "Auditor revolver"
@@ -316,6 +343,9 @@
 	icon_state = "inspector"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/ap
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_MAGNET = 2)
+
+/obj/item/gun/projectile/revolver/webley/magnetic/empty
+	magazine_type = null
 
 /obj/item/gun/projectile/revolver/webley/magnetic/update_icon()
 	cut_overlays()

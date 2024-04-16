@@ -1114,3 +1114,55 @@
 					/obj/item/gun/projectile/revolver/toy/crossbow = 75,
 					/obj/item/gun/projectile/automatic/toy = 300)
 	vending_sound = "machines/vending/vending_cans.ogg"
+
+/obj/machinery/vending/gunsmithing
+	name = "Gunsmithy Schematics"
+	desc = "A collection of pre-printed, lathe-prepared schematics for gunsmiths."
+	product_ads = "Make a gun!;This is where the prints are!;Gunsmithing!;Guns?;Guns!;"
+	icon_state = "gunsmith"
+	products = list(/obj/item/gunschematic/pistol/colt = 5,
+					/obj/item/gunschematic/pistol/sec = 5,
+					/obj/item/gunschematic/pistol/compact = 5,
+					/obj/item/gunschematic/pistol/derringer = 5,
+					/obj/item/gunschematic/pistol/luger = 5,
+					/obj/item/gunschematic/pistol/p92x = 5,
+					/obj/item/gunschematic/pistol/compact_45 = 5,
+					/obj/item/gunschematic/pistol/mini_uzi = 5,
+					/obj/item/gunschematic/revolver/colt = 5,
+					/obj/item/gunschematic/revolver/deckard = 3,
+					/obj/item/gunschematic/revolver/judge = 2,
+					/obj/item/gunschematic/revolver/lemat = 2,
+					/obj/item/gunschematic/revolver/webley = 5,
+					/obj/item/gunschematic/revolver/auto = 3,
+					/obj/item/gunschematic/revolver/heavy = 3,
+					/obj/item/gunschematic/shotgun/pump = 5,
+					/obj/item/gunschematic/shotgun/combat = 3,
+					/obj/item/gunschematic/shotgun/doublebarrel = 5,
+					/obj/item/gunschematic/shotgun/semi = 3,
+					/obj/item/gunschematic/rifle/bolt = 5,
+					/obj/item/gunschematic/rifle/practice  = 5,
+					/obj/item/gunschematic/rifle/ceremonial = 3,
+					/obj/item/gunschematic/rifle/lever = 5,
+					/obj/item/gunschematic/rifle/brushgun = 3,
+					/obj/item/gunschematic/rifle/revolvingrifle = 3,
+					/obj/item/gunschematic/automatic/c20r = 3,
+					/obj/item/gunschematic/automatic/sts35 = 3,
+					/obj/item/gunschematic/automatic/wt550 = 3,
+					/obj/item/gunschematic/automatic/z8 = 3,
+					/obj/item/gunschematic/automatic/l6_saw = 3,
+					/obj/item/gunschematic/automatic/p90 = 3,
+					/obj/item/gunschematic/automatic/pearlshield = 3,
+					/obj/item/gunschematic/automatic/tommygun = 3,
+					/obj/item/gunschematic/automatic/combatsmg = 3)
+	contraband = list(/obj/item/gunschematic/revolver/magnetic = 2,
+					/obj/item/gunschematic/dart/dartgun = 5,
+					/obj/item/gunschematic/dart/prototype = 2,
+					/obj/item/gunschematic/shotgun/sawn = 5,
+					/obj/item/gunschematic/rifle/SVD = 2)
+	premium = list(/obj/item/gunschematic/pistol/deagle = 2,
+					/obj/item/gunschematic/revolver/gold = 3,
+					/obj/item/gunschematic/revolver/mateba = 2,
+					/obj/item/gunschematic/revolver/contender = 3,
+					/obj/item/gunschematic/shotgun/auto = 2,
+					/obj/item/gunschematic/rifle/garand = 3,
+					/obj/item/gunschematic/automatic/advanced_smg = 5)

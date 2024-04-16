@@ -112,8 +112,14 @@
 		list(mode_name="fire both barrels at once", burst=2),
 		)
 
+/obj/item/gun/projectile/shotgun/doublebarrel/empty
+	ammo_type = null
+
 /obj/item/gun/projectile/shotgun/doublebarrel/pellet
 	ammo_type = /obj/item/ammo_casing/a12g/pellet
+
+/obj/item/gun/projectile/shotgun/doublebarrel/pellet/empty
+	ammo_type = null
 
 /obj/item/gun/projectile/shotgun/doublebarrel/flare
 	name = "signal shotgun"
@@ -123,6 +129,9 @@
 
 /obj/item/gun/projectile/shotgun/doublebarrel/unload_ammo(user, allow_dump)
 	..(user, allow_dump=1)
+
+/obj/item/gun/projectile/shotgun/doublebarrel/flare/empty
+	ammo_type = null
 
 //this is largely hacky and bad :(	-Pete
 /obj/item/gun/projectile/shotgun/doublebarrel/attackby(var/obj/item/A as obj, mob/user as mob)
@@ -163,6 +172,9 @@
 	force = 5
 	sawn_off = TRUE
 
+/obj/item/gun/projectile/shotgun/doublebarrel/sawn/empty
+	ammo_type = null
+
 //Sjorgen Inertial Shotgun
 /obj/item/gun/projectile/shotgun/semi
 	name = "semi-automatic shotgun"
@@ -177,3 +189,6 @@
 	load_method = SINGLE_CASING
 	max_shells = 5
 	ammo_type = /obj/item/ammo_casing/a12g/beanbag
+
+/obj/item/gun/projectile/shotgun/semi/empty
+	ammo_type = null
