@@ -461,3 +461,65 @@
 	name = "flamethrower"
 	path =/obj/item/flamethrower/full
 	hidden = 1
+
+/////////////////////
+/*Gunsmithing Parts*/
+/////////////////////
+//Lonestar Ed.
+
+/datum/category_item/autolathe/arms/stock_steel
+	name = "steel gunstock"
+	path =/obj/item/gun_parts/stock_steel
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/long_barrel
+	name = "gun barrel, long"
+	path =/obj/item/gun_parts/barrel/long
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/short_barrel
+	name = "gun barrel, short"
+	path =/obj/item/gun_parts/barrel/short
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/slide
+	name = "pistol slide"
+	path =/obj/item/gun_parts/slide
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/cylinder
+	name = "revolver cylinder"
+	path =/obj/item/gun_parts/cylinder
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/bolt
+	name = "rifle bolt"
+	path =/obj/item/gun_parts/bolt
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/single_action
+	name = "single action trigger group"
+	path =/obj/item/gun_parts/trigger/single
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/semi_auto
+	name = "semi-automatic trigger group"
+	path =/obj/item/gun_parts/trigger/semi_auto
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+/datum/category_item/autolathe/arms/hammer_pin
+	name = "firing pin"
+	path =/obj/item/gun_parts/hammer_pin
+	hidden = 1
+	resources = list(MAT_STEEL = 50)
+
+
+

@@ -678,3 +678,14 @@ CIRCUITS BELOW
 	req_tech = list(TECH_BLUESPACE = 4, TECH_PHORON = 3)
 	materials = list("$glass" = 2000, "sacid" = 20, "$phoron" = 10000, "$diamond" = 5000, "$gold" = 10000)
 */
+
+///////////////////////////////////
+/////////Gun Stuff/////////////////
+///////////////////////////////////
+
+/datum/design/circuit/gun_lathe
+	name = "gun lathe board"
+	id = "gun_lathe_board"
+	req_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2, TECH_COMBAT = 2)
+	build_path = /obj/item/circuitboard/gun_lathe
+	sort_string = "GUUUN"

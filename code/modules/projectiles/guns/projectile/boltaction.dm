@@ -17,6 +17,9 @@
 	action_sound = 'sound/weapons/riflebolt.ogg'
 	pump_animation = "boltaction-cycling"
 
+/obj/item/gun/projectile/shotgun/pump/rifle/empty
+	magazine_type = null
+
 //////Antique Variant//////
 /obj/item/gun/projectile/shotgun/pump/rifle/antique
 	name = "antique bolt-action rifle"
@@ -28,6 +31,9 @@
 	load_method = SINGLE_CASING
 	max_shells = 7
 
+/obj/item/gun/projectile/shotgun/pump/rifle/antique/empty
+	magazine_type = null
+
 ////////Practice Rifle////////
 /obj/item/gun/projectile/shotgun/pump/rifle/practice // For target practice
 	name = "practice bolt-action rifle"
@@ -35,6 +41,9 @@
 	desc = "A bolt-action rifle with a lightweight synthetic wood stock, designed for competitive shooting. Comes shipped with practice rounds pre-loaded into the gun. Popular among professional marksmen. Uses 7.62mm rounds."
 	ammo_type = /obj/item/ammo_casing/a762/practice
 	pump_animation = "boltaction_practice-cycling"
+
+/obj/item/gun/projectile/shotgun/pump/rifle/practice/empty
+	magazine_type = null
 
 ////////Ceremonial Rifle////////
 /obj/item/gun/projectile/shotgun/pump/rifle/ceremonial
@@ -68,6 +77,9 @@
 	else
 		..()
 
+/obj/item/gun/projectile/shotgun/pump/rifle/ceremonial/empty
+	magazine_type = null
+
 //Lever actions are the same thing, but bigger.
 
 ////////Standard Lever Action Rifle////////
@@ -83,6 +95,9 @@
 	load_method = SINGLE_CASING
 	pump_animation = "leveraction-cycling"
 
+/obj/item/gun/projectile/shotgun/pump/rifle/lever/empty
+	magazine_type = null
+
 ////////Vintage Lever Action Rifle////////
 /obj/item/gun/projectile/shotgun/pump/rifle/lever/vintage
 	name = "vintage repeater"
@@ -91,6 +106,11 @@
 	item_state = "levercarbine"
 	icon_state = "levercarbine"
 	pump_animation = "levercarbine-cycling"
+
+/obj/item/gun/projectile/shotgun/pump/rifle/lever/vintage/empty
+	magazine_type = null
+
+///////Brush Gun////////////////////////
 
 /obj/item/gun/projectile/shotgun/pump/rifle/lever/brushgun
 	name = "brush gun"
@@ -101,8 +121,12 @@
 	ammo_type = /obj/item/ammo_casing/a44/rifle
 	caliber = ".44"
 
+/obj/item/gun/projectile/shotgun/pump/rifle/lever/brushgun/empty
+	magazine_type = null
+
 /obj/item/gun/projectile/shotgun/pump/rifle/lever/brushgun/Initialize()
 	if(prob(50))
 		icon_state = "trailgun"
 		pump_animation = "trailgun_cycling"
 	. = ..()
+

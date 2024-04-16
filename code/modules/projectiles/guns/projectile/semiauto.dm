@@ -23,6 +23,9 @@
 	else
 		icon_state = "[initial(icon_state)]-e"
 
+/obj/item/gun/projectile/garand/empty
+	magazine_type = null
+
 //Bastard child of a revolver and a semi-auto rifle.
 
 //Standard Revolving Rifle
@@ -43,9 +46,14 @@
 	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/a44/rifle
 
+/obj/item/gun/projectile/revolvingrifle/empty
+	magazine_type = null
+
 //Vintage Revolving Rifle
 /obj/item/gun/projectile/revolvingrifle/vintage
 	name = "vintage revolving rifle"
 	desc = "The Willhem is the Gungir's older cousin by Hedberg-Hammarstrom, the perfect collector piece. The semi-automatic revolving mechanism offers no real advantage, but some colonists swear by it. Uses .44 magnum revolver rounds."
 	icon_state = "vintagerevolvingrifle"
 
+/obj/item/gun/projectile/revolvingrifle/vintage/empty
+	magazine_type = null
