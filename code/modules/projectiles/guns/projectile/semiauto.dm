@@ -47,7 +47,8 @@
 	ammo_type = /obj/item/ammo_casing/a44/rifle
 
 /obj/item/gun/projectile/revolvingrifle/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 //Vintage Revolving Rifle
 /obj/item/gun/projectile/revolvingrifle/vintage
@@ -56,4 +57,5 @@
 	icon_state = "vintagerevolvingrifle"
 
 /obj/item/gun/projectile/revolvingrifle/vintage/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()

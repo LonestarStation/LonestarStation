@@ -227,6 +227,20 @@
 	build_path = /obj/item/magnetic_ammo
 	sort_string = "MADBE"
 
+// Gun Parts (for lonestar duh)
+
+/datum/design/item/weapon/automatic_trigger/AssembleDesignName()
+	..()
+	name = "Ballistic weapon parts ([item_name])"
+
+/datum/design/item/gun_parts/trigger/automatic
+	id = "auto_trig"
+	desc = "An advanced 9mm SMG with a reflective laser optic."
+	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+	materials = list(MAT_STEEL = 1000, MAT_PLASTEEL = 500)
+	build_path = /obj/item/gun_parts/trigger/automatic
+	sort_string = "MABAE"
+
 // Melee weapons
 
 /datum/design/item/weapon/melee/AssembleDesignName()

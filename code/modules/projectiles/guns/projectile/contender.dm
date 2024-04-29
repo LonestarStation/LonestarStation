@@ -41,6 +41,8 @@
 
 /obj/item/gun/projectile/contender/empty
 	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/contender/tacticool
 	name = "H-H Balmung"
@@ -50,3 +52,5 @@
 
 /obj/item/gun/projectile/contender/tacticool/empty
 	magazine_type = null
+	ammo_type = null
+	loaded = list()
