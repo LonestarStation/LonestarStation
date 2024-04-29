@@ -38,19 +38,19 @@
 	display_name = "personal pepper spray"
 	description = "A smaller bottle of pepper spray, it's less powerful than the security standard issue."
 	path = /obj/item/reagent_containers/spray/pepper/small
-	cost = 3
+	cost = 2
 
 /datum/gear/contraband/phasepistol
 	display_name = "phase pistol"
 	description = "A phase pistol designed for handling the typical wildlife found on Sif. Not particularly effective against anything else..."
 	path = /obj/item/gun/energy/phasegun/pistol
-	cost = 5
+	cost = 2
 
 /datum/gear/contraband/knives /// Steel by default
 	display_name = "knife selection"
 	description = "Steel knives in various designs."
 	path = /obj/item/material/knife
-	cost = 4
+	cost = 2
 
 /datum/gear/contraband/knives/New()
 	..()
@@ -62,8 +62,28 @@
 	knife["survival knife"] = /obj/item/material/knife/tacknife/survival
 	gear_tweaks += new/datum/gear_tweak/path(knife)
 
+/*
 /datum/gear/contraband/zipgun
 	display_name = "zip gun"
 	description = "A single shot gun. You can't quite remember what ammo it used..." /// It randomizes from a list of (potentially shitty) ammunition.
 	path = /obj/item/gun/projectile/pirate
 	cost = 10
+*/
+
+/datum/gear/contraband/handgun
+	display_name = "hand gun selection"
+	description = "A small firearm."
+	path = /obj/item/gun/projectile
+	cost = 5
+
+/datum/gear/contraband/handgun/New()
+	..()
+	var/gun_type = list()
+	gun_type[".45 Pistol"] = /obj/item/gun/projectile/colt/empty
+	gun_type["Compact Pistol"] = /obj/item/gun/projectile/pistol/empty
+	gun_type["Derringer"] = /obj/item/gun/projectile/derringer/empty
+	gun_type["Jindal T15 Chooha"] = /obj/item/gun/projectile/luger/empty
+	gun_type["9mm Pistol"] = /obj/item/gun/projectile/p92x/empty
+	gun_type["Revolver"] = /obj/item/gun/projectile/revolver/empty
+	gun_type["Patrol Revolver"] = /obj/item/gun/projectile/revolver/webley/empty
+	gear_tweaks += new/datum/gear_tweak/path(gun_type)

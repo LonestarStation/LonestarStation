@@ -74,9 +74,9 @@
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(wcoats))
 
 /datum/gear/accessory/holster
-	display_name = "holster selection (Security, CD, HoP)"
+	display_name = "holster selection"
 	path = /obj/item/clothing/accessory/holster
-	allowed_roles = list("Site Manager", "Head of Personnel", "Security Officer", "Warden", "Head of Security","Detective")
+//	allowed_roles = list("Site Manager", "Head of Personnel", "Security Officer", "Warden", "Head of Security","Detective")
 
 /datum/gear/accessory/holster/New()
 	..()
@@ -151,9 +151,9 @@
 	path = /obj/item/clothing/accessory/vest
 
 /datum/gear/accessory/webbing_vest
-	display_name = "webbing vest selection (Engineering, Security, Medical)"
+	display_name = "webbing vest selection"
 	path = /obj/item/clothing/accessory/storage/brown_vest
-	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer","Security Officer","Detective","Head of Security","Warden","Paramedic","Chief Medical Officer","Medical Doctor", "Search and Rescue")
+//	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer","Security Officer","Detective","Head of Security","Warden","Paramedic","Chief Medical Officer","Medical Doctor", "Search and Rescue")
 
 /datum/gear/accessory/webbing_vest/New()
 	..()
@@ -169,9 +169,9 @@
 	cost = 2
 
 /datum/gear/accessory/drop_pouches
-	display_name = "drop pouches selection (Engineering, Security, Medical)"
+	display_name = "drop pouches selection"
 	path = /obj/item/clothing/accessory/storage/brown_drop_pouches
-	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer","Security Officer","Detective","Head of Security","Warden","Paramedic","Chief Medical Officer","Medical Doctor", "Search and Rescue")
+//	allowed_roles = list("Station Engineer","Atmospheric Technician","Chief Engineer","Security Officer","Detective","Head of Security","Warden","Paramedic","Chief Medical Officer","Medical Doctor", "Search and Rescue")
 
 /datum/gear/accessory/drop_pouches/New()
 	..()

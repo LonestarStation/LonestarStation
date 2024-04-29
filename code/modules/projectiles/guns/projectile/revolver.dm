@@ -16,7 +16,8 @@
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 
 /obj/item/gun/projectile/revolver/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/verb/spin_cylinder()
 	set name = "Spin cylinder"
@@ -47,7 +48,8 @@
 	icon_state = "mateba"
 
 /obj/item/gun/projectile/revolver/mateba/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 
 /obj/item/gun/projectile/revolver/detective
@@ -86,7 +88,8 @@
 	ammo_type = /obj/item/ammo_casing/a38
 
 /obj/item/gun/projectile/revolver/gold/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/detective45
 	name = ".45 revolver"
@@ -155,7 +158,8 @@
 	ammo_type = /obj/item/ammo_casing/a38/emp
 
 /obj/item/gun/projectile/revolver/deckard/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 
 /obj/item/gun/projectile/revolver/deckard/update_icon()
@@ -198,7 +202,8 @@
 	// ToDo: Remove accuracy debuf in exchange for slightly injuring your hand every time you fire it.
 
 /obj/item/gun/projectile/revolver/judge/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/lemat
 	name = "Mako revolver"
@@ -223,7 +228,8 @@
 	var/list/tertiary_loaded = list()
 
 /obj/item/gun/projectile/revolver/lemat/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/lemat/Initialize()
 	for(var/i in 1 to secondary_max_shells)
@@ -310,7 +316,8 @@
 	ammo_type = /obj/item/ammo_casing/a44
 
 /obj/item/gun/projectile/revolver/webley/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/webley/auto
 	name = "autorevolver"
@@ -322,7 +329,8 @@
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 
 /obj/item/gun/projectile/revolver/webley/auto/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/webley/large
 	name = "heavy revolver"
@@ -333,7 +341,8 @@
 	max_shells = 8
 
 /obj/item/gun/projectile/revolver/webley/large/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/webley/magnetic
 	name = "Auditor revolver"
@@ -345,7 +354,8 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_MAGNET = 2)
 
 /obj/item/gun/projectile/revolver/webley/magnetic/empty
-	magazine_type = null
+	ammo_type = null
+	loaded = list()
 
 /obj/item/gun/projectile/revolver/webley/magnetic/update_icon()
 	cut_overlays()
