@@ -22,7 +22,7 @@
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	key = "0"
-	flags = RESTRICTED
+//	flags = RESTRICTED //because lonestar ofcourse
 	syllables = list(
 "vol", "zum", "coo","zoo","bi","do","ooz","ite","og","re","si","ite","ish",
 "ar","at","on","ee","east","ma","da", "rim")
