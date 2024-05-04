@@ -87,7 +87,7 @@
 /decl/hierarchy/outfit/job/gunsmith
 	name = OUTFIT_JOB_NAME("Gunsmith")
 	uniform = /obj/item/clothing/under/tactical
-	shoes = /obj/item/clothing/shoes/boots/cowboy
+	shoes = /obj/item/clothing/shoes/boots/workboots
 	id_type = /obj/item/card/id/security
 	pda_type = /obj/item/pda/security
 
@@ -98,6 +98,13 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	id_type = /obj/item/card/id/civilian
 	pda_type = /obj/item/pda/lawyer
+
+/decl/hierarchy/outfit/job/local
+	name = OUTFIT_JOB_NAME("Lonestar Local")
+	uniform = /obj/item/clothing/under/frontier
+	shoes = /obj/item/clothing/shoes/boots/cowboy
+	id_type = null
+	pda_type = null
 
 // unused follows:
 

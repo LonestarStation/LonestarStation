@@ -96,7 +96,7 @@
 	ask_verb = "trills"
 	exclaim_verb = "barks"
 	key = "o"
-	flags = RESTRICTED
+	flags = WHITELISTED
 	machine_understands = 0
 	space_chance = 30
 	syllables = list("crr", "crl", "clr", "drr", "rrr", "rrn", "rrc", "rlp")

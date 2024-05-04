@@ -199,3 +199,29 @@
 	if(.)
 		H.implant_loyalty(H)
 */
+
+
+//////////////////////////////////
+//		Locals
+//////////////////////////////////
+
+//var/global/lawyer = 0//Checks for another lawyer
+/datum/job/local
+	title = "Lonestar Local"
+	flag = LOCAL
+	departments = list(DEPARTMENT_CIVILIAN)
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 6
+	spawn_positions = 3
+	supervisors = "Lonestar Law"
+	selection_color = "#515151"
+	economic_modifier = 7
+	access = list()
+	minimal_access = list()
+	minimal_player_age = 7
+
+	outfit_type = /decl/hierarchy/outfit/job/local
+	job_description = "Lonestar locals can be just about anybody. All it means is that a character lives near the facility map. \
+						They'll still be beholden to Lonestar law, as they're still citizens, even if the maintenance tunnels have\
+						lower than average supervision."

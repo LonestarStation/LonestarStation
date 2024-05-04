@@ -40,13 +40,13 @@ var/global/const/LIBRARIAN			=(1<<5)//gunsmith?
 var/global/const/QUARTERMASTER		=(1<<6)
 var/global/const/CARGOTECH			=(1<<7)
 var/global/const/MINER				=(1<<8)
-var/global/const/LAWYER			=(1<<9)//seems like an rp role
+var/global/const/LAWYER				=(1<<9)//seems like an rp role
 var/global/const/CHAPLAIN			=(1<<10)//merge with psych
 var/global/const/ASSISTANT			=(1<<11)
-var/global/const/BRIDGE			=(1<<12)
-var/global/const/PILOT 			=(1<<13)
-var/global/const/HERMIT		=(1<<14)
-var/global/const/RACCOON		=(1<<15)
+var/global/const/BRIDGE				=(1<<12)
+var/global/const/PILOT 				=(1<<13)
+var/global/const/LOCAL				=(1<<14)
+var/global/const/RACCOON			=(1<<15)
 
 /*
 var/global/const/ENGSEC				=(1<<0)

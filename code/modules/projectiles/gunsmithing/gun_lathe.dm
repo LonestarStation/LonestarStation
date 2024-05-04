@@ -25,12 +25,12 @@
 	clicksound = "button"
 	clickvol = "30"
 	atom_flags = ATOM_REAGENTS_IS_OPEN | ATOM_REAGENTS_SKIP_REACTIONS
-	circuit = /obj/item/circuitboard/microwave
+	circuit = /obj/item/circuitboard/gun_lathe
 	var/operating = 0 // Is it on?
 	var/dirty = 0 // = {0..100} Does it need cleaning?
 	var/broken = 0 // ={0,1,2} How broken is it???
 	var/circuit_item_capacity = 1 //how many items does the circuit add to max number of items
-	var/item_level = 0 // items microwave can handle, 0 foodstuff, 1 materials
+	var/item_level = 1 // items gunlathe can handle, 0 foodstuff, 1 materials
 	var/static/list/acceptable_items // List of the items you can put in
 	var/static/list/available_recipes // List of the recipes you can use
 	var/static/list/acceptable_reagents // List of the reagents you can put in
@@ -40,7 +40,7 @@
 	var/datum/looping_sound/microwave/soundloop
 
 
-// see code/modules/food/recipes_microwave.dm for recipes
+// see code/modules/food/recipes_gunlathe.dm for recipes
 
 /*******************
 *   Initialising
@@ -69,7 +69,7 @@
 			for (var/reagent in recipe.reagents)
 				acceptable_reagents |= reagent
 		// This will do until I can think of a fun recipe to use dionaea in -
-		// will also allow anything using the holder item to be microwaved into
+		// will also allow anything using the holder item to be [gunlathed] into
 		// impure carbon. ~Z
 		acceptable_items |= /obj/item/gun_parts
 		acceptable_items |= /obj/item/stock_parts
@@ -91,25 +91,25 @@
 	if(src.broken > 0)
 		if(src.broken == 2 && O.is_screwdriver()) // If it's broken and they're using a screwdriver
 			user.visible_message( \
-				"<span class='notice'>\The [user] starts to fix part of the microwave.</span>", \
-				"<span class='notice'>You start to fix part of the microwave.</span>" \
+				"<span class='notice'>\The [user] starts to fix part of the Quickdraw Assembly unit.</span>", \
+				"<span class='notice'>You start to fix part of the Quickdraw Assembly unit.</span>" \
 			)
 			playsound(src, O.usesound, 50, 1)
 			if (do_after(user,20 * O.toolspeed))
 				user.visible_message( \
-					"<span class='notice'>\The [user] fixes part of the microwave.</span>", \
-					"<span class='notice'>You have fixed part of the microwave.</span>" \
+					"<span class='notice'>\The [user] fixes part of the Quickdraw Assembly uni.t</span>", \
+					"<span class='notice'>You have fixed part of the Quickdraw Assembly unit.</span>" \
 				)
 				src.broken = 1 // Fix it a bit
 		else if(src.broken == 1 && O.is_wrench()) // If it's broken and they're doing the wrench
 			user.visible_message( \
-				"<span class='notice'>\The [user] starts to fix part of the microwave.</span>", \
-				"<span class='notice'>You start to fix part of the microwave.</span>" \
+				"<span class='notice'>\The [user] starts to fix part of the Quickdraw Assembly unit.</span>", \
+				"<span class='notice'>You start to fix part of the Quickdraw Assembly unit.</span>" \
 			)
 			if (do_after(user,20 * O.toolspeed))
 				user.visible_message( \
-					"<span class='notice'>\The [user] fixes the microwave.</span>", \
-					"<span class='notice'>You have fixed the microwave.</span>" \
+					"<span class='notice'>\The [user] fixes the Quickdraw Assembly unit.</span>", \
+					"<span class='notice'>You have fixed the Quickdraw Assembly unit.</span>" \
 				)
 				src.icon_state = "gunlathe"
 				src.broken = 0 // Fix it!
@@ -119,16 +119,16 @@
 			to_chat(user, "<span class='warning'>It's broken!</span>")
 			return 1
 
-	else if(src.dirty==100) // The microwave is all dirty so can't be used!
+	else if(src.dirty==100) // The gun lathe is all dirty so can't be used!
 		if(istype(O, /obj/item/reagent_containers/spray/cleaner) || istype(O, /obj/item/soap)) // If they're trying to clean it then let them
 			user.visible_message( \
-				"<span class='notice'>\The [user] starts to clean the microwave.</span>", \
-				"<span class='notice'>You start to clean the microwave.</span>" \
+				"<span class='notice'>\The [user] starts to clean the Quickdraw Assembly unit.</span>", \
+				"<span class='notice'>You start to clean the Quickdraw Assembly unit.</span>" \
 			)
 			if (do_after(user,20))
 				user.visible_message( \
-					"<span class='notice'>\The [user] has cleaned the microwave.</span>", \
-					"<span class='notice'>You have cleaned the microwave.</span>" \
+					"<span class='notice'>\The [user] has cleaned the Quickdraw Assembly unit.</span>", \
+					"<span class='notice'>You have cleaned the Quickdraw Assembly unit.</span>" \
 				)
 				src.dirty = 0 // It's clean!
 				src.broken = 0 // just to be sure
@@ -179,13 +179,13 @@
 			return
 		else
 			user.visible_message( \
-				"<span class='notice'>\The [user] begins [src.anchored ? "unsecuring" : "securing"] the microwave.</span>", \
-				"<span class='notice'>You attempt to [src.anchored ? "unsecure" : "secure"] the microwave.</span>"
+				"<span class='notice'>\The [user] begins [src.anchored ? "unsecuring" : "securing"] the Quickdraw Assembly unit.</span>", \
+				"<span class='notice'>You attempt to [src.anchored ? "unsecure" : "secure"] the Quickdraw Assembly unit.</span>"
 				)
 			if (do_after(user,20/O.toolspeed))
 				user.visible_message( \
-				"<span class='notice'>\The [user] [src.anchored ? "unsecures" : "secures"] the microwave.</span>", \
-				"<span class='notice'>You [src.anchored ? "unsecure" : "secure"] the microwave.</span>"
+				"<span class='notice'>\The [user] [src.anchored ? "unsecures" : "secures"] the Quickdraw Assembly unit.</span>", \
+				"<span class='notice'>You [src.anchored ? "unsecure" : "secure"] the Quickdraw Assembly unit.</span>"
 				)
 				src.anchored = !src.anchored
 			else
@@ -206,17 +206,17 @@
 	interact(user)
 
 /*******************
-*   Microwave Menu
+*   Gunlathe Menu
 ********************/
 
-/obj/machinery/gun_lathe/interact(mob/user as mob) // The microwave Menu
+/obj/machinery/gun_lathe/interact(mob/user as mob) // The Menu
 	var/dat = ""
 	if(src.broken > 0)
 		dat = {"<TT>Bzzzzttttt</TT>"}
 	else if(src.operating)
 		dat = {"<TT>Microwaving in progress!<BR>Please wait...!</TT>"}
 	else if(src.dirty==100)
-		dat = {"<TT>This microwave is dirty!<BR>Please clean it before use!</TT>"}
+		dat = {"<TT>This gun lathe is dirty!<BR>Please clean it before use!</TT>"}
 	else
 		var/list/items_counts = new
 		var/list/items_measures = new
@@ -259,7 +259,7 @@
 			dat += {"<B>[display_name]:</B> [R.volume] unit\s<BR>"}
 
 		if (items_counts.len==0 && reagents.reagent_list.len==0)
-			dat = {"<B>The microwave is empty</B><BR>"}
+			dat = {"<B>The gun lathe is empty</B><BR>"}
 		else
 			dat = {"<b>Ingredients:</b><br>[dat]"}
 		dat += {"<HR><BR>\
@@ -267,14 +267,14 @@
 <A href='?src=\ref[src];action=dispose'>Eject ingredients!<BR>\
 "}
 
-	user << browse("<HEAD><TITLE>Microwave Controls</TITLE></HEAD><TT>[dat]</TT>", "window=microwave")
-	onclose(user, "microwave")
+	user << browse("<HEAD><TITLE>Quick Draw 5000 Controls</TITLE></HEAD><TT>[dat]</TT>", "window=gun_lathe")
+	onclose(user, "gun lathe")
 	return
 
 
 
 /***********************************
-*   Microwave Menu Handling/Cooking
+*   	Menu Handling/Cooking
 ************************************/
 
 /obj/machinery/gun_lathe/proc/cook()
@@ -376,7 +376,7 @@
 		sleep(10)
 	return 1
 
-/obj/machinery/gun_lathe/proc/has_extra_item() //- coded to have different microwaves be able to handle different items
+/obj/machinery/gun_lathe/proc/has_extra_item() //- coded to have different lathes be able to handle different items
 	if(item_level == 0)
 		for (var/obj/O in ((contents - component_parts) - circuit))
 			if ( \
@@ -398,7 +398,7 @@
 		return 0
 
 /obj/machinery/gun_lathe/proc/start()
-	src.visible_message("<span class='notice'>The microwave turns on.</span>", "<span class='notice'>You hear a microwave.</span>")
+	src.visible_message("<span class='notice'>The gun lathe turns on.</span>", "<span class='notice'>You hear a gun lathe.</span>")
 	soundloop.start()
 	src.operating = TRUE
 	src.icon_state = "gunlathe1"
@@ -426,7 +426,7 @@
 		src.dirty++
 	src.reagents.clear_reagents()
 	if(message)
-		to_chat(usr, "<span class='notice'>You dispose of the microwave contents.</span>")
+		to_chat(usr, "<span class='notice'>You dispose of the gun lathe's contents.</span>")
 	src.updateUsrDialog()
 
 /obj/machinery/gun_lathe/proc/muck_start()
@@ -434,7 +434,7 @@
 	src.icon_state = "gunlathebloody1" // Make it look dirty!!
 
 /obj/machinery/gun_lathe/proc/muck_finish()
-	src.visible_message("<span class='warning'>The microwave gets covered in muck!</span>")
+	src.visible_message("<span class='warning'>The gun lathe gets covered in muck!</span>")
 	src.dirty = 100 // Make it dirty so it can't be used util cleaned
 	src.atom_flags = EMPTY_BITFIELD //So you can't add condiments
 	src.icon_state = "gunlathebloody" // Make it look dirty too
@@ -448,7 +448,7 @@
 	s.set_up(2, 1, src)
 	s.start()
 	src.icon_state = "gunlatheb" // Make it look all busted up and shit
-	src.visible_message("<span class='warning'>The microwave breaks!</span>") //Let them know they're stupid
+	src.visible_message("<span class='warning'>The gun lathe breaks!</span>") //Let them know they're stupid
 	src.broken = 2 // Make it broken so it can't be used util fixed
 	src.atom_flags = EMPTY_BITFIELD //So you can't add condiments
 	src.operating = 0 // Turn it off again aferwards
