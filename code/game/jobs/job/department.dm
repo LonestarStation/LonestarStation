@@ -19,47 +19,61 @@
 	color = "#3333FF"
 	sorting_order = 10
 
+/datum/department/government
+	name = DEPARTMENT_GOVERNMENT
+	short_name = "Gov"
+	color = "#A52A2A"
+	sorting_order = 12
+
 /datum/department/security
 	name = DEPARTMENT_SECURITY
 	short_name = "Sec"
 	color = "#8E0000"
-	sorting_order = 6
+	sorting_order = 8
 
 /datum/department/engineering
 	name = DEPARTMENT_ENGINEERING
 	short_name = "Eng"
 	color = "#B27300"
-	sorting_order = 5
+	sorting_order = 7
 
 /datum/department/medical
 	name = DEPARTMENT_MEDICAL
 	short_name = "Med"
 	color = "#006600"
-	sorting_order = 4
+	sorting_order = 6
 
 /datum/department/garage
 	name = DEPARTMENT_GARAGE
 	short_name = "Grg"
 	color = "#A65BA6"
-	sorting_order = 4
+	sorting_order = 5
 
 /datum/department/ranch
 	name = DEPARTMENT_RANCH
 	short_name = "Rch"
 	color = "#A65BA6"
-	sorting_order = 3
+	sorting_order = 4
 
 /datum/department/cargo
 	name = DEPARTMENT_CARGO
 	short_name = "Car"
 	color = "#BB9040"
-	sorting_order = 2
+	sorting_order = 3
 
 /datum/department/civilian
 	name = DEPARTMENT_CIVILIAN
 	short_name = "Civ"
 	color = "#A32800"
+	sorting_order = 2
+
+/datum/department/antagonist
+	name = DEPARTMENT_ANTAGONIST
+	short_name = "Antag"
+	color = "#888cba"
 	sorting_order = 1
+	visible = FALSE
+	assignable = FALSE
 
 // Mostly for if someone wanted to rewrite manifest code to be map-agnostic.
 /datum/department/misc

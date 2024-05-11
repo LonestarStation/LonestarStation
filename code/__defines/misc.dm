@@ -176,6 +176,8 @@
 #define DEPARTMENT_GARAGE			"Garage" //Lonestar Ed.
 #define DEPARTMENT_CARGO			"Cargo"
 #define DEPARTMENT_CIVILIAN			"Civilian"
+#define DEPARTMENT_GOVERNMENT		"Lonestar Command"
+#define DEPARTMENT_ANTAGONIST		"Undefined"
 #define DEPARTMENT_PLANET			"Planetside" // I hate having this be here and not in a SC file. Hopefully someday the manifest can be rewritten to be map-agnostic.
 #define DEPARTMENT_SYNTHETIC		"Synthetic"
 

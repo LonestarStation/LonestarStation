@@ -320,8 +320,27 @@ var/global/datum/controller/occupations/job_master
 	var/datum/job/job = GetJob(rank)
 	var/list/spawn_in_storage = list()
 
-	if(!joined_late)
+	if(!joined_late || job.no_shuttle)
+		var/obj/S = null
+		for(var/obj/effect/landmark/start/sloc in landmarks_list)
+			if(sloc.name != rank)	continue
+			if(locate(/mob/living) in sloc.loc)	continue
+			S = sloc
+			break
+		if(!S)
+			S = locate("start*[rank]") // use old stype
+		if(istype(S, /obj/effect/landmark/start) && istype(S.loc, /turf))
+			H.forceMove(S.loc)
+		else
+			var/list/spawn_props = LateSpawn(H.client, rank)
+			var/turf/T = spawn_props["turf"]
+			H.forceMove(T)
 
+		// Moving wheelchair if they have one
+		if(H.buckled && istype(H.buckled, /obj/structure/bed/chair/wheelchair))
+			H.buckled.forceMove(H.loc)
+			H.buckled.set_dir(H.dir)
+/*
 		var/obj/S
 		var/list/possible_spawns = job.get_spawn_locations(H, rank)
 
@@ -344,7 +363,7 @@ var/global/datum/controller/occupations/job_master
 		if(H.buckled && istype(H.buckled, /obj/structure/bed/chair/wheelchair))
 			H.buckled.forceMove(H.loc)
 			H.buckled.set_dir(H.dir)
-
+*/
 	if(job)
 
 		//Equip custom gear loadout.

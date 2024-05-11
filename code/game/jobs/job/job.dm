@@ -35,6 +35,8 @@
 	var/announce_arrival_and_despawn = TRUE // Set this to false to skip announcing arrivals or departures for this job.
 	var/mob_type = JOB_CARBON               // Bitflags representing mob type this job spawns
 
+	var/no_shuttle = FALSE
+
 	// Description of the job's role and minimum responsibilities.
 	var/job_description = "This Job doesn't have a description! Please report it!"
 

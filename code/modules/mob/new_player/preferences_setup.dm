@@ -219,6 +219,10 @@
 					job_flag = job_medsci_high
 				if(ENGSEC)
 					job_flag = job_engsec_high
+				if(GOVLAW)
+					job_flag = job_govlaw_high
+				if(BADGUY)
+					job_flag = job_badguy_high
 			if(job.flag == job_flag)
 				previewJob = job
 				break
@@ -281,6 +285,10 @@
 					job_flag = job_medsci_high
 				if(ENGSEC)
 					job_flag = job_engsec_high
+				if(GOVLAW)
+					job_flag = job_govlaw_high
+				if(BADGUY)
+					job_flag = job_badguy_high
 			if(job.flag == job_flag)
 				highJob = job
 				break

@@ -13,6 +13,12 @@
 	S["job_engsec_high"]	>> pref.job_engsec_high
 	S["job_engsec_med"]		>> pref.job_engsec_med
 	S["job_engsec_low"]		>> pref.job_engsec_low
+	S["job_govlaw_high"]	>> pref.job_govlaw_high
+	S["job_govlaw_med"]		>> pref.job_govlaw_med
+	S["job_govlaw_low"]		>> pref.job_govlaw_low
+	S["job_badguy_high"]	>> pref.job_badguy_high
+	S["job_badguy_med"]		>> pref.job_badguy_med
+	S["job_badguy_low"]		>> pref.job_badguy_low
 	S["player_alt_titles"]	>> pref.player_alt_titles
 
 /datum/category_item/player_setup_item/occupation/save_character(var/savefile/S)
@@ -26,6 +32,12 @@
 	S["job_engsec_high"]	<< pref.job_engsec_high
 	S["job_engsec_med"]		<< pref.job_engsec_med
 	S["job_engsec_low"]		<< pref.job_engsec_low
+	S["job_govlaw_high"]	<< pref.job_govlaw_high
+	S["job_govlaw_med"]		<< pref.job_govlaw_med
+	S["job_govlaw_low"]		<< pref.job_govlaw_low
+	S["job_badguy_high"]	<< pref.job_badguy_high
+	S["job_badguy_med"]		<< pref.job_badguy_med
+	S["job_badguy_low"]		<< pref.job_badguy_low
 	S["player_alt_titles"]	<< pref.player_alt_titles
 
 /datum/category_item/player_setup_item/occupation/sanitize_character()
@@ -39,6 +51,12 @@
 	pref.job_engsec_high	= sanitize_integer(pref.job_engsec_high, 0, 65535, initial(pref.job_engsec_high))
 	pref.job_engsec_med 	= sanitize_integer(pref.job_engsec_med, 0, 65535, initial(pref.job_engsec_med))
 	pref.job_engsec_low 	= sanitize_integer(pref.job_engsec_low, 0, 65535, initial(pref.job_engsec_low))
+	pref.job_govlaw_high	= sanitize_integer(pref.job_govlaw_high, 0, 65535, initial(pref.job_govlaw_high))
+	pref.job_govlaw_med 	= sanitize_integer(pref.job_govlaw_med, 0, 65535, initial(pref.job_govlaw_med))
+	pref.job_govlaw_low 	= sanitize_integer(pref.job_govlaw_low, 0, 65535, initial(pref.job_govlaw_low))
+	pref.job_badguy_high	= sanitize_integer(pref.job_badguy_high, 0, 65535, initial(pref.job_badguy_high))
+	pref.job_badguy_med 	= sanitize_integer(pref.job_badguy_med, 0, 65535, initial(pref.job_badguy_med))
+	pref.job_badguy_low 	= sanitize_integer(pref.job_badguy_low, 0, 65535, initial(pref.job_badguy_low))
 	if(!(pref.player_alt_titles)) pref.player_alt_titles = new()
 
 	if(!job_master)
@@ -285,9 +303,13 @@
 	pref.job_civilian_med |= pref.job_civilian_high
 	pref.job_medsci_med |= pref.job_medsci_high
 	pref.job_engsec_med |= pref.job_engsec_high
+	pref.job_govlaw_med |= pref.job_govlaw_high
+	pref.job_badguy_med |= pref.job_badguy_high
 	pref.job_civilian_high = 0
 	pref.job_medsci_high = 0
 	pref.job_engsec_high = 0
+	pref.job_govlaw_high = 0
+	pref.job_badguy_high = 0
 
 // Level is equal to the desired new level of the job. So for a value of 4, we want to disable the job.
 /datum/category_item/player_setup_item/occupation/proc/SetJobDepartment(var/datum/job/job, var/level)
@@ -331,6 +353,30 @@
 					pref.job_engsec_med |= job.flag
 				if(3)
 					pref.job_engsec_low |= job.flag
+		if(GOVLAW)
+			pref.job_govlaw_low &= ~job.flag
+			pref.job_govlaw_med &= ~job.flag
+			pref.job_govlaw_high &= ~job.flag
+			switch(level)
+				if(1)
+					reset_jobhigh()
+					pref.job_govlaw_high = job.flag
+				if(2)
+					pref.job_govlaw_med |= job.flag
+				if(3)
+					pref.job_govlaw_low |= job.flag
+		if(BADGUY)
+			pref.job_badguy_low &= ~job.flag
+			pref.job_badguy_med &= ~job.flag
+			pref.job_badguy_high &= ~job.flag
+			switch(level)
+				if(1)
+					reset_jobhigh()
+					pref.job_badguy_high = job.flag
+				if(2)
+					pref.job_badguy_med |= job.flag
+				if(3)
+					pref.job_badguy_low |= job.flag
 	return TRUE
 
 /datum/category_item/player_setup_item/occupation/proc/ResetJobs()
@@ -345,6 +391,14 @@
 	pref.job_engsec_high = 0
 	pref.job_engsec_med = 0
 	pref.job_engsec_low = 0
+
+	pref.job_govlaw_high = 0
+	pref.job_govlaw_med = 0
+	pref.job_govlaw_low = 0
+
+	pref.job_badguy_high = 0
+	pref.job_badguy_med = 0
+	pref.job_badguy_low = 0
 
 	pref.player_alt_titles.Cut()
 
@@ -378,4 +432,20 @@
 					return job_engsec_med
 				if(3)
 					return job_engsec_low
+		if(GOVLAW)
+			switch(level)
+				if(1)
+					return job_govlaw_high
+				if(2)
+					return job_govlaw_med
+				if(3)
+					return job_govlaw_low
+		if(BADGUY)
+			switch(level)
+				if(1)
+					return job_badguy_high
+				if(2)
+					return job_badguy_med
+				if(3)
+					return job_badguy_low
 	return 0

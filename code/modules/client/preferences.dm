@@ -102,6 +102,14 @@ var/global/list/preferences_datums = list()
 	var/job_engsec_med = 0
 	var/job_engsec_low = 0
 
+	var/job_govlaw_high = 0
+	var/job_govlaw_med = 0
+	var/job_govlaw_low = 0
+
+	var/job_badguy_high = 0
+	var/job_badguy_med = 0
+	var/job_badguy_low = 0
+
 	//Keeps track of preferrence for not getting any wanted jobs
 	var/alternate_option = 1
 

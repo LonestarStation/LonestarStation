@@ -6,7 +6,7 @@
 	flag = HOS
 	departments_managed = list(DEPARTMENT_SECURITY)
 	departments = list(DEPARTMENT_SECURITY, DEPARTMENT_COMMAND)
-	sorting_order = 2
+	sorting_order = 3
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
@@ -50,13 +50,14 @@
 	title = "Warden"
 	flag = WARDEN
 	departments = list(DEPARTMENT_SECURITY)
-	sorting_order = 1
+	sorting_order = 2
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Prison Baron, the Marshal and Lonestar Law"
 	selection_color = "#601C1C"
+	no_shuttle = TRUE
 	economic_modifier = 5
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_external_airlocks)
@@ -105,6 +106,7 @@
 	title = "Deputy"
 	flag = OFFICER
 	departments = list(DEPARTMENT_SECURITY)
+	sorting_order = 1
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5
@@ -136,3 +138,26 @@
 	title = "Forensic Technician"
 	title_blurb = "A Forensic Technician works more with hard evidence and labwork than a Deputy, but they share the purpose of solving crimes."
 	title_outfit = /decl/hierarchy/outfit/job/security/forensic
+
+//////////////////////////////////
+//Lonestar Prisoner (Life Sentence)
+//////////////////////////////////
+/datum/job/prisoner
+	title = "Prisoner"
+	flag = PRISONER
+	departments = list(DEPARTMENT_SECURITY)
+	sorting_order = 1
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 8
+	spawn_positions = 2
+	supervisors = "the Sheriff and the Warden"
+	selection_color = "#FFAEC8"
+	req_admin_notify = 1
+	no_shuttle = TRUE
+	economic_modifier = 0
+	access = list()
+	minimal_player_age = 3
+
+	outfit_type = /decl/hierarchy/outfit/job/prisoner
+	job_description = "Lots of things can get a prisoner a life sentence like this one, ask them and find out."

@@ -34,6 +34,15 @@
 	head = null
 	suit = /obj/item/clothing/suit/storage/forensics/red
 
+/decl/hierarchy/outfit/job/prisoner
+	name = OUTFIT_JOB_NAME("Prisoner")
+	l_ear = /obj/item/radio/headset
+	uniform = /obj/item/clothing/under/color/prison
+	shoes = /obj/item/clothing/shoes/orange
+	id_type = null
+	pda_type = null
+	backpack = null
+
 //unused follows:
 
 /decl/hierarchy/outfit/job/security/detective
