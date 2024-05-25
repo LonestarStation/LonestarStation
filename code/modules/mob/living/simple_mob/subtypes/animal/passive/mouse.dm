@@ -9,6 +9,8 @@
 	icon_dead = "mouse_gray_dead"
 	kitchen_tag = "rodent"
 
+	faction = "rodent"
+
 	maxHealth = 5
 	health = 5
 	melee_damage_lower = 1
@@ -104,6 +106,10 @@
 /mob/living/simple_mob/animal/passive/mouse/brown
 	body_color = "brown"
 	icon_state = "mouse_brown"
+
+/mob/living/simple_mob/animal/passive/mouse/black
+	body_color = "black"
+	icon_state = "mouse_black"
 
 /mob/living/simple_mob/animal/passive/mouse/rat
 	name = "rat"

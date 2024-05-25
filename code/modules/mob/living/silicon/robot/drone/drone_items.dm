@@ -23,7 +23,8 @@
 		/obj/item/camera_assembly,
 		/obj/item/tank,
 		/obj/item/circuitboard,
-		/obj/item/smes_coil
+		/obj/item/smes_coil,
+		/obj/item/fuel_assembly
 		)
 
 	var/obj/item/wrapped = null // Item currently being held.

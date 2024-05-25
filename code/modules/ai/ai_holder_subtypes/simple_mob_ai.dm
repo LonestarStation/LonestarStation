@@ -124,7 +124,8 @@
 		holder.IMove(get_step(holder, pick(alldirs)))
 		holder.face_atom(A)
 
-
+/datum/ai_holder/simple_mob/melee/stand
+	stand_ground = TRUE
 
 // This AI hits something, then runs away for awhile.
 // It will (almost) always flee if they are uncloaked, AND their target is not stunned.

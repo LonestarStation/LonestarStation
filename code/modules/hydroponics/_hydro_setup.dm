@@ -69,6 +69,7 @@ GLOBAL_LIST_INIT(plant_mob_products, list(
 	/mob/living/simple_mob/creature = 10,
 	/mob/living/simple_mob/blob/spore = 20,
 	/mob/living/simple_mob/tomato = 30,
+	/mob/living/simple_mob/flytrap = 30,
 	/mob/living/simple_mob/animal/passive/dog = 5,
 	/mob/living/simple_mob/animal/passive/chicken = 5,
 	/mob/living/simple_mob/animal/passive/crab = 5,

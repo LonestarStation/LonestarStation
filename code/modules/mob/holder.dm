@@ -135,6 +135,10 @@ var/global/list/holder_mob_icon_cache = list()
 /obj/item/holder/mouse
 	w_class = ITEMSIZE_TINY
 
+/obj/item/holder/snake
+	origin_tech = list(TECH_BIO = 2)
+	slot_flags = SLOT_HEAD | SLOT_HOLSTER
+
 /obj/item/holder/possum
 	origin_tech = list(TECH_BIO = 2)
 

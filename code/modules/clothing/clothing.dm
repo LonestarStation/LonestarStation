@@ -659,6 +659,7 @@ var/global/list/light_overlay_cache = list() //see get_worn_overlay() on helmets
 	if((can_hold_knife == 1) && (istype(I, /obj/item/material/shard) || \
 	 istype(I, /obj/item/material/butterfly) || \
 	 istype(I, /obj/item/material/kitchen/utensil) || \
+	 istype(I, /obj/item/holder/snake) || \
 	 istype(I, /obj/item/material/knife/tacknife)))
 		if(holding)
 			to_chat(user, "<span class='warning'>\The [src] is already holding \a [holding].</span>")

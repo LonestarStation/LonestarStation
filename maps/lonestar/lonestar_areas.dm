@@ -1366,10 +1366,10 @@
 	name = "\improper third floor"
 
 /area/lonestar/maintenance/third/elevatoralpha
-	name = "\improper TFEA Maintenance Hall"
+	name = "\improper TFEA Maintenance Hall" //Third Floor Elevator Alpha
 
 /area/lonestar/maintenance/third/elevatorbeta
-	name = "\improper TFEB Maintenance Hall"
+	name = "\improper TFEB Maintenance Hall" //Third Floor Elevator Beta
 
 //lonestar: administrative offices//
 

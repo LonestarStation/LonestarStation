@@ -102,7 +102,7 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/mining
 	job_description = "An Independent Prospector ventures out of the station to gather valuable resources that they can bring back to the facility."
-	alt_titles = list("Drill Technician" = /datum/alt_title/drill_tech, "Asteroid Miner" = /datum/alt_title/asteroid_miner)
+	alt_titles = list("Drill Technician" = /datum/alt_title/drill_tech, "Asteroid Miner" = /datum/alt_title/asteroid_miner, "Scrapper" = /datum/alt_title/scrapper)
 
 /datum/alt_title/drill_tech
 	title = "Drill Technician"
@@ -112,6 +112,10 @@
 	title = "Asteroid Miner"
 	title_blurb = "Asteroid Miners specialize in the methods and practices required for zero gravity mining. Or they are learning to specialize. Either \
 					way they have the required permits to use excavation equipment on asteroid rock."
+
+/datum/alt_title/scrapper
+	title = "Scrapper"
+	title_blurb = "Scrappers specialize in tearing things apart. Anything they can find. As long as no one owns it. Or as long as no one seems to own it."
 
 //Service
 //////////////////////////////////
