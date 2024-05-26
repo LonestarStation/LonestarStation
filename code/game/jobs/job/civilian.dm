@@ -146,7 +146,7 @@
 //			Gunsmith
 //////////////////////////////////
 /datum/job/librarian
-	title = "Gunsmith" //gunsmith to be moved to security
+	title = "Gunsmith"
 	flag = LIBRARIAN
 	departments = list(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
