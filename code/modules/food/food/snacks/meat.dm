@@ -80,3 +80,19 @@
 	reagents.add_reagent("phoron", 1)
 	reagents.add_reagent("protein", 3)
 	reagents.add_reagent("triglyceride", 3)
+
+/obj/item/reagent_containers/food/snacks/meat/frog
+	name = "frog meat"
+	desc = "A slab of frog legs."
+	icon_state = "fishfillet"
+
+/obj/item/reagent_containers/food/snacks/meat/frog/Initialize()
+	. = ..()
+	reagents.add_reagent("protein", 3)
+	reagents.add_reagent("seafood", 3)
+
+/obj/item/reagent_containers/food/snacks/meat/snake
+	name = "snake meat"
+	desc = "A slab of snake meat."
+	icon_state = "fishfillet"
+

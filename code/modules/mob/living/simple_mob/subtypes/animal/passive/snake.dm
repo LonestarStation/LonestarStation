@@ -20,35 +20,37 @@
 	layer = MOB_LAYER
 	density = 0
 
+	movement_cooldown = 5
+
 
 	response_help  = "pets"
 	response_disarm = "shoos"
 	response_harm   = "stomps on" // no steppy u_u
 
 	attacktext = list("bitten")
-	melee_damage_lower = 5
-	melee_damage_upper = 6
+	melee_damage_lower = 1
+	melee_damage_upper = 4
 
 	attack_sharp = TRUE
 
 	holder_type = /obj/item/holder/snake
-//	meat_type = /obj/item/reagent_containers/food/snacks/meat/snake
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/snake
 //	butchery_loot = list(/obj/item/stack/material/snakeskin = 1)
 
 	speak_emote = list("hisses")
 
-	say_list_type = /datum/say_list/lizard
+	say_list_type = /datum/say_list/snake
 
 	tame_items = list(
-	/obj/item/reagent_containers/food/snacks/egg = 20,
-	/obj/item/holder/mouse = 20
+	/obj/item/reagent_containers/food/snacks/egg = 30,
+	/obj/item/holder/mouse = 30
 	)
 
 	var/poison_type = "toxin"	// The reagent that gets injected when it attacks.
 	var/poison_chance = 50			// Chance for injection to occur.
-	var/poison_per_bite = 5			// Amount added per injection.
+	var/poison_per_bite = 10			// Amount added per injection.
 
-	ai_holder_type = /datum/ai_holder/simple_mob/retaliate/cooperative
+	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand
 
 /mob/living/simple_mob/animal/passive/snake/Initialize()
 	. = ..()
@@ -114,7 +116,7 @@
 	icon_living = "cobra"
 	icon_dead = "cobra_dead"
 
-	poison_chance = 70
-	poison_per_bite = 10
+	poison_chance = 85
+	poison_per_bite = 30
 
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand

@@ -962,6 +962,19 @@
 	reagents.add_reagent("spidertoxin",6)
 	reagents.remove_reagent("pacid",6)
 
+/obj/item/reagent_containers/food/snacks/xenomeat/roachmeat // Substitute for recipes requiring xeno meat.
+	name = "cockroach meat"
+	desc = "A slab of green meat."
+	icon_state = "xenomeat"
+	filling_color = "#43DE18"
+	center_of_mass = list("x"=16, "y"=10)
+	bitesize = 6
+
+/obj/item/reagent_containers/food/snacks/xenomeat/roachmeat/Initialize()
+	. = ..()
+	reagents.add_reagent("protein",6)
+	reagents.remove_reagent("pacid",6)
+
 /obj/item/reagent_containers/food/snacks/meatball
 	name = "meatball"
 	desc = "A great meal all round."

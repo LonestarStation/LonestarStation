@@ -11,8 +11,8 @@
 	icon_dead = "cockroach_dead"
 
 	faction = "roaches"
-	maxHealth = 50
-	health = 50
+	maxHealth = 25
+	health = 25
 	pass_flags = PASSTABLE
 	movement_cooldown = 0
 	poison_resist = 1
@@ -32,7 +32,7 @@
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/small_roach
 
 	meat_amount = 1
-	meat_type = /obj/item/reagent_containers/food/snacks/xenomeat
+	meat_type = /obj/item/reagent_containers/food/snacks/xenomeat/roachmeat
 
 	say_list_type = null
 
@@ -57,12 +57,13 @@
 	icon_dead = "radroach_dead"
 
 	faction = "roaches"
-	maxHealth = 150
-	health = 150
+	maxHealth = 100
+	health = 100
 	pass_flags = PASSTABLE
 	movement_cooldown = 0
 	movement_sound = 'sound/effects/spider_loop.ogg'
 	poison_resist = 1
+	density = 1
 
 	see_in_dark = 10
 
@@ -84,7 +85,7 @@
 	speak_emote = list("chitters")
 
 	meat_amount = 3
-	meat_type = /obj/item/reagent_containers/food/snacks/xenomeat
+	meat_type =/obj/item/reagent_containers/food/snacks/xenomeat/roachmeat
 
 	say_list_type = /datum/say_list/spider
 

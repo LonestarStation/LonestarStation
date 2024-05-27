@@ -33,8 +33,8 @@
 			spawn_area_type = /area/lonestar/bar/kitchen
 			locstring = "the bar kitchen"
 		if(LOC_ATMOS)
-			spawn_area_type = /area/lonestar/engineering/atmos
-			locstring = "atmospherics"
+			spawn_area_type = /area/lonestar/engineering/atmos/storage
+			locstring = "atmospherics storage"
 		if(LOC_CHAPEL)
 			spawn_area_type = /area/lonestar/medbay/clerical/worshiphall
 			locstring = "the chapel"
@@ -80,7 +80,7 @@
 			max_number = 8
 			vermstring = "spiders"
 		if(VERM_SNAKES)
-			spawn_types = list(/mob/living/simple_mob/animal/passive/snake)
+			spawn_types = list(/mob/living/simple_mob/animal/passive/snake, /mob/living/simple_mob/animal/passive/snake/cobra)
 			max_number = 6
 			vermstring = "snakes"
 		if(VERM_FROGS)

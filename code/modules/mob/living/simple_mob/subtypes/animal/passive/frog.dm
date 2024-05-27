@@ -30,6 +30,9 @@
 	/obj/item/holder/mouse = 20
 	)
 
+	meat_amount = 1
+	meat_type =/obj/item/reagent_containers/food/snacks/meat/frog
+
 	special_attack_min_range = 2
 	special_attack_max_range = 5
 	special_attack_cooldown = 5 SECONDS
@@ -100,6 +103,8 @@
 
 	melee_damage_lower = 5
 	melee_damage_upper = 15
+
+	meat_amount = 2
 
 	ai_holder_type = /datum/ai_holder/simple_mob/retaliate/cooperative
 

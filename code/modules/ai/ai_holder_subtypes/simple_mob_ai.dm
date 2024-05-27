@@ -126,6 +126,12 @@
 
 /datum/ai_holder/simple_mob/melee/stand
 	stand_ground = TRUE
+	retaliate = TRUE //If attacked, attack back
+	threaten = TRUE //Verbal threats
+	vision_range = 3
+	destructive = FALSE
+	can_breakthrough = FALSE
+	violent_breakthrough = FALSE
 
 // This AI hits something, then runs away for awhile.
 // It will (almost) always flee if they are uncloaked, AND their target is not stunned.

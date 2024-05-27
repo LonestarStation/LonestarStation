@@ -149,3 +149,9 @@
 
 /datum/say_list/frog
 	emote_hear = list("croaks", "ribbits")
+
+/datum/say_list/snake
+	speak = list("hisses")
+
+	say_threaten = list("hiss!", "HISSSS!")
+
