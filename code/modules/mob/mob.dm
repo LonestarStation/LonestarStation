@@ -405,16 +405,18 @@
 	// Try harder to find a key to use
 	if(!keytouse && key)
 		keytouse = ckey(key)
-	else if(!keytouse && mind?.key)
+	if (!keytouse && mind?.key)
 		keytouse = ckey(mind.key)
-
+	if (!keytouse)
+		return
 	GLOB.respawn_timers[keytouse] = world.time + time
+
 
 /mob/observer/dead/set_respawn_timer()
 	if(config.antag_hud_restricted && has_enabled_antagHUD)
 		..(-1)
 	else
-		return // Don't set it, no need
+		..()
 
 /mob/verb/abandon_mob()
 	set name = "Return to Menu"
@@ -424,10 +426,9 @@
 		to_chat(usr, "<span class='notice'><B>You must be dead to use this!</B></span>")
 		return
 
-	// Final chance to abort "respawning"
-	if(mind && timeofdeath) // They had spawned before
+	if (should_confirm_respawn()) // They had spawned before
 		var/choice = alert(usr, "Returning to the menu will prevent your character from being revived in-round. Are you sure?", "Confirmation", "No, wait", "Yes, leave")
-		if(choice == "No, wait")
+		if (choice != "Yes, leave")
 			return
 
 	// Beyond this point, you're going to respawn
@@ -454,6 +455,11 @@
 	if(M.mind)
 		M.mind.reset()
 	return
+
+
+/mob/proc/should_confirm_respawn()
+	return mind && timeofdeath
+
 
 /client/verb/changes()
 	set name = "Changelog"
@@ -683,6 +689,7 @@
 				stat("Instances:","[world.contents.len]")
 				stat("World Time:", world.time)
 				stat("Real time of day:", REALTIMEOFDAY)
+				stat("Hub:", "Visibility [config.hub_visible?"On":"Off"], [world.reachable?"":"NOT"] Reachable")
 				stat(null)
 				if(GLOB)
 					GLOB.stat_entry()
@@ -1265,3 +1272,6 @@
 
 /mob/proc/hearing_boost_range()
 	return hearing_boost_range
+
+/mob/proc/devour(atom/movable/victim)
+	return

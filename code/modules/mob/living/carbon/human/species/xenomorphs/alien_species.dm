@@ -11,8 +11,8 @@
 	rarity_value = 3
 
 	has_fine_manipulation = 0
-	siemens_coefficient = 0
-	gluttonous = 2
+	shock_vulnerability = 0
+	gluttonous = GLUT_SMALLER
 
 	brute_mod = 0.5 // Hardened carapace.
 	burn_mod = 2    // Weak to fire.
@@ -89,8 +89,6 @@
 	return "alien [caste_name] ([alien_number])"
 
 /datum/species/xenos/can_understand(var/mob/other)
-	if(istype(other, /mob/living/carbon/alien/larva))
-		return TRUE
 	return FALSE
 
 /datum/species/xenos/hug(var/mob/living/carbon/human/H,var/mob/living/target)

@@ -282,6 +282,11 @@
 	desc = "A simple maid uniform for housekeeping."
 	icon_state = "janimaid"
 
+/obj/item/clothing/under/dress/maid/proper
+	name = "maid dress"
+	desc = "A proper black dress with a frilly white apron."
+	icon_state = "propermaid"
+
 /obj/item/clothing/under/dress/dress_fire
 	name = "flame dress"
 	desc = "A small black dress with blue flames print on it."
@@ -509,6 +514,27 @@
 	icon_state = "goldwrap"
 	index = 1
 
+/obj/item/clothing/under/dress/little_strapless
+	name = "short strapless dress"
+	desc = "The classic little black dress now comes in colours other than black."
+	icon_state = "littlestrapless"
+	index = 1
+
+/obj/item/clothing/under/dress/long_strapless
+	name = "long strapless dress"
+	desc = "A sleek sleeveless dress for the modern sophisticate."
+	icon_state = "longstrapless"
+	index = 1
+
+/obj/item/clothing/under/dress/ceremonial
+	name = "ceremonial corset"
+	desc = "A regal black and gold tight corset with silky sleeves. A sheer bodystocking accompanies it."
+	icon_state = "ceremonial"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/dress/ceremonial/sheerless
+	desc = "A regal black and gold tight corset with silky sleeves."
+	worn_state = "ceremonial_c"
 
 /*
  * wedding stuff
@@ -752,16 +778,33 @@ Uniforms and such
 	icon_state = "cheongsam-darkblue"
 
 /obj/item/clothing/under/qipao
-	name = "qipao"
+	name = "short qipao"
 	desc = "A traditional Chinese women's garment, typically made from silk."
 	icon_state = "qipao"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/qipao/black
+	name = "black qipao"
+	icon_state = "qipao_black"
+
+/obj/item/clothing/under/qipao/red
+	name = "red qipao"
+	icon_state = "qipao_red"
+
+/obj/item/clothing/under/qipao/white
+	name = "white qipao"
+	icon_state = "qipao_white"
 
 /obj/item/clothing/under/qipao2
 	name = "slim qipao"
 	desc = "A traditional Chinese women's garment, typically made from silk. This one is fairly slim."
 	icon_state = "qipao2"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/qipao/colorable
+	name = "qipao"
+	icon_state = "qipao_white"
+	starting_accessories = list(/obj/item/clothing/accessory/qipaogold)
 
 /obj/item/clothing/under/blazer
 	name = "blue blazer"
@@ -1167,12 +1210,17 @@ Uniforms and such
 	worn_state = "bathrobe"
 
 /obj/item/clothing/under/explorer
-	desc = "A green uniform for operating in hazardous environments."
+	desc = "A grey and cyan uniform for working in the field."
 	name = "explorer's jumpsuit"
 	icon_state = "explorer"
 
+/obj/item/clothing/under/xenofauna
+	desc = "A grey and purple uniform for working in the field."
+	name = "xenofauna technician's jumpsuit"
+	icon_state = "xenofauna"
+
 /obj/item/clothing/under/explorer/armored
-	desc = "A green uniform for operating in hazardous environments. This one looks like it's been modified."
+	desc = "A grey and green uniform for operating in hazardous environments. This one looks like it's been modified."
 	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 10, rad = 30)
 	armorsoak = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 0)
 

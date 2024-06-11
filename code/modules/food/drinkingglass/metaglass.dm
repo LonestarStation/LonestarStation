@@ -684,3 +684,12 @@ Drinks Data
 
 /datum/reagent/drink/tea/icetea/dyn
 	glass_icon_state = "dyncold"
+
+/datum/reagent/drink/soda/kiraniade
+	glass_icon_state = "kiraniade"
+
+/datum/reagent/ethanol/sirisaii_pole
+	glass_icon_state = "sirisaii_pole"
+
+/datum/reagent/drink/meatshake
+	glass_icon_state = "meatshake"

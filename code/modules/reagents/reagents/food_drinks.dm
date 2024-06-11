@@ -27,13 +27,13 @@
 	else
 		initialize_data(newdata)
 
-	//cull all tastes below 10% of total
+	//cull all tastes below 5% of total
 	var/totalFlavor = 0
 	for(var/taste in data)
 		totalFlavor += data[taste]
 	if(totalFlavor) //Let's not divide by zero for things w/o taste
 		for(var/taste in data)
-			if(data[taste]/totalFlavor < 0.1)
+			if(data[taste]/totalFlavor < 0.05)
 				data -= taste
 
 #define ANIMAL_NUTRITION_MULTIPLIER 0.5
@@ -713,7 +713,7 @@
 	name = "Capsaicin Oil"
 	id = "capsaicin"
 	description = "This is what makes chilis hot."
-	taste_description = "hot peppers"
+	taste_description = "spiciness"
 	taste_mult = 1.5
 	reagent_state = LIQUID
 	ingest_met = REM
@@ -1097,6 +1097,7 @@
 	reagent_state = LIQUID
 	color = "#ff2424"
 	strength = 10
+	allergen_type = ALLERGEN_MEAT //It's meat.
 
 /datum/reagent/toxin/plantcolony
 	name = "A colony of plant cells"
@@ -1106,6 +1107,7 @@
 	reagent_state = LIQUID
 	color = "#7ce01f"
 	strength = 10
+	allergen_type = ALLERGEN_VEGETABLE //It's plant.
 
 /datum/reagent/drink/juice/potato
 	name = "Potato Juice"
@@ -4499,7 +4501,7 @@
 	name = "Kirani jelly"
 	id = "kirani_jelly"
 	description = "Sticky, sweet jelly from ground kiriani fruits."
-	taste_description = "ultra-sweet jelly"
+	taste_description = "ultra-sweet fruity jelly"
 	color = "#993c5c"
 
 /datum/reagent/drink/gauli_juice
@@ -4508,3 +4510,49 @@
 	description = "Juice from a ga'uli pod, used in skrellian and teshari cooking."
 	color = "#6f83a6"
 	taste_description = "mintyness"
+
+/datum/reagent/ethanol/kiranicider
+	name = "Kirani cider"
+	id = "kirani_cider"
+	description = "Fermented kirani jelly, popular among teshari packs."
+	taste_description = "sweet, tangy, fruity alcohol"
+	color = "#993c5c"
+	strength = 10
+	glass_name = "kirani cider"
+	glass_desc = "Fermented kirani jelly, popular among teshari packs."
+	allergen_type = ALLERGEN_FRUIT //Made from fruit
+
+/datum/reagent/ethanol/sirisaii_pole
+	name = "Sirisaii pole"
+	id = "sirisaii_pole"
+	description = "Fermented kirani mixed with ga'uli and ice, for a fruity cocktail as cold as Sirisai's poles."
+	taste_description = "chilled, minty, sweet fruit with an alcoholic kick"
+	color = "#993c5c"
+	strength = 10
+	adj_temp = -20
+	targ_temp = 220
+	glass_name = "Sirisaii pole"
+	glass_desc = "Fermented kirani mixed with ga'uli and ice, for a fruity cocktail as cold as Sirisai's poles."
+	allergen_type = ALLERGEN_FRUIT //Made with kirani and ga'uli
+
+/datum/reagent/drink/soda/kiraniade
+	name = "Kiraniade"
+	id = "kiraniade"
+	description = "Kirani jelly mixed with soda water into a more drinkable form, sweet enough to not even need extra sugar added."
+	taste_description = "super sweet, fizzy fruit"
+	color = "#993c5c"
+	adj_temp = -5
+	glass_name = "kiraniade"
+	glass_desc = "Kirani jelly mixed with soda water into a more drinkable form, sweet enough to not even need extra sugar added."
+	glass_special = list(DRINK_FIZZ)
+	allergen_type = ALLERGEN_FRUIT //Made with kirani
+
+/datum/reagent/drink/meatshake
+	name = "Meatshake"
+	id = "meatshake"
+	color = "#bc1e00"
+	description = "An incredibly straightforward slurry of meat and cream. Refreshing, nutritious, and affordable - if you have the stomach for it."
+	taste_description = "creamy liquified meat"
+	glass_name = "meatshake"
+	glass_desc = "An incredibly straightforward slurry of meat and cream. Refreshing, nutritious, and affordable - if you have the stomach for it."
+	allergen_type = ALLERGEN_MEAT|ALLERGEN_DAIRY //made with meat and cream

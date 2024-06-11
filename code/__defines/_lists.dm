@@ -13,12 +13,12 @@
 // Removes I from list L, and sets I to null if it is now empty
 #define LAZYREMOVE(L, I) if(L) { L -= I; if(!length(L)) { L = null; } }
 
-// Adds I to L, initalizing L if necessary
+// Adds I to L, initializing L if necessary
 #define LAZYADD(L, I) if(!L) { L = list(); } L += I;
 
 #define LAZYOR(L, I) if(!L) { L = list(); } L |= I;
 
-// Adds I to L, initalizing L if necessary, if I is not already in L
+// Adds I to L, initializing L if necessary, if I is not already in L
 #define LAZYDISTINCTADD(L, I) if(!L) { L = list(); } L |= I;
 
 #define LAZYFIND(L, V) L ? L.Find(V) : 0

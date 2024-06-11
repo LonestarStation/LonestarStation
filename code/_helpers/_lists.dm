@@ -15,7 +15,7 @@
  * Misc
  */
 
-//Returns a list in plain english as a string
+//Returns a list in plain English as a string
 /proc/english_list(var/list/input, nothing_text = "nothing", and_text = " and ", comma_text = ", ", final_comma_text = ",")
 	// this proc cannot be merged with counting_english_list to maintain compatibility
 	// with shoddy use of this proc for code logic and for cases that require original order
@@ -890,12 +890,15 @@ This actually tests if they have the same entries and values.
 
 var/global/list/json_cache = list()
 /proc/cached_json_decode(var/json_to_decode)
-	if(!json_to_decode || !length(json_to_decode))
-		return list()
-	try
-		if(isnull(global.json_cache[json_to_decode]))
-			global.json_cache[json_to_decode] = json_decode(json_to_decode)
-		. = global.json_cache[json_to_decode]
-	catch(var/exception/e)
-		log_error("Exception during JSON decoding ([json_to_decode]): [e]")
-		return list()
+	if(length(json_to_decode))
+		try
+			if(isnull(global.json_cache[json_to_decode]))
+				global.json_cache[json_to_decode] = json_decode(json_to_decode)
+			var/list/decoded = global.json_cache[json_to_decode]
+			if(islist(decoded)) // To prevent cache mutation.
+				return deepCopyList(decoded)
+			else if(decoded)
+				return decoded
+		catch(var/exception/e)
+			log_error("Exception during JSON decoding ([json_to_decode]): [e]")
+	return list()

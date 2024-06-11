@@ -56,7 +56,7 @@
 	primitive_form = SPECIES_MONKEY_UNATHI
 	darksight = 3
 	ambiguous_genders = TRUE
-	gluttonous = 1
+	gluttonous = GLUT_TINY
 	slowdown = 0.5
 	total_health = 125
 	brute_mod = 0.85
@@ -134,6 +134,7 @@
 	has_organ = list(
 		O_HEART =    /obj/item/organ/internal/heart/unathi,
 		O_LUNGS =    /obj/item/organ/internal/lungs/unathi,
+		O_VOICE =    /obj/item/organ/internal/voicebox/unathi,
 		O_LIVER =    /obj/item/organ/internal/liver/unathi,
 		O_BRAIN =    /obj/item/organ/internal/brain/unathi,
 		O_EYES =     /obj/item/organ/internal/eyes/unathi,
@@ -190,7 +191,7 @@
 	burn_mod =  1.15
 	flash_mod = 1.1
 	metabolic_rate = 1.1
-	gluttonous = 1
+	gluttonous = GLUT_TINY
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_SIIK, LANGUAGE_AKHANI, LANGUAGE_ALAI)
 	name_language = LANGUAGE_SIIK
@@ -389,7 +390,7 @@
 	flash_mod = 2
 	flash_burn = 15 //flashing a zaddat probably counts as police brutality
 	metabolic_rate = 0.7 //did u know if your ancestors starved ur body will actually start in starvation mode?
-	gluttonous = 1
+	gluttonous = GLUT_TINY
 	taste_sensitivity = TASTE_SENSITIVE
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_ZADDAT, LANGUAGE_UNATHI)
@@ -507,7 +508,7 @@
 	water_movement = -4	//Ignore shallow water
 	rarity_value = 3
 	hud_type = /datum/hud_data/diona
-	siemens_coefficient = 0.3
+	shock_vulnerability = 0.3
 	show_ssd = "completely quiescent"
 	health_hud_intensity = 2.5
 	item_slowdown_mod = 0.1

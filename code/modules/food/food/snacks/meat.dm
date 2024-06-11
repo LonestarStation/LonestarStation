@@ -55,9 +55,9 @@
 	filling_color = "#BBBBAA"
 
 /obj/item/reagent_containers/food/snacks/meat/chicken/Initialize()
-		. = ..()
-		reagents.remove_reagent("triglyceride", INFINITY)
-		//Chicken is low fat. Less total calories than other meats
+	. = ..()
+	reagents.remove_reagent("triglyceride", INFINITY)
+	//Chicken is low fat. Less total calories than other meats
 
 /obj/item/reagent_containers/food/snacks/meat/neaera
 	name = "neaera meat"
@@ -66,8 +66,8 @@
 
 /obj/item/reagent_containers/food/snacks/meat/neaera/Initialize()
 	. = ..()
-	reagents.add_reagent("protein", 3)
-	reagents.add_reagent("seafood", 3)
+	reagents.add_reagent("protein", 3, TASTE_DATA(list("fainty fungal meat" = 3)))
+	reagents.add_reagent("seafood", 3, TASTE_DATA(list("fainty fungal meat" = 3)))
 	reagents.add_reagent("triglyceride", 2)
 
 //Lonestar Ed.

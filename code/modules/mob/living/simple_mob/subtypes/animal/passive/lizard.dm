@@ -23,6 +23,8 @@
 
 	say_list_type = /datum/say_list/lizard
 
+	holder_type = /obj/item/holder/lizard
+
 	faction = "lizard"
 
 /mob/living/simple_mob/animal/passive/lizard/large
@@ -34,6 +36,7 @@
 	melee_damage_upper = 15
 
 	attack_sharp = TRUE
+	holder_type = null
 
 /mob/living/simple_mob/animal/passive/lizard/large/Initialize()
 	. = ..()

@@ -13,7 +13,7 @@
 #define PASSEMOTES  0x40    // Mob has a cortical borer or holders inside of it that need to see emotes.
 #define GODMODE     0x1000
 #define FAKEDEATH   0x2000  // Replaces stuff like changeling.changeling_fakedeath.
-#define DISFIGURED  0x4000  // Set but never checked. Remove this sometime and replace occurences with the appropriate organ code
+#define DISFIGURED  0x4000  // Set but never checked. Remove this sometime and replace occurrences with the appropriate organ code
 
 // Grab levels.
 #define GRAB_PASSIVE    1
@@ -27,7 +27,7 @@
 #define BORGXRAY  0x4
 #define BORGMATERIAL  0x8
 
-#define STANCE_ATTACK    11 // Backwards compatability
+#define STANCE_ATTACK    11 // Backwards compatibility
 #define STANCE_ATTACKING 12 // Ditto
 /*
 #define STANCE_IDLE      1	// Looking for targets if hostile.  Does idle wandering.
@@ -35,7 +35,7 @@
 #define STANCE_ATTACK    3	// Attempting to get into attack position
 #define STANCE_ATTACKING 4	// Doing attacks
 #define STANCE_TIRED     5	// Bears
-#define STANCE_FOLLOW    6	// Following somone
+#define STANCE_FOLLOW    6	// Following someone
 #define STANCE_BUSY      7	// Do nothing on life ticks (Other code is running)
 */
 #define STANCE_SLEEP        0	// Doing (almost) nothing, to save on CPU because nobody is around to notice or the mob died.
@@ -46,7 +46,7 @@
 #define STANCE_BLINDFIGHT   5	// Fighting something that cannot be seen by the mob, from invisibility or out of sight.
 #define STANCE_REPOSITION   6	// Relocating to a better position while in combat. Also used when moving away from a danger like grenades.
 #define STANCE_MOVE         7	// Similar to above but for out of combat. If a baddie is seen, they'll cancel and fight them.
-#define STANCE_FOLLOW       8	// Following somone, without trying to murder them.
+#define STANCE_FOLLOW       8	// Following someone, without trying to murder them.
 #define STANCE_FLEE         9	// Run away from the target because they're too spooky/we're dying/some other reason.
 #define STANCE_DISABLED     10	// Used when the holder is afflicted with certain status effects, such as stuns or confusion.
 
@@ -153,6 +153,21 @@
 #define MOB_SMALL 		10
 #define MOB_TINY 		5
 #define MOB_MINISCULE	1
+
+// Gluttony levels. Used for eating items and mobs.
+#define GLUT_NONE 0       // Cannot eat any mob or item.
+#define GLUT_TINY 1       // Eat anything tiny and smaller
+#define GLUT_SMALLER 2    // Eat anything smaller than we are
+#define GLUT_ANYTHING 4   // Eat anything, ever
+
+#define GLUT_ITEM_TINY 8         // Eat items with a w_class of small or smaller
+#define GLUT_ITEM_NORMAL 16      // Eat items with a w_class of normal or smaller
+#define GLUT_ITEM_ANYTHING 32    // Eat any item
+#define GLUT_PROJECTILE_VOMIT 64 // When vomitting, does it fly out?
+
+// Devour speeds, returned by can_devour()
+#define DEVOUR_SLOW 1
+#define DEVOUR_FAST 2
 
 #define TINT_NONE 0
 #define TINT_MODERATE 1
@@ -277,6 +292,10 @@
 #define TASTE_DULL 0.5 //anything below 30%
 #define TASTE_NUMB 0.1 //anything below 150%
 
+#define TASTE_STRING_DEFAULT     "default"
+#define TASTE_DATA_FIELD         "taste_strings"
+#define TASTE_DATA(DATA)         list(TASTE_DATA_FIELD = DATA)
+
 //Used by emotes
 #define VISIBLE_MESSAGE 1
 #define AUDIBLE_MESSAGE 2
@@ -288,7 +307,7 @@
 #define FBP_DRONE	"Drone"
 
 // Similar to above but for borgs.
-// Seperate defines are unfortunately required since borgs display the brain differently for some reason.
+// Separate defines are unfortunately required since borgs display the brain differently for some reason.
 #define BORG_BRAINTYPE_CYBORG	"Cyborg"
 #define BORG_BRAINTYPE_POSI		"Robot"
 #define BORG_BRAINTYPE_DRONE	"Drone"
@@ -352,7 +371,12 @@
 #define SA_ROBOTIC	3
 #define SA_HUMANOID	4
 
-// More refined version of SA_* ""intelligence"" seperators.
+// Robot module categorization
+#define ROBOT_MODULE_TYPE_GROUNDED "grounded"
+#define ROBOT_MODULE_TYPE_FLYING   "flying"
+#define ROBOT_MODULE_TYPE_PLATFORM "platform"
+
+// More refined version of SA_* ""intelligence"" separators.
 // Now includes bitflags, so to target two classes you just do 'MOB_CLASS_ANIMAL|MOB_CLASS_HUMANOID'
 #define MOB_CLASS_NONE 			0	// Default value, and used to invert for _ALL.
 #define MOB_CLASS_PLANT			1	// Unused at the moment.
@@ -462,8 +486,8 @@
 /// Used by human/get_visible_gender(user, force) to return the mob's identifying gender
 #define VISIBLE_GENDER_FORCE_IDENTIFYING 2
 
-/// Used by human/get_visible_gender(user, force) to return the mob's biological gender
-#define VISIBLE_GENDER_FORCE_BIOLOGICAL 3
+/// Used by human/get_visible_gender(user, force) to return the mob's body type
+#define VISIBLE_GENDER_FORCE_BODYTYPE 3
 
 
 // Dexterity levels for mob/proc/check_dexterity

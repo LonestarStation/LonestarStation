@@ -28,10 +28,11 @@
 		/obj/item/cartridge/hop,
 		/obj/item/radio/headset/heads/hop,
 		/obj/item/radio/headset/heads/hop/alt,
-		/obj/item/storage/box/ids = 2,
+		/obj/item/storage/box/ids,
 		/obj/item/gun/energy/gun,
 		/obj/item/gun/projectile/sec/flash,
-		/obj/item/flash)
+		/obj/item/flash
+	)
 
 /obj/structure/closet/secure_closet/hop2
 	name = "head of personnel's attire"
@@ -54,11 +55,12 @@
 		/obj/item/clothing/shoes/laceup/brown,
 		/obj/item/clothing/shoes/white,
 		/obj/item/clothing/under/rank/head_of_personnel_whimsy,
-		/obj/item/clothing/head/caphat/hop,
+		/obj/item/clothing/head/hop,
 		/obj/item/clothing/under/gimmick/rank/head_of_personnel/suit,
 		/obj/item/clothing/under/gimmick/rank/head_of_personnel/suit/skirt,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/hop,
-		/obj/item/clothing/glasses/sunglasses)
+		/obj/item/clothing/glasses/sunglasses
+	)
 
 
 /obj/structure/closet/secure_closet/hos
@@ -69,7 +71,7 @@
 
 	starts_with = list(
 		/obj/item/clothing/head/helmet/HoS,
-		/obj/item/clothing/head/helmet/HoS/hat,
+		/obj/item/clothing/head/helmet/HoS/cap,
 		/obj/item/clothing/suit/storage/vest/hos,
 		/obj/item/clothing/under/rank/head_of_security/jensen,
 		/obj/item/clothing/under/rank/head_of_security/corp,
@@ -84,15 +86,13 @@
 		/obj/item/shield/riot,
 		/obj/item/shield/riot/tele,
 		/obj/item/storage/box/holobadge/hos,
-		/obj/item/clothing/accessory/badge/holo/hos,
+		/obj/item/clothing/accessory/medal/badge/holo/hos,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/tool/crowbar/red,
 		/obj/item/storage/box/flashbangs,
 		/obj/item/storage/belt/security,
 		/obj/item/flash,
 		/obj/item/melee/baton/loaded,
-		/obj/item/gun/magnetic/railgun/heater/pistol/hos,
-		/obj/item/rcd_ammo/large,
 		/obj/item/cell/device/weapon,
 		/obj/item/clothing/accessory/holster/waist,
 		/obj/item/melee/telebaton,
@@ -134,7 +134,7 @@
 		/obj/item/radio/headset/headset_sec/alt,
 		/obj/item/clothing/glasses/sunglasses/sechud,
 		/obj/item/taperoll/police,
-		/obj/item/clothing/accessory/badge/holo/warden,
+		/obj/item/clothing/accessory/medal/badge/holo/warden,
 		/obj/item/storage/box/flashbangs,
 		/obj/item/storage/belt/security,
 		/obj/item/reagent_containers/spray/pepper,
@@ -230,7 +230,7 @@
 	close_sound = 'sound/machines/closet/closet_wood_close.ogg'
 
 	starts_with = list(
-		/obj/item/clothing/accessory/badge/holo/detective,
+		/obj/item/clothing/accessory/medal/badge/holo/detective,
 		/obj/item/clothing/gloves/black,
 		/obj/item/gunbox,
 		/obj/item/gun/energy/stunrevolver/vintage,

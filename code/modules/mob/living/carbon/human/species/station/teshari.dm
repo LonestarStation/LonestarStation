@@ -1,6 +1,6 @@
 /datum/species/teshari
 	name = SPECIES_TESHARI
-	name_plural = "Tesharii"
+	name_plural = "Teshari"
 	blurb = "A race of feathered raptors who developed alongside the Skrell, inhabiting \
 	the polar tundral regions outside of Skrell territory. Extremely fragile, they developed \
 	hunting skills that emphasized taking out their prey without themselves getting hit. They \
@@ -52,7 +52,7 @@
 	pass_flags = PASSTABLE
 	holder_type = /obj/item/holder/human
 //	short_sighted = 1
-	gluttonous = 1
+	gluttonous = GLUT_TINY
 	blood_volume = 400
 	hunger_factor = 0.2
 	hearboost = 1 //Big heckin chonker ultragigamega-ears.
@@ -134,8 +134,9 @@
 
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/sonar_ping,
-		/mob/living/proc/hide
-		)
+		/mob/living/proc/hide,
+		/mob/living/proc/toggle_pass_table
+	)
 
 	descriptors = list(
 		/datum/mob_descriptor/height = -3,
@@ -154,30 +155,97 @@
 	)
 
 	default_emotes = list(
+		/decl/emote/audible/warble,
 		/decl/emote/audible/teshsqueak,
 		/decl/emote/audible/teshchirp,
 		/decl/emote/audible/teshtrill
 	)
 
-/*
+
 /datum/species/teshari/New()
 	equip_adjust = list(
-		slot_l_ear_str =     list("[NORTH]" = list("x" =  1, "y" = -5), "[EAST]" = list("x" =  -2, "y" = -5), "[SOUTH]" = list("x" = -1, "y" = -4), "[WEST]" = list("x" =  0, "y" = -5)),
-		slot_r_ear_str =     list("[NORTH]" = list("x" =  1, "y" = -4), "[EAST]" = list("x" =   0, "y" = -5), "[SOUTH]" = list("x" = -1, "y" = -5), "[WEST]" = list("x" =  2, "y" = -5)),
-		slot_l_hand_str =    list("[NORTH]" = list("x" =  3, "y" = -3), "[EAST]" = list("x" =   1, "y" = -3), "[SOUTH]" = list("x" = -3, "y" = -3), "[WEST]" = list("x" = -5, "y" = -3)),
-		slot_r_hand_str =    list("[NORTH]" = list("x" = -3, "y" = -3), "[EAST]" = list("x" =   5, "y" = -3), "[SOUTH]" = list("x" =  3, "y" = -3), "[WEST]" = list("x" = -1, "y" = -3)),
-		slot_head_str =      list("[NORTH]" = list("x" =  0, "y" = -5), "[EAST]" = list("x" =   1, "y" = -5), "[SOUTH]" = list("x" =  0, "y" = -5), "[WEST]" = list("x" = -1, "y" = -5)),
-		slot_wear_mask_str = list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =   2, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" = -2, "y" = -6)),
-		slot_glasses_str =   list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =   1, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" = -1, "y" = -6)),
-		slot_back_str =      list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =   3, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" = -3, "y" = -6)),
-		slot_w_uniform_str = list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =  -1, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" =  1, "y" = -6)),
-		slot_tie_str       = list("[NORTH]" = list("x" =  0, "y" = -5), "[EAST]" = list("x" =   0, "y" = -5), "[SOUTH]" = list("x" =  0, "y" = -5), "[WEST]" = list("x" =  0, "y" = -5)),
-		slot_wear_id_str =   list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =  -1, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" =  1, "y" = -6)),
-		slot_wear_suit_str = list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =  -1, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" =  1, "y" = -6)),
-		slot_belt_str =      list("[NORTH]" = list("x" =  0, "y" = -6), "[EAST]" = list("x" =  -1, "y" = -6), "[SOUTH]" = list("x" =  0, "y" = -6), "[WEST]" = list("x" =  1, "y" = -6))
+		/*
+		slot_l_ear_str = list(
+			"[NORTH]" = list("x" =  1, "y" = -5),
+			"[EAST]" =  list("x" = -2, "y" = -5),
+			"[SOUTH]" = list("x" = -1, "y" = -4),
+			"[WEST]" =  list("x" =  0, "y" = -5)
+			),
+		slot_r_ear_str = list(
+			"[NORTH]" = list("x" =  1, "y" = -4),
+			"[EAST]" =  list("x" =  0, "y" = -5),
+			"[SOUTH]" = list("x" = -1, "y" = -5),
+			"[WEST]" =  list("x" =  2, "y" = -5)
+		),
+		slot_l_hand_str = list(
+			"[NORTH]" = list("x" =  3, "y" = -3),
+			"[EAST]" =  list("x" =  1, "y" = -3),
+			"[SOUTH]" = list("x" = -3, "y" = -4),
+			"[WEST]" =  list("x" = -5, "y" = -3)
+		),
+		slot_r_hand_str = list(
+			"[NORTH]" = list("x" = -3, "y" = -4),
+			"[EAST]" =  list("x" =  5, "y" = -3),
+			"[SOUTH]" = list("x" =  3, "y" = -3),
+			"[WEST]" =  list("x" = -1, "y" = -3)
+		),
+*/
+		slot_head_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -5),
+			"[EAST]" =  list("x" =  1, "y" = -5),
+			"[SOUTH]" = list("x" =  0, "y" = -5),
+			"[WEST]" =  list("x" = -1, "y" = -5)
+		),
+		slot_wear_mask_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" =  2, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" = -2, "y" = -6)
+		),
+		slot_glasses_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" =  1, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" = -1, "y" = -6)
+		),
+		slot_back_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" =  3, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" = -3, "y" = -6)
+		),
+		slot_w_uniform_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" = -1, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" =  1, "y" = -6)
+		),
+		slot_tie_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -5),
+			"[EAST]" =  list("x" =  0, "y" = -5),
+			"[SOUTH]" = list("x" =  0, "y" = -5),
+			"[WEST]" =  list("x" =  0, "y" = -5)
+		),
+		slot_wear_id_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" = -1, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" =  1, "y" = -6)
+		),
+		slot_wear_suit_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" = -1, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" =  1, "y" = -6)
+		),
+		slot_belt_str = list(
+			"[NORTH]" = list("x" =  0, "y" = -6),
+			"[EAST]" =  list("x" = -1, "y" = -6),
+			"[SOUTH]" = list("x" =  0, "y" = -6),
+			"[WEST]" =  list("x" =  1, "y" = -6)
+		)
 	)
 	. = ..()
-*/
 
 /datum/species/teshari/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()

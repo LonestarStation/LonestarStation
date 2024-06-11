@@ -33,3 +33,24 @@
  	containertype = /obj/structure/closet/crate/secure/ward
  	containername = "Phase Rifle crate"
  	access = access_mining
+
+
+/datum/supply_pack/munitions/tranq_pistols_xenofauna
+ 	name = "Weapons - Surplus Tranquilizer Pistols"
+ 	contains = list(
+		/obj/item/gun/energy/phasegun/tranq_pistol = 2,
+	)
+ 	cost = 25
+ 	containertype = /obj/structure/closet/crate/secure/ward
+ 	containername = "tranquilizer pistol crate"
+ 	access = access_pest
+
+/datum/supply_pack/munitions/tranq_rifles_xenofauna
+ 	name = "Weapons - Surplus Tranquilizer Rifles"
+ 	contains = list(
+		/obj/item/gun/energy/phasegun/tranq_rifle = 2,
+	)
+ 	cost = 50
+ 	containertype = /obj/structure/closet/crate/secure/ward
+ 	containername = "tranquilizer rifle crate"
+ 	access = access_pest

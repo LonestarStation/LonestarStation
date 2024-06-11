@@ -1,6 +1,6 @@
 
 /obj/item/bodybag/cryobag/robobag
-	name = "synthmorph bag"
+	name = "synthbody bag"
 	desc = "A reusable polymer bag designed to slow down synthetic functions such as data corruption and coolant flow, \
 	especially useful if short on time or in a hostile enviroment."
 	icon = 'icons/obj/robobag.dmi'
@@ -17,14 +17,14 @@
 	qdel(src)
 
 /obj/structure/closet/body_bag/cryobag/robobag
-	name = "synthmorph bag"
+	name = "synthbody bag"
 	desc = "A reusable polymer bag designed to slow down synthetic functions such as data corruption and coolant flow, \
 	especially useful if short on time or in a hostile enviroment."
 	icon = 'icons/obj/robobag.dmi'
 	item_path = /obj/item/bodybag/cryobag/robobag
 	tank_type = /obj/item/tank/stasis/nitro_cryo
 	stasis_level = 2	// Lower than the normal cryobag, because it's not made for meat that dies. It's made for robots and is freezing.
-	var/obj/item/clothing/accessory/badge/corptag	// The tag on the bag.
+	var/obj/item/clothing/accessory/medal/badge/corptag	// The tag on the bag.
 
 /obj/structure/closet/body_bag/cryobag/robobag/examine(mob/user)
 	. = ..()
@@ -32,17 +32,24 @@
 		. += "<span class='notice'>[src] has a [corptag] attached to it.</span>"
 
 /obj/structure/closet/body_bag/cryobag/robobag/update_icon()
+	if(opened)
+		icon_state = "open"
+	else if (length(contents))
+		icon_state = "closed_occupied"
+	else
+		icon_state = "closed_unlocked"
+
 	cut_overlays()
-	..()
+
 	if(corptag)
 		var/corptag_icon_state = "tag_blank"
-		if(istype(corptag,/obj/item/clothing/accessory/badge/holo/detective) || istype(corptag,/obj/item/clothing/accessory/badge/holo/detective) || istype(corptag, /obj/item/clothing/accessory/badge/holo/hos) || istype(corptag, /obj/item/clothing/accessory/badge/old) || istype(corptag, /obj/item/clothing/accessory/badge/sheriff))
+		if(istype(corptag,/obj/item/clothing/accessory/medal/badge/holo/detective) || istype(corptag,/obj/item/clothing/accessory/medal/badge/holo/detective) || istype(corptag, /obj/item/clothing/accessory/medal/badge/holo/hos) || istype(corptag, /obj/item/clothing/accessory/medal/badge/old) || istype(corptag, /obj/item/clothing/accessory/medal/badge/sheriff))
 			corptag_icon_state = "tag_badge_gold"
-		else if(istype(corptag, /obj/item/clothing/accessory/badge/holo/warden))
+		else if(istype(corptag, /obj/item/clothing/accessory/medal/badge/holo/warden))
 			corptag_icon_state = "tag_badge_silver"
-		else if(istype(corptag, /obj/item/clothing/accessory/badge/holo))
+		else if(istype(corptag, /obj/item/clothing/accessory/medal/badge/holo))
 			corptag_icon_state = "tag_badge_blue"
-		else if(istype(corptag, /obj/item/clothing/accessory/badge/corporate_tag))
+		else if(istype(corptag, /obj/item/clothing/accessory/medal/badge/corporate_tag))
 			corptag_icon_state = corptag.icon_state
 
 		add_overlay(corptag_icon_state)
@@ -86,7 +93,7 @@
 			for(var/mob/living/L in contents)
 				analyzer.attack(L,user)
 
-		else if(istype(W, /obj/item/clothing/accessory/badge))
+		else if(istype(W, /obj/item/clothing/accessory/medal/badge))
 			if(corptag)
 				var/old_tag = corptag
 				corptag.forceMove(get_turf(src))
@@ -109,8 +116,8 @@
 	desc = "Your software is being debugged."
 	mob_overlay_state = "signal_blue"
 
-	on_created_text = "<span class='notice'>You feel something pour over your senses.</span>"
-	on_expired_text = "<span class='notice'>Your mind is clear once more.</span>"
+	on_created_text = "<span class='notice'>You feel something cloud over your senses.</span>"
+	on_expired_text = "<span class='notice'>Your senses are clear once more.</span>"
 	stacks = MODIFIER_STACK_FORBID
 
 /datum/modifier/fbp_debug/tick()

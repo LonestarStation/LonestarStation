@@ -21,7 +21,6 @@ var/global/list/mob_hat_cache = list()
 /mob/living/silicon/robot/drone
 	name = "maintenance drone"
 	real_name = "drone"
-	icon = 'icons/mob/robots.dmi'
 	icon_state = "repairbot"
 	maxHealth = 35
 	health = 35
@@ -92,7 +91,7 @@ var/global/list/mob_hat_cache = list()
 	hat_y_offset = -12
 	can_pull_mobs = MOB_PULL_SAME
 
-/mob/living/silicon/robot/drone/Initialize()
+/mob/living/silicon/robot/drone/Initialize(var/ml, var/unfinished = 0, var/supplied_mmi)
 	. = ..()
 	verbs += /mob/living/proc/ventcrawl
 	verbs += /mob/living/proc/hide
@@ -153,7 +152,7 @@ var/global/list/mob_hat_cache = list()
 /mob/living/silicon/robot/drone/choose_icon()
 	return
 
-/mob/living/silicon/robot/drone/pick_module()
+/mob/living/silicon/robot/drone/pick_module(override)
 	return
 
 /mob/living/silicon/robot/drone/proc/wear_hat(var/obj/item/new_hat)
@@ -271,10 +270,6 @@ var/global/list/mob_hat_cache = list()
 		gib()
 		return
 	..()
-
-//DRONE MOVEMENT.
-/mob/living/silicon/robot/drone/Process_Spaceslipping(var/prob_slip)
-	return 0
 
 //CONSOLE PROCS
 /mob/living/silicon/robot/drone/proc/law_resync()

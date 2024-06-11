@@ -51,13 +51,13 @@
 	cold_level_2 = 150	//Default 200
 	cold_level_3 = 90	//Default 120
 
-	gluttonous = 1
+	gluttonous = GLUT_TINY|GLUT_ITEM_NORMAL
 
 	breath_type = "nitrogen"
 	poison_type = "oxygen"
-	siemens_coefficient = 0.2
+	shock_vulnerability = 0.2
 
-	flags = NO_SCAN | NO_DEFIB
+	flags = NO_SCAN
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
 	appearance_flags = HAS_SKIN_COLOR | HAS_EYE_COLOR | HAS_HAIR_COLOR
 	limb_blend = ICON_MULTIPLY
@@ -93,6 +93,7 @@
 		O_KIDNEYS =  /obj/item/organ/internal/kidneys/vox,
 		O_BRAIN =    /obj/item/organ/internal/brain/vox,
 		O_EYES =     /obj/item/organ/internal/eyes,
+		O_STOMACH =  /obj/item/organ/internal/stomach/vox
 		)
 
 	genders = list(NEUTER)
@@ -184,12 +185,13 @@
 	H.b_skin = hex2num(copytext(skin_color,6,8))
 	var/scutes_color = "#BC7D3E"
 	var/obj/item/organ/external/head = H.get_organ(BP_HEAD)
-	head.markings = list(
-		"Vox Beak" = list(
-			"color" = scutes_color,
-			"datum" = body_marking_styles_list["Vox Beak"]
+	if(head)
+		head.markings = list(
+			"Vox Beak" = list(
+				"color" = scutes_color,
+				"datum" = body_marking_styles_list["Vox Beak"]
+			)
 		)
-	)
 	for(var/bp in list(BP_L_ARM, BP_L_HAND, BP_R_ARM, BP_R_HAND, BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT))
 		var/obj/item/organ/external/limb = H.get_organ(bp)
 		if(limb)

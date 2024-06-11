@@ -28,6 +28,13 @@
 			victim.blob_act(C)
 	synchronously_attacking = FALSE
 
+	chunk_effect_range = 3
+	chunk_type = /obj/item/blob_chunk/synchronous_mesh
+
+/obj/item/blob_chunk/synchronous_mesh
+	default_blob = /datum/blob_type/synchronous_mesh
+	blob_effect_master_type = /datum/component/artifact_master/blob/synchronous_mesh
+
 /datum/blob_type/synchronous_mesh/on_received_damage(var/obj/structure/blob/B, damage, damage_type)
 	var/list/blobs_to_hurt = list() // Maximum split is 9, reducing the damage each blob takes to 11.1% but doing that damage to 9 blobs.
 	for(var/obj/structure/blob/C in range(1, B))
@@ -42,3 +49,8 @@
 		C.adjust_integrity(-(damage / blobs_to_hurt.len))
 
 	return damage / max(blobs_to_hurt.len, 1) // To hurt the blob that got hit.
+
+/datum/component/artifact_master/blob/synchronous_mesh
+	make_effects = list(
+		/datum/artifact_effect/extreme/lifemerger
+	)

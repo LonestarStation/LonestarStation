@@ -230,6 +230,12 @@
 	species_allowed = list(SPECIES_HUMAN,SPECIES_PROMETHEAN,SPECIES_HUMAN_VATBORN,SPECIES_UNATHI)
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/tail/special/unathi_yeosa
+	name = "Yeosa'unathi tail"
+	icon_state = "unathitail_yeosa_s"
+	species_allowed = list(SPECIES_UNATHI, SPECIES_EVENT1, SPECIES_EVENT2, SPECIES_EVENT3)
+	color_blend_mode = ICON_ADD
+
 /datum/sprite_accessory/hair/bowl
 	name = "Bowl"
 	icon_state = "hair_bowlcut"
@@ -1219,20 +1225,6 @@
 	icon_state = "hair_ziegler"
 	flags = HAIR_TIEABLE
 
-/datum/sprite_accessory/hair/una_hood
-	name = "Cobra Hood"
-	icon = 'icons/mob/human_face_alt.dmi'
-	icon_add = 'icons/mob/human_face_alt_add.dmi'
-	icon_state = "soghun_hood"
-	species_allowed = list(SPECIES_UNATHI, SPECIES_EVENT1, SPECIES_EVENT2, SPECIES_EVENT3)
-
-/datum/sprite_accessory/hair/una_doublehorns
-	name = "Double Unathi Horns"
-	icon = 'icons/mob/human_face_alt.dmi'
-	icon_add = 'icons/mob/human_face_alt_add.dmi'
-	icon_state = "soghun_dubhorns"
-	species_allowed = list(SPECIES_UNATHI, SPECIES_EVENT1, SPECIES_EVENT2, SPECIES_EVENT3)
-
 /datum/sprite_accessory/hair/sergal_plain
 	name = "Sergal Plain"
 	icon = 'icons/mob/human_face_alt.dmi'
@@ -1688,12 +1680,83 @@ shaved
 //Unathi Head-Bits
 
 /datum/sprite_accessory/hair/una
-	name = "Long Unathi Spines"
-	icon_state = "soghun_longspines"
+	icon            = 'icons/mob/hair_unathi.dmi'
+	icon_add        = 'icons/mob/hair_unathi_add.dmi'
 	species_allowed = list(SPECIES_UNATHI)
 
 /datum/sprite_accessory/hair/una/spines_short
 	name = "Short Unathi Spines"
+/datum/sprite_accessory/hair/una/finhawk
+	name = "Unathi Finhawk"
+	icon_state = "fin_hawk"
+
+/datum/sprite_accessory/hair/una/downcurve_horns
+	name = "Downward-Curved Unathi Horns"
+	icon_state = "curved_down"
+
+/datum/sprite_accessory/hair/una/upcurve_horns
+	name = "Upward-Curved Unathi Horns"
+	icon_state = "curved_up"
+
+/datum/sprite_accessory/hair/una/samurai_horns
+	name = "Unathi Samurai Horns"
+	icon_state = "samurai"
+
+/datum/sprite_accessory/hair/una/big_frills
+	name = "Big Unathi Frills"
+	icon_state = "big_frills"
+
+/datum/sprite_accessory/hair/una/head_spikes
+	name = "Unathi Head Spikes"
+	icon_state = "head_spikes"
+
+/datum/sprite_accessory/hair/una/overgrown_spikes
+	name = "Overgrown Unathi Head Spikes"
+	icon_state = "overgrown_head_spikes"
+
+/datum/sprite_accessory/hair/una/cobrahood
+	name = "Unathi Cobra Hood"
+	icon_state = "unathi_cobrahood"
+
+/datum/sprite_accessory/hair/una/demon_horns
+	name = "Unathi Demon Horns"
+	icon_state = "unathi_horns_demon"
+
+/datum/sprite_accessory/hair/una/large_ram_horns
+	name = "Large Unathi Ram Horns"
+	icon_state = "unathi_horns_ram_big"
+
+/datum/sprite_accessory/hair/una/aqua_frills
+	name = "Unathi Aqua Frills"
+	icon_state = "unathi_frills_aqua"
+
+/datum/sprite_accessory/hair/una/curled_horns
+	name = "Curled Unathi Horns"
+	icon_state = "unathi_horns_curled"
+
+/datum/sprite_accessory/hair/una/ram_horns
+	name = "Unathi Ram Horns"
+	icon_state = "unathi_horns_ram"
+
+/datum/sprite_accessory/hair/una/thick_ram_horns
+	name = "Thick Unathi Ram Horns"
+	icon_state = "unathi_horns_ram_thick"
+
+/datum/sprite_accessory/hair/una/double_horns
+	name = "Double Unathi Horns"
+	icon_state = "unathi_horns_double"
+
+/datum/sprite_accessory/hair/una/swept_horns
+	name = "Swept Unathi Horns"
+	icon_state = "unathi_horns_swept"
+
+/datum/sprite_accessory/hair/una/short_spined_frills
+	name = "Short Spined Unathi Frills"
+	icon_state = "unathi_spined_short_frills"
+
+/datum/sprite_accessory/hair/una/long_spined_frills
+	name = "Long Spined Unathi Frills"
+	icon_state = "unathi_spined_long_frills"
 
 /datum/sprite_accessory/hair/una/frills_long
 	name = "Long Unathi Frills"
@@ -1726,8 +1789,8 @@ shaved
 //Skrell 'hairstyles'
 
 /datum/sprite_accessory/hair/skr
-	name = "Tentacles, Average"
-	icon_state = "skrell_short"
+	icon            = 'icons/mob/hair_skrell.dmi'
+	icon_add        = 'icons/mob/hair_skrell_add.dmi'
 	species_allowed = list(SPECIES_SKRELL, SPECIES_EVENT1, SPECIES_EVENT2, SPECIES_EVENT3)
 
 /datum/sprite_accessory/hair/skr/pullback
@@ -1769,6 +1832,11 @@ shaved
 /datum/sprite_accessory/hair/skr/very_long/wavy
 	name = "Tentacles, Very Long, Wavy"
 	icon_state = "skrell_very_long_wavy"
+
+/datum/sprite_accessory/hair/skr/split
+	name = "Tentacles, Split"
+	icon_state = "skrell_split"
+
 
 //Tajaran hairstyles
 /datum/sprite_accessory/hair/taj
@@ -2075,6 +2143,7 @@ shaved
 	icon = 'icons/mob/hair_vox.dmi'
 	icon_add = 'icons/mob/hair_vox_add.dmi'
 	icon_state = "vox_longbraid"
+	color_blend_mode = ICON_MULTIPLY
 	species_allowed = list(SPECIES_VOX)
 
 /datum/sprite_accessory/hair/vox/braid_short
@@ -2084,6 +2153,10 @@ shaved
 /datum/sprite_accessory/hair/vox/quills_short
 	name = "Short Vox Quills"
 	icon_state = "vox_shortquills"
+
+/datum/sprite_accessory/hair/vox/quills_long
+	name = "Long Vox Quills"
+	icon_state = "vox_longquills"
 
 /datum/sprite_accessory/hair/vox/quills_kingly
 	name = "Kingly Vox Quills"
@@ -2583,6 +2656,12 @@ shaved
 	icon_state = "bandshumanface"
 	body_parts = list(BP_HEAD)
 	species_allowed = list(SPECIES_HUMAN,SPECIES_HUMAN_VATBORN,SPECIES_SKRELL)
+
+/datum/sprite_accessory/marking/masquerade
+	name = "Masquerade Mask"
+	icon_state = "masquerade"
+	body_parts = list(BP_HEAD)
+	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/marking/tat_face_ridge
 	name = "Tattoo (Nose Ridge, Face)"

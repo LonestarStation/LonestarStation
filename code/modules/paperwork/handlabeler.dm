@@ -29,18 +29,6 @@
 	if(length(A.name) + length(label) > 64)
 		to_chat(user, SPAN_WARNING("\The [src]'s label too big."))
 		return
-	if(istype(A, /mob/living/silicon/robot/platform))
-		var/mob/living/silicon/robot/platform/P = A
-		if(!P.allowed(user))
-			to_chat(usr, SPAN_WARNING("Access denied."))
-		else if(P.client || P.key)
-			to_chat(user, SPAN_NOTICE("You rename \the [P] to [label]."))
-			to_chat(P, SPAN_NOTICE("\The [user] renames you to [label]."))
-			P.custom_name = label
-			P.SetName(P.custom_name)
-		else
-			to_chat(user, SPAN_WARNING("\The [src] is inactive and cannot be renamed."))
-		return
 	if(ishuman(A))
 		to_chat(user, SPAN_WARNING("The label refuses to stick to [A.name]."))
 		return
@@ -72,8 +60,8 @@
 	icon_state = "labeler[mode]"
 	if(mode)
 		to_chat(user, SPAN_NOTICE("You turn on \the [src]."))
-		//Now let them chose the text.
-		var/str = sanitizeSafe(input(user,"Label text?","Set label",""), MAX_NAME_LEN)
+		//Now let them choose the text.
+		var/str = html_decode(sanitizeSafe(input(user,"Label text?","Set label",""), MAX_NAME_LEN))
 		if(!str || !length(str))
 			to_chat(user, SPAN_WARNING("Invalid text."))
 			return

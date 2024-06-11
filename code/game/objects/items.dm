@@ -883,7 +883,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	if(addblends && standing && source_icon)
 		var/image/I = image(source_icon, addblends)
 		I.blend_mode = BLEND_ADD
-		standing.overlays += I
+		standing.add_overlay(I)
 	return standing
 
 //STUB
@@ -970,4 +970,10 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	if (test_dexterity)
 		if (!user.check_dexterity(test_dexterity, src, silent)) // Handles its own failure message.
 			return
+	return FALSE
+
+/obj/item/proc/is_mob_movement_sensitive()
+	return FALSE
+
+/obj/item/proc/handle_movement(var/turf/walking, var/running)
 	return FALSE

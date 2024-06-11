@@ -112,9 +112,18 @@
 			adjust_discipline(-1)
 			last_discipline_decay = world.time
 
+/datum/ai_holder/simple_mob/xenobio_slime/list_targets()
+	. = ..()
+	if (!locate(/mob) in . && !leader && !rabid)
+		for(var/atom/movable/M in view(vision_range, holder))
+			if (M.is_slime_food())
+				var/list/path_to = AStar(holder.loc, M.loc, astar_adjacent_proc, /turf/proc/Distance, min_target_dist = 0, max_node_depth = world.view * 2, id = holder.IGetID(), exclude = obstacles, flags = ASTAR_BLOCKED_BY_WINDOWS)
+				if (path_to?.len)
+					. += M
+
 /datum/ai_holder/simple_mob/xenobio_slime/handle_special_tactic()
 	evolve_and_reproduce()
-
+	nom()
 // Hit the correct verbs to keep the slime species going.
 /datum/ai_holder/simple_mob/xenobio_slime/proc/evolve_and_reproduce()
 	var/mob/living/simple_mob/slime/xenobio/my_slime = holder
@@ -125,6 +134,26 @@
 		else
 			my_slime.evolve() // Turns our holder into an adult slime.
 
+
+/// If we have a non-mob target, attempt to eat it and then stop tracking it.
+/datum/ai_holder/simple_mob/xenobio_slime/proc/nom()
+	if (QDELETED(target) || ismob(target) || holder?.incapacitated() || !holder.Adjacent(target) || !target.is_slime_food())
+		return
+	holder.face_atom(target)
+	holder.do_attack_animation(target)
+	holder.setClickCooldown(holder.get_attack_speed())
+	target.slime_chomp(holder)
+	target = null
+
+/datum/ai_holder/simple_mob/xenobio_slime/request_help()
+	if (target && !ismob(target)) // we absolutely, completely do not need help from other slimes when targeting a pile of dirt
+		return
+	. = ..()
+
+/datum/ai_holder/simple_mob/xenobio_slime/can_violently_breakthrough()
+	if (target && !ismob(target))
+		return FALSE
+	return TRUE
 
 // Called when pushed too far (or a red slime core was used).
 /datum/ai_holder/simple_mob/xenobio_slime/proc/enrage()

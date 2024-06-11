@@ -24,10 +24,16 @@ var/global/list/_nymph_default_emotes = list(
 	/decl/emote/audible/chirp
 )
 
+/datum/say_list/diona
+	emote_hear = list("chirps")
+	emote_see = list("jumps", "rolls", "scrathes")
+
 /mob/living/carbon/diona
 	name = "diona nymph"
+	desc = "A skittery little creature."
 	voice_name = "diona nymph"
 	speak_emote = list("chirrups")
+	icon = 'icons/mob/alien.dmi'
 	icon_state = "nymph"
 	item_state = "nymph"
 	species_language = LANGUAGE_ROOTLOCAL
@@ -46,6 +52,10 @@ var/global/list/_nymph_default_emotes = list(
 	mob_size = 4
 
 	inventory_panel_type = null // Disable inventory by default
+	has_huds = TRUE
+
+	say_list_type = /datum/say_list/diona
+	ai_holder_type = /datum/ai_holder/simple_mob/passive
 
 	var/can_namepick_as_adult = TRUE
 	var/adult_name = "diona gestalt"
@@ -75,6 +85,7 @@ var/global/list/_nymph_default_emotes = list(
 	regenerate_icons()
 
 	species = GLOB.all_species[SPECIES_DIONA]
+	add_language(LANGUAGE_ROOTLOCAL)
 	add_language(LANGUAGE_ROOTGLOBAL)
 	add_language(LANGUAGE_SOL_COMMON)
 
@@ -90,15 +101,6 @@ var/global/list/_nymph_default_emotes = list(
 	hat = new_hat
 	new_hat.loc = src
 	update_icons()
-
-
-/mob/living/carbon/diona/proc/handle_npc(var/mob/living/carbon/diona/D)
-	if(D.stat != CONSCIOUS)
-		return
-	if(prob(33) && D.canmove && isturf(D.loc) && !D.pulledby) //won't move if being pulled
-		step(D, pick(cardinal))
-	if(prob(1))
-		D.emote(pick("scratch","jump","chirp","roll"))
 
 
 /mob/living/carbon/diona/u_equip(obj/item/W as obj)
@@ -128,3 +130,30 @@ var/global/list/_nymph_default_emotes = list(
 
 /mob/living/carbon/diona/death(gibbed)
 	return ..(gibbed,death_msg)
+
+
+/mob/living/carbon/diona/attack_ghost(mob/observer/dead/user)
+	if(client || key || ckey)
+		to_chat(user, SPAN_WARNING("\The [src] already has a player."))
+		return
+	if(alert(user, "Do you wish to take control of \the [src]?", "Chirp Time", "No", "Yes") == "No")
+		return
+	if(QDELETED(src) || QDELETED(user) || !user.client)
+		return
+	if(client || key || ckey)
+		to_chat(user, SPAN_WARNING("\The [src] already has a player."))
+		return
+	var/datum/ghosttrap/plant/P = get_ghost_trap("living plant")
+	if(P.assess_candidate(user))
+		P.transfer_personality(user, src)
+
+/mob/living/carbon/diona/make_hud_overlays()
+	hud_list[HEALTH_HUD]      = gen_hud_image(ingame_hud_med, src, "100", plane = PLANE_CH_HEALTH)
+	hud_list[STATUS_HUD]      = gen_hud_image(ingame_hud, src, "hudhealthy", plane = PLANE_CH_STATUS)
+	hud_list[LIFE_HUD]        = gen_hud_image(ingame_hud, src, "hudhealthy", plane = PLANE_CH_LIFE)
+	add_overlay(hud_list)
+
+/mob/living/carbon/diona/Stat()
+	..()
+	if (statpanel("Status"))
+		stat(null, text("Growth: [round(amount_grown/max_grown)]%"))

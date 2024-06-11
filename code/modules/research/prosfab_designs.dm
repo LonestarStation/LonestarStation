@@ -83,7 +83,7 @@
 		H.b_skin = 0
 		H.dna.ResetUIFrom(H)
 
-		H.real_name = "Synthmorph #[rand(100,999)]"
+		H.real_name = "Synthbody #[rand(100,999)]"
 		H.name = H.real_name
 		H.dir = 2
 		H.add_language(LANGUAGE_EAL)
@@ -277,9 +277,23 @@
 /datum/design/item/prosfab/cyborg/exoskeleton
 	name = "Robot Exoskeleton"
 	id = "robot_exoskeleton"
-	build_path = /obj/item/robot_parts/robot_suit
+	build_path = /obj/item/robot_parts/frame
 	time = 50
 	materials = list(MAT_STEEL = 37500)
+
+/datum/design/item/prosfab/cyborg/exoskeleton_flying
+	name = "Flying Robot Exoskeleton"
+	id = "robot_exoskeleton_flyer"
+	build_path = /obj/item/robot_parts/frame/flyer
+	time = 40
+	materials = list(MAT_STEEL = 32500)
+
+/datum/design/item/prosfab/cyborg/exoskeleton_platform
+	name = "Platform Exoskeleton"
+	id = "robot_exoskeleton_platform"
+	build_path = /obj/item/robot_parts/frame/platform
+	time = 60
+	materials = list(MAT_STEEL = 42500)
 
 /datum/design/item/prosfab/cyborg/torso
 	name = "Robot Torso"
@@ -366,6 +380,11 @@
 	id = "platform_armour"
 	build_path = /obj/item/robot_parts/robot_component/armour_platform
 
+/datum/design/item/prosfab/cyborg/component/armour_light
+	name = "Armour Plating (Light)"
+	id = "light_armour"
+	build_path = /obj/item/robot_parts/robot_component/armour_light
+
 /datum/design/item/prosfab/cyborg/component/ai_shell
 	name = "AI Remote Interface"
 	id = "mmi_ai_shell"
@@ -443,8 +462,8 @@
 
 // Synthmorph Bags.
 
-/datum/design/item/prosfab/synthmorphbag
-	name = "Synthmorph Storage Bag"
+/datum/design/item/prosfab/synthbodybag
+	name = "Synthbody Storage Bag"
 	desc = "Used to store or slowly defragment an FBP."
 	id = "misc_synth_bag"
 	materials = list(MAT_STEEL = 250, MAT_GLASS = 250, MAT_PLASTIC = 2000)
@@ -455,35 +474,35 @@
 	desc = "Used to identify an empty NanoTrasen FBP."
 	id = "misc_synth_bag_tag_nt"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag
 
 /datum/design/item/prosfab/badge_morph
 	name = "Morpheus Tag"
 	desc = "Used to identify an empty Morpheus FBP."
 	id = "misc_synth_bag_tag_morph"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/morpheus
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/morpheus
 
 /datum/design/item/prosfab/badge_wardtaka
 	name = "Ward-Takahashi Tag"
 	desc = "Used to identify an empty Ward-Takahashi FBP."
 	id = "misc_synth_bag_tag_wardtaka"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/wardtaka
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/wardtaka
 
 /datum/design/item/prosfab/badge_zenghu
 	name = "Zeng-Hu Tag"
 	desc = "Used to identify an empty Zeng-Hu FBP."
 	id = "misc_synth_bag_tag_zenghu"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/zenghu
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/zenghu
 
 /datum/design/item/prosfab/badge_gilthari
 	name = "Gilthari Tag"
 	desc = "Used to identify an empty Gilthari FBP."
 	id = "misc_synth_bag_tag_gilthari"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_GOLD = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/gilthari
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/gilthari
 	req_tech = list(TECH_MATERIAL = 4, TECH_ILLEGAL = 2, TECH_PHORON = 2)
 
 /datum/design/item/prosfab/badge_veymed
@@ -491,7 +510,7 @@
 	desc = "Used to identify an empty Vey-Medical FBP."
 	id = "misc_synth_bag_tag_veymed"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/veymed
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/veymed
 	req_tech = list(TECH_MATERIAL = 3, TECH_ILLEGAL = 1, TECH_BIO = 4)
 
 /datum/design/item/prosfab/badge_hephaestus
@@ -499,25 +518,25 @@
 	desc = "Used to identify an empty Hephaestus FBP."
 	id = "misc_synth_bag_tag_heph"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/hephaestus
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/hephaestus
 
 /datum/design/item/prosfab/badge_grayson
 	name = "Grayson Tag"
 	desc = "Used to identify an empty Grayson FBP."
 	id = "misc_synth_bag_tag_grayson"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/grayson
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/grayson
 
 /datum/design/item/prosfab/badge_xion
 	name = "Xion Tag"
 	desc = "Used to identify an empty Xion FBP."
 	id = "misc_synth_bag_tag_xion"
 	materials = list(MAT_STEEL = 1000, MAT_GLASS = 500, MAT_PLASTIC = 1000)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/xion
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/xion
 
 /datum/design/item/prosfab/badge_bishop
 	name = "Bishop Tag"
 	desc = "Used to identify an empty Bishop FBP."
 	id = "misc_synth_bag_tag_bishop"
 	materials = list(MAT_STEEL = 500, MAT_GLASS = 2000, MAT_PLASTIC = 500)
-	build_path = /obj/item/clothing/accessory/badge/corporate_tag/bishop
+	build_path = /obj/item/clothing/accessory/medal/badge/corporate_tag/bishop

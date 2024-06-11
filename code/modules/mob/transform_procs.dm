@@ -136,7 +136,7 @@
 	return O
 
 //human -> robot
-/mob/living/carbon/human/proc/Robotize()
+/mob/living/carbon/human/proc/Robotize(supplied_robot_type = /mob/living/silicon/robot)
 	if (transforming)
 		return
 	for(var/obj/item/W in src)
@@ -149,14 +149,13 @@
 	for(var/t in organs)
 		qdel(t)
 
-	var/mob/living/silicon/robot/O = new /mob/living/silicon/robot( loc )
+	var/mmi_type = SSrobots.get_mmi_type_by_title(mind?.role_alt_title ? mind.role_alt_title : mind?.assigned_role)
+	var/mob/living/silicon/robot/O = new supplied_robot_type(loc, FALSE, (mmi_type ? new mmi_type : null))
 
 	// cyborgs produced by Robotize get an automatic power cell
 	O.cell = new(O)
 	O.cell.maxcharge = 7500
 	O.cell.charge = 7500
-
-
 	O.gender = gender
 	O.invisibility = 0
 
@@ -171,14 +170,7 @@
 
 	O.loc = loc
 	O.job = "Cyborg"
-	if(O.mind.assigned_role == "Cyborg")
-		if(O.mind.role_alt_title == "Robot")
-			O.mmi = new /obj/item/mmi/digital/posibrain(O)
-		else if(O.mind.role_alt_title == "Drone")
-			O.mmi = new /obj/item/mmi/digital/robot(O)
-		else
-			O.mmi = new /obj/item/mmi(O)
-
+	if(istype(O.mmi))
 		O.mmi.transfer_identity(src)
 
 	if(O.client && O.client.prefs)

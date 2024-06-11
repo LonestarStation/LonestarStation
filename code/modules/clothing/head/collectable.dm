@@ -179,7 +179,7 @@
 	name = "witch costume wig"
 	desc = "Eeeee~heheheheheheh!"
 	icon_state = "witch"
-	flags_inv = BLOCKHAIR
+	flags_inv = BLOCKHEADHAIR
 	siemens_coefficient = 2.0
 
 /obj/item/clothing/head/collectable/chicken
@@ -195,7 +195,7 @@
 	desc = "Fuzzy."
 	icon_state = "bearpelt"
 	item_state_slots = list(slot_r_hand_str = "beret_black", slot_l_hand_str = "beret_black")
-	flags_inv = BLOCKHAIR
+	flags_inv = BLOCKHEADHAIR
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/head/collectable/xenos

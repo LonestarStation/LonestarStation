@@ -165,40 +165,17 @@
 #undef HUMAN_LOWEST_SLOWDOWN
 
 /mob/living/carbon/human/get_jetpack()
-	if(back)
-		var/obj/item/rig/rig = get_rig()
-		if(istype(back, /obj/item/tank/jetpack))
-			return back
-		else if(istype(rig))
-			for(var/obj/item/rig_module/maneuvering_jets/module in rig.installed_modules)
-				return module.jets
-
-/mob/living/carbon/human/Process_Spacemove(var/check_drift = 0)
-	//Can we act?
-	if(restrained())	return 0
-
-	if(..()) //Can move due to other reasons, don't use jetpack fuel
-		return 1
-
-	//Do we have a working jetpack?
-	var/obj/item/tank/jetpack/thrust = get_jetpack()
-
-	if(thrust)
-		if(((!check_drift) || (check_drift && thrust.stabilization_on)) && (!lying) && (thrust.do_thrust(0.01, src)))
-			inertia_dir = 0
-			return 1
-
-	return 0
-
+	if(istype(back, /obj/item/tank/jetpack))
+		return back
+	var/obj/item/rig/rig = get_rig()
+	for(var/obj/item/rig_module/maneuvering_jets/module in rig?.installed_modules)
+		return module.jets
+	return ..()
 
 /mob/living/carbon/human/Process_Spaceslipping(var/prob_slip = 5)
 	//If knocked out we might just hit it and stop.  This makes it possible to get dead bodies and such.
 
 	if(species.flags & NO_SLIP)
-		return 0
-
-	var/obj/item/tank/jetpack/thrust = get_jetpack()
-	if(thrust?.can_thrust(0.01))
 		return 0
 
 	if(stat)
@@ -209,13 +186,16 @@
 		prob_slip = 0
 
 	//Check hands and mod slip
-	if(!l_hand)	prob_slip -= 2
-	else if(l_hand.w_class <= 2)	prob_slip -= 1
-	if (!r_hand)	prob_slip -= 2
-	else if(r_hand.w_class <= 2)	prob_slip -= 1
+	if(!l_hand)
+		prob_slip -= 2
+	else if(l_hand.w_class <= 2)
+		prob_slip -= 1
+	if (!r_hand)
+		prob_slip -= 2
+	else if(r_hand.w_class <= 2)
+		prob_slip -= 1
 
-	prob_slip = round(prob_slip)
-	return(prob_slip)
+	return round(prob_slip)
 
 // Handle footstep sounds
 /mob/living/carbon/human/handle_footstep(var/turf/T)

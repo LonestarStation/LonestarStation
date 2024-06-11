@@ -52,6 +52,8 @@
 	health_hud_intensity = 2
 	taste_sensitivity = TASTE_SENSITIVE
 
+	checks_gibber_safety = FALSE
+
 	gibbed_anim = "gibbed-m"
 	dusted_anim = "dust-m"
 	death_message = "lets out a faint chitter as it collapses and stops moving..."
@@ -59,7 +61,12 @@
 	fire_icon_state = "small"
 
 	unarmed_types = list(/datum/unarmed_attack/bite, /datum/unarmed_attack/claws)
-	inherent_verbs = list(/mob/living/proc/ventcrawl, /mob/living/proc/hide)
+	inherent_verbs = list(
+		/mob/living/proc/ventcrawl,
+		/mob/living/proc/hide,
+		/mob/living/proc/toggle_pass_table
+	)
+
 	darksight = 9
 	slowdown = -0.5
 	snow_movement = -1		//Ignores half of light snow

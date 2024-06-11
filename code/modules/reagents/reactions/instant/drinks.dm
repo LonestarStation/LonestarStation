@@ -1278,3 +1278,32 @@
 	result = "dyncold"
 	required_reagents = list("dynjuice" = 1, "ice" = 2, "sodawater" = 2)
 	result_amount = 5
+
+/decl/chemical_reaction/instant/drinks/kiranicider
+	name = "Kirani cider"
+	id = "kirani_cider"
+	result = "kirani_cider"
+	required_reagents = list("kirani_jelly" = 10)
+	catalysts = list("enzyme" = 5)
+	result_amount = 10
+
+/decl/chemical_reaction/instant/drinks/kiraniade
+	name = "Kiraniade"
+	id = "kiraniade"
+	result = "kiraniade"
+	required_reagents = list("kirani_jelly" = 1, "sodawater" = 2)
+	result_amount = 3
+
+/decl/chemical_reaction/instant/drinks/sirisaii_pole
+	name = "Sirisaii pole"
+	id = "sirisaii_pole"
+	result = "sirisaii_pole"
+	required_reagents = list("kirani_cider" = 1, "gauli_juice" = 1, "ice" = 1)
+	result_amount = 3
+
+/decl/chemical_reaction/instant/drinks/meatshake
+	name = "Meatshake"
+	id = "meatshake"
+	result = "meatshake"
+	required_reagents = list("cream" = 1, "protein" = 1, "water" = 1)
+	result_amount = 3

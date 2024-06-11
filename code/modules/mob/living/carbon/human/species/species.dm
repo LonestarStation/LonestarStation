@@ -54,6 +54,7 @@
 	var/hunger_factor = 0.05								// Multiplier for hunger.
 	var/active_regen_mult = 1								// Multiplier for 'Regenerate' power speed, in human_powers.dm
 	var/hearboost = 0 										//Extra ranger on whisper hearing. 0 is adjacent.
+	var/checks_gibber_safety = TRUE							// This species is only gibbable in the gibber if it has been emagged.
 
 	var/taste_sensitivity = TASTE_NORMAL							// How sensitive the species is to minute tastes.
 	var/allergens = null									// Things that will make this species very sick
@@ -195,7 +196,7 @@
 	// Body/form vars.
 	var/list/inherent_verbs = list()									// Species-specific verbs.
 	var/has_fine_manipulation = 1							// Can use small items.
-	var/siemens_coefficient = 1								// The lower, the thicker the skin and better the insulation.
+	var/shock_vulnerability = 1								// Used as Siemens's coefficient. The lower, the thicker the skin and better the insulation.
 	var/darksight = 2										// Native darksight distance.
 	var/flags = 0											// Various specific features.
 	var/appearance_flags = 0								// Appearance/display related features.
@@ -214,7 +215,8 @@
 	var/primitive_form										// Lesser form, if any (ie. monkey for humans)
 	var/greater_form										// Greater form, if any, ie. human for monkeys.
 	var/holder_type
-	var/gluttonous											// Can eat some mobs. 1 for mice, 2 for monkeys, 3 for people.
+	var/gluttonous = GLUT_NONE								// Can eat some mobs. Values can be GLUT_TINY, GLUT_SMALLER, GLUT_ANYTHING, GLUT_ITEM_TINY, GLUT_ITEM_NORMAL, GLUT_ITEM_ANYTHING, GLUT_PROJECTILE_VOMIT
+	var/stomach_capacity = 5								// How much stuff they can stick in their stomach
 
 	var/rarity_value = 1									// Relative rarity/collector value for this species.
 	var/economic_modifier = 2								// How much money this species makes

@@ -32,10 +32,11 @@
 	icon_state = "officercap"
 
 //HOP
-/obj/item/clothing/head/caphat/hop
-	name = "crew resource's hat"
-	desc = "A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority."
+/obj/item/clothing/head/hop
+	name = "head of personnel's cap"
+	desc = "A stylish cap that both protects you from enraged former-crewmembers and gives you a false sense of authority."
 	icon_state = "hopcap"
+	body_parts_covered = 0
 
 //Chaplain
 /obj/item/clothing/head/chaplain_hood
@@ -43,7 +44,7 @@
 	desc = "It's a hood that covers the head. It keeps you warm during the space winters."
 	icon_state = "chaplain_hood"
 	item_state_slots = list(slot_r_hand_str = "beret_black", slot_l_hand_str = "beret_black")
-	flags_inv = BLOCKHAIR
+	flags_inv = BLOCKHEADHAIR
 	body_parts_covered = HEAD
 
 //Chaplain but spookier
@@ -83,7 +84,7 @@
 	item_state_slots = list(slot_r_hand_str = "beret_navy", slot_l_hand_str = "beret_navy")
 
 /obj/item/clothing/head/beret/sec/navy/hos
-	name = "Head of Security beret"
+	name = "head of security beret"
 	desc = "A navy blue beret with a Head of Security's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "beret_navy_hos"
 	item_state_slots = list(slot_r_hand_str = "beret_navy", slot_l_hand_str = "beret_navy")
@@ -101,7 +102,7 @@
 	item_state_slots = list(slot_r_hand_str = "beret_black", slot_l_hand_str = "beret_black")
 
 /obj/item/clothing/head/beret/sec/corporate/hos
-	name = "Head of Security beret"
+	name = "head of security beret"
 	desc = "A corporate black beret with a Head of Security's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "beret_corporate_hos"
 	item_state_slots = list(slot_r_hand_str = "beret_black", slot_l_hand_str = "beret_black")
@@ -123,17 +124,17 @@
 	valid_accessory_slots = null
 
 /obj/item/clothing/head/helmet/HoS
-	name = "Head of Security helmet"
-	desc = "Standard Head of Security gear. Protects the head from impacts."
+	name = "head of security helmet"
+	desc = "Standard gear for the head of security. Protects the head from impacts."
 
-/obj/item/clothing/head/helmet/HoS/hat
-	name = "Head of Security Hat"
-	desc = "The hat of the Head of Security. For showing the officers who's in charge."
+/obj/item/clothing/head/helmet/HoS/cap
+	name = "head of security cap"
+	desc = "The head of security's cap."
 	icon_state = "hoscap"
 	valid_accessory_slots = null
 
 /obj/item/clothing/head/helmet/dermal
-	name = "Dermal Armour Patch"
+	name = "dermal armour Patch"
 	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."
 	icon_state = "dermal"
 	item_state_slots = list(slot_r_hand_str = "", slot_l_hand_str = "")

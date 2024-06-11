@@ -4,7 +4,7 @@
 	icon_state = "generic_hood"
 	body_parts_covered = HEAD
 	cold_protection = HEAD
-	flags_inv = HIDEEARS | BLOCKHAIR
+	flags_inv = HIDEEARS | BLOCKHEADHAIR
 
 // Winter coats
 /obj/item/clothing/head/hood/winter
@@ -193,6 +193,13 @@
 	siemens_coefficient = 0.9
 	armor = list(melee = 30, bullet = 20, laser = 20, energy = 20, bomb = 35, bio = 75, rad = 35)
 
+/obj/item/clothing/head/hood/explorer/xenofauna
+	name = "xenofauna field hood"
+	desc = "A lightly armoured hood for surveying harsh environments."
+	icon_state = "xenofauna"
+	siemens_coefficient = 0.5
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 25, bio = 90, rad = 60)
+
 // Costumes
 /obj/item/clothing/head/hood/carp_hood
 	name = "carp hood"
@@ -212,3 +219,19 @@
 	desc = "A hood that looks vaguely like a siffet's head. Guaranteed to traumatize your Promethean coworkers."
 	icon_state = "siffet"
 	item_state_slots = list(slot_r_hand_str = "siffet", slot_l_hand_str = "siffet")
+
+//Hoodie Hood
+
+/obj/item/clothing/head/hood/toggleable
+	name = "super special hood"
+	desc = "This hood is so special that you weren't even supposed to lay eyes on it! Tell a developer!"
+	var/open = FALSE
+
+/obj/item/clothing/head/hood/toggleable/colorable
+	name = "hoodie hood"
+	desc = "It's the hood part of a hoodie. What kind of hoodie would it be without one? A poser, obviously."
+	icon_state = "choodie"
+
+/obj/item/clothing/head/hood/toggleable/colorable/update_icon()
+	. = ..()
+	icon_state = "[initial(icon_state)][open ? "_open" : ""]"

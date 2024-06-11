@@ -638,7 +638,7 @@ var/global/list/light_overlay_cache = list() //see get_worn_overlay() on helmets
 		usr.visible_message("<span class='danger'>\The [usr] pulls a knife out of their boot!</span>")
 		playsound(src, 'sound/weapons/holster/sheathout.ogg', 25)
 		holding = null
-		cut_overlay(image(icon, "[icon_state]_knife"))
+		cut_overlay(image(icon, "boot_knife"))
 	else
 		to_chat(usr, "<span class='warning'>Your need an empty, unbroken hand to do that.</span>")
 		holding.forceMove(src)
@@ -686,7 +686,7 @@ var/global/list/light_overlay_cache = list() //see get_worn_overlay() on helmets
 /obj/item/clothing/shoes/update_icon()
 	. = ..()
 	if(holding)
-		add_overlay(image(icon, "[icon_state]_knife"))
+		add_overlay(image(icon, "boot_knife"))
 	if(ismob(usr))
 		var/mob/M = usr
 		M.update_inv_shoes()
@@ -694,9 +694,6 @@ var/global/list/light_overlay_cache = list() //see get_worn_overlay() on helmets
 /obj/item/clothing/shoes/clean_blood()
 	update_icon()
 	return ..()
-
-/obj/item/clothing/shoes/proc/handle_movement(var/turf/walking, var/running)
-	return
 
 /obj/item/clothing/shoes/update_clothing_icon()
 	if (ismob(src.loc))

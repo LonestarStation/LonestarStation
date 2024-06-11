@@ -106,7 +106,8 @@ var/global/hadevent    = 0
 		if(H.client && H.appendicitis())
 			break
 
-/proc/alien_infestation(var/spawncount = 1) // -- TLE
+/*
+/proc/alien_infestation(var/spawncount = 1) // mostly removed by polaris base code TODO
 	//command_alert("Unidentified lifesigns detected coming aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert")
 	//world << sound('sound/AI/aliens.ogg')
 	var/list/vents = list()
@@ -132,6 +133,7 @@ var/global/hadevent    = 0
 
 	spawn(rand(5000, 6000)) //Delayed announcements to keep the crew on their toes.
 		command_announcement.Announce("Unidentified lifesigns detected coming aboard \the [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", new_sound = 'sound/AI/aliens.ogg')
+*/
 
 /proc/high_radiation_event()
 

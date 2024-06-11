@@ -30,8 +30,8 @@
 
 /obj/structure/kitchenspike/proc/spike(var/mob/living/victim)
 	if(!istype(victim))
-		return
-
+		return FALSE
+/*
 	if(istype(victim, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = victim
 		if(istype(H.species, /datum/species/monkey))
@@ -44,11 +44,21 @@
 		icon_state = "spikebloodygreen"
 	else
 		return 0
+*/
+	if(!ishuman(victim))
+		return FALSE
+
+	var/mob/living/carbon/human/H = victim
+	if(!istype(H.species, /datum/species/monkey))
+		return FALSE
+
+	meat_type = H.species.meat_type
+	icon_state = "spikebloody"
 
 	victim_name = victim.name
 	occupied = 1
 	meat = 5
-	return 1
+	return TRUE
 
 /obj/structure/kitchenspike/attack_hand(mob/user as mob)
 	if(..() || !occupied)
