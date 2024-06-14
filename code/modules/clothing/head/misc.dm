@@ -226,6 +226,14 @@
 	desc = "Because justice isn't going to dispense itself."
 	icon_state = "cowboy_wide"
 
+/obj/item/clothing/head/cowboy_hat/white
+	icon_state = "cowboy_white"
+
+/obj/item/clothing/head/cowboy_hat/white_wide
+	name = "wide-brimmed cowboy hat"
+	desc = "Because justice isn't going to dispense itself."
+	icon_state = "cowboy_white_wide"
+
 /obj/item/clothing/head/cowboy_hat/small
 	name = "small cowboy hat"
 	desc = "For the tiniest of cowboys."
@@ -385,3 +393,14 @@
 	desc = "You... you're not actually going to wear that, right?"
 	icon_state = "fishskull"
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
+
+/obj/item/clothing/head/wooly
+	name = "wooly hat"
+	desc = "A cozy hat made of real wool. It even has a bobble!"
+	icon_state = "woolhat"
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/wooly/nt
+	name = "\improper NanoTrasen wooly hat"
+	desc = "A cozy hat made of real wool. It even has a bobble! This one is in NanoTrasen colors."
+	icon_state = "woolhat_nt"

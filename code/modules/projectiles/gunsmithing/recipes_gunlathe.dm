@@ -366,7 +366,7 @@
 		/obj/item/gun_parts/hammer_pin,
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
@@ -435,7 +435,7 @@
 		/obj/item/gun_parts/hammer_pin,
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
@@ -487,7 +487,7 @@
 		/obj/item/gun_parts/trigger/single,
 		/obj/item/gun_parts/hammer_pin,
 		/obj/item/gun_parts/stock_wood,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -502,7 +502,7 @@
 		/obj/item/gun_parts/trigger/single,
 		/obj/item/gun_parts/hammer_pin,
 		/obj/item/gun_parts/stock_wood,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -517,8 +517,8 @@
 		/obj/item/gun_parts/trigger/single,
 		/obj/item/gun_parts/hammer_pin,
 		/obj/item/gun_parts/stock_wood,
-		/obj/item/stack/material/wood,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -534,7 +534,7 @@
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -550,7 +550,7 @@
 		/obj/item/gun_parts/hammer_pin,
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -567,7 +567,7 @@
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -584,7 +584,7 @@
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring
 	)
@@ -601,8 +601,8 @@
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
@@ -625,8 +625,8 @@
 		/obj/item/gun_parts/stock_wood,
 		/obj/item/stack/material/steel,
 		/obj/item/stack/material/steel,
-		/obj/item/stack/material/wood,
-		/obj/item/stack/material/wood,
+		/obj/item/stack/material/fuel/wood,
+		/obj/item/stack/material/fuel/wood,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,
 		/obj/item/stock_parts/spring,

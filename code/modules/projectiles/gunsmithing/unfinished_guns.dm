@@ -172,7 +172,7 @@
 	if(!my_guntype && !QDELETED(src))
 		qdel(src)
 
-/obj/item/unfinished_gun/examine(mob/user)
+/obj/item/unfinished_gun/examine(mob/user, distance, infix, suffix)
 	. = ..()
 	spawn()
 		if(get_dist(get_turf(user),get_turf(src)) <= 1)

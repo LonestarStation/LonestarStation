@@ -73,12 +73,12 @@ You can eat glowing tree fruit to fuel your <b>ranged spitting attack</b> and <b
 	var/attacking_with_claws = TRUE
 
 	// Set during initialize and used to generate overlays.
-	var/tmp/current_icon_state // used to track our 'actual' icon state due to overlay nonsense in update_icon
-	var/tmp/fur_colour
-	var/tmp/claw_colour
-	var/tmp/glow_colour
-	var/tmp/base_colour
-	var/tmp/eye_colour
+	var/current_icon_state // used to track our 'actual' icon state due to overlay nonsense in update_icon
+	var/fur_colour
+	var/claw_colour
+	var/glow_colour
+	var/base_colour
+	var/eye_colour
 
 	var/offset_compiled_icon = -16
 	var/is_baby = FALSE
@@ -163,7 +163,7 @@ You can eat glowing tree fruit to fuel your <b>ranged spitting attack</b> and <b
 	reset_charisma()
 
 
-/mob/living/simple_mob/animal/sif/grafadreka/examine(mob/living/user)
+/mob/living/simple_mob/animal/sif/grafadreka/examine(mob/user, distance, infix, suffix)
 	. = ..()
 	if (istype(user, /mob/living/simple_mob/animal/sif/grafadreka) || isobserver(user))
 		var/datum/gender/G = gender_datums[get_visible_gender()]
@@ -471,23 +471,22 @@ You can eat glowing tree fruit to fuel your <b>ranged spitting attack</b> and <b
 	return FALSE
 
 
-/mob/living/simple_mob/animal/sif/grafadreka/proc/setup_colours()
+/mob/living/simple_mob/animal/sif/grafadreka/proc/setup_colours(var/force = FALSE)
 	var/static/list/fur_colours =  list(COLOR_SILVER, COLOR_WHITE, COLOR_GREEN_GRAY, COLOR_PALE_RED_GRAY, COLOR_BLUE_GRAY)
 	var/static/list/claw_colours = list(COLOR_GRAY, COLOR_SILVER, COLOR_WHITE, COLOR_GRAY15, COLOR_GRAY20, COLOR_GRAY40, COLOR_GRAY80)
 	var/static/list/glow_colours = list(COLOR_BLUE_LIGHT, COLOR_LIGHT_CYAN, COLOR_CYAN, COLOR_CYAN_BLUE)
 	var/static/list/base_colours = list("#608894", "#436974", "#7fa3ae")
 	var/static/list/eye_colours =  list(COLOR_WHITE, COLOR_SILVER)
-	if (!glow_colour)
+	if (!glow_colour || force)
 		glow_colour = pick(glow_colours)
-	if (!fur_colour)
+	if (!fur_colour || force)
 		fur_colour =  pick(fur_colours)
-	if (!claw_colour)
+	if (!claw_colour || force)
 		claw_colour = pick(claw_colours)
-	if (!base_colour)
+	if (!base_colour || force)
 		base_colour = pick(base_colours)
-	if (!eye_colour)
+	if (!eye_colour || force)
 		eye_colour =  pick(eye_colours)
-
 
 var/global/list/wounds_being_tended_by_drakes = list()
 

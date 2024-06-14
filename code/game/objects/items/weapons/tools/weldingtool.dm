@@ -34,7 +34,7 @@
 	usesound = 'sound/items/Welder2.ogg'
 	var/change_icons = TRUE
 	var/flame_intensity = 2 //how powerful the emitted light is when used.
-	var/flame_color = "#FF9933" // What color the welder light emits when its on.  Default is an orange-ish color.
+	var/flame_color = COLOR_FIRE_ORANGE // What color the welder light emits when its on.  Default is an orange-ish color.
 	var/eye_safety_modifier = 0 // Increasing this will make less eye protection needed to stop eye damage.  IE at 1, sunglasses will fully protect.
 	var/burned_fuel_for = 0 // Keeps track of how long the welder's been on, used to gradually empty the welder if left one, without RNG.
 	var/always_process = FALSE // If true, keeps the welder on the process list even if it's off.  Used for when it needs to regenerate fuel.
@@ -58,9 +58,9 @@
 		STOP_PROCESSING(SSobj, src)
 	return ..()
 
-/obj/item/weldingtool/examine(mob/user)
+/obj/item/weldingtool/examine(mob/user, distance, infix, suffix)
 	. = ..()
-	if(max_fuel && loc == user)
+	if(max_fuel && distance < 2)
 		. += "It contains [get_fuel()]/[src.max_fuel] units of fuel!"
 
 /obj/item/weldingtool/attack(atom/A, mob/living/user, def_zone)
@@ -557,9 +557,9 @@
 /obj/item/weldingtool/electric/get_cell()
 	return power_supply
 
-/obj/item/weldingtool/electric/examine(mob/user)
+/obj/item/weldingtool/electric/examine(mob/user, distance, infix, suffix)
 	. = ..()
-	if(Adjacent(user))
+	if(distance < 2)
 		if(power_supply)
 			. += "It [src.name] has [get_fuel()] charge left."
 		else

@@ -75,19 +75,6 @@ GLOBAL_LIST_EMPTY(apcs)
 /obj/machinery/power/apc/alarms_hidden
 	alarms_hidden = TRUE
 
-/*
-/obj/machinery/power/apc/low_light
-	nightshift_setting = NIGHTSHIFT_ALWAYS
-
-/obj/machinery/power/apc/low_light_no_alarms
-	lighting = 2
-	equipment = 2
-	environ = 2
-	nightshift_lights = TRUE
-	nightshift_setting = NIGHTSHIFT_ALWAYS
-	alarms_hidden = TRUE
-*/
-
 /obj/machinery/power/apc
 	name = "area power controller"
 	desc = "A control terminal for the area electrical systems."
@@ -284,9 +271,9 @@ GLOBAL_LIST_EMPTY(apcs)
 	spawn(5)
 		update()
 
-/obj/machinery/power/apc/examine(mob/user)
+/obj/machinery/power/apc/examine(mob/user, distance, infix, suffix)
 	. = ..()
-	if(Adjacent(user))
+	if(distance < 2)
 		if(stat & BROKEN)
 			. += "This APC is broken."
 

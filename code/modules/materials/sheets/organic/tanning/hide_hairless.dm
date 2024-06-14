@@ -11,7 +11,7 @@
 	max_amount = 20
 	stacktype = "hairlesshide"
 
-/obj/item/stack/hairlesshide/examine(var/mob/user)
+/obj/item/stack/hairlesshide/examine(mob/user, distance, infix, suffix)
 	. = ..()
 	. += description_info
 
@@ -24,7 +24,7 @@
 			if(HS.amount < HS.max_amount)
 				H = HS
 				break
-			
+
 		 // Either we found a valid stack, in which case increment amount,
 		 // Or we need to make a new stack
 		if(istype(H))
@@ -34,15 +34,3 @@
 
 		// Increment the amount
 		src.use(1)
-
-/obj/item/stack/hairlesshide/proc/rapidcure(var/stacknum = 1)
-	stacknum = min(stacknum, amount)
-
-	while(stacknum)
-		var/obj/item/stack/wetleather/I = new /obj/item/stack/wetleather(get_turf(src))
-
-		if(istype(I))
-			I.dry()
-
-		use(1)
-		stacknum -= 1

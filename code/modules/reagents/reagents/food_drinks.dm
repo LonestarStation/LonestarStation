@@ -8,33 +8,62 @@
 	reagent_state = SOLID
 	metabolism = REM * 4
 	ingest_met = REM * 4
+	taste_description = null
 	var/nutriment_factor = 30 // Per unit
 	var/injectable = 0
 	color = "#664330"
 
 /datum/reagent/nutriment/mix_data(var/list/newdata, var/newamount)
-
-	if(!islist(newdata) || !newdata.len)
+	. = ..(newdata)
+	var/list/adding_flavours = LAZYACCESS(newdata, TASTE_DATA_FIELD)
+	if(!. || !adding_flavours)
+		return
+	adding_flavours = cached_json_decode(adding_flavours)
+	if(!islist(adding_flavours) || !length(adding_flavours))
 		return
 
-	//add the new taste data
-	if(islist(data))
-		for(var/taste in newdata)
-			if(taste in data)
-				data[taste] += newdata[taste]
-			else
-				data[taste] = newdata[taste]
+	// Get our existing taste data. This will be reencoded and rewritten after we update it.
+	var/list/existing_taste_data = LAZYACCESS(data, TASTE_DATA_FIELD)
+	if(existing_taste_data)
+		existing_taste_data = cached_json_decode(existing_taste_data)
 	else
-		initialize_data(newdata)
+		existing_taste_data = list()
 
-	//cull all tastes below 5% of total
-	var/totalFlavor = 0
-	for(var/taste in data)
-		totalFlavor += data[taste]
-	if(totalFlavor) //Let's not divide by zero for things w/o taste
-		for(var/taste in data)
-			if(data[taste]/totalFlavor < 0.05)
-				data -= taste
+	// Mix in any supplied flavours.
+	var/added_taste = FALSE
+	for(var/taste in adding_flavours)
+		var/taste_data = adding_flavours[taste]
+		if(islist(taste_data))
+			var/list/existing_taste_category = existing_taste_data[taste]
+			if(!existing_taste_category)
+				existing_taste_category = list()
+				existing_taste_data[taste] = existing_taste_category
+				added_taste = TRUE
+			for(var/taste_string in taste_data)
+				existing_taste_category[taste_string] += taste_data[taste_string]
+				added_taste = TRUE
+
+	// Cull all tastes below 10% of total.
+	for(var/taste_cat in existing_taste_data)
+		var/total_flavor = 0
+		var/list/taste_data = existing_taste_data[taste_cat]
+		if(!length(taste_data))
+			continue
+		for(var/taste_string in taste_data)
+			total_flavor += taste_data[taste_string]
+		if(total_flavor <= 0) //Let's not divide by zero for things w/o taste
+			continue
+		for(var/taste_string in taste_data)
+			if(taste_data[taste_string] /total_flavor < 0.05)
+				taste_data -= taste_string
+				added_taste = TRUE
+		if(!length(taste_data))
+			existing_taste_data -= taste_cat
+			added_taste = TRUE
+
+	// Save our mixed data if needed.
+	if(added_taste)
+		LAZYSET(data, TASTE_DATA_FIELD, json_encode(existing_taste_data))
 
 #define ANIMAL_NUTRITION_MULTIPLIER 0.5
 /datum/reagent/nutriment/affect_animal(var/mob/living/simple_mob/animal/M, var/removed)
@@ -83,7 +112,7 @@
 
 /datum/reagent/nutriment/coating/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 
-	//We'll assume that the batter isnt going to be regurgitated and eaten by someone else. Only show this once
+	//We'll assume that the batter isn't going to be regurgitated and eaten by someone else. Only show this once
 	if(data["cooked"] != 1)
 		if (!messaged)
 			to_chat(M, "<span class='warning'>Ugh, this raw [name] tastes disgusting.</span>")
@@ -96,27 +125,20 @@
 	..()
 
 /datum/reagent/nutriment/coating/initialize_data(var/newdata) // Called when the reagent is created.
-	..()
-	if (!data)
-		data = list()
-	else
-		if (isnull(data["cooked"]))
-			data["cooked"] = 0
-		return
-	data["cooked"] = 0
-	if (holder && holder.my_atom && istype(holder.my_atom,/obj/item/reagent_containers/food/snacks))
-		data["cooked"] = 1
+	. = ..()
+	LAZYINITLIST(data)
+	if(holder && holder.my_atom && istype(holder.my_atom,/obj/item/reagent_containers/food/snacks))
+		data["cooked"] = TRUE
 		name = cooked_name
-
+	else
+		data["cooked"] = FALSE
 		//Batter which is part of objects at compiletime spawns in a cooked state
-
 
 //Handles setting the temperature when oils are mixed
 /datum/reagent/nutriment/coating/mix_data(var/newdata, var/newamount)
-	if (!data)
-		data = list()
-
-	data["cooked"] = newdata["cooked"]
+	. = ..()
+	if(. && LAZYACCESS(newdata, "cooked") != null)
+		LAZYSET(data, "cooked", newdata["cooked"])
 
 /datum/reagent/nutriment/coating/batter
 	name = "batter mix"
@@ -187,28 +209,17 @@
 		T.wet_floor(2)
 
 /datum/reagent/nutriment/triglyceride/oil/initialize_data(var/newdata) // Called when the reagent is created.
-	..()
-	if (!data)
-		data = list("temperature" = T20C)
+	. = ..()
+	LAZYSET(data, "temperature", T20C)
 
 //Handles setting the temperature when oils are mixed
 /datum/reagent/nutriment/triglyceride/oil/mix_data(var/newdata, var/newamount)
-
-	if (!data)
-		data = list()
-
-	var/ouramount = volume - newamount
-	if (ouramount <= 0 || !data["temperature"] || !volume)
-		//If we get here, then this reagent has just been created, just copy the temperature exactly
-		data["temperature"] = newdata["temperature"]
-
-	else
-		//Our temperature is set to the mean of the two mixtures, taking volume into account
-		var/total = (data["temperature"] * ouramount) + (newdata["temperature"] * newamount)
-		data["temperature"] = total / volume
-
-	return ..()
-
+	. = ..()
+	if(.)
+		var/newtemp = LAZYACCESS(newdata, "temperature")
+		if(newtemp != null)
+			var/total = ((LAZYACCESS(data, "temperature") * (volume - newamount)) + (newtemp * newamount)) / volume
+			LAZYSET(data, "temperature", total)
 
 //Calculates a scaling factor for scalding damage, based on the temperature of the oil and creature's heat resistance
 /datum/reagent/nutriment/triglyceride/oil/proc/heatdamage(var/mob/living/carbon/M)
@@ -261,7 +272,10 @@
 /datum/reagent/nutriment/glucose
 	name = "Glucose"
 	id = "glucose"
-	taste_description = "sweetness"
+	taste_description = list(
+		TASTE_STRING_DEFAULT = "sweetness",
+		SPECIES_TESHARI      = "blandness"
+	)
 	color = "#FFFFFF"
 
 	injectable = 1
@@ -269,7 +283,7 @@
 /datum/reagent/nutriment/protein // Bad for Skrell!
 	name = "animal protein"
 	id = "protein"
-	taste_description = "some sort of meat"
+	taste_description = "umami"
 	color = "#440000"
 	allergen_type = ALLERGEN_MEAT //"Animal protein" implies it comes from animals, therefore meat.
 
@@ -314,7 +328,10 @@
 	name = "Honey"
 	id = "honey"
 	description = "A golden yellow syrup, loaded with sugary sweetness."
-	taste_description = "sweetness"
+	taste_description = list(
+		SPECIES_TESHARI      = "floral notes",
+		TASTE_STRING_DEFAULT = "sweetness"
+	)
 	nutriment_factor = 10
 	color = "#FFFF00"
 
@@ -445,14 +462,20 @@
 	name = "Watermelon Juice Powder"
 	id = "instantwatermelon"
 	description = "Dehydrated, powdered watermelon juice."
-	taste_description = "dry sweet watermelon"
+	taste_description = list(
+		SPECIES_TESHARI      = "dry watermelon",
+		TASTE_STRING_DEFAULT = "dry sweet watermelon"
+	)
 	color = "#b83333"
 
 /datum/reagent/nutriment/instantjuice/apple
 	name = "Apple Juice Powder"
 	id = "instantapple"
 	description = "Dehydrated, powdered apple juice."
-	taste_description = "dry sweet apples"
+	taste_description = list(
+		SPECIES_TESHARI      = "dry apples",
+		TASTE_STRING_DEFAULT = "dry sweet apples"
+	)
 	color = "#c07c40"
 
 /datum/reagent/nutriment/soysauce
@@ -549,7 +572,10 @@
 	name = "Durian Paste"
 	id = "durianpaste"
 	description = "A strangely sweet and savory paste."
-	taste_description = "sweet and savory"
+	taste_description = list(
+		SPECIES_TESHARI = "an odd savoury flavour",
+		TASTE_STRING_DEFAULT = "sweet and savory flavours"
+	)
 	color = "#757631"
 
 	glass_name = "durian paste"
@@ -587,7 +613,10 @@
 	name = "Sprinkles"
 	id = "sprinkles"
 	description = "Multi-colored little bits of sugar, commonly found on donuts. Loved by cops."
-	taste_description = "sugar"
+	taste_description = list(
+		SPECIES_TESHARI = "crunchy chalk",
+		TASTE_STRING_DEFAULT = "crunchy sugar"
+	)
 	nutriment_factor = 1
 	color = "#FF00FF"
 
@@ -646,7 +675,10 @@
 	name = "Universal Enzyme"
 	id = "enzyme"
 	description = "A universal enzyme used in the preperation of certain chemicals and foods."
-	taste_description = "sweetness"
+	taste_description = list(
+		SPECIES_TESHARI      = "a tingling sensation",
+		TASTE_STRING_DEFAULT = "sweetness"
+	)
 	taste_mult = 0.7
 	reagent_state = LIQUID
 	color = "#365E30"
@@ -658,6 +690,12 @@
 	description = "An exotic blend of spices for cooking. Definitely not worms."
 	reagent_state = SOLID
 	color = "#e08702"
+
+// Drakenip...
+/datum/reagent/spacespice/affect_animal(var/mob/living/simple_mob/animal/M, var/removed)
+	..()
+	if(istype(M, /mob/living/simple_mob/animal/sif/grafadreka))
+		M.druggy = max(M.druggy, 15)
 
 /datum/reagent/browniemix
 	name = "Brownie Mix"
@@ -713,7 +751,10 @@
 	name = "Capsaicin Oil"
 	id = "capsaicin"
 	description = "This is what makes chilis hot."
-	taste_description = "spiciness"
+	taste_description = list(
+		TASTE_STRING_DEFAULT = list("spiciness" = 10),
+		SPECIES_TESHARI = list("cloying richness" = 10)
+	)
 	taste_mult = 1.5
 	reagent_state = LIQUID
 	ingest_met = REM
@@ -1157,7 +1198,10 @@
 	name = "Watermelon Juice"
 	id = "watermelonjuice"
 	description = "Delicious juice made from watermelon."
-	taste_description = "sweet watermelon"
+	taste_description = list(
+		SPECIES_TESHARI = "watermelon",
+		TASTE_STRING_DEFAULT = "sweet watermelon"
+	)
 	color = "#B83333"
 
 	glass_name = "watermelon juice"
@@ -1278,7 +1322,10 @@
 	name = "Iced Tea"
 	id = "icetea"
 	description = "No relation to a certain rap artist/ actor."
-	taste_description = "sweet tea"
+	taste_description = list(
+		SPECIES_TESHARI      = "bitter tea",
+		TASTE_STRING_DEFAULT = "sweet tea"
+	)
 	color = "#AC7F24" // rgb: 16, 64, 56
 	adj_temp = -5
 
@@ -1455,8 +1502,10 @@
 	id = "chaitea"
 	description = "A milky tea spiced with cinnamon and cloves."
 	color = "#A8442C"
-	taste_description = "creamy cinnamon and spice"
-
+	taste_description = list(
+		SPECIES_TESHARI      = "creamy cinnamon",
+		TASTE_STRING_DEFAULT = "creamy cinnamon and spice"
+	)
 	glass_name = "chai tea"
 	glass_desc = "A milky tea spiced with cinnamon and cloves."
 
@@ -1706,7 +1755,10 @@
 	name = "Pineappleade"
 	id = "pineappleade"
 	description = "Pineapple, juiced up."
-	taste_description = "sweet`n`sour pineapples"
+	taste_description = list(
+		SPECIES_TESHARI      = "sour pineapples",
+		TASTE_STRING_DEFAULT = "sweet and sour pineapples"
+	)
 	color = "#FFFF00"
 	adj_temp = -5
 
@@ -1719,7 +1771,10 @@
 	name = "Kira Special"
 	id = "kiraspecial"
 	description = "Long live the guy who everyone had mistaken for a girl. Baka!"
-	taste_description = "fruity sweetness"
+	taste_description = list(
+		SPECIES_TESHARI      = "fruity flavours",
+		TASTE_STRING_DEFAULT = "fruity sweetness"
+	)
 	color = "#CCCC99"
 	adj_temp = -5
 
@@ -1964,7 +2019,10 @@
 	name = "Orange Soda"
 	id = "orangesoda"
 	description = "Soda made using fresh picked oranges."
-	taste_description = "sweet and citrusy"
+	taste_description = list(
+		SPECIES_TESHARI      = "citrus",
+		TASTE_STRING_DEFAULT = "sweet citrus"
+	)
 	reagent_state = LIQUID
 	color = "#ff992c"
 	adj_drowsy = -3
@@ -2008,7 +2066,10 @@
 	name = "Bacon Soda"
 	id = "porksoda"
 	description = "Soda made using pork like flavoring."
-	taste_description = "sugar coated bacon"
+	taste_description = list(
+		SPECIES_TESHARI      = "reconstituted pork",
+		TASTE_STRING_DEFAULT = "sugar-coated bacon"
+	)
 	reagent_state = LIQUID
 	color = "ff8080"
 	adj_drowsy = -3
@@ -2022,7 +2083,11 @@
 	name = "Mountain Wind"
 	id = "spacemountainwind"
 	description = "Blows right through you like a space wind."
-	taste_description = "sweet citrus soda"
+	taste_description = list(
+		SPECIES_TESHARI      = "fizzy citrus",
+		TASTE_STRING_DEFAULT = "fizzy, sweet citrus"
+	)
+
 	color = "#102000"
 	adj_drowsy = -7
 	adj_sleepy = -1
@@ -2098,8 +2163,10 @@
 	name = "Diet Dr. Gibb"
 	id = "diet_dr_gibb"
 	color = "#102000"
-	taste_description = "chemically sweetened cherry soda"
-
+	taste_description = list(
+		SPECIES_TESHARI      = "cherries",
+		TASTE_STRING_DEFAULT = "sweet cherries"
+	)
 	glass_name = "glass of Diet Dr. Gibb"
 	glass_desc = "Regular Dr.Gibb is probably healthier than this cocktail of artificial flavors."
 	glass_special = list(DRINK_FIZZ)
@@ -2108,7 +2175,10 @@
 	name = "Shirley Temple"
 	id =  "shirley_temple"
 	description = "A sweet concotion hated even by its namesake."
-	taste_description = "sweet ginger ale"
+	taste_description = list(
+		SPECIES_TESHARI      = "ginger ale",
+		TASTE_STRING_DEFAULT = "sweet ginger ale"
+	)
 	color = "#EF304F"
 	adj_temp = -8
 
@@ -2146,7 +2216,10 @@
 	name = "Arnold Palmer"
 	id = "arnold_palmer"
 	description = "Tastes just like the old man."
-	taste_description = "lemon and sweet tea"
+	taste_description = list(
+		SPECIES_TESHARI      = "lemon tea",
+		TASTE_STRING_DEFAULT = "lemon and sweet tea"
+	)
 	color = "#AF5517"
 	adj_temp = -8
 
@@ -2203,7 +2276,10 @@
 	name = "Hell Ramen"
 	id = "hell_ramen"
 	description = "The noodles are boiled, the flavors are artificial, just like being back in school."
-	taste_description = "noodles and spice"
+	taste_description = list(
+		SPECIES_TESHARI      = "noodles with a strange aftertaste",
+		TASTE_STRING_DEFAULT = "noodles and spice"
+	)
 	taste_mult = 1.7
 	reagent_state = LIQUID
 	color = "#302000"
@@ -2218,13 +2294,16 @@
 /datum/reagent/drink/sweetsundaeramen
 	name = "Dessert Ramen"
 	id = "dessertramen"
-	description = "How many things can you add to a cup of ramen before it begins to question its existance?"
-	taste_description = "unbearable sweetness"
+	description = "How many things can you add to a cup of ramen before it begins to question its existence?"
+	taste_description = list(
+		SPECIES_TESHARI      = "bland, sticky slime",
+		TASTE_STRING_DEFAULT = "unbearable sweetness"
+	)
 	color = "#4444FF"
 	nutrition = 5
 
 	glass_name = "Sweet Sundae Ramen"
-	glass_desc = "How many things can you add to a cup of ramen before it begins to question its existance?"
+	glass_desc = "How many things can you add to a cup of ramen before it begins to question its existence?"
 
 /datum/reagent/drink/ice
 	name = "Ice"
@@ -2270,7 +2349,10 @@
 	name = "Dream Cream"
 	id = "dreamcream"
 	description = "A smoothy, silky mix of honey and dairy."
-	taste_description = "sweet, soothing dairy"
+	taste_description = list(
+		SPECIES_TESHARI      = "bland dairy",
+		TASTE_STRING_DEFAULT = "sweet, soothing dairy"
+	)
 	color = "#fcfcc9" // rgb(252, 252, 201)
 
 	glass_name = "Dream Cream"
@@ -2293,7 +2375,11 @@
 	name = "Ent's Draught"
 	id = "entdraught"
 	description = "A natural, earthy combination of all things peaceful."
-	taste_description = "fresh rain and sweet memories"
+	// Pedantic to make Tesh not taste sweet in the context of a metaphor, but this is similar to chivalry below, what does it taste like?
+	taste_description = list(
+		SPECIES_TESHARI      = "petrichor and distant tundra",
+		TASTE_STRING_DEFAULT = "fresh rain and sweet memories"
+	)
 	color = "#3a6617" // rgb(58, 102, 23)
 
 	glass_name = "Ent's Draught"
@@ -2457,7 +2543,11 @@
 	name = "Berry Cordial"
 	id = "berrycordial"
 	description = "How <font face='comic sans ms'>berry cordial</font> of you."
-	taste_description = "sweet chivalry"
+	// Pedantic to make Tesh not taste sweet in the context of a metaphor, but what the hell does 'sweet chivalry' taste like anyway?
+	taste_description = list(
+		SPECIES_TESHARI      = "chivalry",
+		TASTE_STRING_DEFAULT = "sweet chivalry"
+	)
 	color = "#D26EB8"
 
 	glass_name = "berry cordial"
@@ -2468,12 +2558,12 @@
 /datum/reagent/drink/tropicalfizz
 	name = "Tropical Fizz"
 	id = "tropicalfizz"
-	description = "One sip and you're in the bahamas."
+	description = "One sip and you're in the Bahamas."
 	taste_description = "tropical"
 	color = "#69375C"
 
 	glass_name = "tropical fizz"
-	glass_desc = "One sip and you're in the bahamas."
+	glass_desc = "One sip and you're in the Bahamas."
 	glass_icon = DRINK_ICON_NOISY
 	glass_special = list(DRINK_FIZZ)
 	allergen_type = ALLERGEN_FRUIT //Made with several fruit juices
@@ -2481,12 +2571,12 @@
 /datum/reagent/drink/fauxfizz
 	name = "Faux Fizz"
 	id = "fauxfizz"
-	description = "One sip and you're in the bahamas... maybe."
+	description = "One sip and you're in the Bahamas... maybe."
 	taste_description = "slightly tropical"
 	color = "#69375C"
 
 	glass_name = "tropical fizz"
-	glass_desc = "One sip and you're in the bahamas... maybe."
+	glass_desc = "One sip and you're in the Bahamas... maybe."
 	glass_icon = DRINK_ICON_NOISY
 	glass_special = list(DRINK_FIZZ)
 	allergen_type = ALLERGEN_FRUIT //made with several fruit juices
@@ -2511,7 +2601,7 @@
 /datum/reagent/ethanol/ale
 	name = "Ale"
 	id = "ale"
-	description = "A dark alchoholic beverage made by malted barley and yeast."
+	description = "A dark alcoholic beverage made by malted barley and yeast."
 	taste_description = "hearty barley ale"
 	color = "#4C3100"
 	strength = 50
@@ -2572,7 +2662,7 @@
 /datum/reagent/ethanol/cognac
 	name = "Cognac"
 	id = "cognac"
-	description = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing. Classy as fornication."
+	description = "A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. Classy as fornication."
 	taste_description = "rich and smooth alcohol"
 	taste_mult = 1.1
 	color = "#AB3C05"
@@ -2625,7 +2715,7 @@
 
 	allergen_type = ALLERGEN_FRUIT //Made from juniper berries
 
-//Base type for alchoholic drinks containing coffee
+//Base type for alcoholic drinks containing coffee
 /datum/reagent/ethanol/coffee
 	overdose = 45
 	allergen_type = ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Contains coffee or is made from coffee
@@ -2657,7 +2747,7 @@
 	M.make_jittery(5)
 
 /datum/reagent/ethanol/coffee/kahlua
-	name = "Kahlua"
+	name = "Kahlúa"
 	id = "kahlua"
 	description = "A widely known, Mexican coffee-flavored liqueur. In production since 1936!"
 	taste_description = "spiked latte"
@@ -2811,8 +2901,12 @@
 /datum/reagent/ethanol/redwine
 	name = "Red Wine"
 	id = "redwine"
-	description = "An premium alchoholic beverage made from distilled grape juice."
-	taste_description = "bitter sweetness"
+	description = "An premium alcoholic beverage made from distilled grape juice."
+	taste_description = list(
+		SPECIES_TESHARI      = "cloying bitterness",
+		TASTE_STRING_DEFAULT = "bitter sweetness"
+	)
+
 	color = "#7E4043" // rgb: 126, 64, 67
 	strength = 15
 
@@ -2824,7 +2918,7 @@
 /datum/reagent/ethanol/whitewine
 	name = "White Wine"
 	id = "whitewine"
-	description = "An premium alchoholic beverage made from fermenting of the non-coloured pulp of grapes."
+	description = "An premium alcoholic beverage made from fermenting of the non-coloured pulp of grapes."
 	taste_description = "light fruity flavor"
 	color = "#F4EFB0" // rgb: 244, 239, 176
 	strength = 15
@@ -2837,8 +2931,11 @@
 /datum/reagent/ethanol/carnoth
 	name = "Carnoth"
 	id = "carnoth"
-	description = "An premium alchoholic beverage made with multiple hybridized species of grapes that give it a dark maroon coloration."
-	taste_description = "alcoholic sweet flavor"
+	description = "An premium alcoholic beverage made with multiple hybridized species of grapes that give it a dark maroon coloration."
+	taste_description = list(
+		SPECIES_TESHARI      = "cloying fumes",
+		TASTE_STRING_DEFAULT = "alcoholic sweetness"
+	)
 	color = "#5B0000" // rgb: 0, 100, 35
 	strength = 20
 
@@ -2877,7 +2974,10 @@
 	name = "Champagne"
 	id = "champagne"
 	description = "A sparkling wine made with Pinot Noir, Pinot Meunier, and Chardonnay."
-	taste_description = "fizzy bitter sweetness"
+	taste_description = list(
+		SPECIES_TESHARI      = "bitter fizziness",
+		TASTE_STRING_DEFAULT = "fizzy, bitter sweetness"
+	)
 	color = "#D1B166"
 
 	glass_name = "champagne"
@@ -2920,7 +3020,10 @@
 	name = "Allies Cocktail"
 	id = "alliescocktail"
 	description = "A drink made from your allies, not as sweet as when made from your enemies."
-	taste_description = "bitter sweetness"
+	taste_description = list(
+		SPECIES_TESHARI      = "bitterness",
+		TASTE_STRING_DEFAULT = "bitter sweetness"
+	)
 	color = "#D8AC45"
 	strength = 25
 
@@ -2933,7 +3036,10 @@
 	name = "Aloe"
 	id = "aloe"
 	description = "So very, very, very good."
-	taste_description = "sweet and creamy"
+	taste_description = list(
+		SPECIES_TESHARI      = "creamy blandness",
+		TASTE_STRING_DEFAULT = "creamy sweetness"
+	)
 	color = "#B7EA75"
 	strength = 15
 
@@ -2946,7 +3052,7 @@
 	name = "Amasec"
 	id = "amasec"
 	description = "Official drink of the Gun Club!"
-	taste_description = "dark and metallic"
+	taste_description = "metallic darkness"
 	reagent_state = LIQUID
 	color = "#FF975D"
 	strength = 25
@@ -2997,21 +3103,21 @@
 	glass_name = "Atomic Bomb"
 	glass_desc = "We cannot take legal responsibility for your actions after imbibing."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_DAIRY|ALLERGEN_FRUIT|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from b52 which contains kahlua(coffee/caffeine), cognac(fruit), and irish cream(Whiskey(grains),cream(dairy))
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_DAIRY|ALLERGEN_FRUIT|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from b52 which contains Kahlúa(coffee/caffeine), cognac(fruit), and Irish cream(Whiskey(grains),cream(dairy))
 
 /datum/reagent/ethanol/coffee/b52
 	name = "B-52"
 	id = "b52"
-	description = "Kahlua, Irish cream, and cognac. You will get bombed."
+	description = "Kahlúa, Irish cream, and cognac. You will get bombed."
 	taste_description = "coffee, almonds, and whiskey"
 	taste_mult = 1.3
 	color = "#997650"
 	strength = 12
 
 	glass_name = "B-52"
-	glass_desc = "Kahlua, Irish cream, and cognac. You will get bombed."
+	glass_desc = "Kahlúa, Irish cream, and cognac. You will get bombed."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_DAIRY|ALLERGEN_FRUIT|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from kahlua(coffee/caffeine), cognac(fruit), and irish cream(Whiskey(grains),cream(dairy))
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_DAIRY|ALLERGEN_FRUIT|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from Kahlúa(coffee/caffeine), cognac(fruit), and Irish cream(Whiskey(grains),cream(dairy))
 
 /datum/reagent/ethanol/bahama_mama
 	name = "Bahama mama"
@@ -3030,7 +3136,10 @@
 	name = "Banana Mama"
 	id = "bananahonk"
 	description = "A drink from Clown Heaven."
-	taste_description = "bananas and sugar"
+	taste_description = list(
+		SPECIES_TESHARI      = "bananas",
+		TASTE_STRING_DEFAULT = "sweet bananas"
+	)
 	nutriment_factor = 1
 	color = "#FFFF91"
 	strength = 12
@@ -3097,7 +3206,7 @@
 	glass_name = "Black Russian"
 	glass_desc = "For the lactose-intolerant. Still as classy as a White Russian."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from vodka(grains) and kahlua(coffee/caffeine)
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from vodka(grains) and Kahlúa(coffee/caffeine)
 
 /datum/reagent/ethanol/bloody_mary
 	name = "Bloody Mary"
@@ -3116,7 +3225,10 @@
 	name = "Booger"
 	id = "booger"
 	description = "Ewww..."
-	taste_description = "sweet 'n creamy"
+	taste_description = list(
+		SPECIES_TESHARI      = "creamy blandness",
+		TASTE_STRING_DEFAULT = "creamy sweetness"
+	)
 	color = "#8CFF8C"
 	strength = 30
 
@@ -3191,7 +3303,10 @@
 	name = "Demons Blood"
 	id = "demonsblood"
 	description = "This thing makes the hair on the back of your neck stand up."
-	taste_description = "sweet tasting iron"
+	taste_description = list(
+		SPECIES_TESHARI      = "metallic notes",
+		TASTE_STRING_DEFAULT = "metallic sweetness"
+	)
 	taste_mult = 1.5
 	color = "#820000"
 	strength = 15
@@ -3210,7 +3325,7 @@
 
 	glass_name = "Devil's Kiss"
 	glass_desc = "Creepy time!"
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Made from kahlua (Coffee)
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Made from Kahlúa (Coffee)
 
 /datum/reagent/ethanol/driestmartini
 	name = "Driest Martini"
@@ -3325,7 +3440,7 @@
 /datum/reagent/ethanol/hooch
 	name = "Hooch"
 	id = "hooch"
-	description = "Either someone's failure at cocktail making or attempt in alchohol production. In any case, do you really want to drink that?"
+	description = "Either someone's failure at cocktail making or attempt in alcohol production. In any case, do you really want to drink that?"
 	taste_description = "pure alcohol"
 	color = "#4C3100"
 	strength = 25
@@ -3358,9 +3473,9 @@
 	strength = 15
 
 	glass_name = "Irish Car Bomb"
-	glass_desc = "An irish car bomb."
+	glass_desc = "An Irish car bomb."
 
-	allergen_type = ALLERGEN_DAIRY|ALLERGEN_GRAINS //Made from ale(grains) and irish cream(whiskey(grains), cream(dairy))
+	allergen_type = ALLERGEN_DAIRY|ALLERGEN_GRAINS //Made from ale(grains) and Irish cream(whiskey(grains), cream(dairy))
 
 /datum/reagent/ethanol/coffee/irishcoffee
 	name = "Irish Coffee"
@@ -3373,7 +3488,7 @@
 	glass_name = "Irish coffee"
 	glass_desc = "Coffee and alcohol. More fun than a Mimosa to drink in the morning."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_DAIRY|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from Coffee(coffee/caffeine) and irish cream(whiskey(grains), cream(dairy))
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_DAIRY|ALLERGEN_GRAINS|ALLERGEN_STIMULANT //Made from Coffee(coffee/caffeine) and Irish cream(whiskey(grains), cream(dairy))
 
 /datum/reagent/ethanol/irish_cream
 	name = "Irish Cream"
@@ -3392,7 +3507,10 @@
 	name = "Long Island Iced Tea"
 	id = "longislandicedtea"
 	description = "The liquor cabinet, brought together in a delicious mix. Intended for middle-aged alcoholic women only."
-	taste_description = "sweet tea, with a kick"
+	taste_description = list(
+		SPECIES_TESHARI      = "powerfully alcoholic tea",
+		TASTE_STRING_DEFAULT = "sweet tea, with a kick"
+	)
 	color = "#895B1F"
 	strength = 12
 
@@ -3425,7 +3543,7 @@
 
 	glass_name = "Manhattan Project"
 	glass_desc = "A scientist's drink of choice, for thinking how to blow up the station."
-	allergen_type = ALLERGEN_GRAINS|ALLERGEN_FRUIT //Made from manhattan which is made from whiskey(grains), and vermouth(fruit)
+	allergen_type = ALLERGEN_GRAINS|ALLERGEN_FRUIT //Made from Manhattan which is made from whiskey(grains), and vermouth(fruit)
 
 /datum/reagent/ethanol/manly_dorf
 	name = "The Manly Dorf"
@@ -3436,7 +3554,7 @@
 	strength = 25
 
 	glass_name = "The Manly Dorf"
-	glass_desc = "A manly concotion made from Ale and Beer. Intended for true men only."
+	glass_desc = "A manly concoction made from Ale and Beer. Intended for true men only."
 
 	allergen_type = ALLERGEN_GRAINS //Made from beer(grains) and ale(grains)
 
@@ -3457,7 +3575,10 @@
 	name = "Mead"
 	id = "mead"
 	description = "A Viking's drink, though a cheap one."
-	taste_description = "sweet yet alcoholic"
+	taste_description = list(
+		SPECIES_TESHARI      = "floral alcohol",
+		TASTE_STRING_DEFAULT = "cloyingly sweet alcohol"
+	)
 	reagent_state = LIQUID
 	color = "#FFBB00"
 	strength = 30
@@ -3513,7 +3634,10 @@
 	name = "Red Mead"
 	id = "red_mead"
 	description = "The true Viking's drink! Even though it has a strange red color."
-	taste_description = "sweet and salty alcohol"
+	taste_description = list(
+		SPECIES_TESHARI      = "salty alcohol",
+		TASTE_STRING_DEFAULT = "sweet, salty alcohol"
+	)
 	color = "#C73C00"
 	strength = 30
 
@@ -3524,7 +3648,10 @@
 	name = "Sbiten"
 	id = "sbiten"
 	description = "A spicy Vodka! Might be a bit hot for the little guys!"
-	taste_description = "hot and spice"
+	taste_description = list(
+		SPECIES_TESHARI      = "powerful alcohol",
+		TASTE_STRING_DEFAULT = "hot and spice"
+	)
 	color = "#FFA371"
 	strength = 15
 	adj_temp = 50
@@ -3586,7 +3713,7 @@
 	glass_name = "Snow White"
 	glass_desc = "A cold refreshment."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_FRUIT|ALLERGEN_STIMULANT //made from Pineapple juice(fruit), lemon_lime(fruit), and kahlua(coffee/caffine)
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_FRUIT|ALLERGEN_STIMULANT //made from Pineapple juice(fruit), lemon_lime(fruit), and Kahlúa(coffee/caffine)
 
 /datum/reagent/ethanol/suidream
 	name = "Sui Dream"
@@ -3643,7 +3770,10 @@
 	name = "Toxins Special"
 	id = "phoronspecial"
 	description = "This thing is literally on fire!"
-	taste_description = "spicy toxins"
+	taste_description = list(
+		SPECIES_TESHARI      = "pure poison",
+		TASTE_STRING_DEFAULT = "spicy toxins"
+	)
 	reagent_state = LIQUID
 	color = "#7F00FF"
 	strength = 10
@@ -3671,7 +3801,7 @@
 /datum/reagent/ethanol/vodkatonic
 	name = "Vodka and Tonic"
 	id = "vodkatonic"
-	description = "For when a gin and tonic isn't russian enough."
+	description = "For when a gin and tonic isn't Russian enough."
 	taste_description = "tart bitterness"
 	color = "#0064C8" // rgb: 0, 100, 200
 	strength = 15
@@ -3692,7 +3822,7 @@
 	glass_name = "White Russian"
 	glass_desc = "A very nice looking drink. But that's just, like, your opinion, man."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_GRAINS|ALLERGEN_DAIRY|ALLERGEN_STIMULANT //Made from black russian(vodka(grains), kahlua(coffee/caffeine)) and cream(dairy)
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_GRAINS|ALLERGEN_DAIRY|ALLERGEN_STIMULANT //Made from black Russian(vodka(grains), Kahlúa(coffee/caffeine)) and cream(dairy)
 
 /datum/reagent/ethanol/whiskey_cola
 	name = "Whiskey Cola"
@@ -3737,7 +3867,10 @@
 	name = "Redeemer's Brew"
 	id = "unathiliquor"
 	description = "This barely qualifies as a drink, and could give jet fuel a run for its money. Also known to cause feelings of euphoria and numbness."
-	taste_description = "spiced numbness"
+	taste_description = list(
+		TASTE_STRING_DEFAULT = list("spiced numbness" = 10),
+		SPECIES_TESHARI = list("rich numbness" = 10)
+	)
 	color = "#242424"
 	strength = 5
 
@@ -3788,7 +3921,10 @@
 	name = "Ginza Mary"
 	id = "ginzamary"
 	description = "An alcoholic drink made with vodka, sake, and juices."
-	taste_description = "spicy tomato sake"
+	taste_description = list(
+		SPECIES_TESHARI      = "tomato sake",
+		TASTE_STRING_DEFAULT = "spicy tomato sake"
+	)
 	color = "#FF3232"
 	strength = 25
 
@@ -3826,15 +3962,15 @@
 /datum/reagent/ethanol/coffee/elysiumfacepunch
 	name = "Elysium Facepunch"
 	id = "elysiumfacepunch"
-	description = "A loathesome cocktail favored by Heaven's skeleton shift workers."
+	description = "A loathsome cocktail favored by Heaven's skeleton shift workers."
 	taste_description = "sour coffee"
 	color = "#8f7729"
 	strength = 20
 
 	glass_name = "Elysium Facepunch"
-	glass_desc = "A loathesome cocktail favored by Heaven's skeleton shift workers."
+	glass_desc = "A loathsome cocktail favored by Heaven's skeleton shift workers."
 
-	allergen_type = ALLERGEN_COFFEE|ALLERGEN_FRUIT|ALLERGEN_STIMULANT //Made from kahlua(Coffee/caffeine) and lemonjuice(fruit)
+	allergen_type = ALLERGEN_COFFEE|ALLERGEN_FRUIT|ALLERGEN_STIMULANT //Made from Kahlúa(Coffee/caffeine) and lemonjuice(fruit)
 
 /datum/reagent/ethanol/erebusmoonrise
 	name = "Erebus Moonrise"
@@ -3893,7 +4029,10 @@
 	name = "Xanadu Cannon"
 	id = "xanaducannon"
 	description = "Common in the entertainment districts of Titan."
-	taste_description = "sweet alcohol"
+	taste_description = list(
+		SPECIES_TESHARI      = "alcohol",
+		TASTE_STRING_DEFAULT = "sweet alcohol"
+	)
 	color = "#614126"
 	strength = 50
 
@@ -3954,13 +4093,13 @@
 /datum/reagent/ethanol/bitters
 	name = "Bitters"
 	id = "bitters"
-	description = "An aromatic, typically alcohol-based infusions of bittering botanticals and flavoring agents like fruit peels, spices, dried flowers, and herbs."
+	description = "An aromatic, typically alcohol-based infusions of bittering botanicals and flavoring agents like fruit peels, spices, dried flowers, and herbs."
 	taste_description = "sharp bitterness"
 	color = "#9b6241" // rgb(155, 98, 65)
 	strength = 50
 
 	glass_name = "Bitters"
-	glass_desc = "An aromatic, typically alcohol-based infusions of bittering botanticals and flavoring agents like fruit peels, spices, dried flowers, and herbs."
+	glass_desc = "An aromatic, typically alcohol-based infusions of bittering botanicals and flavoring agents like fruit peels, spices, dried flowers, and herbs."
 
 /datum/reagent/ethanol/soemmerfire
 	name = "Soemmer Fire"
@@ -3973,7 +4112,7 @@
 	glass_name = "Soemmer Fire"
 	glass_desc = "A painfully hot mixed drink, for when you absolutely need to hurt right now."
 
-	allergen_type = ALLERGEN_GRAINS|ALLERGEN_FRUIT //Made from manhattan(whiskey(grains), vermouth(fruit))
+	allergen_type = ALLERGEN_GRAINS|ALLERGEN_FRUIT //Made from Manhattan(whiskey(grains), vermouth(fruit))
 
 /datum/reagent/drink/soemmerfire/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
@@ -3985,7 +4124,10 @@
 	name = "Wine Brandy"
 	id = "winebrandy"
 	description = "A premium spirit made from distilled wine."
-	taste_description = "very sweet dried fruit with many elegant notes"
+	taste_description = list(
+		SPECIES_TESHARI      = "complex, fruity alcohol",
+		TASTE_STRING_DEFAULT = "sweet alcohol with elegant notes of dried fruit"
+	)
 	color = "#4C130B" // rgb(76,19,11)
 	strength = 20
 
@@ -4005,7 +4147,7 @@
 	glass_name = "Morning After"
 	glass_desc = "The finest hair of the dog, coming up!"
 
-	allergen_type = ALLERGEN_GRAINS|ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Made from sbiten(vodka(grain)) and coffee(coffee/caffine)
+	allergen_type = ALLERGEN_GRAINS|ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Made from sbiten(vodka(grain)) and coffee(coffee/caffeine)
 
 /datum/reagent/ethanol/vesper
 	name = "Vesper"
@@ -4108,7 +4250,10 @@
 	name = "Clover Club"
 	id = "cloverclub"
 	description = "A light and refreshing raspberry cocktail."
-	taste_description = "sweet raspberry"
+	taste_description = list(
+		SPECIES_TESHARI      = "raspberries",
+		TASTE_STRING_DEFAULT = "sweet raspberry"
+	)
 	color = "#dd00a6" // rgb(221, 0, 166)
 	strength = 30
 
@@ -4200,8 +4345,11 @@
 /datum/reagent/ethanol/piscosour
 	name = "Pisco Sour"
 	id = "piscosour"
-	description = "Wine Brandy, Lemon, and a dream. A South American classic"
-	taste_description = "light sweetness"
+	description = "Wine brandy, lemon, and a dream. A South American classic"
+	taste_description = list(
+		SPECIES_TESHARI      = "light, refreshing alcohol",
+		TASTE_STRING_DEFAULT = "light sweetness"
+	)
 	color = "#f9f96b" // rgb(249, 249, 107)
 	strength = 30
 
@@ -4252,7 +4400,7 @@
 	name = "Godka"
 	id = "godka"
 	description = "Number one drink AND fueling choice for Russians multiverse-wide."
-	taste_description = "russian steel and a hint of grain"
+	taste_description = "Russian steel and a hint of grain"
 	color = "#0064C8"
 	strength = 50
 
@@ -4281,7 +4429,7 @@
 /datum/reagent/ethanol/holywine
 	name = "Angel Ichor"
 	id = "holywine"
-	description = "A premium alchoholic beverage made from distilled angel blood."
+	description = "A premium alcoholic beverage made from distilled angel blood."
 	taste_description = "wings in a glass, and a hint of grape"
 	color = "#C4921E"
 	strength = 20
@@ -4306,10 +4454,13 @@
 	allergen_type = ALLERGEN_FRUIT|ALLERGEN_GRAINS //Made from vodka(grain), holy wine(fruit), and lime juice(fruit)
 
 /datum/reagent/ethanol/angelswrath
-	name = "Angels Wrath"
+	name = "Angel's Wrath"
 	id = "angelswrath"
 	description = "This thing makes the hair on the back of your neck stand up."
-	taste_description = "sweet victory and sour iron"
+	taste_description = list(
+		SPECIES_TESHARI      = "hot victory and bitter iron",
+		TASTE_STRING_DEFAULT = "sweet victory and sour iron"
+	)
 	taste_mult = 1.5
 	color = "#F3C906"
 	strength = 30
@@ -4322,17 +4473,20 @@
 	allergen_type = ALLERGEN_FRUIT|ALLERGEN_STIMULANT //Made from space mountain wind(fruit), dr.gibb(caffine) and holy wine(fruit)
 
 /datum/reagent/ethanol/angelskiss
-	name = "Angels Kiss"
+	name = "Angel's Kiss"
 	id = "angelskiss"
 	description = "Miracle time!"
-	taste_description = "sweet forgiveness and bitter iron"
+	taste_description = list(
+		SPECIES_TESHARI      = "warm forgiveness and bitter iron",
+		TASTE_STRING_DEFAULT = "sweet forgiveness and bitter iron"
+	)
 	color = "#AD772B"
 	strength = 25
 
 	glass_name = "Angel's Kiss"
 	glass_desc = "Miracle time!"
 
-	allergen_type = ALLERGEN_FRUIT|ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Made from holy wine(fruit), and kahlua(coffee)
+	allergen_type = ALLERGEN_FRUIT|ALLERGEN_COFFEE|ALLERGEN_STIMULANT //Made from holy wine(fruit), and Kahlúa(coffee)
 
 /datum/reagent/ethanol/ichor_mead
 	name = "Ichor Mead"
@@ -4375,7 +4529,10 @@
 	name = "Lemonade Schnapps"
 	id = "schnapps_lem"
 	description = "Childhood memories are not included."
-	taste_description = "sweet, lemon-y alcohol"
+	taste_description = list(
+		SPECIES_TESHARI      = "sour lemon with a kick",
+		TASTE_STRING_DEFAULT = "sweet lemon with a kick"
+	)
 	color = "#FFFF00"
 	strength = 25
 
@@ -4436,7 +4593,10 @@
 	name = "Kompot"
 	id = "kompot"
 	description = "A traditional Eastern European beverage once used to preserve fruit in the 1980s"
-	taste_description = "refreshingly sweet and fruity"
+	taste_description = list(
+		SPECIES_TESHARI      = "sticky, fruity flavours",
+		TASTE_STRING_DEFAULT = "sweet, fresh and fruity flavours"
+	)
 	color = "#ed9415" // rgb: 237, 148, 21
 	adj_drowsy = -1
 	adj_temp = -6
@@ -4492,7 +4652,10 @@
 	name = "Qa'zal flour"
 	id = "qazal_flour"
 	description = "Harvested from ground qa'zal, this is one of the main ingredients in qa'zal bread."
-	taste_description = "chalky, sweet dryness"
+	taste_description = list(
+		SPECIES_TESHARI      = "bland, chalky dryness",
+		TASTE_STRING_DEFAULT = "sweet, chalky dryness"
+	)
 	reagent_state = SOLID
 	nutriment_factor = 1
 	color = "#c499bc"
@@ -4501,7 +4664,10 @@
 	name = "Kirani jelly"
 	id = "kirani_jelly"
 	description = "Sticky, sweet jelly from ground kiriani fruits."
-	taste_description = "ultra-sweet fruity jelly"
+	taste_description = list(
+		SPECIES_TESHARI      = "a melange of subtle, fruity flavours",
+		TASTE_STRING_DEFAULT = "ultra-sweet jelly"
+	)
 	color = "#993c5c"
 
 /datum/reagent/drink/gauli_juice
@@ -4515,7 +4681,11 @@
 	name = "Kirani cider"
 	id = "kirani_cider"
 	description = "Fermented kirani jelly, popular among teshari packs."
-	taste_description = "sweet, tangy, fruity alcohol"
+	taste_description = list(
+		TASTE_STRING_DEFAULT = list("sweet, tangy, fruity alcohol"),
+		SPECIES_TESHARI      = list("subtle floral tones", "tangy, fruity alcohol", "mild bitterness")
+	)
+
 	color = "#993c5c"
 	strength = 10
 	glass_name = "kirani cider"
@@ -4526,7 +4696,10 @@
 	name = "Sirisaii pole"
 	id = "sirisaii_pole"
 	description = "Fermented kirani mixed with ga'uli and ice, for a fruity cocktail as cold as Sirisai's poles."
-	taste_description = "chilled, minty, sweet fruit with an alcoholic kick"
+	taste_description = list(
+		TASTE_STRING_DEFAULT = list("chilled, minty, sweet fruit with an alcoholic kick"),
+		SPECIES_TESHARI      = list("complex floral undertones", "chilled, minty fruit with an alcoholic kick")
+	)
 	color = "#993c5c"
 	strength = 10
 	adj_temp = -20
@@ -4539,7 +4712,10 @@
 	name = "Kiraniade"
 	id = "kiraniade"
 	description = "Kirani jelly mixed with soda water into a more drinkable form, sweet enough to not even need extra sugar added."
-	taste_description = "super sweet, fizzy fruit"
+	taste_description = list(
+		TASTE_STRING_DEFAULT = list("super sweet, fizzy fruit"),
+		SPECIES_TESHARI      = list("strong, fizzy, fruity flavours")
+	)
 	color = "#993c5c"
 	adj_temp = -5
 	glass_name = "kiraniade"

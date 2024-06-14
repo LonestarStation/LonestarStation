@@ -10,6 +10,7 @@
 
 	var/access = list()
 	var/registered_name = "Unknown" // The name registered_name on the card
+	var/registered_id_string = "ID Card"
 	slot_flags = SLOT_ID | SLOT_EARS
 
 	var/age = "\[UNSET\]"
@@ -30,9 +31,9 @@
 	var/mining_points = 0	// For redeeming at mining equipment vendors
 	var/survey_points = 0	// For redeeming at explorer equipment vendors.
 
-/obj/item/card/id/examine(mob/user)
+/obj/item/card/id/examine(mob/user, distance, infix, suffix)
 	. = ..()
-	if(in_range(user, src))
+	if(distance < 2)
 		show_tgui(user)
 	else
 		. += "<span class='warning'>It is too far away to read.</span>"

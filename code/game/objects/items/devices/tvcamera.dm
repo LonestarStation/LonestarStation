@@ -20,7 +20,7 @@
 	radio = null
 	..()
 
-/obj/item/tvcamera/examine()
+/obj/item/tvcamera/examine(mob/user, distance, infix, suffix)
 	. = ..()
 	. += "Video feed is [camera.status ? "on" : "off"]"
 	. += "Audio feed is [radio.broadcasting ? "on" : "off"]"

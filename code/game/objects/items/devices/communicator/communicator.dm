@@ -112,9 +112,9 @@ var/global/list/obj/item/communicator/all_communicators = list()
 // Proc: examine()
 // Parameters: user - the user doing the examining
 // Description: Allows the user to click a link when examining to look at video if one is going.
-/obj/item/communicator/examine(mob/user)
+/obj/item/communicator/examine(mob/user, distance, infix, suffix)
 	. = ..()
-	if(Adjacent(user) && video_source)
+	if(distance < 2 && video_source)
 		. += "<span class='notice'>It looks like it's on a video call: <a href='?src=\ref[src];watchvideo=1'>\[view\]</a></span>"
 
 // Proc: initialize_exonet()
@@ -135,12 +135,10 @@ var/global/list/obj/item/communicator/all_communicators = list()
 // Proc: examine()
 // Parameters: 1 (user - the person examining the device)
 // Description: Shows all the voice mobs inside the device, and their status.
-/obj/item/communicator/examine(mob/user)
+/obj/item/communicator/examine(mob/user, distance, infix, suffix)
 	. = ..()
-
 	for(var/mob/living/voice/voice in contents)
 		. += "<span class='notice'>On the screen, you can see a image feed of [voice].</span>"
-
 		if(voice && voice.key)
 			switch(voice.stat)
 				if(CONSCIOUS)
@@ -193,9 +191,17 @@ var/global/list/obj/item/communicator/all_communicators = list()
 // Parameters: None
 // Description: Simple check to see if the exonet node is active.
 /obj/item/communicator/proc/get_connection_to_tcomms()
-	if(node && node.on && node.allow_external_communicators)
-		return can_telecomm(src,node)
-	return 0
+	if (!node?.on || !node.allow_external_communicators)
+		return FALSE
+	if (is_jammed(src) || is_jammed(node))
+		return FALSE
+	var/sender_z = get_z(src)
+	var/receiver_z = get_z(node)
+	if (!sender_z || !receiver_z)
+		return FALSE
+	if (sender_z == receiver_z)
+		return TRUE
+	return sender_z in using_map.get_map_levels(receiver_z, TRUE, om_range = DEFAULT_OVERMAP_RANGE)
 
 // Proc: process()
 // Parameters: None

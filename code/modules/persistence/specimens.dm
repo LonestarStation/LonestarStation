@@ -36,7 +36,7 @@
 	to_chat(usr, "You set the tracker tag to '[tag_id]'.")
 	return TRUE
 
-/obj/item/specimen_tagger/examine(mob/user)
+/obj/item/specimen_tagger/examine(mob/user, distance, infix, suffix)
 	. = ..()
 	. += "Use this on a living animal on help intent to read an existing tracker, grab intent to tag an animal with a tracker, and any other intent to remove an existing tracker."
 
