@@ -6,6 +6,7 @@
 	icon_state = "snake"
 	icon_living = "snake"
 	icon_dead = "snake_dead"
+	organ_names = /decl/mob_organ_names/snake
 
 	faction = "snake"
 
@@ -48,7 +49,7 @@
 
 	var/poison_type = "toxin"	// The reagent that gets injected when it attacks.
 	var/poison_chance = 50			// Chance for injection to occur.
-	var/poison_per_bite = 10			// Amount added per injection.
+	var/poison_per_bite = 15			// Amount added per injection.
 
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand
 
@@ -76,37 +77,7 @@
 		to_chat(L, "<span class='warning'>You feel the snake bite enter your veins.</span>")
 		L.reagents.add_reagent(poison_type, poison_per_bite)
 
-/*
-
-/mob/living/simple_mob/animal/snake
-	name = "snake"
-	desc = "A slithery snake. These legless reptiles are the bane of mice and cowpokes alike."
-	tt_desc = "Reptilia Serpentes"
-	icon_state = "snake"
-	icon_living = "snake"
-	icon_dead = "snake_dead"
-
-	faction = "goat"
-
-	health = 40
-	maxHealth = 40
-
-	response_help  = "pets"
-	response_disarm = "gently pushes aside"
-	response_harm   = "kicks"
-
-	melee_damage_lower = 1
-	melee_damage_upper = 5
-	attacktext = list("kicked")
-
-	say_list_type = /datum/say_list/goat
-	ai_holder_type = /datum/ai_holder/simple_mob/retaliate
-
-	meat_amount = 4
-	meat_type = /obj/item/reagent_containers/food/snacks/meat
-
-*/
-
+//cobra
 /mob/living/simple_mob/animal/passive/snake/cobra
 	name = "cobra"
 	desc = "A slithery snake. These legless reptiles are the bane of mice and cowpokes alike. This one is a cobra."
@@ -117,6 +88,76 @@
 	icon_dead = "cobra_dead"
 
 	poison_chance = 85
+	poison_per_bite = 50
+
+	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand
+	holder_type = /obj/item/holder/snake/cobra
+
+//rattlesnake
+/mob/living/simple_mob/animal/passive/snake/rattle
+	name = "rattlesnake"
+	desc = "A slithery snake. These legless reptiles are the bane of mice and cowpokes alike. This one is a rattlesnake."
+	tt_desc = "Reptilia Serpentes"
+
+	icon_state = "rattle_snake"
+	icon_living = "rattle_snake"
+	icon_dead = "rattle_snake_dead"
+
+	poison_chance = 85
 	poison_per_bite = 30
 
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand
+	holder_type = /obj/item/holder/snake/rattle
+
+//CMO's pet snake
+/mob/living/simple_mob/animal/passive/snake/danger
+	name = "Danger"
+	desc = "A slithery snake. These legless reptiles are the bane of mice and cowpokes alike. This one has a little eye patch."
+	tt_desc = "Reptilia Serpentes"
+
+	icon_state = "danger_noodle"
+	icon_living = "danger_noodle"
+	icon_dead = "danger_noodle_dead"
+
+	health = 60
+	maxHealth = 60
+	poison_chance = 100
+	poison_per_bite = 20
+
+	faction = "neutral"
+	holder_type = /obj/item/holder/snake/danger
+
+/mob/living/simple_mob/animal/passive/snake/danger/Initialize()
+	. = ..()
+	// Change my name back, don't want to be named Danger (666)
+	name = initial(name)
+
+/decl/mob_organ_names/snake
+	hit_zones = list("head", "body", "tail")
+
+/* //TODO snek wants to eat mice
+/mob/living/simple_mob/animal/passive/snake/ListTargets(atom/the_target)
+	. = oview(vision_range, targets_from) //get list of things in vision range
+	var/list/living_mobs = list()
+	var/list/mice = list()
+	for (var/HM in .)
+		//Yum a tasty mouse
+		if(istype(HM, /mob/living/simple_mob/animal/passive/mouse))
+			mice += HM
+		if(isliving(HM))
+			living_mobs += HM
+
+	// if no tasty mice to chase, lets chase any living mob enemies in our vision range
+	if(length(mice) == 0)
+		//Filter living mobs (in range mobs) by those we consider enemies (retaliate behaviour)
+		return  living_mobs & enemies
+	return mice
+
+/mob/living/simple_mob/animal/passive/snake/AttackingTarget()
+        if(istype(target, /mob/living/simple_mob/animal/passive/mouse))
+                visible_message("<span class='notice'>[name] consumes [target] in a single gulp!</span>", "<span class='notice'>You consume [target] in a single gulp!</span>")
+                QDEL_NULL(target)
+                adjustBruteLoss(-2)
+        else
+                return ..()
+*/

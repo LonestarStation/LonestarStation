@@ -37,6 +37,16 @@ var/global/list/_cat_default_emotes = list(
 	icon_dead = "cat2_dead"
 	icon_rest = "cat2_rest"
 
+	faction = "neutral"
+	ai_holder_type = /datum/ai_holder/simple_mob/melee/evasive/cat
+	say_list_type = /datum/say_list/cat
+	see_in_dark = 10
+
+	maxHealth = 50
+	health = 50
+	melee_damage_lower = 3
+	melee_damage_upper = 9
+
 	movement_cooldown = 0.5 SECONDS
 
 	see_in_dark = 6 // Not sure if this actually works.
@@ -75,7 +85,7 @@ var/global/list/_cat_default_emotes = list(
 				var/atom/A = pick(visible)
 				visible_emote("suddenly stops and stares at something unseen[istype(A) ? " near [A]":""].")
 
-// Instakills mice.
+// Instakills mice. //TODO , no it dont, not unless we set the cat to be aggressive to all non-station mobs
 /mob/living/simple_mob/animal/passive/cat/apply_melee_effects(var/atom/A)
 	if(ismouse(A))
 		var/mob/living/simple_mob/animal/passive/mouse/mouse = A
@@ -164,6 +174,18 @@ var/global/list/_cat_default_emotes = list(
 
 /obj/item/holder/cat/penny
 
+/obj/item/holder/cat/lucky
+	name = "Lucky"
+	desc = "It's Lucky! The cat!"
+	gender = MALE
+	icon_state = "cat3"
+
+/obj/item/holder/cat/squeek
+	name = "Squeeky"
+	desc = "It's Squeeky! The cat?"
+	gender = FEMALE
+	icon_state = "cat2"
+
 /mob/living/simple_mob/animal/passive/cat/bones
 	name = "Bones"
 	desc = "That's Bones the cat. He's a laid back, black cat. Meow."
@@ -197,12 +219,43 @@ var/global/list/_cat_default_emotes = list(
 	icon_dead = "crusher_dead"
 	icon_rest = "crusher_rest"
 
+/mob/living/simple_mob/animal/passive/cat/lucky
+	name = "Lucky"
+	desc = "A cat with some attitude. He can be a handful sometimes, but he's a good cat."
+	named = TRUE
+	gender = MALE
+	icon_state = "cat3"
+	item_state = "cat3"
+	icon_living = "cat3"
+	icon_dead = "cat3_dead"
+	icon_rest = "cat3_rest"
+	holder_type = /obj/item/holder/cat/lucky
+
+/mob/living/simple_mob/animal/passive/cat/squeek
+	name = "Squeeky"
+	desc = "A softspoken calico. She might not be loud, but she's a mighty hunter."
+	named = TRUE
+	gender = FEMALE
+	icon_state = "cat2"
+	item_state = "cat2"
+	icon_living = "cat2"
+	icon_dead = "cat2_dead"
+	icon_rest = "cat2_rest"
+	holder_type = /obj/item/holder/cat/squeek
+	say_list_type = /datum/say_list/cat/squeek
+	melee_damage_lower = 9
+	melee_damage_upper = 12
+
 /datum/say_list/cat
 	speak = list("Meow!","Esp!","Purr!","HSSSSS")
 	emote_hear = list("meows","mews")
 	emote_see = list("shakes their head", "shivers")
 	say_maybe_target = list("Meow?","Mew?","Mao?")
 	say_got_target = list("MEOW!","HSSSS!","REEER!")
+
+/datum/say_list/cat/squeek
+	speak = list("Squeek!","SQUEEK!","Squeek?")
+	emote_hear = list("squeeks","squeaks","squiks")
 
 /mob/living/simple_mob/animal/passive/cat/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/pen) || istype(W, /obj/item/flashlight/pen))

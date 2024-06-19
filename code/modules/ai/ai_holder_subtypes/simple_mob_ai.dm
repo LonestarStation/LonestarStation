@@ -132,6 +132,17 @@
 		holder.IMove(get_step(holder, pick(alldirs)))
 		holder.face_atom(A)
 
+/datum/ai_holder/simple_mob/melee/evasive/retaliate
+	hostile = FALSE
+	retaliate = TRUE
+	destructive = FALSE
+	can_breakthrough = FALSE
+
+/datum/ai_holder/simple_mob/melee/evasive/cat
+	vision_range = 10
+	destructive = FALSE
+	can_breakthrough = FALSE
+
 /datum/ai_holder/simple_mob/melee/stand
 	stand_ground = TRUE
 	retaliate = TRUE //If attacked, attack back

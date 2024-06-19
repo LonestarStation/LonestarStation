@@ -139,10 +139,16 @@ var/global/list/holder_mob_icon_cache = list()
 	origin_tech = list(TECH_BIO = 2)
 	slot_flags = SLOT_HEAD | SLOT_HOLSTER
 
+/obj/item/holder/snake/cobra
+
+/obj/item/holder/snake/rattle
+
+/obj/item/holder/snake/danger
+
 /obj/item/holder/possum
 	origin_tech = list(TECH_BIO = 2)
 
-/obj/item/holder/possum/poppy
+/obj/item/holder/possum/pepper
 	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 4)
 
 /obj/item/holder/cat
@@ -153,6 +159,12 @@ var/global/list/holder_mob_icon_cache = list()
 
 /obj/item/holder/cat/runtime
 	origin_tech = list(TECH_BIO = 2, TECH_DATA = 4)
+
+/obj/item/holder/cat/lucky
+	origin_tech = list(TECH_BIO = 2, TECH_ILLEGAL = 4)
+
+/obj/item/holder/cat/squeek
+	origin_tech = list(TECH_BIO = 4)
 
 /obj/item/holder/borer
 	origin_tech = list(TECH_BIO = 6)

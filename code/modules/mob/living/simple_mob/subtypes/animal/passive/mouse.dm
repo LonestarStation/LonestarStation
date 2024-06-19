@@ -120,18 +120,28 @@
 	maxHealth = 20
 	health = 20
 
-	ai_holder_type = /datum/ai_holder/simple_mob/melee/evasive
+	ai_holder_type = /datum/ai_holder/simple_mob/melee/evasive/retaliate
 
 //TOM IS ALIVE! SQUEEEEEEEE~K :)
 /mob/living/simple_mob/animal/passive/mouse/brown/Tom
 	name = "Tom"
 	desc = "Jerry the cat is not amused."
+	faction = "neutral"
 
 /mob/living/simple_mob/animal/passive/mouse/brown/Tom/Initialize()
 	. = ..()
 	// Change my name back, don't want to be named Tom (666)
 	name = initial(name)
 
+/mob/living/simple_mob/animal/passive/mouse/black/Dusty
+	name = "Dusty"
+	desc = "A little black mouse that always seems to be here."
+	faction = "neutral"
+
+/mob/living/simple_mob/animal/passive/mouse/black/Dusty/Initialize()
+	. = ..()
+	// Change my name back, don't want to be named Dusty (666)
+	name = initial(name)
 
 // Mouse noises
 /datum/say_list/mouse

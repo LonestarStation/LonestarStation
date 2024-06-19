@@ -40,7 +40,13 @@
 
 /obj/item/stamp/captain
 	icon_state = "stamp-cap"
-	authority_name = "site manager"
+	authority_name = "baron"
+	authority_suffix = "'s"
+
+
+/obj/item/stamp/steward
+	icon_state = "stamp-cap"
+	authority_name = "steward"
 	authority_suffix = "'s"
 
 
@@ -73,6 +79,17 @@
 	authority_name = "research director"
 	authority_suffix = "'s"
 
+
+/obj/item/stamp/garage
+	icon_state = "stamp-rd"
+	authority_name = "garage head"
+	authority_suffix = "'s"
+
+
+/obj/item/stamp/ranch
+	icon_state = "stamp-rd"
+	authority_name = "ranch head"
+	authority_suffix = "'s"
 
 /obj/item/stamp/cmo
 	icon_state = "stamp-cmo"
@@ -108,9 +125,21 @@
 	authority_name = "CentCom"
 
 
+/obj/item/stamp/barman
+	icon_state = "stamp-qm"
+	authority_name = "bar manager"
+	authority_suffix = "'s"
+
+
 /obj/item/stamp/qm
 	icon_state = "stamp-qm"
 	authority_name = "quartermaster"
+	authority_suffix = "'s"
+
+
+/obj/item/stamp/lawyer
+	icon_state = "stamp-hop"
+	authority_name = "lawyer"
 	authority_suffix = "'s"
 
 

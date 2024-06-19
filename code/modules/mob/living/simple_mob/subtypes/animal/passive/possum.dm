@@ -74,7 +74,7 @@
 		if(last_resting != holder.resting || last_angery != is_angry)
 			holder.update_icon()
 
-/datum/ai_holder/simple_mob/passive/possum/poppy
+/datum/ai_holder/simple_mob/passive/possum/pepper
 	var/static/list/aaa_words = list(
 		"delaminat",
 		"meteor",
@@ -88,11 +88,11 @@
 		"vine"
 	)
 
-/datum/ai_holder/simple_mob/passive/possum/poppy/on_hear_say(mob/living/speaker, message)
+/datum/ai_holder/simple_mob/passive/possum/pepper/on_hear_say(mob/living/speaker, message)
 	. = ..()
 	addtimer(CALLBACK(src, .proc/check_keywords, message), rand(1 SECOND, 3 SECONDS))
 
-/datum/ai_holder/simple_mob/passive/possum/poppy/proc/check_keywords(var/message)
+/datum/ai_holder/simple_mob/passive/possum/pepper/proc/check_keywords(var/message)
 	var/mob/living/simple_mob/animal/passive/opossum/poss = holder
 	if(!istype(poss) || holder.client || holder.stat != CONSCIOUS)
 		return
@@ -121,6 +121,7 @@
 	speak_emote = list("hisses")
 	pass_flags = PASSTABLE
 	ai_holder_type = /datum/ai_holder/simple_mob/passive/possum
+	faction = "neutral"
 	see_in_dark = 6
 	maxHealth = 50
 	health = 50
@@ -139,6 +140,8 @@
 	can_pull_mobs = MOB_PULL_SMALLER
 	say_list_type = /datum/say_list/possum
 	catalogue_data = list(/datum/category_item/catalogue/fauna/opossum)
+
+//TODO: make possums splat snakes
 
 /mob/living/simple_mob/animal/passive/opossum/adjustBruteLoss(damage)
 	. = ..()
@@ -188,21 +191,21 @@
 	verbs += /mob/living/proc/ventcrawl
 	verbs += /mob/living/proc/hide
 
-/mob/living/simple_mob/animal/passive/opossum/poppy
-	name = "Poppy the Safety Possum"
+/mob/living/simple_mob/animal/passive/opossum/pepper
+	name = "Pepper the Safety Possum"
 	desc = "It's an opossum, a small scavenging marsupial. It's wearing appropriate personal protective equipment, though."
-	icon_state = "poppy"
+	icon_state = "pepperpos"
 	item_state = "poppy"
-	icon_living = "poppy"
-	icon_dead = "poppy_dead"
-	icon_rest = "poppy_dead"
+	icon_living = "pepperpos"
+	icon_dead = "pepperpos_dead"
+	icon_rest = "pepperpos_dead"
 	tt_desc = "E Didelphis astrum salutem"
-	organ_names = /decl/mob_organ_names/poppy
-	holder_type = /obj/item/holder/possum/poppy
-	ai_holder_type = /datum/ai_holder/simple_mob/passive/possum/poppy
+	organ_names = /decl/mob_organ_names/pepper
+	holder_type = /obj/item/holder/possum/pepper
+	ai_holder_type = /datum/ai_holder/simple_mob/passive/possum/pepper
 
 /decl/mob_organ_names/possum
 	hit_zones = list("head", "body", "left foreleg", "right foreleg", "left hind leg", "right hind leg", "pouch")
 
-/decl/mob_organ_names/poppy
+/decl/mob_organ_names/pepper
 	hit_zones = list("head", "body", "left foreleg", "right foreleg", "left hind leg", "right hind leg", "pouch", "cute little jacket")

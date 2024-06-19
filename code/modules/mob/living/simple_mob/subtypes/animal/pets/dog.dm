@@ -6,9 +6,13 @@
 	icon_state = "corgi"
 	icon_living = "corgi"
 	icon_dead = "corgi_dead"
+	faction = "neutral"
+	ai_holder_type = /datum/ai_holder/simple_mob/retaliate
 
-	health = 20
-	maxHealth = 20
+	health = 50
+	maxHealth = 50
+	melee_damage_lower = 4
+	melee_damage_upper = 12
 
 	response_help  = "pets"
 	response_disarm = "bops"
@@ -239,6 +243,7 @@
 					sleep(1)
 
 // Tamaskans
+
 /mob/living/simple_mob/animal/passive/dog/tamaskan
 	name = "tamaskan"
 	real_name = "tamaskan"
@@ -263,6 +268,14 @@
 	icon_living = "brittany"
 	icon_dead = "brittany_dead"
 
+/mob/living/simple_mob/animal/passive/dog/brittany/Dolly
+	name = "Dolly"
+	real_name = "Dolly"	//Intended to hold the name without altering it.
+	gender = FEMALE
+	desc = "It's a brittany spaniel, the name Dolly can be found on her old collar. She has a lovely singing voice."
+
+// German Shepherd
+
 /mob/living/simple_mob/animal/passive/dog/german
 	name = "german shepherd"
 	real_name = "german shepherd"
@@ -276,6 +289,20 @@
 	icon_state = "columbo"
 	icon_living = "columbo"
 	icon_dead = "columbo_dead"
+	gender = MALE
+
+/mob/living/simple_mob/animal/passive/dog/german/Hank
+	name = "Deputy Hank"
+	real_name = "Deputy Hank" //Intended to hold the name without altering it.
+	desc = "It's Deputy Hank. He's wearing a security vest."
+	icon_state = "columbo"
+	icon_living = "columbo"
+	icon_dead = "columbo_dead"
+	gender = MALE
+	taser_kill = FALSE
+	resistance = 5
+
+// Pug
 
 /mob/living/simple_mob/animal/passive/dog/pug
 	name = "pug"
@@ -284,6 +311,60 @@
 	icon_state = "pug"
 	icon_living = "pug"
 	icon_dead = "pug_dead"
+
+/mob/living/simple_mob/animal/passive/dog/pug/Mack
+	name = "Mack"
+	real_name = "Mack"	//Intended to hold the name without altering it.
+	gender = MALE
+	desc = "It's a little pug, the name MACK can be found on his collar."
+
+// Bull Terrier
+
+mob/living/simple_mob/animal/passive/dog/bullterrier
+	name = "bull terrier"
+	real_name = "bull terrier"
+	desc = "It's a bull terrier."
+	icon_state = "bullterrier"
+	icon_living = "bullterrier"
+	icon_dead = "bullterrier_dead"
+
+/mob/living/simple_mob/animal/passive/dog/bullterrier/Rocko
+	name = "Rocko"
+	real_name = "Rocko"	//Intended to hold the name without altering it.
+	gender = MALE
+	desc = "It's a bull terrier, the name Rocko can be found on his collar."
+
+// Pomeranian
+
+mob/living/simple_mob/animal/passive/dog/pomeranian
+	name = "pomeranian"
+	real_name = "pomeranian"
+	desc = "It's a pomeranian."
+	icon_state = "pom"
+	icon_living = "pom"
+	icon_dead = "pom_dead"
+
+/mob/living/simple_mob/animal/passive/dog/pomeranian/Princess
+	name = "Princess"
+	real_name = "Princess"	//Intended to hold the name without altering it.
+	gender = FEMALE
+	desc = "It's a pomeranian, the name Princess can be found on her expenstive looking collar."
+
+// Chihuahua
+
+mob/living/simple_mob/animal/passive/dog/chihuahua
+	name = "chihuahua"
+	real_name = "chihuahua"
+	desc = "It's a ra- no wait, that's a chihuahua."
+	icon_state = "chihuahua"
+	icon_living = "chihuahua"
+	icon_dead = "chihuahua_dead"
+
+/mob/living/simple_mob/animal/passive/dog/chihuahua/Penny
+	name = "Penny"
+	real_name = "Penny"	//Intended to hold the name without altering it.
+	gender = FEMALE
+	desc = "It's a chihuahua, the name Penny can be found on her collar."
 
 /decl/mob_organ_names/corgi
 	hit_zones = list("head", "body", "left foreleg", "right foreleg", "left hind leg", "right hind leg", "tail", "heart") //You monster.

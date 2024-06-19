@@ -80,7 +80,7 @@
 			max_number = 8
 			vermstring = "spiders"
 		if(VERM_SNAKES)
-			spawn_types = list(/mob/living/simple_mob/animal/passive/snake, /mob/living/simple_mob/animal/passive/snake/cobra)
+			spawn_types = list(/mob/living/simple_mob/animal/passive/snake, /mob/living/simple_mob/animal/passive/snake/rattle, /mob/living/simple_mob/animal/passive/snake/cobra)
 			max_number = 6
 			vermstring = "snakes"
 		if(VERM_FROGS)
@@ -88,7 +88,7 @@
 			max_number = 9
 			vermstring = "frogs"
 		if(VERM_ROACHES)
-			spawn_types = list(/mob/living/simple_mob/animal/bug/roach, /mob/living/simple_mob/animal/bug/roach/big)
+			spawn_types = list(/obj/effect/roachling)
 			max_number = 7
 			vermstring = "cockroaches"
 

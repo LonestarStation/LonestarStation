@@ -20,7 +20,7 @@
 		/mob/living/carbon,
 		/mob/living/simple_mob/animal/sif/grafadreka/trained,
 		// Do not specimen tag pre-mapped critters
-		/mob/living/simple_mob/animal/passive/opossum/poppy,
+		/mob/living/simple_mob/animal/passive/opossum/pepper,
 		/mob/living/simple_mob/animal/passive/dog/corgi/Ian,
 		/mob/living/simple_mob/animal/passive/cat/runtime
 	)
