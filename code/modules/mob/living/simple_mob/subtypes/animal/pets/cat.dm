@@ -230,6 +230,7 @@ var/global/list/_cat_default_emotes = list(
 	icon_dead = "cat3_dead"
 	icon_rest = "cat3_rest"
 	holder_type = /obj/item/holder/cat/lucky
+	evasion = 35
 
 /mob/living/simple_mob/animal/passive/cat/squeek
 	name = "Squeeky"

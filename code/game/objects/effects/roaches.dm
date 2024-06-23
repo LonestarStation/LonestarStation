@@ -220,3 +220,4 @@
 	desc = "A dead bug."
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "cockroach_dead"
+	anchored = 1

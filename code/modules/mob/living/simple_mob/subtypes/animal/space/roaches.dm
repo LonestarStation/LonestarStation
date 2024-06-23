@@ -26,7 +26,7 @@
 	organ_names = /decl/mob_organ_names/roach
 
 	melee_damage_lower = 10
-	melee_damage_upper = 20
+	melee_damage_upper = 15
 	attack_sharp = TRUE
 	attack_edge = TRUE
 	attack_sound = 'sound/weapons/bite.ogg'
@@ -54,7 +54,7 @@
 	var/roachling_type = /obj/effect/roachling
 	var/mutation_type = /mob/living/simple_mob/animal/space/roach/stunted
 	var/mutation_faction = "roaches"
-	var/mutation_prob = 5 // Odds that a spiderling will be a swarmling instead.
+	var/mutation_prob = 35 // Odds that a spiderling will be a swarmling instead.
 
 
 /mob/living/simple_mob/animal/space/roach/stunted
@@ -65,11 +65,11 @@
 	icon_living = "roachlet"
 	icon_dead = "roachlet_dead"
 
-	maxHealth = 40
-	health = 40
+	maxHealth = 20
+	health = 20
 
-	melee_damage_lower = 5
-	melee_damage_upper = 10
+	melee_damage_lower = 1
+	melee_damage_upper = 5
 	attack_sharp = FALSE
 	attack_edge = FALSE
 	attack_sound = 'sound/weapons/bite.ogg'
@@ -78,6 +78,11 @@
 	butchery_loot = list(\
 		/obj/item/stack/material/chitin = 1\
 		)
+
+//	roachling_count = 0
+	roachling_type = null
+	mutation_type = null
+	mutation_prob = 0 // just in case
 
 /decl/mob_organ_names/roach
 	hit_zones = list("cephalothorax", "abdomen", "left forelegs", "right forelegs", "left hind legs", "right hind legs", "antenae", "mouthparts")

@@ -92,7 +92,7 @@
 
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand
 	holder_type = /obj/item/holder/snake/cobra
-
+/*
 //rattlesnake
 /mob/living/simple_mob/animal/passive/snake/rattle
 	name = "rattlesnake"
@@ -108,7 +108,7 @@
 
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/stand
 	holder_type = /obj/item/holder/snake/rattle
-
+*/
 //CMO's pet snake
 /mob/living/simple_mob/animal/passive/snake/danger
 	name = "Danger"
