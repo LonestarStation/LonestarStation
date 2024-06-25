@@ -168,6 +168,26 @@
 	armor = list(melee = 40, bullet = 15, laser = 30, energy = 15, bomb = 35, bio = 100, rad = 50)
 	breach_threshold = 14 //These are kinda thicc
 
+//Lonestar Response Voidsuit
+
+/obj/item/clothing/head/helmet/space/void/medical/lonestar
+	name = "Lonestar Response combat helmet"
+	desc = "A special helmet designed for work in a hazardous, low pressure environment. For use by Lonestar Station Response crews."
+	icon_state = "rig0-lonestar_commando"
+	item_state_slots = list(slot_r_hand_str = "sec_helm_riot", slot_l_hand_str = "sec_helm_riot")
+	armor = list(melee = 50, bullet = 25, laser = 25, energy = 15, bomb = 35, bio = 100, rad = 50)
+	camera_networks = list(NETWORK_RESPONSE, NETWORK_MEDICAL)
+	no_cycle = TRUE
+
+/obj/item/clothing/suit/space/void/medical/lonestar
+	name = "Lonestar Response combat voidsuit"
+	desc = "A special suit that protects against hazardous, low pressure environments. For use by Lonestar Station Response crews."
+	icon_state = "rig-lonestar_commando"
+	item_state_slots = list(slot_r_hand_str = "suit_olive", slot_l_hand_str = "suit_olive")
+	armor = list(melee = 40, bullet = 20, laser = 20, energy = 15, bomb = 35, bio = 100, rad = 50)
+	breach_threshold = 16 //These are kinda thicc
+	no_cycle = TRUE
+
 //Medical Biohazard Voidsuit
 
 /obj/item/clothing/head/helmet/space/void/medical/bio

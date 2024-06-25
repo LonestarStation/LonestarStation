@@ -273,6 +273,22 @@
 	desc = "A set of armor worn by medical members of the Emergency Response Team. Has blue and white highlights."
 	icon_state = "ertarmor_med"
 
+//Non-hardsuit Lonestar Response armor.
+/obj/item/clothing/suit/armor/vest/lonestar
+	name = "Lonestar Response commando armor"
+	desc = "A set of armor worn by commandos from the Lonestar Station Response team. Includes minor hazard protection."
+	icon_state = "lonestar_armor_commando"
+	item_state_slots = list(slot_r_hand_str = "armor", slot_l_hand_str = "armor")
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	armor = list(melee = 50, bullet = 25, laser = 15, energy = 15, bomb = 25, bio = 5, rad = 5)
+	permeability_coefficient = 0.50
+
+/obj/item/clothing/suit/armor/vest/lonestar/medic
+	name = "Lonestar Response medic armor"
+	desc = "A set of armor worn by medics from the Lonestar Station Response team. Fairly sterile. ."
+	icon_state = "lonestar_armor_medic"
+	armor = list(melee = 50, bullet = 25, laser = 15, energy = 15, bomb = 25, bio = 10, rad = 10)
+
 //New Vests
 /obj/item/clothing/suit/storage/vest
 	name = "armor vest"

@@ -22,6 +22,12 @@
 	build_path = /obj/machinery/computer/security/bar
 	network = NETWORK_BAR //Lonestar Ed.
 
+/obj/item/circuitboard/security/response
+	name = T_BOARD("response helmet camera monitor")
+	build_path = /obj/machinery/computer/security/response
+	network = list(NETWORK_RESPONSE)
+	req_access = list(5,44)
+
 /obj/item/circuitboard/security/engineering
 	name = T_BOARD("engineering camera monitor")
 	build_path = /obj/machinery/computer/security/engineering

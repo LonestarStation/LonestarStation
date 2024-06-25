@@ -525,6 +525,27 @@
 	flags_inv = HIDEHOLSTER
 	index = 1
 
+/obj/item/clothing/suit/storage/miljacket/lonestar
+	name = "Lonestar Station Response jacket"
+	desc = "A thick canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable. The iconography belongs to Lonestar Station."
+	icon_state = "militaryjacket_lonestar"
+	armor = list(melee = 5, bullet = 5, laser = 0,energy = 0, bomb = 5, bio = 5, rad = 0)
+	item_state_slots = list(slot_r_hand_str = "suit_olive", slot_l_hand_str = "suit_olive")
+	flags_inv = HIDEHOLSTER
+
+/obj/item/clothing/suit/storage/miljacket/lonestar/commando
+	name = "Lonestar Station Response jacket"
+	desc = "A thick canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable. The iconography belongs to Lonestar Station."
+	icon_state = "militaryjacket_commando"
+
+/obj/item/clothing/suit/storage/miljacket/lonestar/cmo
+	name = "Lonestar Station Response CMO jacket"
+	desc = "An officer's jacket styled after classical American military garb. Feels sturdy, yet comfortable. The iconography belongs to Lonestar Station."
+	icon_state = "militaryjacket_lonestar_cmo"
+	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 5, bio = 10, rad = 0)
+	item_state_slots = list(slot_r_hand_str = "suit_olive", slot_l_hand_str = "suit_olive")
+	flags_inv = HIDEHOLSTER
+
 /obj/item/clothing/suit/storage/toggle/bomber
 	name = "bomber jacket"
 	desc = "A thick, well-worn WW2 leather bomber jacket."

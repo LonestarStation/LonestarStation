@@ -139,3 +139,11 @@
 	network = list(NETWORK_MERCENARY)
 	circuit = null
 	req_access = list(150)
+
+/obj/machinery/computer/security/response
+	name = "head mounted camera monitor"
+	desc = "Used to access the built-in cameras in Lonestar Response team helmets."
+	icon_state = "syndicam"
+	network = list(NETWORK_RESPONSE)
+	circuit = /obj/item/circuitboard/security/response
+	req_access = list(5,44)

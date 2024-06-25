@@ -58,6 +58,7 @@ var/global/defer_powernet_rebuild = 0      // True if net rebuild will be called
 #define NETWORK_DEFAULT "Station"
 #define NETWORK_BAR "Saloon" //Lonestar Ed.
 #define NETWORK_MEDICAL "Medical"
+#define NETWORK_RESPONSE "Lonestar Station Response" //Lonestar Ed.
 #define NETWORK_MERCENARY "MercurialNet"
 #define NETWORK_MINE "Mining Outpost"
 #define NETWORK_NORTHERN_STAR "Northern Star"
