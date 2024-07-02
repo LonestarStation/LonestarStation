@@ -1889,7 +1889,7 @@
 /area/shuttle/shuttle2/start
 	name = "Shuttle Two"
 	icon_state = "shuttlered"
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/unsimulated/floor
 	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/shuttle/shuttle2/hangar

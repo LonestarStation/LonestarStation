@@ -253,7 +253,7 @@
 	//This inherits from the robot cryo, so synths can be properly cryo'd.  If a non-synth enters and is cryo'd, ..() is called and it'll still work.
 	name = "Airlock of Wonders"
 	desc = "An airlock that isn't an airlock, and shouldn't exist.  Yell at a coder/mapper."
-	icon = 'icons/obj/doors/Doorint.dmi'
+	icon = 'icons/obj/doors/Doorext.dmi'
 	icon_state = "door_open"
 	base_icon_state = "door_open"
 	occupied_icon_state = "door_closed"
@@ -299,10 +299,72 @@
 
 /obj/machinery/cryopod/robot/door/checkpoint
 	name = "automated checkpoint"
-	desc = "A reinforced, automated checkpoint tracking arrivals and departures from the outpost. Beyond this vault is a small airstrip, then nothing but untamed wilderness."
+	desc = "A reinforced, automated checkpoint tracking arrivals and departures from the lower residential area of Vima. Beyond this vault is a large cavern, honeycombed with small shanty settlements. The smell of BBQ wafts from beyond."
 	on_store_message = "has departed from the colony."
 	on_store_name = "Travel Oversight"
 	on_enter_occupant_message = "The checkpoint unseals and grinds open, and you step through."
+	on_store_visible_message_1 = "grinds closed after"
+	on_store_visible_message_2 = "passes through it."
+	time_till_despawn = 10 // 1 second, because math
+
+////Lonestar Transfer Shuttles at the Transit Satellite in orbit of Lonestar Station, and yes the description DID need to be this long.
+
+/obj/machinery/cryopod/robot/door/Fort_Holden
+	name = "Fort Holden shuttle airlock"
+	desc = "An open airlock leading to the shuttle to Fort Holden."
+	on_store_message = "has boarded a shuttle bound for Fort Holden."
+	on_store_name = "Travel Oversight"
+	on_enter_occupant_message = "The airlock unseals and grinds open, and you step through."
+	on_store_visible_message_1 = "grinds closed after"
+	on_store_visible_message_2 = "passes through it."
+	time_till_despawn = 10 // 1 second, because math
+
+/obj/machinery/cryopod/robot/door/Hughs_Town
+	name = "\improper Hugh's Town shuttle airlock"
+	desc = "\improper An open airlock leading to the shuttle to Hugh's Town."
+	on_store_message = "has boarded a shuttle bound for Hugh's Town."
+	on_store_name = "Travel Oversight"
+	on_enter_occupant_message = "The airlock unseals and grinds open, and you step through."
+	on_store_visible_message_1 = "grinds closed after"
+	on_store_visible_message_2 = "passes through it."
+	time_till_despawn = 10 // 1 second, because math
+
+/obj/machinery/cryopod/robot/door/SABS
+	name = "\improper SABS shuttle airlock"
+	desc = "\improper An open airlock leading to the shuttle to San Antonio Battlestation."
+	on_store_message = "has boarded a shuttle bound for the S.A.B.S."
+	on_store_name = "Travel Oversight"
+	on_enter_occupant_message = "The airlock unseals and grinds open, and you step through."
+	on_store_visible_message_1 = "grinds closed after"
+	on_store_visible_message_2 = "passes through it."
+	time_till_despawn = 10 // 1 second, because math
+
+/obj/machinery/cryopod/robot/door/Space_Austin
+	name = "\improper Space Austin shuttle airlock"
+	desc = "\improper An open airlock leading to the shuttle to Space Austin."
+	on_store_message = "has boarded a shuttle bound for the Space Austin."
+	on_store_name = "Travel Oversight"
+	on_enter_occupant_message = "The airlock unseals and grinds open, and you step through."
+	on_store_visible_message_1 = "grinds closed after"
+	on_store_visible_message_2 = "passes through it."
+	time_till_despawn = 10 // 1 second, because math
+
+/obj/machinery/cryopod/robot/door/Vima
+	name = "\improper Vima  shuttle airlock"
+	desc = "\improper An open airlock leading to the shuttle to Vima."
+	on_store_message = "has boarded a shuttle bound for the Vima."
+	on_store_name = "Travel Oversight"
+	on_enter_occupant_message = "The airlock unseals and grinds open, and you step through."
+	on_store_visible_message_1 = "grinds closed after"
+	on_store_visible_message_2 = "passes through it."
+	time_till_despawn = 10 // 1 second, because math
+
+/obj/machinery/cryopod/robot/door/Mars
+	name = "\improper Mars Direct shuttle airlock"
+	desc = "\improper An open airlock leading to the direct shuttle to Mars."
+	on_store_message = "has boarded the direct shuttle line bound for Mars."
+	on_store_name = "Travel Oversight"
+	on_enter_occupant_message = "The airlock unseals and grinds open, and you step through."
 	on_store_visible_message_1 = "grinds closed after"
 	on_store_visible_message_2 = "passes through it."
 	time_till_despawn = 10 // 1 second, because math

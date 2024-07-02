@@ -5,7 +5,7 @@
 	name = "hull shield generator"
 	var/static/list/blockedturfs =  list(
 		/turf/space,
-		/turf/simulated/floor/outdoors,
+//		/turf/simulated/floor/outdoors,
 		/turf/simulated/open
 	)
 

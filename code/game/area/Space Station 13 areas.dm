@@ -220,8 +220,26 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/centcom/evac
 	name = "\improper CentCom Emergency Shuttle"
 
-/area/centcom/suppy
+/area/centcom/Fort_Holden
+	name = "\improper Fort Holden Transfer Shuttle"
+
+/area/centcom/Hughs_Town
+	name = "\improper Hugh's Town Transfer Shuttle"
+
+/area/centcom/SABS
+	name = "\improper S.A.B.S. Transfer Shuttle"
+
+/area/centcom/Space_Austin
+	name = "\improper Space Austin Transfer Shuttle"
+
+/area/centcom/mars_line
+	name = "\improper Mars Direct Shuttle"
+
+/area/centcom/supply
 	name = "\improper CentCom Supply Shuttle"
+
+/area/centcom/hangar
+	name = "\improper CentCom Private Hangar"
 
 /area/centcom/ferry
 	name = "\improper CentCom Transport Shuttle"
@@ -237,6 +255,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/centcom/specops
 	name = "\improper CentCom Special Ops"
+
+/area/centcom/storage
+	name = "\improper CentCom General Storage"
 
 /area/centcom/creed
 	name = "Creed's Office"
@@ -261,6 +282,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper CentCom Medical"
 	icon_state = "centcom_medical"
 
+/area/centcom/gift
+	name = "\improper CentCom Gift Shop"
+
 /area/centcom/command
 	name = "\improper CentCom Command" //Central Command Command totally isn't RAS Syndrome in action.
 	icon_state = "centcom_command"
@@ -282,6 +306,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper CentCom Bathroom"
 	icon_state = "centcom_crew"
 	sound_env = SMALL_ENCLOSED
+
+/area/centcom/tcomms
+	name = "tcoms"
+	icon_state = "tcomsatwest"
 
 //SYNDICATES
 

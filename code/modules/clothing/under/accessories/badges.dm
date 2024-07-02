@@ -158,6 +158,12 @@
 	icon_state = "sheriff"
 	slot_flags = SLOT_TIE | SLOT_BELT
 
+/obj/item/clothing/accessory/medal/badge/holo/ranger
+	name = "Lonestar Ranger badge"
+	desc = "A star-shaped brass badge denoting who the law is around these parts."
+	icon_state = "ranger"
+	slot_flags = SLOT_TIE | SLOT_BELT
+
 //Other badges
 
 /obj/item/clothing/accessory/medal/badge/old
