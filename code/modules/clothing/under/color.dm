@@ -71,6 +71,11 @@
 	desc = "Groovy!"
 	icon_state = "psyche"
 
+/obj/item/clothing/under/camo
+	name = "camo jumpsuit"
+	desc = "They'll never see you coming!"
+	icon_state = "camo"
+
 /obj/item/clothing/under/color/lightblue
 	name = "lightblue jumpsuit"
 	icon_state = "lightblue"

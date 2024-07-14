@@ -12,102 +12,80 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Governor."
+	supervisors = "the Lonestar Station Government and anyone paying you."
 	selection_color = "#888cba"
 	req_admin_notify = 1
 	no_shuttle = TRUE
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
+	access = list(150,157,158)
+	minimal_access = list(150,157,158)
 	minimal_player_age = 10
 	economic_modifier = 20
 
+	is_job_whitelisted = TRUE
 
 	outfit_type = /decl/hierarchy/outfit/job/mercboss
 
-	job_description = "Blank."
-
-//	alt_titles = list("Mercenary Commander" = /datum/alt_title/merccom)
-
-// Alt Titles
-//datum/alt_title/merccom
-//	title = "Mercenary Commander"
-
-/datum/job/mercboss/get_access()
-	return get_all_centcom_access()
+	job_description = "The leader of a band of legal Lonestar mercenaries with a license to kill."
 
 //////////////////////////////////
-//		Figure in Black
+//		Desperado
 //////////////////////////////////
-/datum/job/blackhat
-	title = "Black Hat"
-	flag = BLACKHAT
+/datum/job/desperado
+	title = "Desperado"
+	flag = DESPERADO
 	departments = list(DEPARTMENT_ANTAGONIST)
 	sorting_order = 2
 	department_flag = BADGUY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Can anyone really tell a stray dog what to do?"
+	supervisors = "no one. Can anyone really tell a stray dog what to do? Just stay away from the law."
 	selection_color = "#888cba"
 	req_admin_notify = 1
 	no_shuttle = TRUE
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
+	access = list(12,150,155,156)
+	minimal_access = list(12,150,155,156)
 	minimal_player_age = 10
-	economic_modifier = 13
+	economic_modifier = 5
 
-	outfit_type = /decl/hierarchy/outfit/job/blackhat
+	is_job_whitelisted = TRUE
 
-	job_description = "Blank."
+	outfit_type = /decl/hierarchy/outfit/job/desperado
 
-//	alt_titles = list("Mercenary Commander" = /datum/alt_title/merccom)
-
-// Alt Titles
-//datum/alt_title/merccom
-//	title = "Mercenary Commander"
-
-/datum/job/mercboss/get_access()
-	return get_all_centcom_access()
+	job_description = "A Lonestar outlaw with the charisma or resources to gather a small band of crooks to their side."
 
 //////////////////////////////////
-//		Shadow Master
+//		Mysterious Stranger
 //////////////////////////////////
-/datum/job/shadowmaster
-	title = "Stealth Ops Lead"
-	flag = SHADOWMASTER
+/datum/job/mysterious_stranger
+	title = "Mysterious Stranger"
+	flag = STRANGER
 	departments = list(DEPARTMENT_ANTAGONIST)
 	sorting_order = 2
 	department_flag = BADGUY
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Board of Directors."
+	supervisors = "no one but your own personal code of conduct."
 	selection_color = "#888cba"
 	req_admin_notify = 1
 	no_shuttle = TRUE
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
+	access = list(12,150,154)
+	minimal_access = list(12,150,154)
 	minimal_player_age = 10
-	economic_modifier = 13
+	economic_modifier = 10
 
-	outfit_type = /decl/hierarchy/outfit/job/shadowmaster
+	is_job_whitelisted = TRUE
 
-	job_description = "Blank."
+	outfit_type = /decl/hierarchy/outfit/job/mysterious_stranger
 
-//	alt_titles = list("Mercenary Commander" = /datum/alt_title/merccom)
-
-// Alt Titles
-//datum/alt_title/merccom
-//	title = "Mercenary Commander"
-
-/datum/job/shadowmaster/get_access()
-	return get_all_centcom_access()
+	job_description = "A mysterious stranger who lives by their own rules."
 
 //////////////////////////////////
-//		Spiritual Leader
+//		Homesteader
 //////////////////////////////////
-/datum/job/spiritleader
-	title = "Spiritual Leader"
+/datum/job/homesteader
+	title = "Homesteader"
 	flag = SPIRITLEADER
 	departments = list(DEPARTMENT_ANTAGONIST)
 	sorting_order = 2
@@ -119,20 +97,16 @@
 	selection_color = "#888cba"
 	req_admin_notify = 1
 	no_shuttle = TRUE
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
+	access = list(150,153)
+	minimal_access = list(150,153)
 	minimal_player_age = 10
 	economic_modifier = 13
 
-	outfit_type = /decl/hierarchy/outfit/job/spiritleader
+	is_job_whitelisted = TRUE
 
-	job_description = "Blank."
+	outfit_type = /decl/hierarchy/outfit/job/homesteader
 
-//	alt_titles = list("Mercenary Commander" = /datum/alt_title/merccom)
-
-// Alt Titles
-//datum/alt_title/merccom
-//	title = "Mercenary Commander"
+	job_description = "A Lonestar local in a nearby cavern, just trying to make a living out here in space. They rarely live alone."
 
 //////////////////////////////////
 //		Tradeship Manager
@@ -145,26 +119,20 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The need to move frieght."
+	supervisors = "The Company."
 	selection_color = "#888cba"
 	req_admin_notify = 1
 	no_shuttle = TRUE
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
+	access = list(160,161)
+	minimal_access = list(160,161)
 	minimal_player_age = 10
 	economic_modifier = 20
 
+	is_job_whitelisted = TRUE
 
 	outfit_type = /decl/hierarchy/outfit/job/trademanager
 
-	job_description = "Blank."
+	job_description = "Trade Managers fly to Lonestar for a bit of salvage and sales, they even get helpers."
 
-//	alt_titles = list("Mercenary Commander" = /datum/alt_title/merccom)
 
-// Alt Titles
-//datum/alt_title/merccom
-//	title = "Mercenary Commander"
-
-/datum/job/mercboss/get_access()
-	return get_all_centcom_access()
 

@@ -918,7 +918,7 @@
 /area/lonestar/maintenance/civilian
 	name = "\improper General Maintenance"
 
-//gunrange
+//lonestar: gunrange//
 /area/lonestar/civilian/range
 	name = "\improper Shooting Range"
 
@@ -1714,6 +1714,7 @@
 /area/lonestar/maintenance/substation/security // Security, Brig, Permabrig, etc.
 	name = "Prison Substation"
 */
+
 //lonestar:secrets//
 
 /area/lonestar/cathedral
@@ -2109,7 +2110,7 @@
 /area/skipjack_station/carls
 	name = "\improper near Carl's Corner"
 	icon_state = "shuttlered"
-	dynamic_lighting = 0
+	dynamic_lighting = 1
 	base_turf = /turf/space
 
 /area/skipjack_station/orbit
@@ -2132,67 +2133,67 @@
 	icon_state = "shuttle"
 
 // Ninja areas
-/area/ninja_dojo
-	name = "\improper Ninja Base"
+/area/mysterious
+	name = "\improper Mysterious Base"
 	icon_state = "green"
 	requires_power = 0
 	area_flags = AREA_FLAG_IS_RAD_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 	ambience = AMBIENCE_HIGHSEC
 
-/area/ninja_dojo/dojo
-	name = "\improper Clan Dojo"
+/area/mysterious/stranger_base
+	name = "\improper Dojo"
 	dynamic_lighting = 0
 
-/area/ninja_dojo/start
-	name = "\improper Clan Dojo"
+/area/mysterious/shuttle_start
+	name = "\improper Dojo"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/plating
 
-/area/ninja_dojo/firstdeck
+/area/mysterious/firstdeck
 	name = "off first deck"
 	icon_state = "south"
 
-/area/ninja_dojo/seconddeck
+/area/mysterious/seconddeck
 	name = "off second deck"
 	icon_state = "south"
 
-/area/ninja_dojo/thirddeck
+/area/mysterious/thirddeck
 	name = "off third deck"
 	icon_state = "south"
 
-/area/ninja_dojo/carls
+/area/mysterious/carls
 	name = "carls corner"
 	icon_state = "shuttlered"
 
-/area/ninja_dojo/slammer
+/area/mysterious/slammer
 	name = "the slammer"
 	icon_state = "shuttlered"
 
-/area/ninja_dojo/transit
+/area/mysterious/transit
 	name = "transit"
 	icon_state = "shuttlered"
 	base_turf = /turf/space/transit/north
 
-/area/ninja_dojo/orbit
+/area/mysterious/orbit
 	name = "in orbit of Lonestar Station"
 	icon_state = "shuttlegrn"
 	base_turf = /turf/space
 
-/area/ninja_dojo/sky
+/area/mysterious/sky
 	name = "hovering in the skies"
 	icon_state = "shuttlegrn"
 	base_turf = /turf/simulated/sky/south
 
-/area/ninja_dojo/sky_transit
+/area/mysterious/sky_transit
 	name = "in flight"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/sky/moving/south
 
-/area/ninja_dojo/arrivals_dock
+/area/mysterious/arrivals_dock
 	name = "\improper docked at Vima"
 	icon_state = "shuttle"
 
-/area/ninja_dojo/cavern
+/area/mysterious/cavern
 	name = "\improper Second Deck hidden cavern"
 	icon_state = "shuttle"
 	base_turf = /turf/simulated/floor/plating
@@ -2207,6 +2208,20 @@
 
 /area/shuttle/merchant/away
 	name = "\improper Merchant Vessel - Away"
+
+//Hippies
+
+/area/hippy_station
+	name = "\improper Lonestar homestead"
+	icon_state = "syndie-ship"
+	requires_power = 0
+	dynamic_lighting = 0
+	area_flags = AREA_FLAG_IS_RAD_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
+
+/area/hippy_station/start
+	name = "\improper homesteader shuttle"
+	icon_state = "shuttlered"
+
 
 // Main escape shuttle
 

@@ -112,6 +112,13 @@
 	"cowboy hat, black" = /obj/item/clothing/head/cowboy_hat/black,
 	"cowboy hat, wide" = /obj/item/clothing/head/cowboy_hat/wide,
 	"cowboy hat, small" = /obj/item/clothing/head/cowboy_hat/small,
+	"cowboy hat, large" = /obj/item/clothing/head/cowboy_hat/large,
+	"cowboy hat, pink" = /obj/item/clothing/head/cowboy_hat/pink,
+	"cowboy hat, old" = /obj/item/clothing/head/cowboy_hat/old,
+	"cowboy hat, band" = /obj/item/clothing/head/cowboy_hat/band,
+	"cowboy hat, gambler" = /obj/item/clothing/head/cowboy_hat/gambler,
+	"cowboy hat, hunter" = /obj/item/clothing/head/cowboy_hat/hunter,
+	"cowboy hat, wicker" = /obj/item/clothing/head/cowboy_hat/wicker
 	)
 	gear_tweaks += new/datum/gear_tweak/path(hats)
 

@@ -16,7 +16,7 @@
 	selection_color = "#696969"
 	access = list(access_bar, access_barman, access_maint_tunnels)
 	minimal_access = list(access_bar, access_barman)
-	economic_modifier = 10 //I wonder where that money comes from...
+	economic_modifier = 15 //I wonder where that money comes from...
 //	tcrystals = 50 //honestly this needs to be a thing, but for now we can just manually give a player TC if they ask nicely
 
 	outfit_type = /decl/hierarchy/outfit/job/service/barman

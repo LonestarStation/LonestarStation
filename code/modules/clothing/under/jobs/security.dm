@@ -17,6 +17,15 @@
 	siemens_coefficient = 0.9
 	rolled_sleeves = 0
 
+/obj/item/clothing/under/rank/deputy
+	name = "deputy's uniform"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+	icon_state = "deputy"
+	item_state_slots = list(slot_r_hand_str = "red", slot_l_hand_str = "red")
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	rolled_sleeves = -1
+
 /obj/item/clothing/under/rank/security/turtleneck
 	name = "security turtleneck"
 	desc = "It's a stylish turtleneck made of a robust nanoweave. Nobody said the Law couldn't be fashionable."
@@ -108,9 +117,18 @@
 	name = "head of security's jumpsuit"
 	icon_state = "hos"
 	item_state_slots = list(slot_r_hand_str = "red", slot_l_hand_str = "red")
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	rolled_sleeves = 0
+
+/obj/item/clothing/under/rank/sheriff
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
+	name = "head of security's jumpsuit"
+	icon_state = "sheriff"
+	item_state_slots = list(slot_r_hand_str = "red", slot_l_hand_str = "red")
+	armor = list(melee = 15, bullet = 5, laser = 5, energy = 0, bomb = 5, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	rolled_sleeves = -1
 
 /obj/item/clothing/under/rank/head_of_security/corp
 	icon_state = "hos_corporate"
@@ -144,6 +162,15 @@
 	siemens_coefficient = 0.9
 	rolled_sleeves = 0
 
+/obj/item/clothing/under/rank/warden
+	desc = "It's made of a slightly sturdier material, to allow for more robust protection. It has the word \"Warden\" written on the chest."
+	name = "warden's uniform"
+	icon_state = "sheriff"
+	item_state_slots = list(slot_r_hand_str = "red", slot_l_hand_str = "red")
+	armor = list(melee = 10, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	rolled_sleeves = -1
+
 /obj/item/clothing/under/rank/warden/corp
 	icon_state = "warden_corporate"
 	item_state_slots = list(slot_r_hand_str = "black", slot_l_hand_str = "black")
@@ -174,5 +201,14 @@
 	icon_state = "swatunder"
 	item_state_slots = list(slot_r_hand_str = "green", slot_l_hand_str = "green")
 	armor = list(melee = 10, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	rolled_sleeves = -1
+
+/obj/item/clothing/under/rank/lonestar_ranger
+	desc = "It's the uniform worn by those few with the dedication to achieve the position of \"Lonestar Ranger\". It has additional armor in the vest to protect the wearer."
+	name = "Lonestar ranger uniform"
+	icon_state = "lonestar_ranger"
+	item_state_slots = list(slot_r_hand_str = "red", slot_l_hand_str = "red")
+	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 5, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	rolled_sleeves = -1

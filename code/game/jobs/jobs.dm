@@ -37,12 +37,12 @@ var/global/const/BAR_MANAGER		=(1<<1)
 var/global/const/BARTENDER			=(1<<2)
 var/global/const/CHEF				=(1<<3)
 var/global/const/JANITOR			=(1<<4)
-var/global/const/LIBRARIAN			=(1<<5)//gunsmith?
+var/global/const/LIBRARIAN			=(1<<5)//gunsmith
 var/global/const/QUARTERMASTER		=(1<<6)
 var/global/const/CARGOTECH			=(1<<7)
 var/global/const/MINER				=(1<<8)
-var/global/const/LAWYER				=(1<<9)//seems like an rp role
-var/global/const/CHAPLAIN			=(1<<10)//merge with psych
+var/global/const/LAWYER				=(1<<9)//required for lonestar law
+var/global/const/CHAPLAIN			=(1<<10)//merged with psych
 var/global/const/ASSISTANT			=(1<<11)
 var/global/const/BRIDGE				=(1<<12)
 var/global/const/PILOT 				=(1<<13)
@@ -61,10 +61,11 @@ var/global/const/SOLADVISOR			=(1<<5)
 var/global/const/BADGUY				=(1<<4)
 
 var/global/const/MERCBOSS			=(1<<0)
-var/global/const/BLACKHAT			=(1<<1)
-var/global/const/SHADOWMASTER		=(1<<2)
+var/global/const/DESPERADO			=(1<<1)
+var/global/const/STRANGER			=(1<<2)
 var/global/const/SPIRITLEADER		=(1<<3)
 var/global/const/TRADEMANAGER		=(1<<4)
+//var/global/const/RESEARCHER		=(1<<5)
 
 /proc/guest_jobbans(var/job)
 	return ( (job in SSjob.get_job_titles_in_department(DEPARTMENT_COMMAND)) || (job in SSjob.get_job_titles_in_department(DEPARTMENT_SYNTHETIC)) || (job in SSjob.get_job_titles_in_department(DEPARTMENT_SECURITY)) )

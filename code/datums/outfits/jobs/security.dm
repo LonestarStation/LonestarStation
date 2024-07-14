@@ -2,9 +2,8 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/security
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	l_ear = /obj/item/radio/headset/headset_sec
-	head = /obj/item/clothing/head/soft/sec/corp
 	gloves = /obj/item/clothing/gloves/black
-	shoes = /obj/item/clothing/shoes/boots/duty
+	shoes = /obj/item/clothing/shoes/boots/combat_cowboy
 	backpack = /obj/item/storage/backpack/security
 	satchel_one = /obj/item/storage/backpack/satchel/sec
 	backpack_contents = list(/obj/item/handcuffs = 1)
@@ -13,19 +12,23 @@
 /decl/hierarchy/outfit/job/security/sheriff
 	name = OUTFIT_JOB_NAME("Head of security")
 	l_ear = /obj/item/radio/headset/heads/hos
-	uniform = /obj/item/clothing/under/det/grey/waistcoat
+	head = /obj/item/clothing/head/cowboy_hat/sheriff
+	uniform = /obj/item/clothing/under/rank/sheriff
+	suit = /obj/item/clothing/suit/storage/sheriff_coat
 	id_type = /obj/item/card/id/security/head
 	pda_type = /obj/item/pda/heads/hos
 
 /decl/hierarchy/outfit/job/security/warden
 	name = OUTFIT_JOB_NAME("Warden")
-	uniform = /obj/item/clothing/under/rank/warden/corp
+	head = /obj/item/clothing/head/cowboy_hat/warden
+	uniform = /obj/item/clothing/under/rank/warden
 	id_type = /obj/item/card/id/security
 	pda_type = /obj/item/pda/warden
 
 /decl/hierarchy/outfit/job/security/officer
 	name = OUTFIT_JOB_NAME("Security Officer")
-	uniform = /obj/item/clothing/under/det/grey
+	head = /obj/item/clothing/head/cowboy_hat/deputy
+	uniform = /obj/item/clothing/under/rank/deputy
 	id_type = /obj/item/card/id/security
 	pda_type = /obj/item/pda/security
 

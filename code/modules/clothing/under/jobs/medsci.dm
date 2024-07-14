@@ -47,6 +47,27 @@
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	rolled_sleeves = 0
 
+/obj/item/clothing/under/rank/research_director/ranch
+	desc = "A dress suit and slacks stained with hard work and dedication to science. Perhaps other things as well, but mostly hard work and dedication."
+	name = "ranching suit"
+	icon_state = "callum_suit"
+	item_state_slots = list(slot_r_hand_str = "sl_suit", slot_l_hand_str = "sl_suit")
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
+
+/obj/item/clothing/under/rank/research_director/garage
+	desc = "A dress suit and slacks stained with hard work and dedication to science. Perhaps other things as well, but mostly hard work and dedication."
+	name = "head mechanic jumpsuit"
+	icon_state = "greyutility"
+	item_state_slots = list(slot_r_hand_str = "grey", slot_l_hand_str = "grey")
+	armor = list(melee = 0, bullet = 0, laser = 10, energy = 10, bomb = 5, bio = 0, rad = 10)
+
+/obj/item/clothing/under/rank/grease_monkey
+	desc = "A dress suit and slacks stained with hard work and dedication to science. Perhaps other things as well, but mostly hard work and dedication."
+	name = "mechanic jumpsuit"
+	icon_state = "greyutility"
+	item_state_slots = list(slot_r_hand_str = "grey", slot_l_hand_str = "grey")
+	armor = list(melee = 0, bullet = 0, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 5)
+
 /*
  * Medical
  */

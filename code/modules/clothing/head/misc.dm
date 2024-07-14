@@ -216,18 +216,54 @@
 	icon_state = "cowboy"
 	body_parts_covered = 0
 
+/obj/item/clothing/head/cowboy_hat/white
+	icon_state = "cowboy_white"
+
+/obj/item/clothing/head/cowboy_hat/pink
+	name = "pink cowboy hat"
+	desc = "You can almost hear the old western music. Comes with a pretty flower in the hat band"
+	icon_state = "cowboy_pink"
+
 /obj/item/clothing/head/cowboy_hat/black
 	name = "black cowboy hat"
 	desc = "You can almost hear the old western music."
 	icon_state = "cowboy_black"
 
+/obj/item/clothing/head/cowboy_hat/old
+	name = "old cowboy hat"
+	desc = "You can almost hear the old western music."
+	icon_state = "cowboy_old"
+
+/obj/item/clothing/head/cowboy_hat/wicker
+	name = "wicker cowboy hat"
+	desc = "You can almost hear the old western music."
+	icon_state = "cowboy_wicker"
+
+/obj/item/clothing/head/cowboy_hat/gambler
+	name = "gambler hat"
+	desc = "You can almost hear the old western music."
+	icon_state = "cowboy_gambler"
+
+/obj/item/clothing/head/cowboy_hat/band
+	name = "banded cowboy hat"
+	desc = "You can almost hear the old western music."
+	icon_state = "cowboy_band"
+
+/obj/item/clothing/head/cowboy_hat/security
+	name = "corporate security cowboy hat"
+	desc = "You can almost hear the company approved western music."
+	icon_state = "cowboy_security"
+
+/obj/item/clothing/head/cowboy_hat/hunter
+	name = "\improper bounty hunter's ten galon"
+	desc = "The hat of someone who will bring them in... dead or alive."
+	icon_state = "cowboy_hunter"
+	armor = list(melee = 5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+
 /obj/item/clothing/head/cowboy_hat/wide
 	name = "wide-brimmed cowboy hat"
 	desc = "Because justice isn't going to dispense itself."
 	icon_state = "cowboy_wide"
-
-/obj/item/clothing/head/cowboy_hat/white
-	icon_state = "cowboy_white"
 
 /obj/item/clothing/head/cowboy_hat/white_wide
 	name = "wide-brimmed cowboy hat"
@@ -238,6 +274,38 @@
 	name = "small cowboy hat"
 	desc = "For the tiniest of cowboys."
 	icon_state = "cowboy_small"
+
+/obj/item/clothing/head/cowboy_hat/large
+	name = "large cowboy hat"
+	desc = "For the largest of cowboys."
+	icon_state = "cowboy_large"
+
+/obj/item/clothing/head/cowboy_hat/lonestar_ranger
+	name = "Lonestar ranger hat"
+	desc = "Because the good guys have white hats."
+	icon_state = "lonestar_ranger"
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 10, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/head/cowboy_hat/sheriff
+	name = "\improper sheriff's hat"
+	desc = "This hat belongs to the Lonestar Sheriff."
+	icon_state = "cowboy_sheriff"
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/head/cowboy_hat/warden
+	name = "\improper sheriff's hat"
+	desc = "This hat belongs to the Lonestar Warden."
+	icon_state = "cowboy_sheriff"
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/head/cowboy_hat/deputy
+	name = "Lonestar ranger hat"
+	desc = "A Lonestar Deputy's hat."
+	icon_state = "cowboy_deputy"
+	armor = list(melee = 5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/head/orangebandana //themij: Taryn Kifer
 	name = "orange bandana"

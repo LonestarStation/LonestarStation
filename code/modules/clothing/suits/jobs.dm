@@ -107,6 +107,18 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	flags_inv = HIDEHOLSTER
 
+/obj/item/clothing/suit/storage/sheriff_coat
+	name = "\improper Sheriff's trenchcoat"
+	desc = "A rugged canvas trenchcoat, designed and created for the Sheriffs of Lonestar Station. The coat is externally impact resistant and has an interior lead layer for slight rad protection!"
+	icon_state = "sheriff_coat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	flags_inv = HIDEHOLSTER
+	allowed = list(/obj/item/tank/emergency/oxygen, /obj/item/flashlight, /obj/item/gun/energy, /obj/item/gun/projectile, /obj/item/ammo_magazine,
+	/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/handcuffs, /obj/item/storage/fancy/cigarettes, /obj/item/flame/lighter,
+	/obj/item/taperecorder)
+	armor = list(melee = 50, bullet = 40, laser = 40, energy = 15, bomb = 15, bio = 5, rad = 5)
+
 //Detective
 /obj/item/clothing/suit/storage/det_trench
 	name = "brown trenchcoat"

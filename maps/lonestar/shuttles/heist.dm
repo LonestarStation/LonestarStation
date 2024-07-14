@@ -1,30 +1,31 @@
+//////////////
+//Desperados//
+//////////////
+
 /obj/machinery/computer/shuttle_control/web/heist
 	name = "skipjack control console"
-	req_access = list(access_syndicate)
+	req_access = list(access_desperado)
 	shuttle_tag = "Skipjack"
 
 /datum/shuttle/autodock/web_shuttle/heist
 	name = "Skipjack"
+	visible_name = "Unknown Vessel"
 	warmup_time = 0
 	can_cloak = TRUE
 	cloaked = TRUE
 	shuttle_area = /area/skipjack_station/start
 	current_location = "skipjack_start"
-//	docking_controller_tag = "skipjack_shuttle"
+	docking_controller_tag = "skipjack_shuttle"
 	web_master_type = /datum/shuttle_web_master/heist
 
 /datum/shuttle_web_master/heist
 	destination_class = /datum/shuttle_destination/heist
 	starting_destination = /datum/shuttle_destination/heist/root
 
-
-
 /datum/shuttle_destination/heist/root
-	name = "Raider Outpost"
+	name = "Hideout"
 	my_landmark = "skipjack_start"
 	preferred_interim_tag = "skipjack_transit"
-
-//	dock_target = "skipjack_base"
 
 	routes_to_make = list(
 		/datum/shuttle_destination/heist/orbit = 1 MINUTE,
@@ -81,7 +82,6 @@
 	my_landmark = "skipjack_arrivals_dock"
 	preferred_interim_tag = "skipjack_transit"
 
-//	dock_target = "skipjack_shuttle_dock_airlock"
 	announcer = "Southern Cross Docking Computer"
 
 /datum/shuttle_destination/heist/docked_LS/get_arrival_message()

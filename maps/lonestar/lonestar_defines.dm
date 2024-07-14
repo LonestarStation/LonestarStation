@@ -101,7 +101,7 @@
 	overmap_event_areas = 	6
 	default_skybox = /datum/skybox_settings/lonestar
 
-	unit_test_exempt_areas = list(/area/ninja_dojo, /area/ninja_dojo/firstdeck, /area/ninja_dojo/arrivals_dock)
+	unit_test_exempt_areas = list(/area/mysterious, /area/mysterious/firstdeck, /area/mysterious/arrivals_dock)
 	unit_test_exempt_from_atmos = null //list(/area/lonestar/command/server)
 
 	planet_datums_to_make = list(/datum/planet/main_belt)

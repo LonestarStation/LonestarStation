@@ -41,8 +41,14 @@
 /decl/hierarchy/outfit/job/secretary
 	name = OUTFIT_JOB_NAME("Command Secretary")
 	l_ear = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/rank/head_of_personnel
-	shoes = /obj/item/clothing/shoes/boots/cowboy
+	shoes = /obj/item/clothing/shoes/boots/cowboy/classic
 	id_type = /obj/item/card/id/silver
 	pda_type = /obj/item/pda/heads
+
+/decl/hierarchy/outfit/job/secretary/pre_equip(mob/living/carbon/human/H)
+	..()
+	if(H.gender == FEMALE)
+		uniform = /obj/item/clothing/under/suit_jacket/female/skirt
+	else
+		uniform = /obj/item/clothing/under/suit_jacket/charcoal
 

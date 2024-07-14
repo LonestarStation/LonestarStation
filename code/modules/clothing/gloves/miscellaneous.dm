@@ -179,3 +179,14 @@
 	desc = "A pair of cozy woolen mittens."
 	icon_state = "mittens"
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/lonestar_ranger
+	desc = "These brown frilled white are made from a durable synthetic, and have hardened knuckles."
+	name = "Lonestar ranger gloves"
+	icon_state = "lonestar_ranger"
+	item_state_slots = list(slot_r_hand_str = "white", slot_l_hand_str = "white")
+	force = 5
+	punch_force = 5
+	siemens_coefficient = 0.75
+	permeability_coefficient = 0.05
+	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)

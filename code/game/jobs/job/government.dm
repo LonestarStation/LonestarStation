@@ -23,6 +23,8 @@
 	minimal_player_age = 14
 	economic_modifier = 25
 
+	is_job_whitelisted = TRUE
+
 	minimum_character_age = 35
 	min_age_by_species = list(SPECIES_HUMAN_VATBORN = 16)
 	ideal_character_age = 70 // Old geezer captains ftw
@@ -59,6 +61,8 @@
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 14
 	economic_modifier = 20
+
+	is_job_whitelisted = TRUE
 
 	minimum_character_age = 25
 	min_age_by_species = list(SPECIES_HUMAN_VATBORN = 10)
@@ -102,6 +106,8 @@
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 10
 	economic_modifier = 15
+
+	is_job_whitelisted = TRUE
 
 	minimum_character_age = 25
 	min_age_by_species = list(SPECIES_UNATHI = 70, SPECIES_TESHARI = 20, "mechanical" = 10, SPECIES_HUMAN_VATBORN = 14)
@@ -147,6 +153,8 @@
 	minimal_player_age = 10
 	economic_modifier = 25
 
+	is_job_whitelisted = TRUE
+
 	minimum_character_age = 25
 	min_age_by_species = list(SPECIES_HUMAN_VATBORN = 14)
 	ideal_character_age = 40
@@ -191,6 +199,8 @@
 	minimal_player_age = 10
 	economic_modifier = 25
 
+	is_job_whitelisted = TRUE
+
 	minimum_character_age = 40
 	min_age_by_species = list(SPECIES_HUMAN_VATBORN = 20)
 	ideal_character_age = 60
@@ -232,6 +242,8 @@
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 10
 	economic_modifier = 30
+
+	is_job_whitelisted = TRUE
 
 	minimum_character_age = 40
 	min_age_by_species = list(SPECIES_HUMAN_VATBORN = 20)

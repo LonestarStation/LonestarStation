@@ -4,10 +4,12 @@
 /decl/hierarchy/outfit/job/assistant
 	name = OUTFIT_JOB_NAME("Assistant")
 	id_type = /obj/item/card/id/assistant
+	uniform = /obj/item/clothing/under/tourist
 
 /decl/hierarchy/outfit/job/assistant/visitor
 	name = OUTFIT_JOB_NAME("Visitor")
 	id_pda_assignment = "Visitor"
+	uniform = /obj/item/clothing/under/tourist
 
 /decl/hierarchy/outfit/job/assistant/cityslick
 	name = OUTFIT_JOB_NAME("City Slicker")

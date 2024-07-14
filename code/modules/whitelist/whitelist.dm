@@ -95,7 +95,6 @@
 
 	return C.is_whitelisted(language.type)
 
-/*
 /proc/is_job_whitelisted(mob/M, var/datum/job/job)
 	//They are admin or the whitelist isn't in use
 	if(whitelist_overrides(M))
@@ -106,12 +105,11 @@
 		return FALSE
 
 	//The job isn't even whitelisted
-	if(!(JOB_IS_WHITELISTED))
+	if(!job.is_job_whitelisted)
 		return TRUE
 
 	var/client/C = (!isclient(M)) ? M.client : M
 	return C.is_whitelisted(job.type)
-*/
 
 /proc/whitelist_overrides(mob/M)
 	return !config.usealienwhitelist || check_rights(R_ADMIN|R_EVENT, 0, M)

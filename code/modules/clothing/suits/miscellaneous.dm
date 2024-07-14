@@ -420,6 +420,22 @@
 	addblends = "cardigan_a"
 	flags_inv = HIDEHOLSTER
 
+/obj/item/clothing/suit/mysterious
+	name = "mysterious coat"
+	desc = "A long, thick black leather coat."
+	icon_state = "leathercoat_alt"
+	allowed = list (/obj/item/pen, /obj/item/paper, /obj/item/flashlight, /obj/item/tank/emergency/oxygen, /obj/item/storage/fancy/cigarettes, /obj/item/storage/box/matches, /obj/item/reagent_containers/food/drinks/flask)
+	item_state_slots = list(slot_r_hand_str = "leather_jacket", slot_l_hand_str = "leather_jacket")
+	flags_inv = HIDEHOLSTER
+	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
+
+/obj/item/clothing/under/costume/captain_fly/robust
+	name = "rogue's uniform"
+	desc = "Still free."
+	icon_state = "captain_fly"
+	item_state_slots = list(slot_r_hand_str = "red", slot_l_hand_str = "red")
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 5, bomb = 5, bio = 0, rad = 0)
+
 /*
  * stripper
  */

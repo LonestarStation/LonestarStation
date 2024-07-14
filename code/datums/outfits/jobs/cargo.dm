@@ -21,7 +21,6 @@
 	shoes = /obj/item/clothing/shoes/black
 	uniform = /obj/item/clothing/under/rank/cargotech/jeans
 	suit = /obj/item/clothing/suit/storage/toggle/bomber
-	gloves = /obj/item/clothing/gloves/fingerless
 	glasses = /obj/item/clothing/glasses/fakesunglasses/aviator
 	id_slot = slot_wear_id
 	pda_slot = slot_belt

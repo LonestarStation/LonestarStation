@@ -82,6 +82,9 @@ var/global/datum/controller/occupations/job_master
 		if(jobban_isbanned(player, job.title))
 			Debug("FOC isbanned failed, Player: [player]")
 			continue
+		if(!is_job_whitelisted(player, job))
+			Debug("FOC not whitelisted failed, Player: [player]")
+			continue
 		if(!job.player_old_enough(player.client))
 			Debug("FOC player not old enough, Player: [player]")
 			continue
@@ -118,6 +121,10 @@ var/global/datum/controller/occupations/job_master
 
 		if(!job.player_old_enough(player.client))
 			Debug("GRJ player not old enough, Player: [player]")
+			continue
+
+		if(!is_job_whitelisted(player, job))
+			Debug("GRJ not whitelisted failed, Player: [player]")
 			continue
 
 		if((job.current_positions < job.spawn_positions) || job.spawn_positions == -1)
@@ -261,6 +268,10 @@ var/global/datum/controller/occupations/job_master
 
 				if(!job.player_old_enough(player.client))
 					Debug("DO player not old enough, Player: [player], Job:[job.title]")
+					continue
+
+				if(!is_job_whitelisted(player, job))
+					Debug("DO whitelisted failed, Player: [player], Job:[job.title]")
 					continue
 
 				// If the player wants that job on this level, then try give it to him.
@@ -603,6 +614,9 @@ var/global/datum/controller/occupations/job_master
 			if(!(player.ready && player.mind && !player.mind.assigned_role))
 				continue //This player is not ready
 			if(jobban_isbanned(player, job.title))
+				level5++
+				continue
+			if(!is_job_whitelisted(player, job))
 				level5++
 				continue
 			if(!job.player_old_enough(player.client))

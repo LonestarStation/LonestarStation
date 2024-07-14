@@ -210,6 +210,19 @@
 	heat_protection = FEET
 	max_heat_protection_temperature = SHOE_MAX_HEAT_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/shoes/boots/combat_cowboy //Basically SWAT shoes combined with galoshes. with a cowboy sprite
+	name = "combat cowboy boots"
+	desc = "When you REALLY want to turn up the yeehaw."
+	icon_state = "cowboy_black"
+	force = 5
+	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
+	siemens_coefficient = 0.6
+
+	cold_protection = FEET
+	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = FEET
+	max_heat_protection_temperature = SHOE_MAX_HEAT_PROTECTION_TEMPERATURE
+
 //Stolen from CM, refurbished to be less terrible.
 /obj/item/clothing/shoes/boots/marine
 	name = "combat boots"

@@ -116,9 +116,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimal_player_age = 5
 	economic_modifier = 7
 
-	access = list(access_heads, access_keycard_auth)
+	access = list(access_maint_tunnels, access_heads, access_keycard_auth)
 	minimal_access = list(access_maint_tunnels, access_heads, access_keycard_auth)
 
 	outfit_type = /decl/hierarchy/outfit/job/secretary
 	job_description = "A Command Secretary handles paperwork duty for the Heads of Staff, so they can better focus on managing their departments. \
 						They are not Heads of Staff, and have no real authority."
+
+// Secretary Alt Titles
+/datum/alt_title/command_barista
+	title = "Command Barista"

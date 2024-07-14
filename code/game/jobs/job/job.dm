@@ -30,6 +30,9 @@
 	var/account_allowed = 1                 // Does this job type come with a station account?
 	var/economic_modifier = 2               // With how much does this job modify the initial account amount?
 	var/outfit_type                         // What outfit datum does this job use in its default title?
+
+	var/is_job_whitelisted = FALSE
+
 	var/offmap_spawn = FALSE                // Do we require weird and special spawning and datacore handling?
 	var/substitute_announce_title           // Set this to replace the actual job title in join/leave messages (for 'gamey' jobs like Survivalist)
 	var/announce_arrival_and_despawn = TRUE // Set this to false to skip announcing arrivals or departures for this job.
@@ -196,6 +199,8 @@
 	if(jobban_isbanned(player, rank))
 		return FALSE
 	if(!player_old_enough(player.client))
+		return FALSE
+	if(!is_job_whitelisted(player/*, job*/))
 		return FALSE
 	return TRUE
 

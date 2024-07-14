@@ -33,7 +33,7 @@
 /decl/hierarchy/outfit/job/soladvisor
 	name = OUTFIT_JOB_NAME("Sol Advisor")
 	l_ear = /obj/item/radio/headset/heads/hop
-	shoes = /obj/item/clothing/shoes/black
+	shoes = /obj/item/clothing/shoes/laceup
 	id_type = /obj/item/card/id/centcom
 	pda_type = /obj/item/pda/captain
 
@@ -48,12 +48,12 @@
 	name = OUTFIT_JOB_NAME("Lonestar Ranger")
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	l_ear = /obj/item/radio/headset/heads/hos
-//	head = /obj/item/clothing/head/soft/sec/corp
-	gloves = /obj/item/clothing/gloves/black
-	uniform = /obj/item/clothing/under/det/black_alt
+	head = /obj/item/clothing/head/cowboy_hat/lonestar_ranger
+	gloves = /obj/item/clothing/gloves/lonestar_ranger
+	uniform = /obj/item/clothing/under/rank/lonestar_ranger
 	id_type = /obj/item/card/id/centcom/ERT
 	pda_type = /obj/item/pda/heads/hos
-	shoes = /obj/item/clothing/shoes/boots/duty
+	shoes = /obj/item/clothing/shoes/boots/combat_cowboy
 	backpack = /obj/item/storage/backpack/security
 	satchel_one = /obj/item/storage/backpack/satchel/sec
 	backpack_contents = list(/obj/item/handcuffs = 1)
@@ -103,7 +103,7 @@
 	name = OUTFIT_JOB_NAME("Lonestar Surgeon General")
 	l_ear = /obj/item/radio/headset/heads/captain
 	uniform = /obj/item/clothing/under/rank/chief_medical_officer
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/cmo
+	suit = /obj/item/clothing/suit/storage/miljacket/lonestar/cmo
 	shoes = /obj/item/clothing/shoes/dress
 	pda_slot = slot_l_store
 	backpack = /obj/item/storage/backpack/medic
@@ -111,6 +111,13 @@
 	messenger_bag = /obj/item/storage/backpack/messenger/med
 	id_type = /obj/item/card/id/centcom
 	pda_type = /obj/item/pda/heads/cmo
+
+/decl/hierarchy/outfit/job/surgeongeneral/pre_equip(mob/living/carbon/human/H)
+	..()
+	if(H.gender == FEMALE)
+		uniform = /obj/item/clothing/under/rank/chief_medical_uniform/skirt
+	else
+		uniform = /obj/item/clothing/under/rank/chief_medical_uniform
 
 /decl/hierarchy/outfit/job/surgeongeneral/post_equip(var/mob/living/carbon/human/H)
 	..()

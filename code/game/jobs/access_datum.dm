@@ -478,10 +478,54 @@ var/global/const/access_cent_captain = 109//Captain's office/ID comp/AI.
 /***************
 * Antag access *
 ***************/
-var/global/const/access_syndicate = 150//General Syndicate Access
+var/global/const/access_syndicate = 150
 /datum/access/syndicate
 	id = access_syndicate
 	access_type = ACCESS_TYPE_SYNDICATE
+
+//151 unused
+
+//152 unused
+
+var/global/const/access_homestead = 153
+/datum/access/homestead
+	id = access_homestead
+	access_type = ACCESS_TYPE_SYNDICATE
+
+var/global/const/access_stranger = 154
+/datum/access/stranger
+	id = access_stranger
+	access_type = ACCESS_TYPE_SYNDICATE
+
+var/global/const/access_desperado = 155
+/datum/access/desperado
+	id = access_desperado
+	access_type = ACCESS_TYPE_SYNDICATE
+
+var/global/const/access_desperado_boss = 156
+/datum/access/desperado_boss
+	id = access_desperado_boss
+	access_type = ACCESS_TYPE_SYNDICATE
+
+var/global/const/access_merc = 157
+/datum/access/merc
+	id = access_merc
+	access_type = ACCESS_TYPE_SYNDICATE
+
+var/global/const/access_merc_boss = 158
+/datum/access/merc_boss
+	id = access_merc_boss
+	access_type = ACCESS_TYPE_SYNDICATE
+
+var/global/const/access_trader = 160//General Beruang Trader Access
+/datum/access/trader
+	id = access_trader
+	access_type = ACCESS_TYPE_PRIVATE
+
+var/global/const/access_trader_manager = 161
+/datum/access/trader_manager
+	id = access_trader_manager
+	access_type = ACCESS_TYPE_PRIVATE
 
 /*******
 * Misc *
@@ -497,10 +541,7 @@ var/global/const/access_crate_cash = 200
 	id = access_crate_cash
 	access_type = ACCESS_TYPE_NONE
 
-var/global/const/access_trader = 160//General Beruang Trader Access
-/datum/access/trader
-	id = access_trader
-	access_type = ACCESS_TYPE_PRIVATE
+
 
 var/global/const/access_alien = 300 // For things like crashed ships.
 /datum/access/alien

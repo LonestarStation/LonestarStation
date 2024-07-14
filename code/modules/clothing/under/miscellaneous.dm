@@ -537,6 +537,18 @@
 	worn_state = "ceremonial_c"
 
 /*
+/obj/item/clothing/under/dress/yellow_fifties
+	name = "\improper yellow 50's dress"
+	desc = "A classic dress for classic style."
+	icon_state = "dress_yellow_fifties"
+
+/obj/item/clothing/under/dress/red_fifties
+	name = "\improper red 50's dress"
+	desc = "A classic dress for classic style."
+	icon_state = "dress_red_fifties"
+*/
+
+/*
  * wedding stuff
  */
 /obj/item/clothing/under/wedding
@@ -1249,3 +1261,9 @@ Uniforms and such
 	name = "hazard cohesion suit"
 	desc = "An orange cohesion suit with yellow hazard stripes intended to assist Prometheans in maintaining their form and prevent direct skin exposure."
 	icon_state = "cohesionsuit_hazard"
+
+/obj/item/clothing/under/tourist
+	name = "tourist outfit"
+	desc = "A questionably fashionable polo shirt with some khaki cargo shorts."
+	icon_state = "tourist"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO

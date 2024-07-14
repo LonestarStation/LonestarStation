@@ -12,18 +12,18 @@
 /decl/hierarchy/outfit/job/science/ranch_head
 	name = OUTFIT_JOB_NAME("Ranch Overseer")
 	l_ear = /obj/item/radio/headset/heads/rd
-	uniform = /obj/item/clothing/under/gentlesuit
-	shoes = /obj/item/clothing/shoes/boots/cowboy/snakeskin
-	head = /obj/item/clothing/head/cowboy_hat/black
+	uniform = /obj/item/clothing/under/rank/research_director/ranch
+	shoes = /obj/item/clothing/shoes/boots/cowboy/classic
+	head = /obj/item/clothing/head/cowboy_hat/old
 	id_type = /obj/item/card/id/science/head
 	pda_type = /obj/item/pda/heads/rd
 
 /decl/hierarchy/outfit/job/science/ranch_hand
 	name = OUTFIT_JOB_NAME("Ranch Hand")
 	uniform = /obj/item/clothing/under/frontier
-	gloves = /obj/item/clothing/gloves/duty
+	gloves = /obj/item/clothing/gloves/botanic_leather
 	shoes = /obj/item/clothing/shoes/boots/cowboy
-	head = /obj/item/clothing/head/cowboy_hat
+	head = /obj/item/clothing/head/cowboy_hat/wicker
 	id_type = /obj/item/card/id/science
 
 /decl/hierarchy/outfit/job/science/rodeo_clown
@@ -31,7 +31,7 @@
 	uniform = /obj/item/clothing/under/frontier
 	gloves = /obj/item/clothing/gloves/duty
 	shoes = /obj/item/clothing/shoes/boots/cowboy
-	head = /obj/item/clothing/head/cowboy_hat
+	head = /obj/item/clothing/head/cowboy_hat/small
 	id_type = /obj/item/card/id/science
 
 //garage
@@ -40,7 +40,8 @@
 	name = OUTFIT_JOB_NAME("Head Mechanic")
 	l_ear = /obj/item/radio/headset/heads/rd
 	glasses = /obj/item/clothing/glasses/welding/superior
-	uniform = /obj/item/clothing/under/serviceoveralls
+	uniform = /obj/item/clothing/under/rank/research_director/garage
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/science
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/boots/workboots
 	id_type = /obj/item/card/id/science/head
@@ -50,7 +51,7 @@
 
 /decl/hierarchy/outfit/job/science/mechanic
 	name = OUTFIT_JOB_NAME("Mechanic")
-	uniform = /obj/item/clothing/under/serviceoveralls
+	uniform = /obj/item/clothing/under/rank/grease_monkey
 	shoes = /obj/item/clothing/shoes/boots/workboots
 	belt = /obj/item/storage/belt/utility/full
 	id_type = /obj/item/card/id/science

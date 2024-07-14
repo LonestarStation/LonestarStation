@@ -23,7 +23,7 @@
 /obj/item/clothing/suit/armor/vest
 	name = "armor"
 	desc = "An armored vest that protects against some damage."
-	icon_state = "armor"
+	icon_state = "bulletproof"
 	blood_overlay_type = "armor"
 	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
 

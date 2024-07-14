@@ -140,7 +140,7 @@
 /datum/shuttle/autodock/ferry/merchant
 	name = "Merchant"
 	location = FERRY_LOCATION_OFFSITE
-	warmup_time = 0
+	warmup_time = 10
 	shuttle_area = /area/shuttle/merchant/home
 	landmark_station = "merchant_station"
 	landmark_offsite = "merchant_offsite"
