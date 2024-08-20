@@ -18,13 +18,13 @@
 	short_name = "Heads"
 	color = "#3333FF"
 	sorting_order = 10
-
+/*
 /datum/department/government
 	name = DEPARTMENT_GOVERNMENT
 	short_name = "Gov"
 	color = "#A52A2A"
 	sorting_order = 12
-
+*/
 /datum/department/security
 	name = DEPARTMENT_SECURITY
 	short_name = "Sec"
@@ -66,7 +66,7 @@
 	short_name = "Civ"
 	color = "#A32800"
 	sorting_order = 2
-
+/*
 /datum/department/antagonist
 	name = DEPARTMENT_ANTAGONIST
 	short_name = "Antag"
@@ -74,7 +74,7 @@
 	sorting_order = 1
 	visible = FALSE
 	assignable = FALSE
-
+*/
 // Mostly for if someone wanted to rewrite manifest code to be map-agnostic.
 /datum/department/misc
 	name = "Miscellaneous"

@@ -31,7 +31,7 @@
 	var/economic_modifier = 2               // With how much does this job modify the initial account amount?
 	var/outfit_type                         // What outfit datum does this job use in its default title?
 
-	var/is_job_whitelisted = FALSE
+//	var/is_job_whitelisted = FALSE			//commented out due to being bork't //demonpizza
 
 	var/offmap_spawn = FALSE                // Do we require weird and special spawning and datacore handling?
 	var/substitute_announce_title           // Set this to replace the actual job title in join/leave messages (for 'gamey' jobs like Survivalist)
@@ -200,8 +200,8 @@
 		return FALSE
 	if(!player_old_enough(player.client))
 		return FALSE
-	if(!is_job_whitelisted(player/*, job*/))
-		return FALSE
+//	if(!is_job_whitelisted(player/*, job*/)) //this is probably where the probalem is idk //demonpizza
+//		return FALSE
 	return TRUE
 
 // If this proc returns a mob, further equip procs are not called and things like

@@ -1,3 +1,4 @@
+/*
 //var/datum/announcement/minor/governor_announcement = new(do_newscast = 1)
 
 //////////////////////////////////
@@ -286,3 +287,4 @@
 /datum/job/board/get_access()
 	return get_all_centcom_access()+get_all_station_access()
 
+*/

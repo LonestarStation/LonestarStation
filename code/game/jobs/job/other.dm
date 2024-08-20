@@ -1,5 +1,5 @@
 ///888cba
-
+/*
 //////////////////////////////////
 //		Mercenary Captain
 //////////////////////////////////
@@ -135,4 +135,4 @@
 	job_description = "Trade Managers fly to Lonestar for a bit of salvage and sales, they even get helpers."
 
 
-
+*/

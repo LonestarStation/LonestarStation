@@ -82,9 +82,9 @@ var/global/datum/controller/occupations/job_master
 		if(jobban_isbanned(player, job.title))
 			Debug("FOC isbanned failed, Player: [player]")
 			continue
-		if(!is_job_whitelisted(player, job))
-			Debug("FOC not whitelisted failed, Player: [player]")
-			continue
+//		if(!is_job_whitelisted(player, job))
+//			Debug("FOC not whitelisted failed, Player: [player]")
+//			continue		//we hateses it //demonpizza
 		if(!job.player_old_enough(player.client))
 			Debug("FOC player not old enough, Player: [player]")
 			continue
@@ -123,10 +123,10 @@ var/global/datum/controller/occupations/job_master
 			Debug("GRJ player not old enough, Player: [player]")
 			continue
 
-		if(!is_job_whitelisted(player, job))
-			Debug("GRJ not whitelisted failed, Player: [player]")
-			continue
-
+//		if(!is_job_whitelisted(player, job))
+//			Debug("GRJ not whitelisted failed, Player: [player]")
+//			continue
+////commented out by //demonpizza
 		if((job.current_positions < job.spawn_positions) || job.spawn_positions == -1)
 			Debug("GRJ Random job given, Player: [player], Job: [job]")
 			AssignRole(player, job.title)
@@ -270,10 +270,10 @@ var/global/datum/controller/occupations/job_master
 					Debug("DO player not old enough, Player: [player], Job:[job.title]")
 					continue
 
-				if(!is_job_whitelisted(player, job))
-					Debug("DO whitelisted failed, Player: [player], Job:[job.title]")
-					continue
-
+//				if(!is_job_whitelisted(player, job))
+//					Debug("DO whitelisted failed, Player: [player], Job:[job.title]")
+//					continue
+// HATES IT WE DOES //demonpizza
 				// If the player wants that job on this level, then try give it to him.
 				if(player.client.prefs.GetJobDepartment(job, level) & job.flag)
 
@@ -616,9 +616,9 @@ var/global/datum/controller/occupations/job_master
 			if(jobban_isbanned(player, job.title))
 				level5++
 				continue
-			if(!is_job_whitelisted(player, job))
-				level5++
-				continue
+//			if(!is_job_whitelisted(player, job))
+//				level5++
+//				continue			// it BURNS us precious // demonpizza
 			if(!job.player_old_enough(player.client))
 				level6++
 				continue

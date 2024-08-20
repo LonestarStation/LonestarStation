@@ -141,9 +141,9 @@
 			var/available_in_days = job.available_in_days(user.client)
 			. += "<del>[rank]</del></td></a><td> \[IN [(available_in_days)] DAYS]</td></tr>"
 			continue
-		if(job.is_job_whitelisted && !is_job_whitelisted(user, job))
-			. += "<del>[rank]</del></td><td><b> \[WHITELISTED]</b></td></tr>"
-			continue
+//		if(job.is_job_whitelisted && !is_job_whitelisted(user, job))
+//			. += "<del>[rank]</del></td><td><b> \[WHITELISTED]</b></td></tr>"
+//			continue 									//meant for role whitelisting, broken currently //demonpizza
 		if(job.is_species_banned(user.client.prefs.species, user.client.prefs.organ_data["brain"]) == TRUE)
 			. += "<del>[rank]</del></td></a><td> \[THIS RACE/BRAIN TYPE CANNOT TAKE THIS ROLE.\]</td></tr>"
 			continue

@@ -50,23 +50,23 @@ var/global/const/LOCAL				=(1<<14)
 var/global/const/RACCOON			=(1<<15)
 
 var/global/const/GOVLAW				=(1<<3)
-
+/*
 var/global/const/GOVERNOR			=(1<<0)
 var/global/const/BARON				=(1<<1)
 var/global/const/RANGER				=(1<<2)
 var/global/const/SURGEONGENERAL		=(1<<3)
 var/global/const/BOARD				=(1<<4)
 var/global/const/SOLADVISOR			=(1<<5)
-
+*/
 var/global/const/BADGUY				=(1<<4)
-
+/*
 var/global/const/MERCBOSS			=(1<<0)
 var/global/const/DESPERADO			=(1<<1)
 var/global/const/STRANGER			=(1<<2)
 var/global/const/SPIRITLEADER		=(1<<3)
 var/global/const/TRADEMANAGER		=(1<<4)
-//var/global/const/RESEARCHER		=(1<<5)
-
+//var/global/const/RESEARCHER		=(1<<5)  //demonpizza
+*/
 /proc/guest_jobbans(var/job)
 	return ( (job in SSjob.get_job_titles_in_department(DEPARTMENT_COMMAND)) || (job in SSjob.get_job_titles_in_department(DEPARTMENT_SYNTHETIC)) || (job in SSjob.get_job_titles_in_department(DEPARTMENT_SECURITY)) )
 
